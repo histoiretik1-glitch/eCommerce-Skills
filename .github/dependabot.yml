@@ -1,0 +1,28 @@
+version: 2
+updates:
+  # Actions pinned by commit SHA in .github/workflows/
+  - package-ecosystem: github-actions
+    directory: /
+    schedule:
+      interval: monthly
+    cooldown:
+      default-days: 14
+    groups:
+      github-actions:
+        patterns: ["*"]
+
+  # Claude Code CLI used by the validation workflow (tools/ci/package-lock.json)
+  - package-ecosystem: npm
+    directory: /tools/ci
+    schedule:
+      interval: monthly
+    cooldown:
+      default-days: 14
+
+  # PyYAML used by the validation workflow (tools/ci/requirements.txt)
+  - package-ecosystem: pip
+    directory: /tools/ci
+    schedule:
+      interval: monthly
+    cooldown:
+      default-days: 14

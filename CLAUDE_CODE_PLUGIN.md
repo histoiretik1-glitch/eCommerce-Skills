@@ -114,6 +114,17 @@ Le workflow `.github/workflows/validate-plugin.yml` s'exécute à chaque Pull Re
 
 **Quand vous ajoutez ou retirez des skills, mettez à jour `EXPECTED_SKILL_COUNT` dans le workflow.**
 
+Sécurité du workflow :
+
+- **Droits minimaux** : jeton en lecture seule (`contents: read`), et `persist-credentials: false` au checkout. Aucun secret n'est utilisé.
+- **Actions figées** sur un commit précis (SHA complet, version en commentaire) : `actions/checkout` v7.0.1, `actions/setup-python` v7.1.0, `actions/setup-node` v7.1.0.
+- **Outils figés et vérifiés** dans `tools/ci/` :
+  - PyYAML 6.0.3 s'installe avec `--require-hashes` (`requirements.txt`) ;
+  - Claude Code 2.1.319 s'installe avec `npm ci` depuis `package-lock.json` (empreintes d'intégrité), puis `npm audit signatures` vérifie les signatures du registre npm. Si cette vérification échoue, la CLI n'est pas exécutée.
+- **Mises à jour** : `.github/dependabot.yml` propose chaque mois les nouvelles versions des actions, de la CLI et de PyYAML. Le délai de 14 jours (`cooldown`) écarte les versions trop récentes.
+
+Pour changer de version de Claude Code à la main : modifiez `tools/ci/package.json`, puis lancez `npm install --package-lock-only` dans `tools/ci/` et commitez les deux fichiers.
+
 Pour rendre ce contrôle obligatoire avant toute fusion : *Settings* → *Branches* → règle de protection sur `main` → *Require status checks to pass*, puis cochez **Skills, manifest and plugin**.
 
 ## Organisation

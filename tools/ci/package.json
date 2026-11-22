@@ -1,0 +1,9 @@
+{
+  "name": "ecommerce-skills-ci",
+  "private": true,
+  "description": "Pinned tooling for the plugin validation workflow (.github/workflows/validate-plugin.yml).",
+  "license": "MIT",
+  "dependencies": {
+    "@anthropic-ai/claude-code": "2.1.319"
+  }
+}
