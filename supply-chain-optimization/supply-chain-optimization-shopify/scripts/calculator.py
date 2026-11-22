@@ -4,13 +4,63 @@ Supply Chain Analyzer - Core Calculator
 Supply Chain Analyzer - Core Calculator
 
 Purpose: Calculate key metrics and diagnose bottlenecks
-Version: 1.0.0
+Shared by supply-chain-optimization-{amazon,shopify,tiktok,walmart}. The file is
+identical in every skill folder; the platform comes from the "platform" input
+field, or else from the skill folder name.
+Version: 2.0.0
 """
 
 import json
-from dataclasses import dataclass
+from dataclasses import dataclass, fields
+from pathlib import Path
 from typing import Optional, List, Dict
 from enum import Enum
+
+SUPPORTED_PLATFORMS = ("amazon", "shopify", "tiktok", "walmart")
+
+# Platform profile: display labels, default payout delay (days after sale,
+# estimates dated 2026-11, override with payout_days) and aged-stock wording.
+PLATFORM_PROFILES = {
+    "amazon": {"fee_label": "FBA Fee", "title": "Amazon", "fulfillment": "FBA Fulfillment", "storage": "FBA Storagefee",
+               "chart_fulfillment": "FBAFulfillment", "payout_days": 14,
+               "aged_stock": ("ExistPeriodStoragefee", "PartInventorysuper 365days",
+                              "1. ExportLibraryageReport 2. On-site promotion clearanceInventory 3. Remove or destroy"),
+               "aged_report": "Export FBA LibraryageReport"},
+    "walmart": {"fee_label": "WFS Fee", "title": "Walmart", "fulfillment": "WFS Fulfillment", "storage": "WFS Storage fee",
+                "chart_fulfillment": "WFSFulfillment", "payout_days": 14,
+                "aged_stock": ("Aged WFS inventory", "Part of the WFS inventory is aging and accrues storage fees",
+                               "1. Check the WFS inventory health report 2. Run Walmart price/rollback promotions 3. Request a WFS removal order"),
+                "aged_report": "Export the WFS inventory health report"},
+    "tiktok": {"fee_label": "FBT/Fulfillment Fee", "title": "TikTok Shop", "fulfillment": "FBT/Fulfillment", "storage": "FBT Storage fee",
+               "chart_fulfillment": "FBTFulfillment", "payout_days": 15,
+               "aged_stock": ("Aged stock after the viral peak", "Inventory is still high after the product's trend window",
+                              "1. Clear with Flash Deals or bundles 2. Brief creators on a new angle 3. Stop reorders until sell-through recovers"),
+               "aged_report": "Export the FBT / warehouse inventory age report"},
+    "shopify": {"fee_label": "3PL Fee", "title": "Shopify/DTC", "fulfillment": "3PL Fulfillment", "storage": "3PL Storage fee",
+                "chart_fulfillment": "3PLFulfillment", "payout_days": 3,
+                "aged_stock": ("Aged 3PL inventory", "Slow-moving stock accrues 3PL storage fees",
+                               "1. Ask the 3PL for an inventory age report 2. Discount or bundle slow SKUs 3. Liquidate or return to supplier"),
+                "aged_report": "Export the 3PL inventory age report"},
+}
+
+# Accepted alternative input names -> canonical field
+INPUT_ALIASES = {
+    "fulfillment_fee": "fba_fee",
+    "wfs_fee": "fba_fee",
+    "fbt_fee": "fba_fee",
+    "fba_fulfillment_fee": "fba_fee",
+    "fba_storage_fee": "storage_fee",
+    "creator_commission_rate": "affiliate_commission_rate",
+}
+
+
+def detect_platform(default: str = "amazon") -> str:
+    """Platform implied by the skill folder name (supply-chain-optimization-<platform>)."""
+    folder = Path(__file__).resolve().parent.parent.name.lower()
+    for platform in SUPPORTED_PLATFORMS:
+        if folder.endswith("-" + platform):
+            return platform
+    return default
 
 
 class HealthStatus(Enum):
@@ -165,8 +215,36 @@ class SupplyChainInput:
     daily_sales: Optional[float] = None      # DayAverage sales
     current_inventory: Optional[int] = None  # CurrentInventoryquantity
     
-    # Platform
-    platform: str = "amazon"
+    # Platform (default: skill folder)
+    platform: Optional[str] = None
+
+    # Optional platform fees (only shown when provided)
+    referral_fee_rate: Optional[float] = None   # Marketplace referral/commission (0-1)
+    affiliate_commission_rate: float = 0.0      # TikTok creator commission (0-1)
+    payout_days: Optional[int] = None           # Days from sale to payout (default per platform)
+
+    def __post_init__(self):
+        self.platform = (self.platform or detect_platform()).lower()
+        if self.platform not in SUPPORTED_PLATFORMS:
+            raise ValueError(f"unknown platform '{self.platform}' (expected one of {', '.join(SUPPORTED_PLATFORMS)})")
+        if self.payout_days is None:
+            self.payout_days = PLATFORM_PROFILES[self.platform]["payout_days"]
+
+
+def input_from_dict(data: Dict) -> "SupplyChainInput":
+    """Build SupplyChainInput from a dict, accepting documented aliases."""
+    allowed = {f.name for f in fields(SupplyChainInput)}
+    clean, unknown = {}, []
+    for key, value in data.items():
+        canonical = INPUT_ALIASES.get(key, key)
+        if canonical in allowed:
+            clean[canonical] = value
+        else:
+            unknown.append(key)
+    if unknown:
+        raise ValueError(f"unknown field(s): {', '.join(unknown)}. Allowed: {', '.join(sorted(allowed))}; "
+                         f"aliases: {', '.join(sorted(INPUT_ALIASES))}")
+    return SupplyChainInput(**clean)
 
 
 @dataclass
@@ -288,7 +366,7 @@ def calculate_metrics(data: SupplyChainInput) -> List[MetricResult]:
         data.production_days + 
         data.shipping_days + 
         data.inventory_days + 
-        14  # AmazonPayment Cycle
+        data.payout_days  # Payout delay (Amazon: 14 days)
         - data.supplier_payment_days
     )
     metrics.append(MetricResult(
@@ -309,6 +387,8 @@ def calculate_cost_breakdown(data: SupplyChainInput) -> Dict[str, float]:
     """
     ad_cost = data.selling_price * data.ad_spend_ratio
     other_cost = data.selling_price * 0.05
+    referral_fee = data.selling_price * (data.referral_fee_rate or 0.0)
+    affiliate_fee = data.selling_price * data.affiliate_commission_rate
     
     net_profit = (
         data.selling_price 
@@ -318,6 +398,8 @@ def calculate_cost_breakdown(data: SupplyChainInput) -> Dict[str, float]:
         - data.storage_fee 
         - ad_cost 
         - other_cost
+        - referral_fee
+        - affiliate_fee
     )
     
     return {
@@ -335,7 +417,13 @@ def calculate_cost_breakdown(data: SupplyChainInput) -> Dict[str, float]:
         "fba_ratio": round(data.fba_fee / data.selling_price * 100, 1),
         "storage_ratio": round(data.storage_fee / data.selling_price * 100, 1),
         "ad_ratio": round(ad_cost / data.selling_price * 100, 1),
-        "net_margin": round(net_profit / data.selling_price * 100, 1)
+        "net_margin": round(net_profit / data.selling_price * 100, 1),
+        # Platform
+        "platform": data.platform,
+        "referral_fee": round(referral_fee, 2),
+        "affiliate_fee": round(affiliate_fee, 2),
+        "referral_ratio": round(referral_fee / data.selling_price * 100, 1),
+        "affiliate_ratio": round(affiliate_fee / data.selling_price * 100, 1),
     }
 
 
@@ -406,13 +494,14 @@ def diagnose_bottlenecks(data: SupplyChainInput, metrics: List[MetricResult]) ->
     
     # CheckPeriodStoragefee
     if data.has_long_term_storage:
+        title, problem, suggestion = PLATFORM_PROFILES[data.platform]["aged_stock"]
         bottlenecks.append(BottleneckItem(
             priority=2,
             severity=" in ",
-            title="ExistPeriodStoragefee",
-            problem="PartInventorysuper 365days",
+            title=title,
+            problem=problem,
             impact="amount outside CostExpenditure，CapitalWaste",
-            suggestion="1. ExportLibraryageReport 2. On-site promotion clearanceInventory 3. Remove or destroy"
+            suggestion=suggestion
         ))
     
     #  by excellent first LevelSort
@@ -470,13 +559,16 @@ def format_metrics_table(metrics: List[MetricResult]) -> str:
 
 def format_cost_breakdown(breakdown: Dict[str, float]) -> str:
     """FormatCostBreakdown"""
+    labels = PLATFORM_PROFILES.get(breakdown.get("platform", "amazon"), PLATFORM_PROFILES["amazon"])
     lines = [
         f"Selling Price            ${breakdown['selling_price']:.2f}   100%",
         "─────────────────────────────",
         f"ProductCost        -${breakdown['product_cost']:.2f}    {breakdown['product_cost_ratio']}%",
         f"InboundLogistics        -${breakdown['shipping_cost']:.2f}     {breakdown['shipping_ratio']}%",
-        f"FBA Fulfillment      -${breakdown['fba_fee']:.2f}    {breakdown['fba_ratio']}%",
-        f"FBA Storagefee      -${breakdown['storage_fee']:.2f}     {breakdown['storage_ratio']}%",
+        f"{labels['fulfillment']:<21}-${breakdown['fba_fee']:.2f}    {breakdown['fba_ratio']}%",
+        f"{labels['storage']:<20}-${breakdown['storage_fee']:.2f}     {breakdown['storage_ratio']}%",
+    ] + ([f"{'Referral Fee':<21}-${breakdown['referral_fee']:.2f}    {breakdown['referral_ratio']}%"] if breakdown.get('referral_fee') else []) + (
+        [f"{'Affiliate Commission':<21}-${breakdown['affiliate_fee']:.2f}    {breakdown['affiliate_ratio']}%"] if breakdown.get('affiliate_fee') else []) + [
         f"Advertisingfee          -${breakdown['ad_cost']:.2f}    {breakdown['ad_ratio']}%",
         f"OtherFee        -${breakdown['other_cost']:.2f}     5.0%",
         "─────────────────────────────",
@@ -556,14 +648,14 @@ def main():
         ad_spend_ratio=0.10,
         inventory_days=60,
         has_long_term_storage=True,
-        platform="amazon"
+        platform=None  # default: this skill's platform
     )
     
     # If JSON input provided
     if len(sys.argv) > 1:
         try:
             input_json = json.loads(sys.argv[1])
-            test_data = SupplyChainInput(**input_json)
+            test_data = input_from_dict(input_json)
         except Exception as e:
             print(f"Error parsing input: {e}")
             sys.exit(1)

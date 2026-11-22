@@ -1,0 +1,58 @@
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+📋 BRAND REGISTRY COMPLAINT TEMPLATE
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+**Platform**: Amazon Brand Registry Portal
+**URL**: https://brandregistry.amazon.com/
+
+---
+
+## Report Details
+
+**Brand Name**: TechGadget
+**Trademark Number**: US12345678
+**ASIN**: B08XXXXXX1
+**Infringing Seller**: CheapDeals123 (X9Y8Z7W6V5U4T3)
+**Violation Type**: Unauthorized Sale / Suspected Counterfeit
+
+---
+
+## Complaint Text (Copy & Paste)
+
+```
+I am the brand owner of TechGadget (Trademark #US12345678).
+
+The seller "CheapDeals123" (Seller ID: X9Y8Z7W6V5U4T3) is selling unauthorized/counterfeit products on ASIN B08XXXXXX1.
+
+Evidence:
+Test buy received product with different packaging and lower quality than authentic product.
+
+This seller is NOT an authorized reseller of our products. We request immediate removal of this seller from our listing.
+
+Contact: legal@techgadget.com
+Company: TechGadget Inc.
+```
+
+---
+
+## Steps to Submit
+
+1. Log into Brand Registry: https://brandregistry.amazon.com/
+2. Click "Report a Violation"
+3. Select violation type
+4. Enter ASIN and seller information
+5. Paste complaint text above
+6. Upload evidence (screenshots, invoices, test buy photos)
+7. Submit and note case ID
+
+---
+
+## Evidence Checklist
+
+☐ Screenshots of listing showing unauthorized seller
+☐ Invoice/order confirmation from test buy
+☐ Photos comparing authentic vs suspected counterfeit
+☐ Trademark registration certificate
+☐ Authorization letter (showing seller is NOT authorized)
+

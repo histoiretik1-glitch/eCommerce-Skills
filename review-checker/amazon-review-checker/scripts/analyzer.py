@@ -8,7 +8,11 @@ Features:
 -  many dimensionDegreeDetection (Time/Content/Rating/Account/VP)
 - Friendly guidance (HintCanDeepenDirection)
 
-Version: 1.0.0
+Shared by {amazon,ebay,walmart}-review-checker. The file is identical in every
+skill folder; the platform comes from --platform=<name> or, by default, from the
+skill folder name (it only changes labels; detection logic is the same).
+
+Version: 2.0.0
 """
 
 import json
@@ -34,6 +38,37 @@ class AnalysisLevel(Enum):
     L2_TIMED = "L2"      # + Time
     L3_SCORED = "L3"     # + Rating
     L4_FULL = "L4"       #  all Field
+
+
+# ============================================================
+# Platform
+# ============================================================
+
+from pathlib import Path as _Path
+
+SUPPORTED_PLATFORMS = ("amazon", "ebay", "walmart")
+PLATFORM_ID_LABELS = {"amazon": "ASIN", "ebay": "eBay Item ID", "walmart": "Walmart Item ID"}
+PLATFORM_NAMES = {"amazon": "Amazon", "ebay": "eBay", "walmart": "Walmart"}
+
+# Accepted alternative review field names -> Review field
+REVIEW_FIELD_ALIASES = {
+    "wfs_verified": "verified_purchase",   # Walmart "Verified Purchase" badge
+    "verified": "verified_purchase",
+    "vp": "verified_purchase",
+    "text": "content",
+    "body": "content",
+    "stars": "rating",
+    "author": "reviewer_name",
+}
+
+
+def detect_platform(default: str = "amazon") -> str:
+    """Platform implied by the skill folder name (<platform>-review-checker)."""
+    folder = _Path(__file__).resolve().parent.parent.name.lower()
+    for platform in SUPPORTED_PLATFORMS:
+        if folder.startswith(platform + "-"):
+            return platform
+    return default
 
 
 # ============================================================
@@ -677,7 +712,7 @@ def format_report(result: AnalysisResult, lang: str = "en") -> str:
         lines = [
             f"📊 **ReviewAuthenticityAnalyzeReport**",
             f"",
-            f"**ASIN**: {result.asin}",
+            f"**{PLATFORM_ID_LABELS.get(PLATFORM, 'ASIN')}**: {result.asin}",
             f"**Review Count**: {result.total_reviews}",
             f"**AnalyzelayerLevel**: {result.analysis_level.value}",
             f"",
@@ -720,7 +755,7 @@ def format_report(result: AnalysisResult, lang: str = "en") -> str:
         lines = [
             f"📊 **Review Authenticity Report**",
             f"",
-            f"**ASIN**: {result.asin}",
+            f"**{PLATFORM_ID_LABELS.get(PLATFORM, 'ASIN')}**: {result.asin}",
             f"**Reviews**: {result.total_reviews}",
             f"**Analysis Level**: {result.analysis_level.value}",
             f"",
@@ -804,7 +839,31 @@ def parse_simple_reviews(text: str) -> List[Review]:
 # CLI Entry Point
 # ============================================================
 
+def review_from_dict(data: dict) -> "Review":
+    """Build a Review from a dict, accepting documented aliases; reject unknown fields."""
+    allowed = set(Review.__dataclass_fields__)
+    clean, unknown = {}, []
+    for key, value in data.items():
+        canonical = REVIEW_FIELD_ALIASES.get(key, key)
+        if canonical in allowed:
+            clean[canonical] = value
+        else:
+            unknown.append(key)
+    if unknown:
+        raise ValueError(f"unknown field(s): {', '.join(unknown)}. Allowed: {', '.join(sorted(allowed))}; "
+                         f"aliases: {', '.join(sorted(REVIEW_FIELD_ALIASES))}")
+    return Review(**clean)
+
+
+PLATFORM = "amazon"
+
+
 def main():
+    global PLATFORM
+    PLATFORM = (next((a.split("=", 1)[1] for a in sys.argv if a.startswith("--platform=")), None) or detect_platform()).lower()
+    if PLATFORM not in SUPPORTED_PLATFORMS:
+        print(f"Error: unknown platform '{PLATFORM}' (expected one of {', '.join(SUPPORTED_PLATFORMS)})")
+        sys.exit(1)
     """CLI Entry Point"""
     # TestData
     test_reviews = [
@@ -829,9 +888,11 @@ def main():
             # JSON group
             try:
                 data = json.loads(arg)
-                test_reviews = [Review(**r) for r in data]
-            except:
-                pass
+                test_reviews = [review_from_dict(r) for r in data]
+            except Exception as e:
+                # Never fall back to demo data silently: the user would get a report on fake reviews
+                print(f"Error: could not read the reviews JSON: {e}")
+                sys.exit(1)
         else:
             # pureText
             test_reviews = parse_simple_reviews(arg)

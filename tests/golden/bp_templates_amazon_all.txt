@@ -1,0 +1,277 @@
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+📋 BRAND REGISTRY COMPLAINT TEMPLATE
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+**Platform**: Amazon Brand Registry Portal
+**URL**: https://brandregistry.amazon.com/
+
+---
+
+## Report Details
+
+**Brand Name**: TechGadget
+**Trademark Number**: US12345678
+**ASIN**: B08XXXXXX1
+**Infringing Seller**: CheapDeals123 (X9Y8Z7W6V5U4T3)
+**Violation Type**: Unauthorized Sale / Suspected Counterfeit
+
+---
+
+## Complaint Text (Copy & Paste)
+
+```
+I am the brand owner of TechGadget (Trademark #US12345678).
+
+The seller "CheapDeals123" (Seller ID: X9Y8Z7W6V5U4T3) is selling unauthorized/counterfeit products on ASIN B08XXXXXX1.
+
+Evidence:
+Test buy received product with different packaging and lower quality than authentic product.
+
+This seller is NOT an authorized reseller of our products. We request immediate removal of this seller from our listing.
+
+Contact: legal@techgadget.com
+Company: TechGadget Inc.
+```
+
+---
+
+## Steps to Submit
+
+1. Log into Brand Registry: https://brandregistry.amazon.com/
+2. Click "Report a Violation"
+3. Select violation type
+4. Enter ASIN and seller information
+5. Paste complaint text above
+6. Upload evidence (screenshots, invoices, test buy photos)
+7. Submit and note case ID
+
+---
+
+## Evidence Checklist
+
+☐ Screenshots of listing showing unauthorized seller
+☐ Invoice/order confirmation from test buy
+☐ Photos comparing authentic vs suspected counterfeit
+☐ Trademark registration certificate
+☐ Authorization letter (showing seller is NOT authorized)
+
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+📋 CEASE AND DESIST LETTER TEMPLATE
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+**Date**: November 22, 2026
+
+---
+
+**CEASE AND DESIST NOTICE**
+
+To: CheapDeals123
+Seller ID: X9Y8Z7W6V5U4T3
+Re: Unauthorized Sale of TechGadget Products
+
+---
+
+Dear CheapDeals123,
+
+This letter serves as formal notice that you are engaging in unauthorized sale of products bearing the TechGadget® trademark (Registration No. US12345678) on Amazon.com, specifically on ASIN: B08XXXXXX1.
+
+**YOU ARE NOT AN AUTHORIZED RESELLER** of TechGadget products. Your unauthorized sale of these products constitutes:
+
+1. Trademark infringement under 15 U.S.C. § 1114
+2. False designation of origin under 15 U.S.C. § 1125(a)
+3. Violation of Amazon's Anti-Counterfeiting Policy
+
+**DEMAND**
+
+We hereby demand that you:
+
+1. Immediately cease and desist all sales of TechGadget products
+2. Remove all TechGadget product listings from your seller account
+3. Provide a written confirmation of compliance within 5 business days
+
+**CONSEQUENCES OF NON-COMPLIANCE**
+
+Failure to comply with this demand will result in:
+- Report to Amazon Brand Registry for listing removal
+- Legal action seeking injunctive relief and monetary damages
+- Report to law enforcement if counterfeit goods are involved
+
+This letter is not intended to be a complete statement of the facts or law applicable to this matter, and nothing herein should be construed as a waiver of any rights or remedies.
+
+Sincerely,
+
+TechGadget Inc.
+legal@techgadget.com
+
+---
+
+## Sending Instructions
+
+1. Send via Amazon Buyer-Seller Messaging (if available)
+2. Send via seller's contact email (find in storefront)
+3. Keep copies of all correspondence
+4. Set 5-day deadline for response
+5. Escalate to legal action if no response
+
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+📋 TEST BUY PROCEDURE GUIDE
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+## Purpose
+
+Test Buy is the process of purchasing products from suspected counterfeit/unauthorized sellers to collect physical evidence for your complaint.
+
+---
+
+## Step-by-Step Process
+
+### 1. Preparation
+
+☐ Create a separate Amazon buyer account (not linked to seller account)
+☐ Use a different shipping address if possible
+☐ Prepare camera for documentation
+☐ Have authentic product ready for comparison
+
+### 2. Purchase
+
+☐ Select the suspected seller's offer (not Buy Box)
+☐ Screenshot the product page showing seller name and price
+☐ Screenshot checkout page with seller info
+☐ Complete purchase and save order confirmation
+☐ Note Order ID: ________________
+
+### 3. Documentation Upon Arrival
+
+☐ Photograph unopened package (showing shipping label)
+☐ Video record unboxing process
+☐ Photograph product from multiple angles
+☐ Compare with authentic product side-by-side:
+   - Packaging differences
+   - Label/printing quality
+   - Product quality/finish
+   - Weight comparison
+   - Serial number verification
+☐ Keep all packaging materials
+
+### 4. Evidence Organization
+
+Create folder with:
+```
+test_buy_evidence/
+├── 01_listing_screenshots/
+├── 02_order_confirmation/
+├── 03_package_photos/
+├── 04_unboxing_video/
+├── 05_product_comparison/
+└── 06_notes.txt
+```
+
+### 5. Submit Complaint
+
+☐ Compile all evidence
+☐ Write detailed complaint (use template)
+☐ Submit via Brand Registry
+☐ Include Order ID in complaint
+☐ Upload photos/video
+
+---
+
+## Evidence Checklist
+
+**Screenshots**
+☐ Listing page with seller
+☐ Seller storefront
+☐ Order confirmation
+☐ Shipping confirmation
+☐ Delivery confirmation
+
+**Photos**
+☐ Package exterior (4+ angles)
+☐ Shipping label close-up
+☐ Product in packaging
+☐ Product removed
+☐ Side-by-side with authentic
+☐ Close-up of differences
+
+**Documents**
+☐ Invoice from test buy
+☐ Authentication certificate (if available)
+☐ Trademark registration
+
+---
+
+## Timeline
+
+Day 1: Place order
+Day 3-7: Receive package
+Day 7-8: Document and compare
+Day 8-10: Compile and submit complaint
+Day 10-21: Amazon review period
+
+---
+
+## Cost Tracking
+
+| Item | Cost |
+|------|------|
+| Test Buy Product | $_____ |
+| Shipping | $_____ |
+| Return Shipping | $_____ |
+| Total | $_____ |
+
+*Note: May be recoverable in legal action*
+
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+📋 MAP VIOLATION NOTICE TEMPLATE
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+**Date**: November 22, 2026
+
+---
+
+**MINIMUM ADVERTISED PRICE (MAP) VIOLATION NOTICE**
+
+To: CheapDeals123
+Re: MAP Policy Violation - TechGadget
+
+---
+
+Dear CheapDeals123,
+
+This notice is to inform you that your current advertised price for TechGadget products violates our Minimum Advertised Price (MAP) policy.
+
+**Violation Details:**
+
+| Product | ASIN | Your Price | MAP Price | Violation |
+|---------|------|------------|-----------|-----------|
+| TechGadget | B08XXXXXX1 | $18.99 | $29.99 | -36.7% |
+
+**MAP Policy Terms:**
+
+As an authorized/unauthorized reseller of TechGadget products, you are required to maintain advertised prices at or above the Minimum Advertised Price. This policy ensures:
+
+- Fair competition among resellers
+- Brand value protection
+- Quality customer experience
+
+**Required Action:**
+
+Please adjust your advertised price to $29.99 or higher within **48 hours** of receiving this notice.
+
+**Consequences of Non-Compliance:**
+
+Continued violation of our MAP policy may result in:
+- Removal from authorized reseller program
+- Report to Amazon for policy violation
+- Supply chain restrictions
+
+Please confirm compliance by replying to this notice.
+
+Sincerely,
+TechGadget Inc.
+legal@techgadget.com
+

@@ -1,7 +1,7 @@
 ---
 name: supply-chain-optimization-shopify
 version: 1.0.0
-description: "Supply Chain Bottleneck Analyzer for Shopify/DTC stores. Diagnose cash flow, inventory, shipping costs, and customer acquisition efficiency. Includes CAC/LTV analysis, 3PL cost optimization, and ad spend benchmarks. No API key required for basic analysis."
+description: "Shopify/DTC supply chain bottleneck analyzer. Computes margins, 3PL fulfillment and shipping ratios, inventory days and cash conversion cycle (fast Shopify payouts) against DTC benchmarks, ranks the top 3 bottlenecks and proposes cost reduction actions; optional Markdown/HTML report. No API key required. Use when a Shopify or DTC brand asks about cash flow, 3PL costs, inventory levels, supplier payment terms or landed cost."
 metadata: {"nexscope":{"emoji":"📦","category":"ecommerce"}}
 ---
 
@@ -173,6 +173,16 @@ export SHOPIFY_ACCESS_TOKEN="xxx"
 ```bash
 export SHIPBOB_API_TOKEN="xxx"
 ```
+
+## Script Usage
+
+`scripts/calculator.py` (plus `report_doc.py` and `report_html.py`) is shared by the four supply-chain-optimization skills. The platform comes from the `platform` field (`amazon`, `shopify`, `tiktok`, `walmart`) or, by default, from this skill's folder. It sets the benchmarks, the payout delay used in the cash cycle (3 days by default, override with `payout_days`), the fulfillment labels and the aged-stock advice.
+
+```bash
+python3 scripts/calculator.py '{"product_cost": 12, "supplier_payment_days": 30, "production_days": 20, "shipping_cost_per_unit": 1.0, "shipping_days": 25, "selling_price": 49.99, "fulfillment_fee": 4.5, "storage_fee": 0.3, "ad_spend_ratio": 0.25, "inventory_days": 50, "has_long_term_storage": false}'
+```
+
+Required fields: `product_cost`, `supplier_payment_days`, `production_days`, `shipping_cost_per_unit`, `shipping_days`, `selling_price`, `fba_fee` (aliases `fulfillment_fee`, `wfs_fee`, `fbt_fee`), `storage_fee`, `ad_spend_ratio`, `inventory_days`, `has_long_term_storage`. Optional: `referral_fee_rate`, `affiliate_commission_rate`, `payout_days`, `daily_sales`, `current_inventory`. An unknown field stops the script with the list of accepted fields.
 
 ## Bottleneck Diagnosis Focus
 

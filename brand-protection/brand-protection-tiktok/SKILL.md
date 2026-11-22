@@ -2,7 +2,7 @@
 name: brand-protection-tiktok
 version: 1.0.0
 author: Nexscope AI
-description: "TikTok Shop brand protection toolkit. Detect unauthorized sellers, counterfeit products, and affiliate abuse. Includes TikTok IP Protection reporting, influencer misuse detection, and complaint templates. No API key required."
+description: "TikTok Shop brand protection toolkit. Detect unauthorized sellers, counterfeit products, and affiliate abuse. Includes TikTok IP Protection reporting, influencer misuse detection, and complaint templates. No API key required. Use when a brand owner asks about counterfeit TikTok Shop sellers, affiliates misusing the brand, or how to report IP infringement in the TikTok Shop IP Protection Center."
 metadata: {"nexscope":{"emoji":"🛡️","category":"ecommerce"}}
 ---
 
@@ -74,6 +74,13 @@ python3 scripts/templates.py seller-complaint
 # Content takedown
 python3 scripts/templates.py content-takedown
 ```
+
+## Script Notes
+
+- `scripts/detector.py` and `scripts/templates.py` are shared by the five brand-protection skills. They use this skill's platform by default (TikTok Shop IP Protection Center); `--platform=amazon|ebay|shopify|tiktok|walmart` overrides it.
+- `detector.py` runs on built-in demo data to show the report format. For a real case, collect the seller's listings, sellers and prices, then apply the same checks and action plan in the conversation.
+- `templates.py` sub-commands: `complaint` (aliases `vero`, `dmca`, `platform-report`, `ip-report`, `seller-complaint`, `content-takedown`, `brand-portal`), `cease` (`cease-desist`), `testbuy`, `map`, or `all`. Replace the demo brand, seller and listing IDs with the user's data before sending anything.
+- `--zh` (Chinese wording) is available for Amazon only.
 
 ## Output Example
 

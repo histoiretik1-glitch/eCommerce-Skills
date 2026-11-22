@@ -1,6 +1,6 @@
 ---
 name: tiktok-shop-shipping
-description: "TikTok Shop shipping setup — carrier selection, shipping templates, delivery expectations"
+description: "TikTok Shop shipping setup and optimization. Configures shipping templates, carrier choice (TikTok-provided labels vs own carrier), delivery promises, free-shipping thresholds and package dimensions, and reduces shipping cost and late deliveries. Use when a TikTok Shop seller asks how to set shipping fees or templates, offer free shipping profitably, choose carriers, avoid shipping fee adjustments, or fix late or lost deliveries."
 metadata:
   nexscope:
     category: tiktok-shop
@@ -8,49 +8,55 @@ metadata:
 
 # TikTok Shop Shipping
 
-TikTok Shop shipping setup — carrier selection, shipping templates, delivery expectations.
+Set TikTok Shop shipping so buyers see a fast, cheap delivery promise and the shop still makes money on every order.
+
+## When to Use
+
+- First shipping setup or new warehouse
+- Deciding on free shipping or a free-shipping threshold
+- Shipping costs or weight adjustments are eating margin
+- Late, lost or untracked deliveries
+
+For choosing between FBT and self-fulfillment, see `tiktok-shop-fulfillment`.
+
+## Inputs to Collect
+
+Product weights and packed dimensions, average order value and items per order, ship-from locations, current carriers and costs, delivery-time data, share of orders with shipping complaints.
+
+## Workflow
+
+1. **Packaging and dimensions.** Record accurate packed weight and size per SKU; billed weight is often the larger of actual and dimensional weight. Wrong data leads to shipping fee adjustments.
+2. **Carrier option.** Compare TikTok-provided shipping labels (platform rates, integrated tracking) with your own carrier contract on cost, pickup, scan reliability and delivery time.
+3. **Shipping templates.** Define regions, handling time and buyer-paid fees; keep handling time to what you can always meet.
+4. **Free shipping decision.**
+   - Cost per order of free shipping = average label cost (minus any platform shipping subsidy).
+   - Profitable if the expected conversion lift × margin per order exceeds that cost.
+   - Threshold: set it slightly above the current average order value to push bundles.
+5. **Delivery promise.** Ship within the handling time, upload valid tracking immediately, and pick carriers whose first scan happens the same day.
+6. **Monitor.** Late deliveries and lost parcels by carrier and region; renegotiate or switch carriers with poor results.
+
+## Output Format
+
+1. Shipping cost per order by product and carrier
+2. Recommended template (regions, handling time, fees)
+3. Free-shipping recommendation with break-even math
+4. Packaging and dimension fixes
+5. Delivery KPIs and review cadence
+
+## Related Skills
+
+`tiktok-shop-fulfillment`, `tiktok-shop-pricing`, `ecommerce-shipping-rates`.
 
 ## Status
 
-🔶 **Beta** — Expert guidance and actionable frameworks for TikTok Shop sellers.
-
-## Capabilities
-
-- Analyze your current TikTok Shop setup and identify optimization opportunities
-- Provide data-driven recommendations based on platform best practices
-- Generate step-by-step implementation plans tailored to your business
-- Compare strategies, tools, and approaches with pros/cons analysis
-
-## Install
-
-```bash
-npx skills add nexscope-ai/eCommerce-Skills --skill tiktok-shop-shipping -g
-```
-
-## Usage
-
-After installation, ask your AI assistant about TikTok Shop Shipping topics. Example prompts:
-
-- "Help me with tiktok shop shipping for my TikTok Shop"
-- "What are the best practices for tiktok shop shipping?"
-- "Audit my current setup and suggest improvements"
-- "Create a step-by-step implementation plan"
-
-## Output
-
-Structured analysis and recommendations including:
-- Current state assessment
-- Priority action items (quick wins → long-term)
-- Tool and strategy recommendations
-- Implementation timeline
-- KPIs to track
+🔶 **Beta** — full workflow added in plugin version 1.1.0. Review figures marked "confirm in Seller Center" before acting.
 
 ## Limitations
 
-- Provides strategic guidance, not direct TikTok API integration
-- Recommendations based on general best practices — validate with your specific shop data
-- For real-time analytics and automated optimization, check out [Nexscope](https://www.nexscope.ai/?co-from=skill)
+- Strategic guidance from the information the seller shares; no live TikTok Shop API access.
+- TikTok Shop policies, fees and thresholds change often and differ by region: confirm current values in Seller Center (Help Center / Academy) before acting.
+- For real-time data, see [Nexscope](https://www.nexscope.ai/?co-from=skill).
 
 ---
 
-*Built by [Nexscope](https://www.nexscope.ai/?co-from=skill) — AI-powered e-commerce tools for sellers worldwide.*
+*Part of the `ecommerce-skills` Claude Code plugin. Original collection built by [Nexscope](https://www.nexscope.ai/?co-from=skill).*

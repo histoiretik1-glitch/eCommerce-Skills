@@ -1,0 +1,51 @@
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+📋 MAP VIOLATION NOTICE TEMPLATE
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+**Date**: November 22, 2026
+
+---
+
+**MINIMUM ADVERTISED PRICE (MAP) VIOLATION NOTICE**
+
+To: CheapDeals123
+Re: MAP Policy Violation - TechGadget
+
+---
+
+Dear CheapDeals123,
+
+This notice is to inform you that your current advertised price for TechGadget products violates our Minimum Advertised Price (MAP) policy.
+
+**Violation Details:**
+
+| Product | ASIN | Your Price | MAP Price | Violation |
+|---------|------|------------|-----------|-----------|
+| TechGadget | B08XXXXXX1 | $18.99 | $29.99 | -36.7% |
+
+**MAP Policy Terms:**
+
+As an authorized/unauthorized reseller of TechGadget products, you are required to maintain advertised prices at or above the Minimum Advertised Price. This policy ensures:
+
+- Fair competition among resellers
+- Brand value protection
+- Quality customer experience
+
+**Required Action:**
+
+Please adjust your advertised price to $29.99 or higher within **48 hours** of receiving this notice.
+
+**Consequences of Non-Compliance:**
+
+Continued violation of our MAP policy may result in:
+- Removal from authorized reseller program
+- Report to Amazon for policy violation
+- Supply chain restrictions
+
+Please confirm compliance by replying to this notice.
+
+Sincerely,
+TechGadget Inc.
+legal@techgadget.com
+

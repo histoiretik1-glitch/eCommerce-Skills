@@ -1,0 +1,75 @@
+🛡️ **Brand ProtectionDetectionReport**
+
+**Brand**: TechGadget
+**Brand Registry**: ✅  already Register
+**ScanTime**: 2026-11-22T16:09:08
+**Scan ASIN **: 2
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+## 🎯 RiskRating: 100/100
+
+🚨 CriticalRisk | Found 8 Infringement | 3 Hijacking, 1 Counterfeit Signals
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+## ⚠️ InfringementDetails
+
+**1. [HIJACKER] ⚠️**
+   FoundnotAuthorizedSeller 'CheapDeals123'  in you Listing  above Sale
+   Seller: CheapDeals123 | Price: $18.99
+   Recommendation: Pass Brand Registry Complaint or cease and desist letter
+
+**2. [HIJACKER] ⚠️**
+   FoundnotAuthorizedSeller 'BestPriceStore'  in you Listing  above Sale
+   Seller: BestPriceStore | Price: $24.99
+   Recommendation: Pass Brand Registry Complaint or cease and desist letter
+
+**3. [PRICE] 🚨**
+   Seller 'CheapDeals123' Selling Price low  at  MAP 36.7%
+   Seller: CheapDeals123 | Price: $18.99
+   Recommendation: Send MAP Violation notice，ConsiderReviewDistributionChannel
+
+**4. [PRICE] 🔴**
+   Seller 'BestPriceStore' Selling Price low  at  MAP 16.7%
+   Seller: BestPriceStore | Price: $24.99
+   Recommendation: Send MAP Violation notice，ConsiderReviewDistributionChannel
+
+**5. [COUNTERFEIT] 🚨**
+    many itemReviewmention and Counterfeit/Imitation，ExistCounterfeitRisk
+   Recommendation: Proceed Test Buy Test purchase to collect physical evidence
+
+**6. [HIJACKER] ⚠️**
+   FoundnotAuthorizedSeller 'AccessoryWorld'  in you Listing  above Sale
+   Seller: AccessoryWorld | Price: $9.99
+   Recommendation: Pass Brand Registry Complaint or cease and desist letter
+
+**7. [PRICE] 🚨**
+   Seller 'AccessoryWorld' Selling Price low  at  MAP 66.7%
+   Seller: AccessoryWorld | Price: $9.99
+   Recommendation: Send MAP Violation notice，ConsiderReviewDistributionChannel
+
+**8. [TRADEMARK] ⚠️**
+   Listing Title may contain trademark abuse
+   Recommendation:  such as notAuthorizedUse，SubmitTrademarkInfringementComplaint
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+## 📋 Rights action plan
+
+**[P1] Pass Brand Registry Complaint**
+   Pass Amazon Brand Registry PortalComplaint 3 notAuthorizedSeller
+   ExpectedTime: 24-48 hours
+
+**[P1] Proceed Test Buy**
+    from SuspiciousSeller at PurchaseProductCollectPhysicalEvidence
+   ExpectedTime: 7-14 days
+
+**[P2] SubmitCounterfeitComplaint**
+    to  Amazon Submit counterfeit complaint and evidence
+   ExpectedTime: After test buy
+
+**[P2] Send MAP Violation notice**
+   Notification 3 Seller MAP Policy violation
+   ExpectedTime: 48-72 hours
+

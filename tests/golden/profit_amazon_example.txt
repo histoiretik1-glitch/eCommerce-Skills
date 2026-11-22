@@ -1,0 +1,53 @@
+
+💰 **Amazon Profit Analysis Report**
+
+**Product**: Product (SKU001)
+**Status**: ✅ ✅ Healthy | Net Margin 46.6% | Profit/Unit $13.99
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+📊 **Cost Breakdown**
+
+```
+Selling Price         $29.99   100%
+────────────────────────────────────────
+Product Cost          -$6.00    20.0%
+Inbound Shipping      -$0.00    0.0%
+FBA Fulfillment       -$5.50    18.3%
+FBA Storage           -$0.00    0.0%
+Referral Fee          -$4.50    15.0%
+Advertising           -$0.00    0.0%
+Returns               -$0.00    0.0%
+Other Fees            -$0.00    0.0%
+────────────────────────────────────────
+Total Cost            $16.00    53.4%
+Net Profit            $13.99    46.6%
+```
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+📈 **Break-Even Analysis**
+
+Break-even Price: $16.00
+├── Below this price = Loss
+
+Current Price: $29.99
+├── 87.4% above break-even
+
+Safety Margin: 46.7%
+├── Room for price reduction
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+💡 **Pricing Recommendations**
+
+| Target Margin | Recommended Price | Profit/Unit |
+|---------------|-------------------|-------------|
+| 15% | $16.43 | $2.46 |
+| 20% | $17.69 | $3.54 |
+| 25% | $19.17 | $4.79 |
+| 30% | $20.91 | $6.27 |
+
+Current Price $29.99 → Net Margin 46.6%
+
+

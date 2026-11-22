@@ -1,0 +1,109 @@
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+📋 TEST BUY PROCEDURE GUIDE
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+## Purpose
+
+Test Buy is the process of purchasing products from suspected counterfeit/unauthorized sellers to collect physical evidence for your complaint.
+
+---
+
+## Step-by-Step Process
+
+### 1. Preparation
+
+☐ Create a separate Amazon buyer account (not linked to seller account)
+☐ Use a different shipping address if possible
+☐ Prepare camera for documentation
+☐ Have authentic product ready for comparison
+
+### 2. Purchase
+
+☐ Select the suspected seller's offer (not Buy Box)
+☐ Screenshot the product page showing seller name and price
+☐ Screenshot checkout page with seller info
+☐ Complete purchase and save order confirmation
+☐ Note Order ID: ________________
+
+### 3. Documentation Upon Arrival
+
+☐ Photograph unopened package (showing shipping label)
+☐ Video record unboxing process
+☐ Photograph product from multiple angles
+☐ Compare with authentic product side-by-side:
+   - Packaging differences
+   - Label/printing quality
+   - Product quality/finish
+   - Weight comparison
+   - Serial number verification
+☐ Keep all packaging materials
+
+### 4. Evidence Organization
+
+Create folder with:
+```
+test_buy_evidence/
+├── 01_listing_screenshots/
+├── 02_order_confirmation/
+├── 03_package_photos/
+├── 04_unboxing_video/
+├── 05_product_comparison/
+└── 06_notes.txt
+```
+
+### 5. Submit Complaint
+
+☐ Compile all evidence
+☐ Write detailed complaint (use template)
+☐ Submit via Brand Registry
+☐ Include Order ID in complaint
+☐ Upload photos/video
+
+---
+
+## Evidence Checklist
+
+**Screenshots**
+☐ Listing page with seller
+☐ Seller storefront
+☐ Order confirmation
+☐ Shipping confirmation
+☐ Delivery confirmation
+
+**Photos**
+☐ Package exterior (4+ angles)
+☐ Shipping label close-up
+☐ Product in packaging
+☐ Product removed
+☐ Side-by-side with authentic
+☐ Close-up of differences
+
+**Documents**
+☐ Invoice from test buy
+☐ Authentication certificate (if available)
+☐ Trademark registration
+
+---
+
+## Timeline
+
+Day 1: Place order
+Day 3-7: Receive package
+Day 7-8: Document and compare
+Day 8-10: Compile and submit complaint
+Day 10-21: Amazon review period
+
+---
+
+## Cost Tracking
+
+| Item | Cost |
+|------|------|
+| Test Buy Product | $_____ |
+| Shipping | $_____ |
+| Return Shipping | $_____ |
+| Total | $_____ |
+
+*Note: May be recoverable in legal action*
+

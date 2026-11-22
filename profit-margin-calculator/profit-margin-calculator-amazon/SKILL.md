@@ -185,6 +185,16 @@ SKU A002: Bands, $19.99, cost $3, shipping $0.8, FBA $4
 
 ---
 
+## Script Parameters
+
+`scripts/calculator.py` is shared by the four profit-margin-calculator skills. It reads the platform from the `platform` field (`amazon`, `shopify`, `tiktok`, `walmart`) or, by default, from this skill's folder, so the commands below need no `platform` field.
+
+Common fields: `selling_price`, `product_cost`, `shipping_cost` (inbound), `ad_spend_ratio` (0-1), `return_rate` (0-1), `return_processing_fee`, `other_fees`, `fixed_costs`, `sku`, `name`.
+
+Fields specific to Amazon: `fba_fulfillment_fee` (alias `fba_fee`), `fba_storage_fee` (alias `storage_fee`), `category`, `referral_fee_rate`.
+
+An unknown field stops the script with the list of accepted fields. Fee defaults are estimates dated 2026-11: when the seller knows their own rate, pass it explicitly (`referral_fee_rate`, `payment_processing_rate`).
+
 ## Script Usage
 
 ```bash
@@ -195,7 +205,7 @@ python3 scripts/calculator.py
 python3 scripts/calculator.py '{"selling_price": 29.99, "product_cost": 6, "fba_fee": 5.5}'
 
 # Batch analysis
-python3 scripts/calculator.py '[{"sku": "A001", ...}, {"sku": "A002", ...}]'
+python3 scripts/calculator.py '[{"sku": "A001", "selling_price": 29.99, "product_cost": 6, "fba_fee": 5.5}, {"sku": "A002", "selling_price": 19.99, "product_cost": 4, "fba_fee": 4.75, "category": "beauty"}]'
 ```
 
 ---

@@ -1,7 +1,7 @@
 ---
 name: supply-chain-optimization-amazon
 version: 1.0.0
-description: Supply Chain Optimization (Lite) - Diagnose bottlenecks and provide cost reduction strategies through conversation
+description: "Amazon FBA supply chain bottleneck analyzer. Computes gross and net margin, inbound shipping ratio, inventory days and cash conversion cycle against Amazon benchmarks, ranks the top 3 bottlenecks (aged inventory, storage fees, cash cycle, margins) and proposes cost reduction actions; optional Markdown/HTML report. No API key required. Use when an Amazon seller asks about cash flow, restock timing, FBA storage or aged inventory fees, supplier terms, landed cost or why margins are shrinking."
 platform: amazon
 lang: en
 ---
@@ -84,7 +84,7 @@ Just reply in natural language.
 Run calculation script:
 
 ```bash
-python3 scripts/calculator.py '{"product_cost": 8, "supplier_payment_days": 0, ...}'
+python3 scripts/calculator.py '{"product_cost": 8, "supplier_payment_days": 0, "production_days": 25, "shipping_cost_per_unit": 0.75, "shipping_days": 35, "selling_price": 25, "fba_fee": 5, "storage_fee": 0.5, "ad_spend_ratio": 0.10, "inventory_days": 60, "has_long_term_storage": true}'
 ```
 
 Output diagnosis report:

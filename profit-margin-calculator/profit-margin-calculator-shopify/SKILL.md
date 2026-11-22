@@ -1,7 +1,7 @@
 ---
 name: profit-margin-calculator-shopify
 version: 1.0.0
-description: "Shopify/DTC profit margin calculator for sellers. Calculate cost breakdowns including ad spend, CAC, payment processing fees, and 3PL costs. Includes LTV/CAC analysis and DTC-specific benchmarks. No API key required."
+description: "Shopify/DTC profit margin calculator. Computes per-order cost breakdown with Shopify Payments processing by plan (or third-party gateway fees), 3PL fulfillment, ad spend, returns, break-even price, target-margin pricing and max affordable CAC. No platform commission. No API key required. Use when a Shopify or DTC store owner asks about product margins, pricing, ad spend limits, CAC or payment fees."
 metadata: {"nexscope":{"emoji":"💰","category":"ecommerce"}}
 ---
 
@@ -22,7 +22,7 @@ npx skills add nexscope-ai/eCommerce-Skills --skill profit-margin-calculator-sho
 | Product Cost | FOB purchase price | - |
 | Inbound Shipping | To 3PL warehouse | - |
 | 3PL Fulfillment | ShipBob/Deliverr etc. | - |
-| **Payment Processing** | 2.9% + $0.30 | Shopify Payments |
+| **Payment Processing** | 2.9% + $0.30 (Basic), 2.7% (Grow), 2.5% (Advanced) | Shopify Payments, US online cards |
 | **Advertising** | 20-40% | Main cost ⚠️ |
 | Return Cost | Return processing | - |
 | Customer Shipping | If free shipping offered | Optional |
@@ -43,12 +43,25 @@ npx skills add nexscope-ai/eCommerce-Skills --skill profit-margin-calculator-sho
 | LTV/CAC | >3 |
 | Repeat Rate | Higher = better |
 
+## Script Parameters
+
+`scripts/calculator.py` is shared by the four profit-margin-calculator skills. It reads the platform from the `platform` field (`amazon`, `shopify`, `tiktok`, `walmart`) or, by default, from this skill's folder, so the commands below need no `platform` field.
+
+Common fields: `selling_price`, `product_cost`, `shipping_cost` (inbound), `ad_spend_ratio` (0-1), `return_rate` (0-1), `return_processing_fee`, `other_fees`, `fixed_costs`, `sku`, `name`.
+
+Fields specific to Shopify/DTC: `fulfillment_fee` (3PL, alias of `fba_fulfillment_fee`), `shopify_plan` (`basic` 2.9% + $0.30, `grow` 2.7% + $0.30, `advanced` 2.5% + $0.30), `uses_shopify_payments` (`false` adds Shopify's third-party fee: 2% / 1% / 0.6%), `payment_processing_rate`, `payment_fixed_fee`.
+
+An unknown field stops the script with the list of accepted fields. Fee defaults are estimates dated 2026-11: when the seller knows their own rate, pass it explicitly (`referral_fee_rate`, `payment_processing_rate`).
+
 ## Usage
 
 ```bash
 python3 scripts/calculator.py
 
-python3 scripts/calculator.py '{"selling_price": 49.99, "ad_spend_ratio": 0.20, "product_cost": 12}'
+python3 scripts/calculator.py '{"selling_price": 49.99, "ad_spend_ratio": 0.20, "product_cost": 12, "fulfillment_fee": 4.5}'
+
+# Grow plan with a third-party payment gateway
+python3 scripts/calculator.py '{"selling_price": 49.99, "product_cost": 12, "shopify_plan": "grow", "uses_shopify_payments": false}'
 ```
 
 ## Output Example

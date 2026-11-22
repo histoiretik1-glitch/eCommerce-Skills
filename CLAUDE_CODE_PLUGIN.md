@@ -93,15 +93,19 @@ Puis redémarrez Claude Code. Vous pouvez aussi activer la mise à jour automati
    ---
    ```
    `name` doit être **identique au nom du dossier** (minuscules, chiffres, tirets).
-2. Régénérez la liste des skills du manifeste et validez :
+2. Si vous modifiez un script partagé (familles `profit-margin-calculator`, `supply-chain-optimization`, `brand-protection`, `product-differentiation`, `review-checker`), modifiez une copie puis recopiez-la à l'identique dans chaque dossier de la famille : un test vérifie qu'elles restent identiques. La plateforme est déduite du nom du dossier.
+3. Régénérez la liste des skills du manifeste, validez et lancez les tests :
    ```bash
    python3 tools/validate_plugin.py --write
    ```
    ```bash
    claude plugin validate .
    ```
-3. **Augmentez le numéro `version`** du plugin dans `.claude-plugin/marketplace.json` (par exemple `1.0.0` → `1.1.0`). Claude Code se sert de ce numéro pour détecter une mise à jour : sans changement de version, `claude plugin update` considère le plugin à jour.
-4. Faites un commit et un push sur la branche par défaut (`main`).
+   ```bash
+   python3 -m unittest discover -s tests -v
+   ```
+4. **Augmentez le numéro `version`** du plugin dans `.claude-plugin/marketplace.json` (par exemple `1.0.0` → `1.1.0`). Claude Code se sert de ce numéro pour détecter une mise à jour : sans changement de version, `claude plugin update` considère le plugin à jour.
+5. Faites un commit et un push sur la branche par défaut (`main`).
 
 ### Validation automatique (GitHub Actions)
 
@@ -110,6 +114,7 @@ Le workflow `.github/workflows/validate-plugin.yml` s'exécute à chaque Pull Re
 - le nombre de `SKILL.md` diffère de `EXPECTED_SKILL_COUNT` (162) ;
 - `marketplace.json` n'est pas un JSON valide ou ne contient pas de plugin ;
 - `python3 tools/validate_plugin.py` détecte une erreur : YAML invalide, `name` ou `description` manquant ou vide, `name` différent du dossier, doublon, fichier référencé introuvable, skill absent du manifeste ou chemin du manifeste sans `SKILL.md` ;
+- les tests de `tests/` échouent : modèles de frais par plateforme, sorties Amazon comparées aux fichiers de référence de `tests/golden/`, exécution de tous les exemples `python3 scripts/...` documentés, copies identiques des scripts partagés ;
 - `claude plugin validate .` échoue. Cette étape est ignorée, avec un avertissement, uniquement si la CLI Claude Code ne peut pas être installée sur le runner.
 
 **Quand vous ajoutez ou retirez des skills, mettez à jour `EXPECTED_SKILL_COUNT` dans le workflow.**
@@ -148,6 +153,21 @@ Les descriptions des 162 skills sont chargées dans chaque session (environ 16 5
 ```bash
 claude plugin disable ecommerce-skills@ecommerce-skills
 ```
+
+## Historique des versions
+
+### 1.1.0 — LOT 1 (scripts multi-plateformes, TikTok Shop)
+
+- Calculateurs de marge : un modèle de frais par plateforme. Amazon : commission par catégorie et FBA (inchangé). Shopify : frais Shopify Payments selon le plan, frais de passerelle tierce, aucune commission. TikTok Shop : commission par catégorie et commission des créateurs. Walmart : commission par catégorie avec paliers de prix et WFS. Les anciens noms de paramètres (`fba_fee`, `wfs_fee`, `creator_commission_rate`…) sont acceptés, et un paramètre inconnu produit une erreur explicite.
+- Chaîne logistique : plateforme détectée selon le dossier, délai de paiement, libellés et conseils sur les stocks anciens propres à chaque plateforme, frais de commission et de créateurs optionnels.
+- Protection de marque : canaux de signalement propres à chaque plateforme (eBay VeRO, Shopify et DMCA, IP Protection Center de TikTok Shop, Walmart Brand Portal). Les sous-commandes documentées fonctionnent désormais.
+- Vérification des avis : identifiant du produit selon la plateforme, alias `wfs_verified` reconnu, et une erreur au lieu d'un retour silencieux aux données de démonstration.
+- Frais TikTok Shop harmonisés (environ 6 à 8 % aux États-Unis, 5 % pour la bijouterie, à confirmer dans Seller Center) dans tous les skills.
+- 13 skills TikTok Shop réécrits avec une méthode complète : compliance, conversion, creator-management, customer-service, fulfillment, inventory, pricing, product-research, promotions, returns, reviews, shipping, trending-products.
+- Descriptions améliorées pour un meilleur déclenchement automatique.
+- Tests automatisés dans `tests/`, exécutés par la CI.
+
+Les sorties Amazon des scripts sont identiques à celles de la version 1.0.0, ce que vérifient les fichiers de référence de `tests/golden/`.
 
 ## Désinstallation
 

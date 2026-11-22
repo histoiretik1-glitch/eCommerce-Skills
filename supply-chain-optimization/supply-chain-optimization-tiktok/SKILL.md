@@ -1,7 +1,7 @@
 ---
 name: supply-chain-optimization-tiktok
 version: 1.0.0
-description: "Supply Chain Bottleneck Analyzer for TikTok Shop sellers. Diagnose cash flow, inventory turnover, affiliate commissions, and return rates. Includes FBT cost analysis, influencer payout optimization, and viral product lifecycle management. No API key required for basic analysis."
+description: "TikTok Shop supply chain bottleneck analyzer. Computes margins after the TikTok referral fee and creator commissions, FBT or self-fulfillment costs, inventory days and cash cycle against TikTok Shop benchmarks, flags stock left after a viral peak and proposes actions; optional Markdown/HTML report. No API key required. Use when a TikTok Shop seller asks about cash flow, restocking a viral product, FBT costs, returns or how affiliate payouts affect working capital."
 metadata: {"nexscope":{"emoji":"📦","category":"ecommerce"}}
 ---
 
@@ -20,7 +20,7 @@ npx skills add nexscope-ai/eCommerce-Skills --skill supply-chain-optimization-ti
 | Feature | TikTok Shop | vs Amazon |
 |---------|-------------|-----------|
 | Fulfillment | FBT / Self-ship | FBA |
-| Commission | 2-8% (category) + 2% transaction | 8-15% |
+| Referral fee | ~6-8% most US categories (5% jewelry), confirm in Seller Center | 8-15% |
 | Payment cycle | 7-15 days | 14 days |
 | Traffic source | Content-driven | Search-driven |
 | Return rate | Higher (impulse buying) | Medium |
@@ -32,8 +32,7 @@ Selling Price $XX
 ├── Product Cost
 ├── Inbound Shipping
 ├── FBT Fulfillment / Self-ship
-├── Platform Fee (2%)
-├── Referral Fee (2-8%)
+├── Referral Fee (~8% US default; 6-8% reported, 5% jewelry; confirm in Seller Center)
 ├── Affiliate Commission (10-30%)  ← TikTok-specific
 ├── Advertising (Spark Ads)
 └── Net Profit
@@ -110,8 +109,7 @@ Must account for:
 **Sales (TikTok-specific)**
 • Average Selling Price: $___
 • FBT Fulfillment Fee: $___/unit
-• Platform Fee: 2% (fixed)
-• Referral Fee: ___%
+• Referral Fee: ___% (from Seller Center; ~6-8% for most US categories)
 • Affiliate Commission Rate: ___% (if applicable)
 • Spark Ads Spend Ratio: ___%
 
@@ -139,6 +137,16 @@ export TIKTOK_ACCESS_TOKEN="xxx"
 | Logistics | Logistics API |
 | Affiliates | Affiliate API |
 
+## Script Usage
+
+`scripts/calculator.py` (plus `report_doc.py` and `report_html.py`) is shared by the four supply-chain-optimization skills. The platform comes from the `platform` field (`amazon`, `shopify`, `tiktok`, `walmart`) or, by default, from this skill's folder. It sets the benchmarks, the payout delay used in the cash cycle (15 days by default, override with `payout_days`), the fulfillment labels and the aged-stock advice.
+
+```bash
+python3 scripts/calculator.py '{"product_cost": 5, "supplier_payment_days": 0, "production_days": 15, "shipping_cost_per_unit": 0.6, "shipping_days": 20, "selling_price": 19.99, "fulfillment_fee": 3.5, "storage_fee": 0.2, "ad_spend_ratio": 0.05, "inventory_days": 35, "has_long_term_storage": true, "referral_fee_rate": 0.08, "affiliate_commission_rate": 0.15}'
+```
+
+Required fields: `product_cost`, `supplier_payment_days`, `production_days`, `shipping_cost_per_unit`, `shipping_days`, `selling_price`, `fba_fee` (aliases `fulfillment_fee`, `wfs_fee`, `fbt_fee`), `storage_fee`, `ad_spend_ratio`, `inventory_days`, `has_long_term_storage`. Optional: `referral_fee_rate`, `affiliate_commission_rate`, `payout_days`, `daily_sales`, `current_inventory`. An unknown field stops the script with the list of accepted fields.
+
 ## Bottleneck Diagnosis Focus
 
 TikTok Shop-specific bottlenecks:
@@ -152,7 +160,7 @@ TikTok Shop-specific bottlenecks:
 
 | Item | Amazon | TikTok |
 |------|--------|--------|
-| Commission | 8-15% | 4-10% |
+| Referral fee | 8-15% | ~6-8% |
 | Affiliate split | None | 10-30% |
 | Payment cycle | 14 days | 7-15 days |
 | Return rate | 5-15% | 10-30% |

@@ -1,7 +1,7 @@
 ---
 name: brand-protection-ebay
 version: 1.0.0
-description: "eBay brand protection toolkit. Detect unauthorized sellers, counterfeits, and VeRO violations. Includes price monitoring, trademark abuse detection, VeRO complaint templates, and enforcement guides. No API key required."
+description: "eBay brand protection toolkit. Detect unauthorized sellers, counterfeits, and VeRO violations. Includes price monitoring, trademark abuse detection, VeRO complaint templates, and enforcement guides. No API key required. Use when a brand owner asks about unauthorized eBay sellers, counterfeit listings, or how to file a VeRO notice."
 metadata: {"nexscope":{"emoji":"🛡️","category":"ecommerce"}}
 ---
 
@@ -74,6 +74,13 @@ python3 scripts/templates.py cease-desist
 # Test buy guide
 python3 scripts/templates.py testbuy
 ```
+
+## Script Notes
+
+- `scripts/detector.py` and `scripts/templates.py` are shared by the five brand-protection skills. They use this skill's platform by default (eBay VeRO Program (NOCI)); `--platform=amazon|ebay|shopify|tiktok|walmart` overrides it.
+- `detector.py` runs on built-in demo data to show the report format. For a real case, collect the seller's listings, sellers and prices, then apply the same checks and action plan in the conversation.
+- `templates.py` sub-commands: `complaint` (aliases `vero`, `dmca`, `platform-report`, `ip-report`, `seller-complaint`, `content-takedown`, `brand-portal`), `cease` (`cease-desist`), `testbuy`, `map`, or `all`. Replace the demo brand, seller and listing IDs with the user's data before sending anything.
+- `--zh` (Chinese wording) is available for Amazon only.
 
 ## Output Example
 

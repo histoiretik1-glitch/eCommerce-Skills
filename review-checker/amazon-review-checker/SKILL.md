@@ -1,7 +1,7 @@
 ---
 name: amazon-review-checker
 version: 1.0.0
-description: "Amazon review authenticity analyzer. Detect fake reviews, suspicious patterns, and rating manipulation. Includes time clustering detection, content similarity analysis, rating distribution checks, and verified purchase validation. Progressive analysis with L1-L4 depth levels. No API key required."
+description: "Amazon review authenticity analyzer. Detect fake reviews, suspicious patterns, and rating manipulation. Includes time clustering detection, content similarity analysis, rating distribution checks, and verified purchase validation. Progressive analysis with L1-L4 depth levels. No API key required. Use when a Amazon seller or buyer asks whether a product's reviews are fake or manipulated, wants to audit a competitor's reviews, or needs evidence of suspicious review patterns."
 metadata: {"nexscope":{"emoji":"🔍","category":"ecommerce"}}
 ---
 
