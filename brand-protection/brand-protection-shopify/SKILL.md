@@ -2,13 +2,22 @@
 name: brand-protection-shopify
 version: 1.0.0
 author: Nexscope AI
-description: "Shopify/DTC brand protection toolkit. Detect counterfeit stores, unauthorized resellers, and trademark violations. Includes DMCA takedown templates, domain monitoring, and social media infringement detection. No API key required. Use when a brand owner asks about copycat or counterfeit websites, unauthorized resellers, or how to send a DMCA or Shopify IP report."
+description: "Shopify/DTC brand protection toolkit. Detect counterfeit stores, unauthorized resellers, and trademark violations. Includes DMCA takedown templates, domain monitoring, and social media infringement detection. Use when a brand owner asks about copycat or counterfeit websites, unauthorized resellers, or how to send a DMCA or Shopify IP report."
 metadata: {"nexscope":{"emoji":"🛡️","category":"ecommerce"}}
 ---
 
 # Brand Protection — Shopify/DTC 🛡️
 
 Protect your brand from counterfeit stores and unauthorized resellers in the DTC space.
+
+## Workflow
+
+1. **Collect evidence**: listings or stores, seller names and IDs, prices, screenshots with URL and date, test-buy results, your trademark registration and authorized-seller list.
+2. **Classify each case**: unauthorized reseller, counterfeit, MAP violation (`minimum-advertised-price`), trademark or image misuse.
+3. **Score the risk**: run `python3 scripts/detector.py` to see the report and action-plan format, then apply the same checks to the collected data.
+4. **Prepare the filing** for Shopify's IP infringement report plus DMCA notices to the host/registrar with `python3 scripts/templates.py complaint`, and a cease-and-desist letter with `python3 scripts/templates.py cease` when the seller is reachable.
+5. **Submit and track**: file through the platform channel, record the case number and deadline, follow up on counter-notices.
+6. **Verify and monitor**: confirm removals, re-check the listings weekly, escalate repeat offenders.
 
 ## Installation
 

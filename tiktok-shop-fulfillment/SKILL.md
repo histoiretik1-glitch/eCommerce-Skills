@@ -74,6 +74,12 @@ KPIs to watch weekly: [...]
 
 🔶 **Beta** — full workflow added in plugin version 1.1.0. Review figures marked "confirm in Seller Center" before acting.
 
+## Example Requests
+
+- "Should I switch to Fulfilled by TikTok? I ship 150 orders a day myself."
+- "My late dispatch rate on TikTok Shop is rising during campaigns. What should I change?"
+- "Compare FBT, my own warehouse and a 3PL for my TikTok Shop orders."
+
 ## Installation
 
 Part of the **`ecommerce-skills`** Claude Code plugin (all 162 skills). In Claude Code:

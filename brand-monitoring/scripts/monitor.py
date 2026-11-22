@@ -614,11 +614,49 @@ def format_report(report: MonitoringReport, lang: str = "en") -> str:
 # CLI
 # ============================================================
 
+DEMO_BANNER = ("> ⚠️ **DEMO DATA** — the mentions below are generated examples, not real mentions of {brand}. "
+               "This script does not fetch live data: collect real mentions (web search, social or review exports) "
+               "and pass them in the JSON field \"mentions\".\n")
+
+
+def mention_from_dict(d: dict) -> Mention:
+    """Real mention collected by the user: content and platform required."""
+    allowed = {"content", "platform", "url", "author", "date", "engagement"}
+    unknown = sorted(set(d) - allowed)
+    if unknown or "content" not in d:
+        raise ValueError(f"each mention needs 'content' (and optional {', '.join(sorted(allowed - {'content'}))}); unknown: {unknown}")
+    try:
+        platform = Platform(str(d.get("platform", "other")).lower())
+    except ValueError:
+        platform = Platform.OTHER
+    date = datetime.fromisoformat(d["date"]) if d.get("date") else None
+    return Mention(content=d["content"], platform=platform, url=d.get("url", ""), author=d.get("author", ""),
+                   date=date, engagement=int(d.get("engagement", 0)))
+
+
 def main():
     lang = "zh" if "--zh" in sys.argv else "en"
-    brand = sys.argv[1] if len(sys.argv) > 1 and not sys.argv[1].startswith("--") else "TechBrand"
-    
-    report = monitor_brand(brand, competitors=["CompetitorA", "CompetitorB"])
+    args = [a for a in sys.argv[1:] if not a.startswith("--")]
+    data = {}
+    if args and args[0].lstrip().startswith("{"):
+        try:
+            data = json.loads(args[0])
+            mentions = [mention_from_dict(m) for m in data.get("mentions", [])] or None
+        except (ValueError, TypeError) as e:
+            print(f"Error: {e}")
+            sys.exit(1)
+    else:
+        mentions = None
+    brand = data.get("brand") or (args[0] if args and not args[0].lstrip().startswith("{") else "TechBrand")
+
+    if mentions is None:
+        # No real data: demo mentions, clearly labelled
+        report = monitor_brand(brand, competitors=data.get("competitors") or ["CompetitorA", "CompetitorB"])
+        print(DEMO_BANNER.format(brand=brand))
+        print(format_report(report, lang))
+        return
+    # Real mentions: competitors are compared only when their real mentions are given
+    report = monitor_brand(brand, competitors=None, mentions=mentions)
     print(format_report(report, lang))
 
 

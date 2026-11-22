@@ -1,6 +1,6 @@
 ---
 name: tiktok-influencer-marketing
-description: "TikTok creator strategy. Decides which collaboration models to use (TikTok Shop affiliate commissions, paid branded content, gifting, Spark Ads), the creator mix by tier, budget split, usage rights and the ROI model, then hands execution to the affiliate, creator marketplace and creator management skills. Use when a brand asks how to plan TikTok influencer or UGC marketing overall, how to split a creator budget, or which kind of creator partnership fits its goal."
+description: "TikTok creator strategy. Chooses between collaboration models (TikTok Shop affiliate commissions, paid sponsored videos, free samples or gifting, Spark Ads), the creator mix by tier, budget split, usage rights and ROI model, then hands execution to the affiliate, creator marketplace and creator management skills. Use whenever a brand plans a TikTok creator or UGC budget or asks which kind of creator partnership fits its goal."
 metadata: {"nexscope":{"emoji":"📱","category":"tiktok-shop"}}
 ---
 

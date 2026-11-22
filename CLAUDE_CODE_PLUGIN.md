@@ -157,7 +157,40 @@ Les descriptions des 162 skills sont chargées dans chaque session (environ 16 5
 claude plugin disable ecommerce-skills@ecommerce-skills
 ```
 
+## Outils d'audit et d'évaluation
+
+| Commande | Rôle | Coût |
+|---|---|---|
+| `python3 tools/validate_plugin.py --expected 162` | En-têtes, descriptions (≤ 500 caractères, « Use when », plateforme), sections d'installation, références, manifeste | Gratuit |
+| `python3 tools/audit_library.py` | Classe chaque skill « validé » ou « à améliorer » (contenu propre, méthode, livrable, exemples, scripts en bibliothèque standard) et estime le coût en tokens | Gratuit |
+| `python3 -m unittest discover -s tests -v` | 75 tests : scripts, exemples documentés, doublons, structure, honnêteté des sorties | Gratuit |
+| `python3 tools/check_install.py` | Parcours complet dans une configuration isolée : ajout du marketplace, installation, mise à jour simulée, désinstallation | Gratuit, sans appel API |
+| `claude plugin eval` (voir ci-dessous) | **Vrai déclenchement** : Claude reçoit 52 demandes types et on vérifie quel skill il appelle | ≈ 4 $ par passage complet (quota du compte) |
+
+Évaluation du déclenchement (manuelle, hors CI, car elle consomme le quota du compte) :
+
+```bash
+python3 tools/make_trigger_evals.py
+```
+```bash
+python3 tools/build_eval_plugin.py /tmp/ecommerce-skills-eval
+```
+```bash
+claude plugin eval /tmp/ecommerce-skills-eval --runs 1 --ablation none --max-cost-usd 12 --trust-plugin --no-publish -j 2 --json /tmp/trigger-results.json
+```
+
+Les cas sont définis dans `evals/trigger_cases.json` : chaque cas réussit quand Claude appelle l'un des skills attendus. Un cas « négatif » vérifie qu'aucun skill n'est appelé pour une demande hors sujet.
+
 ## Historique des versions
+
+### 1.5.0 — LOT 5 (audit final et optimisation)
+
+- **Audit complet** : rapport détaillé dans `AUDIT_REPORT.md`. 118 skills validés, 44 encore « liste de sujets » suivis par un test (la liste ne peut que diminuer).
+- **Vrai déclenchement testé** avec `claude plugin eval` sur 52 demandes types (suite dans `evals/`, outils `tools/make_trigger_evals.py` et `tools/build_eval_plugin.py`).
+- **Sorties honnêtes** : `brand-monitoring`, `etsy-seo` et `product-differentiation` analysaient toujours des données de démonstration, même quand l'utilisateur fournissait les siennes. Ils lisent maintenant l'entrée réelle, rejettent les champs inconnus et signalent toute démonstration par « DEMO DATA ». Les exemples documentés ont été corrigés.
+- **Méthodes, exemples et livrables** ajoutés à 29 skills qui en manquaient (scripts de protection de marque, de calcul, de vérification d'avis, chaîne logistique, 12 skills TikTok).
+- **Descriptions** : 500 caractères au plus (règle du validateur), formulations redondantes retirées, 13 descriptions renforcées contre le sous-déclenchement.
+- **Installation et mises à jour** vérifiées de bout en bout par `tools/check_install.py`, exécuté aussi par la CI.
 
 ### 1.4.0 — LOT 4 (enrichissement des 16 skills peu développés)
 

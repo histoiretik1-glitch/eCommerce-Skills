@@ -1,6 +1,6 @@
 ---
 name: tiktok-shop-creator-management
-description: "TikTok Shop creator (affiliate) relationship management. Builds a creator roster and tiers, briefing and content approval process, sample tracking, commission and bonus structure, and performance reviews to keep the best creators selling. Use when a TikTok Shop seller manages many creators, needs a creator brief, wants to track samples and content, or decide which creators to keep, scale or drop."
+description: "TikTok Shop creator (affiliate) roster management. Organizes creators into tiers, tracks samples and content, sets briefs, approval, commissions and bonuses, and runs monthly reviews to decide who to keep, scale or drop. Use whenever a TikTok Shop seller works with many creators, has lost track of samples or posts, needs a creator brief, or decides which creators to keep."
 metadata:
   nexscope:
     category: tiktok-shop
@@ -68,6 +68,12 @@ Creator | Tier | Category | Products | Commission | Samples sent | Videos | LIVE
 ## Status
 
 🔶 **Beta** — full workflow added in plugin version 1.1.0. Review figures marked "confirm in Seller Center" before acting.
+
+## Example Requests
+
+- "We sent samples to 80 TikTok creators and only 20 posted. How do we organize follow-up?"
+- "Write a one-page creator brief for our new TikTok Shop product."
+- "Which of our TikTok creators should get a higher commission tier this month?"
 
 ## Installation
 

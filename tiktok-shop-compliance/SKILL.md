@@ -49,6 +49,7 @@ Product type and ingredients/materials, target region, the exact listing text an
 2. Identify the root cause; fix every similar listing, not only the flagged one.
 3. Appeal only with evidence (documents, invoices, authorization letters) and a short factual explanation.
 4. Track the shop's violation points or account health status in Seller Center and the date points expire.
+5. Prevent repeats: add the rule to listing and creator-brief checklists, and re-check similar listings monthly.
 
 ## Output Format
 
@@ -71,6 +72,12 @@ Always tell the seller to confirm the current policy page in Seller Center, as r
 ## Status
 
 🔶 **Beta** — full workflow added in plugin version 1.1.0. Review figures marked "confirm in Seller Center" before acting.
+
+## Example Requests
+
+- "TikTok Shop removed my collagen supplement listing. Is it a restricted category and how do I appeal?"
+- "Can creators say my serum 'clears acne in 7 days' in their TikTok Shop videos?"
+- "I got 4 violation points on my TikTok Shop. What happens next and how do I fix it?"
 
 ## Installation
 

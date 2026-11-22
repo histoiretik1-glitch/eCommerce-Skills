@@ -75,6 +75,12 @@ Please message us with your order number so we can make it right.
 
 🔶 **Beta** — full workflow added in plugin version 1.1.0. Review figures marked "confirm in Seller Center" before acting.
 
+## Example Requests
+
+- "How can I get more reviews on TikTok Shop without breaking the rules?"
+- "Reply to these three negative TikTok Shop reviews about sizing."
+- "Turn our TikTok Shop reviews into a list of product fixes."
+
 ## Installation
 
 Part of the **`ecommerce-skills`** Claude Code plugin (all 162 skills). In Claude Code:

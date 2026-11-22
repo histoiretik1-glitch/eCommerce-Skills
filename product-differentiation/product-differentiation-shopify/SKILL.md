@@ -2,7 +2,7 @@
 name: product-differentiation-shopify
 version: 1.0.0
 author: Nexscope AI
-description: "Shopify/DTC product differentiation strategy tool. Analyze competitor stores, extract pain points from reviews, identify brand positioning opportunities, and generate actionable differentiation strategies. Includes DTC-specific metrics like CAC, LTV, and brand story analysis. No API key required. Use when a Shopify or DTC seller asks how to stand out from competitors, which weaknesses or review complaints to exploit, or what unique selling points and positioning to use."
+description: "Shopify/DTC product differentiation strategy tool. Analyze competitor stores, extract pain points from reviews, identify brand positioning opportunities, and generate actionable differentiation strategies. Includes DTC-specific metrics like CAC, LTV, and brand story analysis. Use when a Shopify or DTC seller asks how to stand out from competitors, which weaknesses or review complaints to exploit, or what unique selling points and positioning to use."
 metadata: {"nexscope":{"emoji":"🎯","category":"ecommerce"}}
 ---
 
@@ -64,12 +64,10 @@ python3 scripts/analyzer.py
 ### With Parameters
 
 ```bash
-python3 scripts/analyzer.py '{
-  "your_store": "yourbrand.com",
-  "competitors": ["competitor1.com", "competitor2.com"],
-  "category": "Skincare"
-}'
+python3 scripts/analyzer.py '{"my_product": {"name": "Organic Face Serum", "price": 49.99, "rating": 4.3, "review_count": 150, "features": ["feature A", "feature B"]}, "competitors": [{"name": "Competitor A", "price": 59.99, "rating": 4.1, "review_count": 500}], "competitor_reviews": {"negative": ["Broke after two weeks", "Battery life is terrible", "Too expensive for this quality"]}, "my_reviews": {"positive": ["Great quality", "Fast shipping, well packaged"]}}'
 ```
+
+Fields: `my_product` (required: name, price, rating, review_count, features…), `competitors` (list), `competitor_reviews` and `my_reviews` (`positive`, `negative`, `neutral` lists of review texts). Paste real competitor reviews: the script analyzes only what it is given; without input it shows a demo, labelled as such.
 
 ## Output Example
 

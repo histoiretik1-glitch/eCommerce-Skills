@@ -1,6 +1,6 @@
 ---
 name: warehouse-optimization
-description: "E-commerce warehouse and inventory optimization advisor. Analyzes inventory health, calculates safety stock and reorder points, performs ABC analysis, evaluates fulfillment costs, and provides actionable recommendations for improving efficiency. Supports all major fulfillment models: Self-fulfillment, Amazon FBA/FBM, Walmart WFS, 3PL, Shopify Fulfillment, TikTok Shop, Dropshipping, and Hybrid setups. No API key required. Use when: (1) reducing stockouts or overstock, (2) calculating safety stock levels, (3) optimizing warehouse costs, (4) improving Amazon IPI score, (5) analyzing inventory KPIs."
+description: "Warehouse and inventory optimization advisor. Analyzes inventory health, safety stock and reorder points, ABC classes, fulfillment and storage costs and the Amazon IPI score, for self-fulfillment, Amazon FBA/FBM, Walmart WFS, 3PL, Shopify, TikTok Shop, dropshipping and hybrid setups. Use when reducing stockouts or overstock, calculating safety stock, cutting warehouse or storage costs, improving the Amazon IPI score or analyzing inventory KPIs."
 metadata: {"nexscope":{"emoji":"🏭","category":"ecommerce"}}
 ---
 

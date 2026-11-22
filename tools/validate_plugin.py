@@ -38,7 +38,7 @@ except ImportError:
 
 NAME_RE = re.compile(r"^[a-z0-9]+(?:-[a-z0-9]+)*$")
 REPO = "histoiretik1-glitch/eCommerce-Skills"
-DESCRIPTION_MAX = 1024  # Agent Skills limit used by Claude Code
+DESCRIPTION_MAX = 500  # library budget (Agent Skills hard limit is 1024): descriptions are loaded in every session
 PLATFORM_WORDS = {"etsy": "etsy", "shopify": "shopify", "tiktok": "tiktok", "walmart": "walmart",
                   "ebay": "ebay", "amazon": "amazon", "woocommerce": "woocommerce"}
 # Prefixes of names that look like skill references in a SKILL.md body

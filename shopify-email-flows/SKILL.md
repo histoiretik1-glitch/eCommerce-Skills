@@ -1,6 +1,6 @@
 ---
 name: shopify-email-flows
-description: "Shopify email automations setup. Turns on and configures the core automated flows of a Shopify store in priority order (welcome, abandoned checkout, browse abandonment, post-purchase, win-back, replenishment) in Shopify Email or Klaviyo, with triggers, timing and filters. Use when a Shopify store owner asks which automations to turn on or how to configure them (see `ecommerce-email-marketing-builder` for a complete program with copywriting)."
+description: "Shopify email automations setup. Gives the priority order of automated flows (welcome, abandoned checkout, browse abandonment, post-purchase, win-back, replenishment) and configures them in Shopify Email or Klaviyo with triggers, timing and filters. Use whenever a Shopify store owner asks which automated emails to turn on first or how to set them up (see `ecommerce-email-marketing-builder` for a full program with copywriting)."
 metadata:
   nexscope:
     category: shopify

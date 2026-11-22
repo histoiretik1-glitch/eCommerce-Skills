@@ -1,13 +1,22 @@
 ---
 name: profit-margin-calculator-tiktok
 version: 1.0.0
-description: "TikTok Shop profit margin calculator. Computes per-unit cost breakdown with the TikTok Shop referral fee, creator (affiliate) commission, FBT or self-fulfillment, ads and returns, then break-even price and target-margin pricing. No API key required. Use when a TikTok Shop seller asks whether a product is profitable, what price to set, how much creator commission they can afford, or how returns and affiliate fees eat their margin."
+description: "TikTok Shop profit margin calculator with a tested script: per-unit costs with the TikTok Shop referral fee, creator (affiliate) commission and share of creator orders, FBT or own fulfillment, ads and returns, then break-even and target-margin prices. Use when a seller asks any TikTok Shop profit or pricing question, even a quick one, instead of estimating fees by hand: is it profitable, what price, how much creator commission it can afford."
 metadata: {"nexscope":{"emoji":"💰","category":"ecommerce"}}
 ---
 
 # Profit Margin Calculator — TikTok Shop 💰
 
 Calculate product profitability for TikTok Shop sellers — cost breakdowns, profit margins, and affiliate commission analysis.
+
+## Workflow
+
+1. **Collect the inputs**: selling price, product cost, inbound shipping, referral fee rate from Seller Center, creator commission and the share of creator orders, FBT or shipping cost, return rate and return cost.
+2. **Confirm the fees**: use the seller's own rates when known (`referral_fee_rate`, `payment_processing_rate`); otherwise state that the script's dated defaults are estimates.
+3. **Run the calculator**: `python3 scripts/calculator.py '<json>'` (see Script Parameters); unknown fields stop the script with the list of accepted ones.
+4. **Read the result**: net margin and status, break-even price, prices for 15-30% target margins, fee notes.
+5. **Test scenarios**: campaign price, higher ad spend or commission, higher return rate; compare margins.
+6. **Recommend**: price, maximum discount or commission, cost reductions, with each figure labelled verified or estimate.
 
 ## Installation
 

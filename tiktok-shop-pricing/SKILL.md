@@ -78,6 +78,12 @@ Test plan: [lever, duration, success metric]
 
 🔶 **Beta** — full workflow added in plugin version 1.1.0. Review figures marked "confirm in Seller Center" before acting.
 
+## Example Requests
+
+- "What price should I set on TikTok Shop if creators take 20% commission?"
+- "How deep can my Flash Deal discount go without losing money?"
+- "My product is $5 cheaper on Amazon than on TikTok Shop. Should I match it?"
+
 ## Installation
 
 Part of the **`ecommerce-skills`** Claude Code plugin (all 162 skills). In Claude Code:

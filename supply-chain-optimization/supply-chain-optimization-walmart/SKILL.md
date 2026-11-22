@@ -1,13 +1,32 @@
 ---
 name: supply-chain-optimization-walmart
 version: 1.0.0
-description: "Walmart Marketplace supply chain bottleneck analyzer. Computes margins after Walmart referral fees, WFS fulfillment and storage, inventory days and cash cycle against Walmart benchmarks, ranks the top 3 bottlenecks and proposes cost reduction actions; optional Markdown/HTML report. No API key required. Use when a Walmart seller asks about WFS costs, cash flow, aged inventory, restocking or landed cost."
+description: "Walmart Marketplace supply chain bottleneck analyzer. Computes margins after Walmart referral fees, WFS fulfillment and storage, inventory days and cash cycle against Walmart benchmarks, ranks the top 3 bottlenecks and proposes cost reduction actions; optional Markdown/HTML report. Use when a Walmart seller asks about WFS costs, cash flow, aged inventory, restocking or landed cost."
 metadata: {"nexscope":{"emoji":"📦","category":"ecommerce"}}
 ---
 
 # Supply Chain Optimization — Walmart 📦
 
 Supply chain bottleneck analyzer for Walmart Marketplace sellers. Diagnose cash flow, inventory, WFS costs, and referral fees.
+
+## Workflow
+
+1. **Collect data**: product cost and supplier payment terms, production and shipping days, landed shipping cost, selling price, WFS fulfillment and storage costs, referral fee, ad spend, inventory days.
+2. **Run the diagnosis**: `python3 scripts/calculator.py '<json>'` (see Script Usage); the Walmart benchmarks and payout delay apply by default.
+3. **Read the metrics**: gross and net margin, shipping ratio, inventory days and cash cycle against the benchmarks.
+4. **Rank the bottlenecks**: the script returns the top 3; confirm them with the seller's context.
+5. **Plan actions**: cost reductions, payment terms, reorder timing, aged-stock clearance; estimate the effect of each.
+6. **Optional report**: `python3 scripts/report_doc.py` or `python3 scripts/report_html.py` for a shareable document.
+
+## Output Format
+
+```
+SUPPLY CHAIN DIAGNOSIS — Walmart — [Product]
+| Metric | Value | Benchmark | Status |        (gross margin, shipping ratio, inventory days, cash cycle, net margin)
+Cost breakdown per unit (with platform fees)
+Top 3 bottlenecks: problem → impact → actions
+Action plan: [action, owner, expected effect, verified/estimate]
+```
 
 ## Installation
 

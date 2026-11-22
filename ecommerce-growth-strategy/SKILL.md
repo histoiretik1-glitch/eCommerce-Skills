@@ -1,6 +1,6 @@
 ---
 name: ecommerce-growth-strategy
-description: "E-commerce growth strategy advisor. Diagnoses current business health using unit economics (CAC, LTV, AOV, contribution margin), identifies the highest-impact growth opportunities across 5 levers (traffic, conversion, AOV, retention, expansion), and builds a prioritized 90-day growth roadmap. Uses the Ansoff Matrix adapted for e-commerce to evaluate market penetration, channel expansion, product expansion, and new market entry. Includes multichannel readiness assessment (Amazon, Walmart, TikTok Shop, Etsy, DTC/Shopify/Shopify) and product line expansion analysis. No API key required. Use when: (1) planning next phase of e-commerce growth, (2) deciding whether to expand to new channels or products, (3) diagnosing why growth has stalled, (4) prioritizing what to fix or build next."
+description: "E-commerce growth strategy advisor. Diagnoses business health with unit economics (CAC, LTV, AOV, contribution margin), finds the highest-impact lever among traffic, conversion, AOV, retention and expansion, assesses new channels (Amazon, Walmart, TikTok Shop, Etsy, Shopify) and products with an Ansoff matrix, and builds a prioritized 90-day roadmap. Use when planning the next growth phase, deciding whether to add channels or products, diagnosing stalled growth or prioritizing what to fix next."
 metadata:
   nexscope:
     emoji: "🚀"

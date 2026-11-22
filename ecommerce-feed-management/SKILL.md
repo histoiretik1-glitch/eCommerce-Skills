@@ -1,6 +1,6 @@
 ---
 name: ecommerce-feed-management
-description: "Product feed management and monitoring for any channel (Google Merchant Center, Meta catalog, Amazon, Walmart, TikTok Shop, marketplaces). Validates feeds for missing required attributes, invalid prices, availability and GTINs, duplicate IDs and title length with a script, diagnoses sync errors and missing SKUs between the store and each channel, and sets feed rules, supplemental feeds and monitoring. Use when products are disapproved, missing or out of sync on a channel, or a seller needs to clean up or monitor product feeds."
+description: "Product feed management for any channel (Google Merchant Center, Meta catalog, Amazon, Walmart, TikTok Shop). Validates feeds with a script (required attributes, prices, availability, GTIN check digits, duplicate IDs, title length), finds SKUs missing between the store and each channel, and sets feed rules, supplemental feeds and monitoring. Use when products are disapproved, missing or out of sync on a channel, or a feed needs cleaning or monitoring."
 nexscope:
   name: "E-Commerce Feed Management"
   category: "Monitoring & Alerts"

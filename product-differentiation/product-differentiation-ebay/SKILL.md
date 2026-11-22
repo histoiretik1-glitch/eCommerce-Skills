@@ -2,7 +2,7 @@
 name: product-differentiation-ebay
 version: 1.0.0
 author: Nexscope AI
-description: "eBay product differentiation strategy tool. Analyze competitor weaknesses, extract pain points from negative feedback, identify unique selling points, and generate actionable differentiation strategies. Includes eBay-specific seller feedback analysis. No API key required. Use when a eBay seller asks how to stand out from competitors, which weaknesses or review complaints to exploit, or what unique selling points and positioning to use."
+description: "eBay product differentiation strategy tool. Analyze competitor weaknesses, extract pain points from negative feedback, identify unique selling points, and generate actionable differentiation strategies. Includes eBay-specific seller feedback analysis. Use when a eBay seller asks how to stand out from competitors, which weaknesses or review complaints to exploit, or what unique selling points and positioning to use."
 metadata: {"nexscope":{"emoji":"🎯","category":"ecommerce"}}
 ---
 
@@ -64,12 +64,10 @@ python3 scripts/analyzer.py
 ### With Parameters
 
 ```bash
-python3 scripts/analyzer.py '{
-  "your_item_id": "123456789012",
-  "competitor_ids": ["234567890123", "345678901234"],
-  "category": "Consumer Electronics"
-}'
+python3 scripts/analyzer.py '{"my_product": {"name": "Vintage Film Camera", "price": 49.99, "rating": 4.3, "review_count": 150, "features": ["feature A", "feature B"], "asin": "123456789012"}, "competitors": [{"name": "Competitor A", "price": 59.99, "rating": 4.1, "review_count": 500, "asin": "223456789012"}], "competitor_reviews": {"negative": ["Broke after two weeks", "Battery life is terrible", "Too expensive for this quality"]}, "my_reviews": {"positive": ["Great quality", "Fast shipping, well packaged"]}}'
 ```
+
+Fields: `my_product` (required: name, price, rating, review_count, features…), `competitors` (list), `competitor_reviews` and `my_reviews` (`positive`, `negative`, `neutral` lists of review texts). Paste real competitor reviews: the script analyzes only what it is given; without input it shows a demo, labelled as such.
 
 ## Output Example
 

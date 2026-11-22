@@ -1,6 +1,6 @@
 ---
 name: restock-alert
-description: "Restock alert and replenishment calculator. Computes per SKU the reorder point, safety stock for a chosen service level, days of cover, stock-out risk and the order quantity (respecting MOQ and case packs) from sales history and supplier lead time, with a script. Use when a seller on Amazon, Shopify, Walmart, Etsy or TikTok Shop asks when to reorder, how much safety stock to keep, how much to order, or which SKUs are about to run out."
+description: "Restock and replenishment calculator with a tested script: per-SKU reorder point, safety stock for a service level, days of cover, stock-out risk and order quantity (MOQ, case packs) from sales history and supplier lead time. Use whenever a seller on Amazon, Shopify, Walmart, Etsy or TikTok Shop asks when to reorder, how much to order or keep as safety stock, or which SKUs will run out, even for a quick check."
 nexscope:
   name: "Restock Alert"
   category: "Supply Chain & Logistics"

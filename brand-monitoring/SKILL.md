@@ -2,7 +2,7 @@
 name: brand-monitoring
 version: 1.0.0
 author: Nexscope AI
-description: "Brand monitoring tool for tracking mentions across social media platforms. Monitor Reddit, Google News, YouTube, and DuckDuckGo for brand mentions. Includes sentiment analysis, trend tracking, crisis detection, and competitor comparison. No API key required for basic monitoring. Use when a brand asks what people are saying about it online, wants mention alerts, sentiment tracking or early warning of a PR crisis."
+description: "Brand mention analysis for e-commerce brands. Analyzes mentions collected from Reddit, news, YouTube, social media and the web (the script does not fetch them itself) for sentiment, platform split, engagement, influential posts and crisis signals, with a monitoring workflow and alert rules. Use when a brand asks what people say about it online, wants sentiment tracking or early warning of a PR crisis from mentions it has gathered or can search for."
 metadata: {"nexscope":{"emoji":"📡","category":"ecommerce"}}
 ---
 
@@ -64,6 +64,19 @@ npx skills add histoiretik1-glitch/eCommerce-Skills --skill brand-monitoring -g
 | Sources | Platform breakdown | Source distribution |
 | Keywords | Topic extraction | Word cloud |
 | Competitors | Share of voice | Comparison chart |
+
+## Data Source (read first)
+
+`scripts/monitor.py` **does not fetch live data** (the collectors in `scripts/scrapers.py` are not connected). It analyzes the mentions you give it: sentiment, platform split, engagement, influential posts and crisis keywords.
+
+1. Collect real mentions first: web search for the brand name, Reddit and news searches, social and review exports.
+2. Pass them as JSON:
+
+```bash
+python3 scripts/monitor.py '{"brand": "Acme", "mentions": [{"content": "Acme bottle leaked in my bag, very disappointed", "platform": "reddit", "url": "https://reddit.com/r/example", "date": "2026-11-20T10:00:00", "engagement": 42}, {"content": "Love my Acme bottle, keeps water cold all day", "platform": "news", "date": "2026-11-21T09:00:00", "engagement": 5}]}'
+```
+
+3. Without `mentions`, the script prints a **demo report labelled DEMO DATA**: never present it as real monitoring results.
 
 ## Usage
 

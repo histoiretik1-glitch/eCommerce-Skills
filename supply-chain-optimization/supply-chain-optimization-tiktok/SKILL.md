@@ -1,13 +1,32 @@
 ---
 name: supply-chain-optimization-tiktok
 version: 1.0.0
-description: "TikTok Shop supply chain bottleneck analyzer. Computes margins after the TikTok referral fee and creator commissions, FBT or self-fulfillment costs, inventory days and cash cycle against TikTok Shop benchmarks, flags stock left after a viral peak and proposes actions; optional Markdown/HTML report. No API key required. Use when a TikTok Shop seller asks about cash flow, restocking a viral product, FBT costs, returns or how affiliate payouts affect working capital."
+description: "TikTok Shop supply chain bottleneck analyzer. Computes margins after the TikTok referral fee and creator commissions, FBT or self-fulfillment costs, inventory days and cash cycle against TikTok Shop benchmarks, flags stock left after a viral peak and proposes actions; optional Markdown/HTML report. Use when a TikTok Shop seller asks about cash flow, restocking a viral product, FBT costs, returns or how affiliate payouts affect working capital."
 metadata: {"nexscope":{"emoji":"📦","category":"ecommerce"}}
 ---
 
 # Supply Chain Optimization — TikTok Shop 📦
 
 Supply chain bottleneck analyzer for TikTok Shop sellers. Diagnose cash flow, inventory, affiliate costs, and return rates.
+
+## Workflow
+
+1. **Collect data**: product cost and supplier payment terms, production and shipping days, landed shipping cost, selling price, FBT/fulfillment and storage costs, referral fee and creator commission, ad spend, inventory days.
+2. **Run the diagnosis**: `python3 scripts/calculator.py '<json>'` (see Script Usage); the TikTok Shop benchmarks and payout delay apply by default.
+3. **Read the metrics**: gross and net margin, shipping ratio, inventory days and cash cycle against the benchmarks.
+4. **Rank the bottlenecks**: the script returns the top 3; confirm them with the seller's context.
+5. **Plan actions**: cost reductions, payment terms, reorder timing, aged-stock clearance; estimate the effect of each.
+6. **Optional report**: `python3 scripts/report_doc.py` or `python3 scripts/report_html.py` for a shareable document.
+
+## Output Format
+
+```
+SUPPLY CHAIN DIAGNOSIS — TikTok Shop — [Product]
+| Metric | Value | Benchmark | Status |        (gross margin, shipping ratio, inventory days, cash cycle, net margin)
+Cost breakdown per unit (with platform fees)
+Top 3 bottlenecks: problem → impact → actions
+Action plan: [action, owner, expected effect, verified/estimate]
+```
 
 ## Installation
 

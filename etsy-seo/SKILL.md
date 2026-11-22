@@ -2,7 +2,7 @@
 name: etsy-seo
 version: 1.0.0
 author: Nexscope AI
-description: "Etsy SEO analyzer and optimizer. Improve search visibility with title optimization, tag analysis, description scoring, and keyword research. Includes SEO scoring (0-100), long-tail keyword suggestions, and prioritized action plans. No API key required. Use when an Etsy seller asks to improve search ranking, audit or rewrite listing titles, tags and descriptions, or score a listing's SEO."
+description: "Etsy SEO analyzer and optimizer. Improve search visibility with title optimization, tag analysis, description scoring, and keyword research. Includes SEO scoring (0-100), long-tail keyword suggestions, and prioritized action plans. Use when an Etsy seller asks to improve search ranking, audit or rewrite listing titles, tags and descriptions, or score a listing's SEO."
 metadata: {"nexscope":{"emoji":"🔍","category":"ecommerce"}}
 ---
 
@@ -25,6 +25,15 @@ Part of: Etsy listings and search. For neighbouring jobs, use the matching skill
 - `etsy-competitor-analysis` — Studying competing Etsy shops and listings to find gaps.
 
 <!-- role-and-scope:end -->
+
+## Workflow
+
+1. **Collect the listing**: title, 13 tags, description, category and attributes; plus the main product keywords (`etsy-keyword-research`).
+2. **Run the analyzer** (see Usage) to score the title, tags and description.
+3. **Fix the title**: main buyer phrase first, clear product description, within Etsy's 140-character limit.
+4. **Fix the tags**: use all 13, multi-word phrases of at most 20 characters, no duplicates of attributes (`etsy-seo-tags`).
+5. **Fix the description**: first lines answer what it is and for whom, with natural keywords (`etsy-product-description`).
+6. **Re-score and track**: run the analyzer again, then compare search visits in Etsy Stats after 30-60 days.
 
 ## Installation
 

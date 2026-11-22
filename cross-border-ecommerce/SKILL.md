@@ -1,6 +1,6 @@
 ---
 name: cross-border-ecommerce
-description: "Cross-border e-commerce expansion advisor. Scores target markets on 8 weighted dimensions (market size, ecommerce penetration, competition, regulatory complexity, logistics infrastructure, payment ecosystem, cultural distance, IP protection), compares 5 fulfillment models with cost and transit data, provides country-by-country tax/duty compliance guides (EU VAT/IOSS, UK VAT, US sales tax, CA GST, AU GST, JP consumption tax), maps local payment preferences by market, and builds a phased expansion roadmap. No API key required. Use when a seller asks which country to expand to, how to sell internationally, or about VAT/IOSS/GST, duties, international shipping, payments or localization."
+description: "Cross-border e-commerce expansion advisor. Scores target countries on 8 weighted dimensions, compares fulfillment models by cost and transit time, gives tax and duty compliance guides (EU VAT/IOSS, UK VAT, US sales tax, Canada and Australia GST, Japan) and local payment preferences, and builds a phased expansion roadmap. Use when a seller asks which country to expand to, how to sell internationally, or about VAT/IOSS/GST, duties, international shipping, payments or localization."
 metadata:
   nexscope:
     emoji: "✈️"

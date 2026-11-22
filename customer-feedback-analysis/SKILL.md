@@ -1,6 +1,6 @@
 ---
 name: customer-feedback-analysis
-description: "Voice-of-customer analysis across every feedback source. Merges survey answers, NPS comments, support tickets, chat logs, return reasons, social comments and reviews into one theme map, counts and scores themes by frequency, severity and trend, computes NPS and CSAT where available, and turns them into an improvement roadmap for product, service and operations. Use when a business wants to understand all its customer feedback together or prioritize what to fix from many sources (for analysis of product reviews only use `product-review-analysis`)."
+description: "Voice-of-customer analysis across every feedback source. Merges survey and NPS answers, support tickets, chats, return reasons, social comments and reviews into one theme map scored by frequency, severity and trend, with NPS/CSAT, and an improvement roadmap. Use when a business wants to understand all its customer feedback together or prioritize what to fix from many sources (for product reviews only use `product-review-analysis`)."
 nexscope:
   name: "Customer Feedback Analysis"
   category: "Reviews & Reputation"

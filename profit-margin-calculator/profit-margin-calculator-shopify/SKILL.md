@@ -1,13 +1,22 @@
 ---
 name: profit-margin-calculator-shopify
 version: 1.0.0
-description: "Shopify/DTC profit margin calculator. Computes per-order cost breakdown with Shopify Payments processing by plan (or third-party gateway fees), 3PL fulfillment, ad spend, returns, break-even price, target-margin pricing and max affordable CAC. No platform commission. No API key required. Use when a Shopify or DTC store owner asks about product margins, pricing, ad spend limits, CAC or payment fees."
+description: "Shopify/DTC profit margin calculator. Computes per-order cost breakdown with Shopify Payments processing by plan (or third-party gateway fees), 3PL fulfillment, ad spend, returns, break-even price, target-margin pricing and max affordable CAC. No platform commission. Use when a Shopify or DTC store owner asks about product margins, pricing, ad spend limits, CAC or payment fees."
 metadata: {"nexscope":{"emoji":"💰","category":"ecommerce"}}
 ---
 
 # Profit Margin Calculator — Shopify/DTC 💰
 
 Calculate product profitability for Shopify and DTC stores — cost breakdowns, profit margins, and CAC/LTV analysis.
+
+## Workflow
+
+1. **Collect the inputs**: selling price, product cost, inbound shipping, Shopify plan, payment gateway, 3PL fulfillment cost per order, ad spend share, return rate and return cost.
+2. **Confirm the fees**: use the seller's own rates when known (`referral_fee_rate`, `payment_processing_rate`); otherwise state that the script's dated defaults are estimates.
+3. **Run the calculator**: `python3 scripts/calculator.py '<json>'` (see Script Parameters); unknown fields stop the script with the list of accepted ones.
+4. **Read the result**: net margin and status, break-even price, prices for 15-30% target margins, fee notes.
+5. **Test scenarios**: campaign price, higher ad spend or commission, higher return rate; compare margins.
+6. **Recommend**: price, maximum discount or commission, cost reductions, with each figure labelled verified or estimate.
 
 ## Installation
 

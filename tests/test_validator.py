@@ -64,7 +64,7 @@ class Validator(unittest.TestCase):
         rel = "etsy-star-seller/SKILL.md"
         self.assertRejected(self.mutate(rel, 'description: "Etsy Star Seller guide.',
                                         'description: "Etsy Star Seller guide.' + " Use when." * 120),
-                            "(max 1024)")
+                            "(max 500)")
 
     def test_rejects_legacy_install_command(self):
         rel = "ebay-seo/SKILL.md"

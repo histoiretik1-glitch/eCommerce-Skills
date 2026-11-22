@@ -70,6 +70,12 @@ To validate a specific product idea in depth, use `tiktok-shop-product-research`
 
 🔶 **Beta** — full workflow added in plugin version 1.1.0. Review figures marked "confirm in Seller Center" before acting.
 
+## Example Requests
+
+- "What's trending on TikTok Shop in home and kitchen right now?"
+- "Is it too late to start selling the viral cloud slippers?"
+- "Plan which seasonal products to stock for TikTok Shop this Q4."
+
 ## Installation
 
 Part of the **`ecommerce-skills`** Claude Code plugin (all 162 skills). In Claude Code:

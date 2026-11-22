@@ -1,7 +1,7 @@
 ---
 name: supply-chain-optimization-amazon
 version: 1.0.0
-description: "Amazon FBA supply chain bottleneck analyzer. Computes gross and net margin, inbound shipping ratio, inventory days and cash conversion cycle against Amazon benchmarks, ranks the top 3 bottlenecks (aged inventory, storage fees, cash cycle, margins) and proposes cost reduction actions; optional Markdown/HTML report. No API key required. Use when an Amazon seller asks about cash flow, restock timing, FBA storage or aged inventory fees, supplier terms, landed cost or why margins are shrinking."
+description: "Amazon FBA supply chain bottleneck analyzer. Computes gross and net margin, inbound shipping ratio, inventory days and cash conversion cycle against Amazon benchmarks, ranks the top 3 bottlenecks (aged inventory, storage fees, cash cycle, margins) and proposes cost reduction actions; optional Markdown/HTML report. Use when an Amazon seller asks about cash flow, restock timing, FBA storage or aged inventory fees, supplier terms, landed cost or why margins are shrinking."
 platform: amazon
 lang: en
 ---
@@ -146,6 +146,12 @@ amazon-lite/
 
 _Version 1.0.0 | Platform: Amazon | Lang: English_
 
+
+## Example Requests
+
+- "My Amazon cash is always tied up in inventory. Diagnose my supply chain."
+- "Should I negotiate 30-day supplier terms or reduce my FBA stock first?"
+- "Find the top 3 bottlenecks in my Amazon FBA supply chain from these numbers."
 
 ## Installation
 

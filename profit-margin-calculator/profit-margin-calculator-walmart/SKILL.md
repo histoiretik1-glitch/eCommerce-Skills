@@ -1,13 +1,22 @@
 ---
 name: profit-margin-calculator-walmart
 version: 1.0.0
-description: "Walmart Marketplace profit margin calculator. Computes per-unit cost breakdown with Walmart category referral fees (including apparel price tiers), WFS fulfillment and storage, Walmart Connect ads and returns, then break-even price and target-margin pricing. No API key required. Use when a Walmart seller asks about product profitability, WFS costs, referral fees, pricing, or Walmart vs Amazon margins."
+description: "Walmart Marketplace profit margin calculator with a tested script: per-unit costs with Walmart category referral fees (including apparel price tiers), WFS fulfillment and storage, ads and returns, then break-even and target-margin prices. Use when a seller asks any Walmart profit, WFS cost or referral fee question, even a quick one, instead of estimating fees by hand, and for Walmart vs Amazon margins."
 metadata: {"nexscope":{"emoji":"💰","category":"ecommerce"}}
 ---
 
 # Profit Margin Calculator — Walmart 💰
 
 Calculate product profitability for Walmart Marketplace sellers — cost breakdowns, profit margins, and WFS fee analysis.
+
+## Workflow
+
+1. **Collect the inputs**: selling price, product cost, inbound shipping, Walmart category (for the referral fee), WFS fulfillment and storage fees, return rate and return cost.
+2. **Confirm the fees**: use the seller's own rates when known (`referral_fee_rate`, `payment_processing_rate`); otherwise state that the script's dated defaults are estimates.
+3. **Run the calculator**: `python3 scripts/calculator.py '<json>'` (see Script Parameters); unknown fields stop the script with the list of accepted ones.
+4. **Read the result**: net margin and status, break-even price, prices for 15-30% target margins, fee notes.
+5. **Test scenarios**: campaign price, higher ad spend or commission, higher return rate; compare margins.
+6. **Recommend**: price, maximum discount or commission, cost reductions, with each figure labelled verified or estimate.
 
 ## Installation
 

@@ -78,6 +78,12 @@ The `warehouse-optimization` skill covers safety stock and ABC analysis in more 
 
 🔶 **Beta** — full workflow added in plugin version 1.1.0. Review figures marked "confirm in Seller Center" before acting.
 
+## Example Requests
+
+- "A big creator posts about my product next week. How much stock should I prepare?"
+- "My viral product's sales are falling. When do I stop reordering?"
+- "Split my stock between FBT and my warehouse for the next campaign."
+
 ## Installation
 
 Part of the **`ecommerce-skills`** Claude Code plugin (all 162 skills). In Claude Code:
