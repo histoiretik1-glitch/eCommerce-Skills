@@ -7,12 +7,15 @@ Checks:
   * skill names are unique
   * .claude-plugin/marketplace.json references exactly the skill folders on disk
   * relative `scripts/...` files and Markdown links mentioned in SKILL.md exist
+  * when PyYAML is installed: every frontmatter block is valid YAML and
+    `name` / `description` are non-empty strings (strict mode)
 
 Usage:
-  python3 tools/validate_plugin.py          # validate only
-  python3 tools/validate_plugin.py --write  # also regenerate the skills list in marketplace.json
+  python3 tools/validate_plugin.py                 # validate only
+  python3 tools/validate_plugin.py --expected 162  # also require exactly 162 skills
+  python3 tools/validate_plugin.py --write         # also regenerate the skills list in marketplace.json
 
-Uses only the Python standard library (frontmatter is parsed with a minimal reader).
+Uses only the Python standard library; PyYAML is optional and enables strict YAML checks.
 """
 import json
 import re
@@ -21,6 +24,11 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent
 MANIFEST = ROOT / ".claude-plugin" / "marketplace.json"
+try:
+    import yaml  # optional, enables strict YAML parsing
+except ImportError:
+    yaml = None
+
 NAME_RE = re.compile(r"^[a-z0-9]+(?:-[a-z0-9]+)*$")
 
 
@@ -56,6 +64,18 @@ def main():
         if fm is None:
             errors.append(f"{rel}: missing YAML frontmatter")
             continue
+        if yaml is not None:
+            try:
+                strict = yaml.safe_load(text[4:text.find("\n---", 4)])
+            except yaml.YAMLError as exc:
+                errors.append(f"{rel}: invalid YAML frontmatter: {str(exc).splitlines()[0]}")
+                continue
+            if not isinstance(strict, dict):
+                errors.append(f"{rel}: frontmatter is not a YAML mapping")
+                continue
+            for key in ("name", "description"):
+                if not isinstance(strict.get(key), str) or not strict[key].strip():
+                    errors.append(f"{rel}: `{key}` must be a non-empty string")
         name = fm.get("name", "").strip("\"'")
         desc = fm.get("description", "").strip("\"'")
         if not name:
@@ -77,8 +97,12 @@ def main():
                 errors.append(f"{rel}: broken relative link `{link}`")
 
     on_disk = ["./" + d.relative_to(ROOT).as_posix() for d in dirs]
-    manifest = json.loads(MANIFEST.read_text(encoding="utf-8"))
-    plugin = manifest["plugins"][0]
+    try:
+        manifest = json.loads(MANIFEST.read_text(encoding="utf-8"))
+        plugin = manifest["plugins"][0]
+    except (OSError, ValueError, KeyError, IndexError) as exc:
+        print(f"FAILED: cannot read {MANIFEST.relative_to(ROOT)}: {exc}")
+        return 1
     if "--write" in sys.argv:
         plugin["skills"] = on_disk
         MANIFEST.write_text(json.dumps(manifest, indent=2, ensure_ascii=False) + "\n", encoding="utf-8")
@@ -91,11 +115,17 @@ def main():
     if len(listed) != len(set(listed)):
         errors.append("marketplace.json: duplicate entries in skills list")
 
+    if "--expected" in sys.argv:
+        expected = int(sys.argv[sys.argv.index("--expected") + 1])
+        if len(dirs) != expected:
+            errors.append(f"expected {expected} skills, found {len(dirs)} SKILL.md files")
+
     if errors:
         print("\n".join(errors))
         print(f"\nFAILED: {len(errors)} problem(s)")
         return 1
-    print(f"OK: {len(dirs)} skills on disk, {len(listed)} referenced in marketplace.json, all valid.")
+    mode = "strict YAML" if yaml is not None else "basic frontmatter parser"
+    print(f"OK: {len(dirs)} skills on disk, {len(listed)} referenced in marketplace.json, all valid ({mode}).")
     return 0
 
 

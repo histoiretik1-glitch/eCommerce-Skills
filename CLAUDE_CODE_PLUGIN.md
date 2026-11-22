@@ -103,6 +103,19 @@ Puis redémarrez Claude Code. Vous pouvez aussi activer la mise à jour automati
 3. **Augmentez le numéro `version`** du plugin dans `.claude-plugin/marketplace.json` (par exemple `1.0.0` → `1.1.0`). Claude Code se sert de ce numéro pour détecter une mise à jour : sans changement de version, `claude plugin update` considère le plugin à jour.
 4. Faites un commit et un push sur la branche par défaut (`main`).
 
+### Validation automatique (GitHub Actions)
+
+Le workflow `.github/workflows/validate-plugin.yml` s'exécute à chaque Pull Request, à chaque push sur `main` et sur les branches `claude/**`, et à la demande (*Actions* → *Run workflow*). Il échoue, et bloque donc la validation, si :
+
+- le nombre de `SKILL.md` diffère de `EXPECTED_SKILL_COUNT` (162) ;
+- `marketplace.json` n'est pas un JSON valide ou ne contient pas de plugin ;
+- `python3 tools/validate_plugin.py` détecte une erreur : YAML invalide, `name` ou `description` manquant ou vide, `name` différent du dossier, doublon, fichier référencé introuvable, skill absent du manifeste ou chemin du manifeste sans `SKILL.md` ;
+- `claude plugin validate .` échoue. Cette étape est ignorée, avec un avertissement, uniquement si la CLI Claude Code ne peut pas être installée sur le runner.
+
+**Quand vous ajoutez ou retirez des skills, mettez à jour `EXPECTED_SKILL_COUNT` dans le workflow.**
+
+Pour rendre ce contrôle obligatoire avant toute fusion : *Settings* → *Branches* → règle de protection sur `main` → *Require status checks to pass*, puis cochez **Skills, manifest and plugin**.
+
 ## Organisation
 
 ```
