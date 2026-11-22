@@ -1,6 +1,6 @@
 ---
 name: shopify-page-speed
-description: "Shopify Core Web Vitals diagnosis. Reads Shopify's web performance report and PageSpeed Insights (LCP, INP, CLS) per template, finds which pages and elements cause slow loading or layout shifts, and explains the measurements. Use when a Shopify store owner asks what their speed score or Core Web Vitals mean or which pages are slow (for the fix plan use `shopify-speed-optimization`)."
+description: "Shopify Core Web Vitals diagnosis. Reads Shopify's web performance report and PageSpeed Insights field data (LCP, INP, CLS at the 75th percentile) per template, compares them with Google's thresholds, identifies the elements that cause slow loading, slow interactions or layout shifts, and explains the measurements. Use when a Shopify store owner asks what their speed score or Core Web Vitals mean or which pages and elements are slow (for the fix plan use `shopify-speed-optimization`)."
 nexscope:
   name: "Shopify Page Speed"
   category: "Site Performance"
@@ -33,12 +33,67 @@ Part of: Shopify store speed. For neighbouring jobs, use the matching skill inst
 
 <!-- role-and-scope:end -->
 
-## Capabilities
+## Data Needed
 
-- Generates actionable site performance frameworks based on your specific business context
-- Works across major e-commerce platforms (Amazon, Shopify, Walmart, WooCommerce, Etsy, TikTok Shop)
-- Provides data-driven recommendations with industry benchmarks
-- Outputs ready-to-implement plans, not just generic advice
+| Data | Where to find it |
+|------|------------------|
+| Core Web Vitals from real users (LCP, INP, CLS) | Shopify admin web performance report; PageSpeed Insights "field data" / Chrome UX Report |
+| Lab diagnostics per page | PageSpeed Insights or Lighthouse on mobile |
+| URLs per template (home, collection, product, cart) | Store |
+| Recent changes (theme updates, new apps) | Theme and app history |
+
+## Workflow
+
+1. **Use field data first**: Core Web Vitals are assessed on real users at the 75th percentile; lab scores (the 0-100 performance score) help diagnose but are not the metric itself.
+2. **Per template**: collect LCP, INP and CLS for home, collection, product and cart (mobile first).
+3. **Classify** each metric with Google's thresholds (below).
+4. **Diagnose** with PageSpeed Insights audits:
+   - LCP: which element is the LCP (often hero image or product image), its size, whether it is lazy-loaded by mistake, render-blocking resources.
+   - INP: long tasks from apps, chat widgets, tag managers; heavy JavaScript on interaction.
+   - CLS: images without dimensions, late-loading banners or app widgets, web fonts swapping.
+5. **Attribute** each issue to a source: theme, a specific app, an image, a third-party script.
+6. **Hand over** the prioritized findings to `shopify-speed-optimization` (fix plan) or `shopify-theme-optimization` (theme code).
+7. **Re-measure**: field data is a 28-day rolling window, so improvements show progressively.
+
+## Calculations and Tools
+
+Google's Core Web Vitals thresholds (75th percentile of page loads; published by Google at web.dev):
+
+| Metric | Good | Needs improvement | Poor |
+|--------|------|-------------------|------|
+| LCP (Largest Contentful Paint) | ≤ 2.5 s | 2.5-4.0 s | > 4.0 s |
+| INP (Interaction to Next Paint) | ≤ 200 ms | 200-500 ms | > 500 ms |
+| CLS (Cumulative Layout Shift) | ≤ 0.1 | 0.1-0.25 | > 0.25 |
+
+A page passes when all three are "good".
+
+## Example Requests
+
+- "My Shopify speed report says LCP 4.2 s on mobile. What is slowing it down?"
+- "Explain our Core Web Vitals per template and what each number means."
+- "Our CLS got worse after installing a reviews app. How do we confirm the cause?"
+
+## Output Format
+
+```
+CORE WEB VITALS DIAGNOSIS — [Store, date, data source]
+| Template | LCP | INP | CLS | Status | Main cause | Source (theme/app/image/script) |
+Findings handed to the fix plan: [...]
+```
+
+## Quality Checks
+
+- Field data and lab data are clearly separated; the data source and date are stated.
+- Each finding names the element or script responsible, not only the metric.
+- Mobile is analyzed before desktop.
+- Thresholds are Google's published values, cited as such.
+
+## Data Reliability
+
+Label every figure in the deliverable as **[verified]** (with its source and date) or **[estimate]** (with the assumption behind it). Never present an estimate or a benchmark as the seller's own data.
+
+- **Verified**: field metrics from Shopify's report / Chrome UX Report, lab audits from PageSpeed Insights, Google's thresholds.
+- **Estimates**: expected gains from a fix before re-measurement; sales impact of speed changes.
 
 ## Installation
 

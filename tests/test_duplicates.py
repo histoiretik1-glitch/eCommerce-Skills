@@ -1,6 +1,7 @@
 """Duplicate detection and content preservation across the 162 skills (LOT 3)."""
 import itertools
 import json
+import re
 import subprocess
 import sys
 import unittest
@@ -15,13 +16,7 @@ PLATFORMS = ("amazon", "ebay", "shopify", "tiktok", "walmart", "etsy", "woocomme
 
 # Skills that still have almost no content of their own (template text only).
 # This list may only shrink: enrich a skill, then remove it from here.
-KNOWN_THIN = {
-    "api-monitoring", "customer-feedback-analysis", "domain-monitoring", "ecommerce-feed-management",
-    "file-integrity-monitoring", "inventory-tracking-software", "localization-testing",
-    "minimum-advertised-price", "online-reputation-management", "public-status-page", "restock-alert",
-    "share-of-shelf", "shopify-page-speed", "synthetic-monitoring", "visual-regression-testing",
-    "walmart-price-tracker",
-}
+KNOWN_THIN = set()  # emptied in LOT 4 (was 16 skills in 1.3.0, 56 before LOT 3)
 MIN_SPECIFIC_LINES = 8          # lines not found in 5+ other SKILL.md files
 MAX_SHARED_SPECIFIC = 0.5        # share of specific lines two skills may have in common
 MAX_GROUP_DESCRIPTION_SIM = 0.5  # TF-IDF cosine between descriptions of the same group
@@ -99,6 +94,12 @@ class Duplicates(unittest.TestCase):
         self.assertEqual(too_close, [], "descriptions too similar to tell the skills apart")
 
 
+# Template sentences of the 1.2.0 "Nexscope format" skills; they vary only by category word, so the
+# boilerplate filter (lines in 5+ files) misses them. They carry no skill-specific content and were
+# replaced by real sections in LOT 4. Only lines matching this pattern may disappear.
+REMOVED_TEMPLATE = re.compile(r"^generates actionable .+ frameworks based on your specific business context$")
+
+
 class ContentPreserved(unittest.TestCase):
     def test_no_functional_line_lost_since_1_2_0(self):
         baseline = json.loads((GOLDEN / "content_baseline_1.2.0.json").read_text(encoding="utf-8"))
@@ -106,7 +107,7 @@ class ContentPreserved(unittest.TestCase):
         lost = {}
         for name, lines in baseline.items():
             now = set(candidate_lines(TEXTS[name]))
-            missing = [l for l in lines if l not in now]
+            missing = [l for l in lines if l not in now and not REMOVED_TEMPLATE.match(l)]
             if missing:
                 lost[name] = missing[:3]
         self.assertEqual(lost, {}, "functional lines removed (list items, steps, table rows)")
@@ -164,6 +165,16 @@ GROUP_REQUESTS = [
     ("Install a subscription app and selling plans on Shopify", "shopify-subscription-setup"),
     ("Write a full email program with copy and an annual campaign calendar", "ecommerce-email-marketing-builder"),
     ("Turn on the welcome and abandoned checkout automations in Shopify Email", "shopify-email-flows"),
+    ("Script checks of add to cart and checkout journeys every 10 minutes with alerts", "synthetic-monitoring"),
+    ("Our Amazon order webhook to the ERP fails; monitor API error rates and the SLO error budget", "api-monitoring"),
+    ("Check SSL certificate expiry and DMARC SPF DKIM records for our domain", "domain-monitoring"),
+    ("Detect unauthorized file changes and card skimmer scripts on our Magento checkout", "file-integrity-monitoring"),
+    ("Screenshot comparison to catch layout breakages after a theme update", "visual-regression-testing"),
+    ("Test translations, currency formats and VAT display for our German market", "localization-testing"),
+    ("Status page with incident templates to tell customers checkout is down", "public-status-page"),
+    ("What share of marketplace search results does our brand have versus competitors on these keywords?", "share-of-shelf"),
+    ("Draft a minimum advertised price policy and check reseller prices for violations", "minimum-advertised-price"),
+    ("Compare my Walmart landed prices with other sellers and set Repricer rules", "walmart-price-tracker"),
 ]
 
 

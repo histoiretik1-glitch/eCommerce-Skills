@@ -7,13 +7,13 @@
   },
   "metadata": {
     "description": "162 e-commerce skills for Amazon, Shopify, eBay, Etsy, TikTok Shop, Walmart and WooCommerce sellers, packaged as a Claude Code plugin.",
-    "version": "1.3.0"
+    "version": "1.4.0"
   },
   "plugins": [
     {
       "name": "ecommerce-skills",
       "description": "162 e-commerce skills: growth strategy, pricing and profit calculators, competitor and review analysis, brand protection, listing SEO, advertising, marketing, monitoring, supply chain, and platform guides for Amazon, Shopify, eBay, Etsy, TikTok Shop, Walmart and WooCommerce.",
-      "version": "1.3.0",
+      "version": "1.4.0",
       "author": {
         "name": "Nexscope AI",
         "url": "https://www.nexscope.ai"

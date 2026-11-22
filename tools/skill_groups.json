@@ -172,7 +172,8 @@
         "competitive-pricing-strategy": "Price architecture and response rules against competitors.",
         "dynamic-pricing-ecommerce": "Automated repricing rules with floors, ceilings and guardrails.",
         "price-optimization-tool": "Choosing a price from unit economics, elasticity and price tests.",
-        "walmart-price-tracker": "Walmart-specific price tracking and repricing."
+        "walmart-price-tracker": "Walmart-specific price tracking and repricing.",
+        "minimum-advertised-price": "MAP policy and enforcement: policy document, violation checks across channels and escalation steps."
       }
     },
     "channels": {
@@ -212,6 +213,26 @@
         "ebay-seller-tools": "Choosing software tools for an eBay business.",
         "walmart-seller-guide": "How to sell on Walmart Marketplace, from application to scaling.",
         "walmart-seller-tools": "Choosing software tools for a Walmart business."
+      }
+    },
+    "site-reliability": {
+      "title": "Store reliability and technical quality",
+      "members": {
+        "synthetic-monitoring": "Scripted checks of the critical shopper journeys (home, search, product, add to cart, checkout) with alerts and performance baselines.",
+        "api-monitoring": "Health, latency and error monitoring of the APIs and webhooks behind the store (payments, inventory, marketplaces, shipping), with SLOs and error budgets.",
+        "domain-monitoring": "Domain expiry, DNS, SSL/TLS certificates and email authentication (SPF, DKIM, DMARC) monitoring.",
+        "file-integrity-monitoring": "Detecting unauthorized changes to store files, code and payment-page scripts.",
+        "visual-regression-testing": "Screenshot comparison to catch layout and UI breakages before and after releases.",
+        "localization-testing": "Testing translations, currencies, prices, taxes, shipping and legal information per country.",
+        "public-status-page": "Telling customers and partners about incidents and uptime through a public status page."
+      }
+    },
+    "competitive-visibility": {
+      "title": "Competitive visibility",
+      "members": {
+        "share-of-shelf": "Measuring a brand's share of marketplace search results against competitors, by keyword and over time.",
+        "ecommerce-competitor-analysis": "Cross-platform competitor analysis: channel presence, offer, strategy and positioning.",
+        "market-gap-analysis": "Finding underserved needs and niches that competitors miss."
       }
     }
   }

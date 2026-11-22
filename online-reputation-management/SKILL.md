@@ -1,6 +1,6 @@
 ---
 name: online-reputation-management
-description: "AI-powered online reputation management skill for e-commerce brands. Builds reputation monitoring frameworks, negative review response strategies, rating recovery plans, and crisis communication templates. Use when the user asks for help managing brand reputation, responding to negative reviews, recovering ratings or handling a PR crisis."
+description: "Online reputation management for e-commerce brands. Audits ratings and reviews across marketplaces, Google, Trustpilot and social media, sets monitoring and response rules, computes how many new positive reviews a rating recovery needs, prepares response templates and a crisis playbook, all within review-platform policies and consumer-protection rules on fake reviews. Use when a brand's rating dropped, a wave of negative reviews or posts hits the brand, or it needs a reputation strategy and crisis plan."
 nexscope:
   name: "Online Reputation Management"
   category: "Monitoring & Alerts"
@@ -34,12 +34,61 @@ Part of: Reviews, feedback and reputation. For neighbouring jobs, use the matchi
 
 <!-- role-and-scope:end -->
 
-## Capabilities
+## Data Needed
 
-- Generates actionable monitoring & alerts frameworks based on your specific business context
-- Works across major e-commerce platforms (Amazon, Shopify, Walmart, WooCommerce, Etsy, TikTok Shop)
-- Provides data-driven recommendations with industry benchmarks
-- Outputs ready-to-implement plans, not just generic advice
+| Data | Where to find it |
+|------|------------------|
+| Ratings and review counts per platform (Amazon, Walmart, Etsy, TikTok Shop, Shopify reviews app, Google, Trustpilot) | Platform dashboards |
+| Recent negative reviews and posts | Platforms, `review-monitoring`, `social-media-monitor` |
+| Mentions and sentiment trends | `brand-monitoring` |
+| Root causes behind complaints | `customer-feedback-analysis`, support data |
+| Spokesperson, approval chain, legal contact | Team |
+
+## Workflow
+
+1. **Audit**: rating, count and trend per platform; top complaint themes; search results for the brand name (first page).
+2. **Monitoring**: alerts for new negative reviews and spikes in mentions (`review-monitoring`, `brand-monitoring`).
+3. **Response rules**: who answers, within what time, tone, what to offer, when to take the conversation private; reply to negative reviews factually, never argue.
+4. **Fix the cause**: link each recurring complaint to an owner (product, shipping, service); responses without fixes do not recover ratings.
+5. **Recovery plan**: compute the reviews needed (below); increase honest review volume through allowed requests to all customers (no incentives for positive reviews, no review gating, no fake reviews; these breach platform rules and consumer-protection rules such as the FTC rule on fake reviews in the US).
+6. **Crisis playbook**: severity levels, first statement within an agreed time, holding statements, approval chain, channels, follow-up.
+7. **Report** monthly: rating trends, response time, theme changes.
+
+## Calculations and Tools
+
+- **Rating recovery**: with N reviews at average A, the number n of new 5-star reviews needed to reach target T is n = N × (T − A) ÷ (5 − T).
+  Example: 400 reviews at 3.9 → 4.3 needs 400 × 0.4 ÷ 0.7 ≈ 229 five-star reviews (more if new reviews are not all 5 stars: replace 5 by the expected average of new reviews).
+- **Response rate** = negative reviews answered ÷ negative reviews; **response time** = median hours to first reply.
+- **Negative share** = 1-2 star reviews ÷ all reviews in the period.
+
+## Example Requests
+
+- "Our Amazon rating fell from 4.4 to 3.9 in two months. Build a recovery plan."
+- "A viral TikTok video says our product is unsafe. What do we say in the next 24 hours?"
+- "Write response templates for negative reviews about late delivery and damaged items."
+
+## Output Format
+
+```
+REPUTATION REPORT — [Brand, period]
+| Platform | Rating | Reviews | Trend | Negative share | Top complaint |
+Recovery math: current → target, reviews needed, timeline at current review rate
+Response rules and templates; crisis playbook (levels, statements, approvals)
+```
+
+## Quality Checks
+
+- No tactic involves fake, incentivized-for-positive or selectively requested reviews, or removing legitimate reviews.
+- Templates are factual, apologize where appropriate and never disclose customer data.
+- Recovery timelines use the brand's actual review rate.
+- Crisis statements avoid admissions or claims not approved by legal.
+
+## Data Reliability
+
+Label every figure in the deliverable as **[verified]** (with its source and date) or **[estimate]** (with the assumption behind it). Never present an estimate or a benchmark as the seller's own data.
+
+- **Verified**: ratings, counts and reviews from the platforms on the stated date.
+- **Estimates**: future review rate, timeline to target, impact on sales. Legal points are to confirm with counsel.
 
 ## Installation
 

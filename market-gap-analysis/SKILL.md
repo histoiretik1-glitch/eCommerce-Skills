@@ -15,6 +15,18 @@ Identify underserved market gaps and unmet customer needs in e-commerce. Analyze
 
 Built by [Nexscope](https://www.nexscope.ai/?co-from=skill) — your AI assistant for smarter e-commerce decisions.
 
+<!-- role-and-scope:start (generated from tools/skill_groups.json) -->
+## Role and Scope
+
+**This skill:** Finding underserved needs and niches that competitors miss.
+
+Part of: Competitive visibility. For neighbouring jobs, use the matching skill instead:
+
+- `share-of-shelf` — Measuring a brand's share of marketplace search results against competitors, by keyword and over time.
+- `ecommerce-competitor-analysis` — Cross-platform competitor analysis: channel presence, offer, strategy and positioning.
+
+<!-- role-and-scope:end -->
+
 ## Installation
 
 Part of the **`ecommerce-skills`** Claude Code plugin (all 162 skills). In Claude Code:

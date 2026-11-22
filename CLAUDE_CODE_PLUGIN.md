@@ -159,6 +159,14 @@ claude plugin disable ecommerce-skills@ecommerce-skills
 
 ## Historique des versions
 
+### 1.4.0 — LOT 4 (enrichissement des 16 skills peu développés)
+
+- **16 skills enrichis** : `api-monitoring`, `customer-feedback-analysis`, `domain-monitoring`, `ecommerce-feed-management`, `file-integrity-monitoring`, `inventory-tracking-software`, `localization-testing`, `minimum-advertised-price`, `online-reputation-management`, `public-status-page`, `restock-alert`, `share-of-shelf`, `shopify-page-speed`, `synthetic-monitoring`, `visual-regression-testing`, `walmart-price-tracker`. Chacun contient : Role and Scope, Data Needed (avec l'endroit où trouver chaque donnée), Workflow, Calculations and Tools, Example Requests, Output Format, Quality Checks et Data Reliability (chaque chiffre du livrable est marqué « vérifié » avec sa source ou « estimation » avec son hypothèse).
+- **6 scripts de calcul** (bibliothèque standard, testés) : `restock-alert/scripts/reorder.py` (point de commande, stock de sécurité, risque de rupture), `share-of-shelf/scripts/sos.py` (part de linéaire organique, sponsorisée et pondérée), `minimum-advertised-price/scripts/map_check.py` (violations, gravité, récidivistes), `walmart-price-tracker/scripts/price_index.py` (indice de prix rendu, rang, variations), `ecommerce-feed-management/scripts/feed_check.py` (attributs requis, formats, doublons, clé GTIN), `api-monitoring/scripts/uptime.py` (disponibilité, budget d'erreur, MTTR, percentiles).
+- **Registre** : nouveaux groupes « Store reliability and technical quality » (7 skills) et « Competitive visibility » (3 skills) ; `minimum-advertised-price` rejoint le groupe Prix (99 skills groupés).
+- **Plus aucun skill-gabarit** : la liste `KNOWN_THIN` du test est vide.
+- **Tests** : `tests/test_lot4_scripts.py` (valeurs vérifiées à la main pour chaque script) et `tests/test_lot4_structure.py` (sections obligatoires, étapes, exemples concrets, règle vérifié / estimation).
+
 ### 1.3.0 — LOT 3 (doublons et rôles)
 
 - **Aucun skill supprimé**, toujours 162. Les doublons sont traités par des rôles distincts, des renvois entre voisins et du contenu propre à chaque skill.

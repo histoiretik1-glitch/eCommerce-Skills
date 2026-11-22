@@ -1,6 +1,6 @@
 ---
 name: customer-feedback-analysis
-description: "Voice-of-customer analysis across every feedback source. Merges survey answers, NPS comments, support tickets, chat logs, return reasons, social comments and reviews into one theme map and an improvement roadmap for product, service and operations. Use when a business wants to understand all its customer feedback together or prioritize what to fix from many sources (for analysis of product reviews only use `product-review-analysis`)."
+description: "Voice-of-customer analysis across every feedback source. Merges survey answers, NPS comments, support tickets, chat logs, return reasons, social comments and reviews into one theme map, counts and scores themes by frequency, severity and trend, computes NPS and CSAT where available, and turns them into an improvement roadmap for product, service and operations. Use when a business wants to understand all its customer feedback together or prioritize what to fix from many sources (for analysis of product reviews only use `product-review-analysis`)."
 nexscope:
   name: "Customer Feedback Analysis"
   category: "Reviews & Reputation"
@@ -35,12 +35,63 @@ Part of: Reviews, feedback and reputation. For neighbouring jobs, use the matchi
 
 <!-- role-and-scope:end -->
 
-## Capabilities
+## Data Needed
 
-- Generates actionable reviews & reputation frameworks based on your specific business context
-- Works across major e-commerce platforms (Amazon, Shopify, Walmart, WooCommerce, Etsy, TikTok Shop)
-- Provides data-driven recommendations with industry benchmarks
-- Outputs ready-to-implement plans, not just generic advice
+| Data | Where to find it |
+|------|------------------|
+| Survey and NPS/CSAT answers (score + comment) | Survey tool exports |
+| Support tickets and chats (category, text, resolution) | Helpdesk exports |
+| Return and refund reasons | Platform or returns app reports |
+| Reviews (Amazon, Shopify, Etsy, TikTok Shop, Walmart) | Review exports or `product-review-analysis` output |
+| Social comments and DMs | Social tools |
+| Period, product/SKU, channel and customer segment for each item | Same exports |
+
+## Workflow
+
+1. **Collect and clean**: one table with source, date, product, channel, segment, score and text; remove duplicates and spam; anonymize personal data.
+2. **Build a theme codebook**: 10-25 themes (e.g. sizing, shipping delay, damaged item, price, quality, ease of use, customer service), each with a definition and examples.
+3. **Code each item** to one or more themes and a sentiment (negative / neutral / positive); check consistency on a sample.
+4. **Count** themes by source, product and period; compute NPS and CSAT where scores exist.
+5. **Prioritize** with frequency × severity (impact on returns, refunds, ratings or churn) and trend.
+6. **Root cause** for the top 5 themes, using ticket details and return data.
+7. **Roadmap**: owner, fix, expected effect and the metric that will show it worked; feed back to listings, product, packaging or service.
+
+## Calculations and Tools
+
+- **NPS** = % promoters (9-10) − % detractors (0-6), on answers from the same period.
+- **CSAT** = satisfied answers (e.g. 4-5 on a 5-point scale) ÷ all answers.
+- **Theme share** = items coded to the theme ÷ all coded items (per source and overall).
+- **Priority score** = theme share × severity weight (e.g. 3 = causes returns/refunds, 2 = lowers ratings, 1 = annoyance); weights are a team choice to state.
+- **Trend** = theme share this period − previous period; ignore changes on very small samples.
+
+## Example Requests
+
+- "Here are 2,000 support tickets and 500 survey answers from Q3. What should we fix first?"
+- "Combine our Amazon reviews, return reasons and NPS comments into one priority list."
+- "Build a feedback codebook for our apparel brand and code these comments."
+
+## Output Format
+
+```
+VOICE OF CUSTOMER — [period]
+Sources: | Source | Items | Period |    NPS: X (n=…)   CSAT: X% (n=…)
+| Theme | Share | Trend | Severity | Priority score | Example quote | Root cause | Owner |
+Roadmap: top 5 fixes with metric to watch
+```
+
+## Quality Checks
+
+- Every number shows its sample size and period; no percentage on fewer than ~30 items without a warning.
+- Quotes are real, short and anonymized.
+- The codebook is included so the coding can be repeated.
+- Feedback from different sources is not double-counted (one customer, one issue).
+
+## Data Reliability
+
+Label every figure in the deliverable as **[verified]** (with its source and date) or **[estimate]** (with the assumption behind it). Never present an estimate or a benchmark as the seller's own data.
+
+- **Verified**: counts and scores computed from the exports.
+- **Estimates**: severity weights, expected impact of fixes, sentiment coding (judgment-based; spot-check a sample).
 
 ## Installation
 
