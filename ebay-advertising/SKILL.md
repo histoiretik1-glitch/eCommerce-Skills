@@ -1,3 +1,8 @@
+---
+name: ebay-advertising
+description: "Master eBay advertising — Promoted Listings Standard, Advanced, and Offsite Ads. Campaign setup, bidding strategy, budget allocation, and ROI optimization for eBay sellers. Use when the user asks for help setting up or optimizing eBay Promoted Listings (Standard, Advanced, Offsite), ad rates, budgets or ROAS."
+---
+
 # eBay Advertising
 
 Master eBay advertising — Promoted Listings Standard, Advanced, and Offsite Ads. Campaign setup, bidding strategy, budget allocation, and ROI optimization for eBay sellers.

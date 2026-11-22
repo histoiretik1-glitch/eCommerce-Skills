@@ -39,6 +39,23 @@ Example — install the growth strategy skill:
 npx skills add nexscope-ai/eCommerce-Skills --skill ecommerce-growth-strategy -g
 ```
 
+### Claude Code plugin (all 162 skills at once)
+
+This repository is also a Claude Code plugin marketplace. In Claude Code:
+
+```
+/plugin marketplace add histoiretik1-glitch/eCommerce-Skills
+/plugin install ecommerce-skills@ecommerce-skills
+```
+
+One-step alternative on Claude Code 2.1.275 or later:
+
+```
+/plugin install ecommerce-skills --marketplace histoiretik1-glitch/eCommerce-Skills
+```
+
+See [CLAUDE_CODE_PLUGIN.md](./CLAUDE_CODE_PLUGIN.md) for verification, updates and maintenance.
+
 Then just ask your AI assistant naturally:
 
 > *"I sell pet clothes on Shopify doing $8K/month. How do I get to $20K in 6 months?"*

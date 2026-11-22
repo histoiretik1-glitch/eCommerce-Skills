@@ -1,4 +1,6 @@
 ---
+name: synthetic-monitoring
+description: "AI-powered synthetic monitoring skill for e-commerce websites. Designs automated user journey tests for add-to-cart, checkout, and payment flows with alerting rules and performance baselines. Use when the user asks for help setting up synthetic tests of critical user journeys (add-to-cart, checkout, payment) with alerting and baselines."
 nexscope:
   name: "Synthetic Monitoring"
   category: "Monitoring & Alerts"

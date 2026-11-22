@@ -1,3 +1,8 @@
+---
+name: influencer-outreach
+description: "Find, contact, and manage influencer partnerships for e-commerce brands. Outreach templates, negotiation tactics, contract frameworks, and relationship management across Instagram, TikTok, YouTube, and more. Use when the user asks for help finding influencers, writing outreach messages, negotiating rates, drafting contracts or managing creator partnerships."
+---
+
 # Influencer Outreach
 
 Find, contact, and manage influencer partnerships for e-commerce brands. Outreach templates, negotiation tactics, contract frameworks, and relationship management across Instagram, TikTok, YouTube, and more.

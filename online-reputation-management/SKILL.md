@@ -1,4 +1,6 @@
 ---
+name: online-reputation-management
+description: "AI-powered online reputation management skill for e-commerce brands. Builds reputation monitoring frameworks, negative review response strategies, rating recovery plans, and crisis communication templates. Use when the user asks for help managing brand reputation, responding to negative reviews, recovering ratings or handling a PR crisis."
 nexscope:
   name: "Online Reputation Management"
   category: "Monitoring & Alerts"

@@ -1,4 +1,6 @@
 ---
+name: walmart-price-tracker
+description: "AI-powered Walmart price tracking and competitive pricing skill. Analyzes Walmart marketplace pricing trends, competitor price positioning, and generates repricing strategies for Walmart sellers. Use when the user asks for help tracking Walmart prices, analyzing competitor price positioning or defining Walmart repricing strategy."
 nexscope:
   name: "Walmart Price Tracker"
   category: "Monitoring & Alerts"

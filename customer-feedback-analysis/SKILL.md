@@ -1,4 +1,6 @@
 ---
+name: customer-feedback-analysis
+description: "AI-powered customer feedback and review sentiment analysis skill. Extracts pain points, feature requests, and improvement priorities from customer reviews across e-commerce platforms. Use when the user asks for help analyzing customer reviews or feedback, extracting pain points, feature requests or sentiment trends."
 nexscope:
   name: "Customer Feedback Analysis"
   category: "Reviews & Reputation"

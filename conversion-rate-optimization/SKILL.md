@@ -1,3 +1,8 @@
+---
+name: conversion-rate-optimization
+description: "Systematic CRO for e-commerce stores. Audit conversion funnels, identify drop-off points, implement fixes, and run experiments to increase revenue per visitor across all platforms. Use when the user asks for help diagnosing a low conversion rate, auditing a funnel, finding drop-off points or building a CRO testing roadmap."
+---
+
 # Conversion Rate Optimization
 
 Systematic CRO for e-commerce stores. Audit conversion funnels, identify drop-off points, implement fixes, and run experiments to increase revenue per visitor across all platforms.

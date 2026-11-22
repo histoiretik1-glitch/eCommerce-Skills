@@ -1,3 +1,8 @@
+---
+name: ebay-seller-guide
+description: "Complete guide for selling on eBay — auction and fixed-price strategies, listing optimization, eBay SEO, shipping setup, seller ratings, and scaling from casual seller to Top Rated Seller. Use when the user asks for help starting or growing an eBay business, choosing auction vs Buy It Now, shipping setup or reaching Top Rated Seller."
+---
+
 # eBay Seller Guide
 
 Complete guide for selling on eBay — auction and fixed-price strategies, listing optimization, eBay SEO, shipping setup, seller ratings, and scaling from casual seller to Top Rated Seller.

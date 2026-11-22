@@ -1,4 +1,6 @@
 ---
+name: public-status-page
+description: "AI-powered public status page design skill for e-commerce businesses. Creates status page architecture, incident communication templates, subscriber notification systems, and uptime reporting frameworks. Use when the user asks for help designing a public status page, incident communication templates, subscriber notifications or uptime reporting."
 nexscope:
   name: "Public Status Page"
   category: "Monitoring & Alerts"

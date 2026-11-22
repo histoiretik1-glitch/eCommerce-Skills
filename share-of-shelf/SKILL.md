@@ -1,4 +1,6 @@
 ---
+name: share-of-shelf
+description: "AI-powered digital share of shelf analysis skill. Measures brand visibility within product categories, benchmarks against competitors, and tracks shelf position trends across e-commerce platforms. Use when the user asks for help measuring digital share of shelf, brand visibility in category search results or benchmarking against competitors."
 nexscope:
   name: "Share of Shelf"
   category: "Monitoring & Alerts"

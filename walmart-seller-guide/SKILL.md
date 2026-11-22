@@ -1,3 +1,8 @@
+---
+name: walmart-seller-guide
+description: "Complete guide for selling on Walmart Marketplace. Covers application, listing optimization, Walmart SEO, WFS fulfillment, advertising, and scaling on America second-largest marketplace. Use when the user asks for help applying to or growing on Walmart Marketplace (listing, Walmart SEO, WFS, ads, Pro Seller)."
+---
+
 # Walmart Seller Guide
 
 Complete guide for selling on Walmart Marketplace. Covers application, listing optimization, Walmart SEO, WFS fulfillment, advertising, and scaling on America second-largest marketplace.

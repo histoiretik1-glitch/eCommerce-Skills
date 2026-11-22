@@ -1,3 +1,8 @@
+---
+name: ecommerce-customer-retention
+description: "Increase customer retention and repeat purchases for e-commerce businesses. Email flows, loyalty programs, subscription models, customer segmentation, and win-back strategies. Use when the user asks for help improving repeat purchase rate, LTV, loyalty, RFM segmentation, post-purchase or win-back flows."
+---
+
 # E-Commerce Customer Retention
 
 Increase customer retention and repeat purchases for e-commerce businesses. Email flows, loyalty programs, subscription models, customer segmentation, and win-back strategies.

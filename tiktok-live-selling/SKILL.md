@@ -1,3 +1,8 @@
+---
+name: tiktok-live-selling
+description: "Master TikTok live selling for e-commerce. Plan live sessions, engage audiences, pin products, handle real-time sales, and optimize GPM (GMV per mille) for maximum live revenue. Use when the user asks for help planning or improving TikTok Shop LIVE sessions, scripts, product pinning, engagement or GPM."
+---
+
 # TikTok Live Selling
 
 Master TikTok live selling for e-commerce. Plan live sessions, engage audiences, pin products, handle real-time sales, and optimize GPM (GMV per mille) for maximum live revenue.

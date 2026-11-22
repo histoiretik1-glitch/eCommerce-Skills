@@ -1,4 +1,6 @@
 ---
+name: visual-regression-testing
+description: "AI-powered visual regression testing skill for e-commerce websites. Designs screenshot comparison workflows, mobile/desktop visual checks, and change detection alerts to prevent conversion-killing UI bugs. Use when the user asks for help detecting visual UI regressions on a store with screenshot comparison on desktop and mobile."
 nexscope:
   name: "Visual Regression Testing"
   category: "Monitoring & Alerts"

@@ -1,4 +1,6 @@
 ---
+name: localization-testing
+description: "AI-powered localization and internationalization testing skill for e-commerce sites. Designs multi-language QA frameworks, currency validation checks, shipping info verification, and regional compliance audits. Use when the user asks for help testing a store for international markets (translations, currencies, shipping info, regional compliance)."
 nexscope:
   name: "Localization Testing"
   category: "Monitoring & Alerts"

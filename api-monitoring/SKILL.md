@@ -1,4 +1,6 @@
 ---
+name: api-monitoring
+description: "AI-powered API and webhook monitoring skill for e-commerce integrations. Designs health check systems, alerting strategies, SLA reporting templates, and integration validation for e-commerce API endpoints. Use when the user asks for help monitoring e-commerce APIs, webhooks or integrations, defining health checks, alerting rules or SLA reports."
 nexscope:
   name: "API Monitoring"
   category: "Monitoring & Alerts"
