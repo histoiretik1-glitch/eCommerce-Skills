@@ -27,6 +27,7 @@ Part of: Pricing. For neighbouring jobs, use the matching skill instead:
 - `dynamic-pricing-ecommerce` — Automated repricing rules with floors, ceilings and guardrails.
 - `price-optimization-tool` — Choosing a price from unit economics, elasticity and price tests.
 - `walmart-price-tracker` — Walmart-specific price tracking and repricing.
+- `minimum-advertised-price` — MAP policy and enforcement: policy document, violation checks across channels and escalation steps.
 
 <!-- role-and-scope:end -->
 

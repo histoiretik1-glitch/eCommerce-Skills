@@ -1,6 +1,6 @@
 ---
 name: inventory-tracking-software
-description: "Inventory tracking system design. Chooses or designs the tracking setup (spreadsheet, inventory app, ERP), the data each SKU needs, monitoring dashboards, alert rules and multi-channel stock sync so every channel shows the right quantity. Use when a business asks which inventory software to use or how to set up inventory tracking and sync across channels."
+description: "Inventory tracking system design and tool selection. Defines the inventory data model (SKUs, locations, statuses), the source of truth, multi-channel stock sync between Amazon, Shopify, Walmart, Etsy and TikTok Shop, reconciliation checks, accuracy metrics and alert rules, and compares inventory software options by business size. Use when a business asks which inventory management software to use, how to stop overselling across channels, or how to set up reliable inventory tracking and sync."
 nexscope:
   name: "Inventory Tracking Software"
   category: "Supply Chain & Logistics"
@@ -35,12 +35,62 @@ Part of: Inventory and replenishment. For neighbouring jobs, use the matching sk
 
 <!-- role-and-scope:end -->
 
-## Capabilities
+## Data Needed
 
-- Generates actionable supply chain & logistics frameworks based on your specific business context
-- Works across major e-commerce platforms (Amazon, Shopify, Walmart, WooCommerce, Etsy, TikTok Shop)
-- Provides data-driven recommendations with industry benchmarks
-- Outputs ready-to-implement plans, not just generic advice
+| Data | Where to find it |
+|------|------------------|
+| Channels and where stock is held (own warehouse, FBA, WFS, FBT, 3PL, stores) | Seller accounts, 3PL contracts |
+| SKU count, variants, bundles/kits | Catalog exports |
+| Current tools (spreadsheets, apps, ERP) and pain points (oversells, stock-outs, manual work) | Team |
+| Order volume per day and peaks | Order reports |
+| Count history and adjustments | Inventory reports |
+
+## Workflow
+
+1. **Source of truth**: choose one system that owns available-to-sell quantities (inventory app, ERP or the main platform); every channel reads from it.
+2. **Data model**: one SKU per sellable variant, mapped to each channel's identifier (ASIN/FNSKU, Shopify variant, Walmart item ID, TikTok SKU, Etsy listing variation); bundles as components; stock by location and status (on hand, reserved, in transit, damaged).
+3. **Sync rules**: update frequency per channel, safety buffer per channel to absorb sync delay, what happens when stock hits the buffer (pause listing vs show out of stock).
+4. **Fulfillment-network stock** (FBA, WFS, FBT): track separately; it cannot be shared with other channels in real time.
+5. **Reconciliation**: daily comparison of quantities in the source of truth and in each channel; alert on differences above a threshold.
+6. **Counting**: cycle counts (A items more often), adjustments with reason codes.
+7. **Tool selection**: spreadsheet (very small catalogs), platform-native inventory (single channel), multichannel inventory apps, ERP (high volume, manufacturing). Compare on channel connectors, sync speed, bundles, cost and support.
+8. **Alerts**: low stock (thresholds from `restock-alert`), sync failures (`api-monitoring`), oversell events.
+
+## Calculations and Tools
+
+- **Inventory record accuracy** = SKUs whose counted quantity matches the system (within tolerance) ÷ SKUs counted.
+- **Oversell rate** = orders cancelled for lack of stock ÷ total orders.
+- **Channel buffer** ≈ average daily sales on the channel × sync delay in days (+ margin); an estimate to tune.
+- **Sync lag** = time between a sale and the updated quantity on the other channels (measure with a test order).
+
+## Example Requests
+
+- "We oversell on Amazon and Shopify every weekend. How should we set up inventory sync?"
+- "Which inventory software fits a brand selling on Shopify, Amazon FBA and TikTok Shop with 300 SKUs?"
+- "Design our inventory tracking: locations, statuses and daily reconciliation."
+
+## Output Format
+
+```
+INVENTORY TRACKING DESIGN — [Business]
+Source of truth: [...]   SKU mapping table: | SKU | Amazon | Shopify | Walmart | TikTok | Etsy |
+Sync rules: | Channel | Frequency | Buffer | Out-of-stock behaviour |
+Reconciliation and alerts; tool shortlist with pros/cons and cost; rollout plan
+```
+
+## Quality Checks
+
+- Every channel identifier is mapped to exactly one internal SKU.
+- Fulfillment-network stock is not counted as available for other channels.
+- Tool recommendations state what was compared and that prices must be confirmed with vendors.
+- Accuracy and oversell metrics come from measured data, with the period stated.
+
+## Data Reliability
+
+Label every figure in the deliverable as **[verified]** (with its source and date) or **[estimate]** (with the assumption behind it). Never present an estimate or a benchmark as the seller's own data.
+
+- **Verified**: counts, order and cancellation data, measured sync lag.
+- **Estimates**: buffers, expected reduction in oversells, vendor features and prices (confirm with vendors).
 
 ## Installation
 

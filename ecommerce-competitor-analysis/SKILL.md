@@ -8,6 +8,18 @@ metadata: {"nexscope":{"emoji":"🔍","category":"ecommerce"}}
 
 Comprehensive cross-platform competitor intelligence. Analyze strategies, positioning, and performance across all channels.
 
+<!-- role-and-scope:start (generated from tools/skill_groups.json) -->
+## Role and Scope
+
+**This skill:** Cross-platform competitor analysis: channel presence, offer, strategy and positioning.
+
+Part of: Competitive visibility. For neighbouring jobs, use the matching skill instead:
+
+- `share-of-shelf` — Measuring a brand's share of marketplace search results against competitors, by keyword and over time.
+- `market-gap-analysis` — Finding underserved needs and niches that competitors miss.
+
+<!-- role-and-scope:end -->
+
 ## Installation
 
 Part of the **`ecommerce-skills`** Claude Code plugin (all 162 skills). In Claude Code:
