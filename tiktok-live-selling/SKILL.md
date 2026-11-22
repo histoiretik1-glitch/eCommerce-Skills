@@ -18,10 +18,19 @@ Master TikTok live selling for e-commerce. Plan live sessions, engage audiences,
 - Multi-host and guest collaboration strategy
 - Post-live analytics and iteration
 
-## Install
+## Installation
+
+Part of the **`ecommerce-skills`** Claude Code plugin (all 162 skills). In Claude Code:
+
+```
+/plugin marketplace add histoiretik1-glitch/eCommerce-Skills
+/plugin install ecommerce-skills@ecommerce-skills
+```
+
+This skill only, with the Skills CLI (Claude Code, Cursor, Codex and other agents):
 
 ```bash
-npx skills add nexscope/tiktok-live-selling
+npx skills add histoiretik1-glitch/eCommerce-Skills --skill tiktok-live-selling -g
 ```
 
 ## Usage

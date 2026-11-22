@@ -1,6 +1,6 @@
 ---
 name: shopify-google-channel
-description: "Google integration — Shopping feed, Performance Max, free listings, Merchant Center optimization"
+description: "Shopify Google channel setup. Connects a Shopify store to Google Merchant Center, fixes product feed errors, enables free listings and launches Performance Max campaigns from Shopify. Use when a Shopify store owner wants to sell on Google or fix Merchant Center issues (for Shopping campaign strategy use `google-shopping-optimization`)."
 metadata:
   nexscope:
     category: shopify
@@ -21,10 +21,19 @@ Google integration — Shopping feed, Performance Max, free listings, Merchant C
 - Generate step-by-step implementation plans tailored to your business stage
 - Compare tools, apps, and strategies with pros/cons analysis
 
-## Install
+## Installation
+
+Part of the **`ecommerce-skills`** Claude Code plugin (all 162 skills). In Claude Code:
+
+```
+/plugin marketplace add histoiretik1-glitch/eCommerce-Skills
+/plugin install ecommerce-skills@ecommerce-skills
+```
+
+This skill only, with the Skills CLI (Claude Code, Cursor, Codex and other agents):
 
 ```bash
-npx skills add nexscope-ai/eCommerce-Skills --skill shopify-google-channel -g
+npx skills add histoiretik1-glitch/eCommerce-Skills --skill shopify-google-channel -g
 ```
 
 ## Usage

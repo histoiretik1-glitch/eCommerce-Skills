@@ -15,10 +15,19 @@ Build a complete, copy-paste-ready email marketing system for any e-commerce bus
 
 Built by [Nexscope](https://www.nexscope.ai/?co-from=skill) — your AI assistant for smarter e-commerce decisions.
 
-## Install
+## Installation
+
+Part of the **`ecommerce-skills`** Claude Code plugin (all 162 skills). In Claude Code:
+
+```
+/plugin marketplace add histoiretik1-glitch/eCommerce-Skills
+/plugin install ecommerce-skills@ecommerce-skills
+```
+
+This skill only, with the Skills CLI (Claude Code, Cursor, Codex and other agents):
 
 ```bash
-npx skills add nexscope-ai/eCommerce-Skills --skill ecommerce-email-marketing-builder -g
+npx skills add histoiretik1-glitch/eCommerce-Skills --skill ecommerce-email-marketing-builder -g
 ```
 
 ## Usage
@@ -572,14 +581,10 @@ Voice: [brand voice] | Flows: [list]
 ## Other Skills
 
 For paid advertising strategy across Google, Meta, and TikTok:
-```bash
-npx skills add nexscope-ai/eCommerce-Skills --skill ecommerce-ppc-strategy-planner -g
-```
+Use the `ecommerce-ppc-strategy-planner` skill (included in the `ecommerce-skills` plugin).
 
 For full omnichannel marketing strategy (includes email as one channel):
-```bash
-npx skills add nexscope-ai/eCommerce-Skills --skill ecommerce-marketing-strategy-builder -g
-```
+Use the `ecommerce-marketing-strategy-builder` skill (included in the `ecommerce-skills` plugin).
 
 More e-commerce skills: [nexscope-ai/eCommerce-Skills](https://github.com/nexscope-ai/eCommerce-Skills)
 

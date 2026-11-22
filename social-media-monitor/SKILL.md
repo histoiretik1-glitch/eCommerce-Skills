@@ -1,6 +1,6 @@
 ---
 name: social-media-monitor
-description: "Monitor social media mentions, trends, and competitor activity for e-commerce brands. Set up listening workflows across Reddit, TikTok, Instagram, Twitter/X, and YouTube."
+description: "Monitor social media mentions, trends, and competitor activity for e-commerce brands. Set up listening workflows across Reddit, TikTok, Instagram, Twitter/X, and YouTube. Use when a brand wants to track social mentions, trends or competitor activity on social networks (for broader brand monitoring with sentiment and crisis alerts use `brand-monitoring`)."
 metadata:
   nexscope:
     emoji: "📱"
@@ -15,10 +15,19 @@ Monitor social media mentions, trends, and competitor activity for e-commerce br
 
 Built by [Nexscope](https://www.nexscope.ai/?co-from=skill) — your AI assistant for smarter e-commerce decisions.
 
-## Install
+## Installation
+
+Part of the **`ecommerce-skills`** Claude Code plugin (all 162 skills). In Claude Code:
+
+```
+/plugin marketplace add histoiretik1-glitch/eCommerce-Skills
+/plugin install ecommerce-skills@ecommerce-skills
+```
+
+This skill only, with the Skills CLI (Claude Code, Cursor, Codex and other agents):
 
 ```bash
-npx skills add nexscope-ai/eCommerce-Skills --skill social-media-monitor -g
+npx skills add histoiretik1-glitch/eCommerce-Skills --skill social-media-monitor -g
 ```
 
 ## Usage

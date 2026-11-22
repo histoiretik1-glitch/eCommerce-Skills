@@ -1,6 +1,6 @@
 ---
 name: ecommerce-personalization
-description: "Design personalization strategies for e-commerce stores. Product recommendations, dynamic content, customer segmentation, and personalized email/SMS based on browsing and purchase behavior."
+description: "Design personalization strategies for e-commerce stores. Product recommendations, dynamic content, customer segmentation, and personalized email/SMS based on browsing and purchase behavior. Use when a store wants product recommendations, personalized content or emails, or customer segments to show different offers to different shoppers."
 metadata:
   nexscope:
     emoji: "🎯"
@@ -15,10 +15,19 @@ Design personalization strategies for e-commerce stores. Product recommendations
 
 Built by [Nexscope](https://www.nexscope.ai/?co-from=skill) — your AI assistant for smarter e-commerce decisions.
 
-## Install
+## Installation
+
+Part of the **`ecommerce-skills`** Claude Code plugin (all 162 skills). In Claude Code:
+
+```
+/plugin marketplace add histoiretik1-glitch/eCommerce-Skills
+/plugin install ecommerce-skills@ecommerce-skills
+```
+
+This skill only, with the Skills CLI (Claude Code, Cursor, Codex and other agents):
 
 ```bash
-npx skills add nexscope-ai/eCommerce-Skills --skill ecommerce-personalization -g
+npx skills add histoiretik1-glitch/eCommerce-Skills --skill ecommerce-personalization -g
 ```
 
 ## Usage

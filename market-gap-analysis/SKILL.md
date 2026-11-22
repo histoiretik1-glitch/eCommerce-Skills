@@ -1,6 +1,6 @@
 ---
 name: market-gap-analysis
-description: "Identify underserved market gaps and unmet customer needs in e-commerce. Analyzes competitor blind spots, review pain points, search demand without adequate supply, and emerging customer segments."
+description: "Identify underserved market gaps and unmet customer needs in e-commerce. Analyzes competitor blind spots, review pain points, search demand without adequate supply, and emerging customer segments. Use when a seller looks for an underserved niche, unmet customer needs or product ideas that competitors miss."
 metadata:
   nexscope:
     emoji: "🎯"
@@ -15,10 +15,19 @@ Identify underserved market gaps and unmet customer needs in e-commerce. Analyze
 
 Built by [Nexscope](https://www.nexscope.ai/?co-from=skill) — your AI assistant for smarter e-commerce decisions.
 
-## Install
+## Installation
+
+Part of the **`ecommerce-skills`** Claude Code plugin (all 162 skills). In Claude Code:
+
+```
+/plugin marketplace add histoiretik1-glitch/eCommerce-Skills
+/plugin install ecommerce-skills@ecommerce-skills
+```
+
+This skill only, with the Skills CLI (Claude Code, Cursor, Codex and other agents):
 
 ```bash
-npx skills add nexscope-ai/eCommerce-Skills --skill market-gap-analysis -g
+npx skills add histoiretik1-glitch/eCommerce-Skills --skill market-gap-analysis -g
 ```
 
 ## Usage

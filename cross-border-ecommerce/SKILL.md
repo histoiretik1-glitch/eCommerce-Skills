@@ -1,6 +1,6 @@
 ---
 name: cross-border-ecommerce
-description: "Cross-border e-commerce expansion advisor. Scores target markets on 8 weighted dimensions (market size, ecommerce penetration, competition, regulatory complexity, logistics infrastructure, payment ecosystem, cultural distance, IP protection), compares 5 fulfillment models with cost and transit data, provides country-by-country tax/duty compliance guides (EU VAT/IOSS, UK VAT, US sales tax, CA GST, AU GST, JP consumption tax), maps local payment preferences by market, and builds a phased expansion roadmap. No API key required."
+description: "Cross-border e-commerce expansion advisor. Scores target markets on 8 weighted dimensions (market size, ecommerce penetration, competition, regulatory complexity, logistics infrastructure, payment ecosystem, cultural distance, IP protection), compares 5 fulfillment models with cost and transit data, provides country-by-country tax/duty compliance guides (EU VAT/IOSS, UK VAT, US sales tax, CA GST, AU GST, JP consumption tax), maps local payment preferences by market, and builds a phased expansion roadmap. No API key required. Use when a seller asks which country to expand to, how to sell internationally, or about VAT/IOSS/GST, duties, international shipping, payments or localization."
 metadata:
   nexscope:
     emoji: "✈️"
@@ -13,18 +13,25 @@ Your strategic advisor for international e-commerce expansion. This skill scores
 
 This is the international expansion layer. It tells you **where to expand, how to get there, and what it will cost**, then connects you to specialized skills for execution in each market.
 
-```bash
-npx skills add nexscope-ai/eCommerce-Skills --skill ecommerce-growth-strategy -g
-```
+Use the `ecommerce-growth-strategy` skill (included in the `ecommerce-skills` plugin).
 
 **Supported platforms:** Amazon, Shopify, WooCommerce, Walmart, TikTok Shop, Etsy, eBay, BigCommerce, and multi-channel sellers.
 
 Built by [Nexscope](https://www.nexscope.ai/?co-from=skill8) — your AI assistant for smarter e-commerce decisions.
 
-## Install
+## Installation
+
+Part of the **`ecommerce-skills`** Claude Code plugin (all 162 skills). In Claude Code:
+
+```
+/plugin marketplace add histoiretik1-glitch/eCommerce-Skills
+/plugin install ecommerce-skills@ecommerce-skills
+```
+
+This skill only, with the Skills CLI (Claude Code, Cursor, Codex and other agents):
 
 ```bash
-npx skills add nexscope-ai/eCommerce-Skills --skill cross-border-ecommerce -g
+npx skills add histoiretik1-glitch/eCommerce-Skills --skill cross-border-ecommerce -g
 ```
 
 ## Usage
@@ -666,26 +673,24 @@ Estimates are marked with ⚠️ when based on general benchmarks rather than us
 For specialized execution after your expansion plan:
 
 **Overall growth strategy (diagnose + prioritize + 90-day roadmap):**
-```bash
-npx skills add nexscope-ai/eCommerce-Skills --skill ecommerce-growth-strategy -g
-```
+Use the `ecommerce-growth-strategy` skill (included in the `ecommerce-skills` plugin).
 
 **Full-stack marketing strategy (paid ads, SEO, email, content, social, influencers):**
-```bash
-npx skills add nexscope-ai/eCommerce-Skills --skill ecommerce-marketing-strategy-builder -g
-```
+Use the `ecommerce-marketing-strategy-builder` skill (included in the `ecommerce-skills` plugin).
 
 **PPC strategy planner (Google Ads, Meta Ads, Amazon PPC, TikTok Ads):**
-```bash
-npx skills add nexscope-ai/eCommerce-Skills --skill ecommerce-ppc-strategy-planner -g
-```
+Use the `ecommerce-ppc-strategy-planner` skill (included in the `ecommerce-skills` plugin).
 
 **Amazon tariff calculator (import duties, landed costs, VAT/GST for any trade route):**
+External skill `tariff-calculator-amazon` from the separate [Amazon-Skills](https://github.com/nexscope-ai/Amazon-Skills) collection (not part of this plugin):
+
 ```bash
 npx skills add nexscope-ai/Amazon-Skills --skill tariff-calculator-amazon -g
 ```
 
 **Amazon listing optimization (keyword-optimized listings for international marketplaces):**
+External skill `amazon-listing-optimization` from the separate [Amazon-Skills](https://github.com/nexscope-ai/Amazon-Skills) collection (not part of this plugin):
+
 ```bash
 npx skills add nexscope-ai/Amazon-Skills --skill amazon-listing-optimization -g
 ```

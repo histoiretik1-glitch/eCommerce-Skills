@@ -28,10 +28,19 @@ AI-powered restock alert and replenishment planning skill. Calculates optimal re
 - Provides data-driven recommendations with industry benchmarks
 - Outputs ready-to-implement plans, not just generic advice
 
-## Install
+## Installation
+
+Part of the **`ecommerce-skills`** Claude Code plugin (all 162 skills). In Claude Code:
 
 ```
-clawhub install restock-alert
+/plugin marketplace add histoiretik1-glitch/eCommerce-Skills
+/plugin install ecommerce-skills@ecommerce-skills
+```
+
+This skill only, with the Skills CLI (Claude Code, Cursor, Codex and other agents):
+
+```bash
+npx skills add histoiretik1-glitch/eCommerce-Skills --skill restock-alert -g
 ```
 
 ## Usage

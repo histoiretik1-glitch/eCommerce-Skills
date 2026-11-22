@@ -1,6 +1,6 @@
 ---
 name: ecommerce-checkout-optimization
-description: "Optimize e-commerce checkout flow to reduce cart abandonment. Friction analysis, payment method optimization, trust signals, and checkout UX best practices."
+description: "Optimize e-commerce checkout flow to reduce cart abandonment. Friction analysis, payment method optimization, trust signals, and checkout UX best practices. Use when a store has high cart or checkout abandonment, wants to add payment methods, or asks how to simplify checkout (for Shopify-specific checkout settings use `shopify-checkout-customization`)."
 metadata:
   nexscope:
     emoji: "💳"
@@ -15,10 +15,19 @@ Optimize e-commerce checkout flow to reduce cart abandonment. Friction analysis,
 
 Built by [Nexscope](https://www.nexscope.ai/?co-from=skill) — your AI assistant for smarter e-commerce decisions.
 
-## Install
+## Installation
+
+Part of the **`ecommerce-skills`** Claude Code plugin (all 162 skills). In Claude Code:
+
+```
+/plugin marketplace add histoiretik1-glitch/eCommerce-Skills
+/plugin install ecommerce-skills@ecommerce-skills
+```
+
+This skill only, with the Skills CLI (Claude Code, Cursor, Codex and other agents):
 
 ```bash
-npx skills add nexscope-ai/eCommerce-Skills --skill ecommerce-checkout-optimization -g
+npx skills add histoiretik1-glitch/eCommerce-Skills --skill ecommerce-checkout-optimization -g
 ```
 
 ## Usage

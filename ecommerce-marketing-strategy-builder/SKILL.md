@@ -1,6 +1,6 @@
 ---
 name: ecommerce-marketing-strategy-builder
-description: "Full-stack e-commerce marketing strategy builder. Analyzes your product, market, and competitors, then builds a complete omnichannel marketing plan covering paid ads, SEO, email/SMS, content marketing, social media, influencer partnerships, and referral programs. Includes target audience persona, competitive landscape, channel prioritization with budget allocation, content direction, and a 90-day action plan. Works for any e-commerce platform — Shopify, Amazon, Etsy, WooCommerce, TikTok Shop, and more. No API key required."
+description: "Full-stack e-commerce marketing strategy builder. Analyzes your product, market, and competitors, then builds a complete omnichannel marketing plan covering paid ads, SEO, email/SMS, content marketing, social media, influencer partnerships, and referral programs. Includes target audience persona, competitive landscape, channel prioritization with budget allocation, content direction, and a 90-day action plan. Works for any e-commerce platform — Shopify, Amazon, Etsy, WooCommerce, TikTok Shop, and more. No API key required. Use when a brand asks for a complete marketing plan, a channel mix and budget split, or how to grow sales through marketing."
 metadata:
   nexscope:
     emoji: 🎯
@@ -13,8 +13,17 @@ Build a complete omnichannel marketing strategy for your e-commerce business. Co
 
 ## Installation
 
+Part of the **`ecommerce-skills`** Claude Code plugin (all 162 skills). In Claude Code:
+
+```
+/plugin marketplace add histoiretik1-glitch/eCommerce-Skills
+/plugin install ecommerce-skills@ecommerce-skills
+```
+
+This skill only, with the Skills CLI (Claude Code, Cursor, Codex and other agents):
+
 ```bash
-npx skills add nexscope-ai/eCommerce-Skills --skill ecommerce-marketing-strategy-builder -g
+npx skills add histoiretik1-glitch/eCommerce-Skills --skill ecommerce-marketing-strategy-builder -g
 ```
 
 ## Capabilities
@@ -416,9 +425,7 @@ This skill builds the strategy. For execution on specific channels:
 
 - **[ecommerce-ppc-strategy-planner](https://github.com/nexscope-ai/eCommerce-Skills/tree/main/ecommerce-ppc-strategy-planner)** — Detailed paid ads strategy for Google, Meta, and TikTok with ad copy + creative prompts
 
-```bash
-npx skills add nexscope-ai/eCommerce-Skills --skill ecommerce-ppc-strategy-planner -g
-```
+Use the `ecommerce-ppc-strategy-planner` skill (included in the `ecommerce-skills` plugin).
 
 Selling on Amazon? See [nexscope-ai/Amazon-Skills](https://github.com/nexscope-ai/Amazon-Skills) for keyword research, listing optimization, and Amazon PPC.
 

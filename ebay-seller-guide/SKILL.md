@@ -18,10 +18,19 @@ Complete guide for selling on eBay — auction and fixed-price strategies, listi
 - Top Rated Seller requirements and benefits
 - International selling and Global Shipping Program
 
-## Install
+## Installation
+
+Part of the **`ecommerce-skills`** Claude Code plugin (all 162 skills). In Claude Code:
+
+```
+/plugin marketplace add histoiretik1-glitch/eCommerce-Skills
+/plugin install ecommerce-skills@ecommerce-skills
+```
+
+This skill only, with the Skills CLI (Claude Code, Cursor, Codex and other agents):
 
 ```bash
-npx skills add nexscope/ebay-seller-guide
+npx skills add histoiretik1-glitch/eCommerce-Skills --skill ebay-seller-guide -g
 ```
 
 ## Usage

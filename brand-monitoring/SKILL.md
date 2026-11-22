@@ -2,7 +2,7 @@
 name: brand-monitoring
 version: 1.0.0
 author: Nexscope AI
-description: "Brand monitoring tool for tracking mentions across social media platforms. Monitor Reddit, Google News, YouTube, and DuckDuckGo for brand mentions. Includes sentiment analysis, trend tracking, crisis detection, and competitor comparison. No API key required for basic monitoring."
+description: "Brand monitoring tool for tracking mentions across social media platforms. Monitor Reddit, Google News, YouTube, and DuckDuckGo for brand mentions. Includes sentiment analysis, trend tracking, crisis detection, and competitor comparison. No API key required for basic monitoring. Use when a brand asks what people are saying about it online, wants mention alerts, sentiment tracking or early warning of a PR crisis."
 metadata: {"nexscope":{"emoji":"📡","category":"ecommerce"}}
 ---
 
@@ -12,8 +12,17 @@ Track brand mentions across social media platforms and analyze sentiment.
 
 ## Installation
 
+Part of the **`ecommerce-skills`** Claude Code plugin (all 162 skills). In Claude Code:
+
+```
+/plugin marketplace add histoiretik1-glitch/eCommerce-Skills
+/plugin install ecommerce-skills@ecommerce-skills
+```
+
+This skill only, with the Skills CLI (Claude Code, Cursor, Codex and other agents):
+
 ```bash
-npx skills add nexscope-ai/eCommerce-Skills --skill brand-monitoring -g
+npx skills add histoiretik1-glitch/eCommerce-Skills --skill brand-monitoring -g
 ```
 
 ## Features

@@ -1,6 +1,6 @@
 ---
 name: etsy-print-on-demand
-description: "POD integration — Printful, Printify, mockups, niche selection, margin optimization"
+description: "Etsy print-on-demand (POD). Sets up Printful, Printify or similar integrations with Etsy, picks niches and designs, creates mockups, prices products after POD and Etsy fees, and handles production times and Etsy's production-partner disclosure. Use when someone wants to sell print-on-demand products on Etsy or improve POD margins."
 metadata:
   nexscope:
     category: etsy
@@ -21,10 +21,19 @@ POD integration — Printful, Printify, mockups, niche selection, margin optimiz
 - Generate step-by-step implementation plans tailored to your shop
 - Compare tools, strategies, and approaches with pros/cons analysis
 
-## Install
+## Installation
+
+Part of the **`ecommerce-skills`** Claude Code plugin (all 162 skills). In Claude Code:
+
+```
+/plugin marketplace add histoiretik1-glitch/eCommerce-Skills
+/plugin install ecommerce-skills@ecommerce-skills
+```
+
+This skill only, with the Skills CLI (Claude Code, Cursor, Codex and other agents):
 
 ```bash
-npx skills add nexscope-ai/eCommerce-Skills --skill etsy-print-on-demand -g
+npx skills add histoiretik1-glitch/eCommerce-Skills --skill etsy-print-on-demand -g
 ```
 
 ## Usage

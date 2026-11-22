@@ -1,6 +1,6 @@
 ---
 name: etsy-multi-shop
-description: "Multi-shop management — category separation, brand differentiation, efficiency optimization"
+description: "Etsy multi-shop management. Decides when to open a second Etsy shop, how to split categories and brands between shops, and how to run several shops efficiently within Etsy's rules. Use when an Etsy seller asks about opening or managing more than one Etsy shop."
 metadata:
   nexscope:
     category: etsy
@@ -21,10 +21,19 @@ Multi-shop management — category separation, brand differentiation, efficiency
 - Generate step-by-step implementation plans tailored to your shop
 - Compare tools, strategies, and approaches with pros/cons analysis
 
-## Install
+## Installation
+
+Part of the **`ecommerce-skills`** Claude Code plugin (all 162 skills). In Claude Code:
+
+```
+/plugin marketplace add histoiretik1-glitch/eCommerce-Skills
+/plugin install ecommerce-skills@ecommerce-skills
+```
+
+This skill only, with the Skills CLI (Claude Code, Cursor, Codex and other agents):
 
 ```bash
-npx skills add nexscope-ai/eCommerce-Skills --skill etsy-multi-shop -g
+npx skills add histoiretik1-glitch/eCommerce-Skills --skill etsy-multi-shop -g
 ```
 
 ## Usage

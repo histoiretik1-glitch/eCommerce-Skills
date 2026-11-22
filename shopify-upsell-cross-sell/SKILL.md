@@ -1,6 +1,6 @@
 ---
 name: shopify-upsell-cross-sell
-description: "Upsell and cross-sell strategy — product recommendations, cart upsells, post-purchase offers, bundles"
+description: "Shopify upsell and cross-sell strategy. Adds product recommendations, cart and checkout upsells, post-purchase offers and bundles to a Shopify store to raise average order value. Use when a Shopify store owner wants higher AOV or asks which upsell apps and offers to use."
 metadata:
   nexscope:
     category: shopify
@@ -21,10 +21,19 @@ Upsell and cross-sell strategy — product recommendations, cart upsells, post-p
 - Generate step-by-step implementation plans tailored to your business stage
 - Compare tools, apps, and strategies with pros/cons analysis
 
-## Install
+## Installation
+
+Part of the **`ecommerce-skills`** Claude Code plugin (all 162 skills). In Claude Code:
+
+```
+/plugin marketplace add histoiretik1-glitch/eCommerce-Skills
+/plugin install ecommerce-skills@ecommerce-skills
+```
+
+This skill only, with the Skills CLI (Claude Code, Cursor, Codex and other agents):
 
 ```bash
-npx skills add nexscope-ai/eCommerce-Skills --skill shopify-upsell-cross-sell -g
+npx skills add histoiretik1-glitch/eCommerce-Skills --skill shopify-upsell-cross-sell -g
 ```
 
 ## Usage

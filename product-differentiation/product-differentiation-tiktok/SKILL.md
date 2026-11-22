@@ -12,8 +12,17 @@ Develop winning product differentiation strategies for TikTok Shop.
 
 ## Installation
 
+Part of the **`ecommerce-skills`** Claude Code plugin (all 162 skills). In Claude Code:
+
+```
+/plugin marketplace add histoiretik1-glitch/eCommerce-Skills
+/plugin install ecommerce-skills@ecommerce-skills
+```
+
+This skill only, with the Skills CLI (Claude Code, Cursor, Codex and other agents):
+
 ```bash
-npx skills add nexscope-ai/eCommerce-Skills --skill product-differentiation-tiktok -g
+npx skills add histoiretik1-glitch/eCommerce-Skills --skill product-differentiation-tiktok -g
 ```
 
 ## Features

@@ -1,6 +1,6 @@
 ---
 name: product-launch-strategy
-description: "Plan and execute e-commerce product launches. Pre-launch, launch day, and post-launch playbooks for Amazon, Shopify, and multi-channel sellers. Covers inventory, pricing, advertising, and review strategy."
+description: "Plan and execute e-commerce product launches. Pre-launch, launch day, and post-launch playbooks for Amazon, Shopify, and multi-channel sellers. Covers inventory, pricing, advertising, and review strategy. Use when a seller is preparing to launch a new product and needs a pre-launch, launch-day and post-launch plan."
 metadata:
   nexscope:
     emoji: "🚀"
@@ -15,10 +15,19 @@ Plan and execute e-commerce product launches. Pre-launch, launch day, and post-l
 
 Built by [Nexscope](https://www.nexscope.ai/?co-from=skill) — your AI assistant for smarter e-commerce decisions.
 
-## Install
+## Installation
+
+Part of the **`ecommerce-skills`** Claude Code plugin (all 162 skills). In Claude Code:
+
+```
+/plugin marketplace add histoiretik1-glitch/eCommerce-Skills
+/plugin install ecommerce-skills@ecommerce-skills
+```
+
+This skill only, with the Skills CLI (Claude Code, Cursor, Codex and other agents):
 
 ```bash
-npx skills add nexscope-ai/eCommerce-Skills --skill product-launch-strategy -g
+npx skills add histoiretik1-glitch/eCommerce-Skills --skill product-launch-strategy -g
 ```
 
 ## Usage

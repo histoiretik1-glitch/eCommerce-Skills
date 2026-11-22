@@ -18,10 +18,19 @@ Increase Shopify store conversion rates with data-driven optimization. Product p
 - Urgency and scarcity tactics (ethical implementation)
 - Post-purchase upsell and cross-sell setup
 
-## Install
+## Installation
+
+Part of the **`ecommerce-skills`** Claude Code plugin (all 162 skills). In Claude Code:
+
+```
+/plugin marketplace add histoiretik1-glitch/eCommerce-Skills
+/plugin install ecommerce-skills@ecommerce-skills
+```
+
+This skill only, with the Skills CLI (Claude Code, Cursor, Codex and other agents):
 
 ```bash
-npx skills add nexscope/shopify-conversion-optimization
+npx skills add histoiretik1-glitch/eCommerce-Skills --skill shopify-conversion-optimization -g
 ```
 
 ## Usage

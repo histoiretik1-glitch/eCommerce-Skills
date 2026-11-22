@@ -1,6 +1,6 @@
 ---
 name: product-title-optimization
-description: "Optimize product titles for search visibility and click-through rate across e-commerce platforms. Platform-specific title rules for Amazon (200 chars), Etsy (140 chars), Walmart, Shopify SEO, and eBay."
+description: "Optimize product titles for search visibility and click-through rate across e-commerce platforms. Platform-specific title rules for Amazon (200 chars), Etsy (140 chars), Walmart, Shopify SEO, and eBay. Use when a seller asks to write or improve product titles for search ranking and click-through on a specific marketplace."
 metadata:
   nexscope:
     emoji: "✏️"
@@ -15,10 +15,19 @@ Optimize product titles for search visibility and click-through rate across e-co
 
 Built by [Nexscope](https://www.nexscope.ai/?co-from=skill) — your AI assistant for smarter e-commerce decisions.
 
-## Install
+## Installation
+
+Part of the **`ecommerce-skills`** Claude Code plugin (all 162 skills). In Claude Code:
+
+```
+/plugin marketplace add histoiretik1-glitch/eCommerce-Skills
+/plugin install ecommerce-skills@ecommerce-skills
+```
+
+This skill only, with the Skills CLI (Claude Code, Cursor, Codex and other agents):
 
 ```bash
-npx skills add nexscope-ai/eCommerce-Skills --skill product-title-optimization -g
+npx skills add histoiretik1-glitch/eCommerce-Skills --skill product-title-optimization -g
 ```
 
 ## Usage

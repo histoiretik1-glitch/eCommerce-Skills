@@ -1,6 +1,6 @@
 ---
 name: etsy-offsite-ads
-description: "Offsite Ads analysis — when to opt out, ROI tracking, fee impact on margins, attribution"
+description: "Etsy Offsite Ads analysis. Explains how Offsite Ads fees are charged on attributed sales, measures their real cost and return on the seller's margins, and decides whether to opt out (when the shop is eligible to). Use when an Etsy seller asks about Offsite Ads fees, attribution, or whether to opt out (for on-Etsy ads use `etsy-advertising`)."
 metadata:
   nexscope:
     category: etsy
@@ -21,10 +21,19 @@ Offsite Ads analysis — when to opt out, ROI tracking, fee impact on margins, a
 - Generate step-by-step implementation plans tailored to your shop
 - Compare tools, strategies, and approaches with pros/cons analysis
 
-## Install
+## Installation
+
+Part of the **`ecommerce-skills`** Claude Code plugin (all 162 skills). In Claude Code:
+
+```
+/plugin marketplace add histoiretik1-glitch/eCommerce-Skills
+/plugin install ecommerce-skills@ecommerce-skills
+```
+
+This skill only, with the Skills CLI (Claude Code, Cursor, Codex and other agents):
 
 ```bash
-npx skills add nexscope-ai/eCommerce-Skills --skill etsy-offsite-ads -g
+npx skills add histoiretik1-glitch/eCommerce-Skills --skill etsy-offsite-ads -g
 ```
 
 ## Usage

@@ -1,6 +1,6 @@
 ---
 name: walmart-listing-optimization
-description: "Optimize Walmart Marketplace product listings for search visibility and conversion. Covers Walmart SEO, content quality scoring, rich media, and Walmart-specific listing requirements."
+description: "Optimize Walmart Marketplace product listings for search visibility and conversion. Covers Walmart SEO, content quality scoring, rich media, and Walmart-specific listing requirements. Use when a Walmart seller asks to improve listing quality score, Walmart search ranking, item attributes, images or rich media."
 metadata:
   nexscope:
     emoji: "🏪"
@@ -15,10 +15,19 @@ Optimize Walmart Marketplace product listings for search visibility and conversi
 
 Built by [Nexscope](https://www.nexscope.ai/?co-from=skill) — your AI assistant for smarter e-commerce decisions.
 
-## Install
+## Installation
+
+Part of the **`ecommerce-skills`** Claude Code plugin (all 162 skills). In Claude Code:
+
+```
+/plugin marketplace add histoiretik1-glitch/eCommerce-Skills
+/plugin install ecommerce-skills@ecommerce-skills
+```
+
+This skill only, with the Skills CLI (Claude Code, Cursor, Codex and other agents):
 
 ```bash
-npx skills add nexscope-ai/eCommerce-Skills --skill walmart-listing-optimization -g
+npx skills add histoiretik1-glitch/eCommerce-Skills --skill walmart-listing-optimization -g
 ```
 
 ## Usage

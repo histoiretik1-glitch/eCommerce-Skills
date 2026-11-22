@@ -18,10 +18,19 @@ Master Shopify analytics and reporting. Understand key metrics, build custom rep
 - Third-party analytics integration (GA4, Triple Whale, Polar)
 - Benchmarking against industry averages
 
-## Install
+## Installation
+
+Part of the **`ecommerce-skills`** Claude Code plugin (all 162 skills). In Claude Code:
+
+```
+/plugin marketplace add histoiretik1-glitch/eCommerce-Skills
+/plugin install ecommerce-skills@ecommerce-skills
+```
+
+This skill only, with the Skills CLI (Claude Code, Cursor, Codex and other agents):
 
 ```bash
-npx skills add nexscope/shopify-analytics-guide
+npx skills add histoiretik1-glitch/eCommerce-Skills --skill shopify-analytics-guide -g
 ```
 
 ## Usage

@@ -1,6 +1,6 @@
 ---
 name: etsy-product-description
-description: "Product description writing — keyword integration, benefit-focused copy, FAQ, formatting"
+description: "Etsy product description writing. Writes Etsy listing descriptions that answer buyer questions (materials, size, personalization, shipping, care), use keywords naturally and are easy to scan on mobile. Use when an Etsy seller asks to write or improve a listing description (for titles and tags use `etsy-seo` and `etsy-seo-tags`)."
 metadata:
   nexscope:
     category: etsy
@@ -21,10 +21,19 @@ Product description writing — keyword integration, benefit-focused copy, FAQ, 
 - Generate step-by-step implementation plans tailored to your shop
 - Compare tools, strategies, and approaches with pros/cons analysis
 
-## Install
+## Installation
+
+Part of the **`ecommerce-skills`** Claude Code plugin (all 162 skills). In Claude Code:
+
+```
+/plugin marketplace add histoiretik1-glitch/eCommerce-Skills
+/plugin install ecommerce-skills@ecommerce-skills
+```
+
+This skill only, with the Skills CLI (Claude Code, Cursor, Codex and other agents):
 
 ```bash
-npx skills add nexscope-ai/eCommerce-Skills --skill etsy-product-description -g
+npx skills add histoiretik1-glitch/eCommerce-Skills --skill etsy-product-description -g
 ```
 
 ## Usage

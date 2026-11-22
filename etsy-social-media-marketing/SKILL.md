@@ -1,6 +1,6 @@
 ---
 name: etsy-social-media-marketing
-description: "Social media marketing for Etsy — Pinterest, Instagram, TikTok strategies to drive shop traffic"
+description: "Social media marketing for Etsy shops. Drives traffic to an Etsy shop from Pinterest, Instagram and TikTok with content ideas, posting plans and links to listings. Use when an Etsy seller asks how to promote their shop on social media or get traffic from outside Etsy."
 metadata:
   nexscope:
     category: etsy
@@ -21,10 +21,19 @@ Social media marketing for Etsy — Pinterest, Instagram, TikTok strategies to d
 - Generate step-by-step implementation plans tailored to your shop
 - Compare tools, strategies, and approaches with pros/cons analysis
 
-## Install
+## Installation
+
+Part of the **`ecommerce-skills`** Claude Code plugin (all 162 skills). In Claude Code:
+
+```
+/plugin marketplace add histoiretik1-glitch/eCommerce-Skills
+/plugin install ecommerce-skills@ecommerce-skills
+```
+
+This skill only, with the Skills CLI (Claude Code, Cursor, Codex and other agents):
 
 ```bash
-npx skills add nexscope-ai/eCommerce-Skills --skill etsy-social-media-marketing -g
+npx skills add histoiretik1-glitch/eCommerce-Skills --skill etsy-social-media-marketing -g
 ```
 
 ## Usage

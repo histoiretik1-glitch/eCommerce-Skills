@@ -1,6 +1,6 @@
 ---
 name: etsy-shop-branding
-description: "Shop branding — banner design, logo, brand story, cohesive listing photography, packaging"
+description: "Etsy shop branding. Creates a consistent shop identity on Etsy: shop name, banner, logo, shop announcement and About section, photo style and packaging. Use when an Etsy seller asks how to make their shop look more professional or build a recognizable brand on Etsy."
 metadata:
   nexscope:
     category: etsy
@@ -21,10 +21,19 @@ Shop branding — banner design, logo, brand story, cohesive listing photography
 - Generate step-by-step implementation plans tailored to your shop
 - Compare tools, strategies, and approaches with pros/cons analysis
 
-## Install
+## Installation
+
+Part of the **`ecommerce-skills`** Claude Code plugin (all 162 skills). In Claude Code:
+
+```
+/plugin marketplace add histoiretik1-glitch/eCommerce-Skills
+/plugin install ecommerce-skills@ecommerce-skills
+```
+
+This skill only, with the Skills CLI (Claude Code, Cursor, Codex and other agents):
 
 ```bash
-npx skills add nexscope-ai/eCommerce-Skills --skill etsy-shop-branding -g
+npx skills add histoiretik1-glitch/eCommerce-Skills --skill etsy-shop-branding -g
 ```
 
 ## Usage

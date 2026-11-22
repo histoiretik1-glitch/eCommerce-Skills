@@ -1,6 +1,6 @@
 ---
 name: etsy-shop-analytics
-description: "Shop analytics — traffic sources, conversion rates, search terms, top listings performance"
+description: "Etsy shop analytics. Reads Etsy Stats (visits, traffic sources, search terms, conversion rate, top listings) to find what drives sales and which listings to fix. Use when an Etsy seller asks why sales dropped, which listings perform best, or how to use Etsy Stats."
 metadata:
   nexscope:
     category: etsy
@@ -21,10 +21,19 @@ Shop analytics — traffic sources, conversion rates, search terms, top listings
 - Generate step-by-step implementation plans tailored to your shop
 - Compare tools, strategies, and approaches with pros/cons analysis
 
-## Install
+## Installation
+
+Part of the **`ecommerce-skills`** Claude Code plugin (all 162 skills). In Claude Code:
+
+```
+/plugin marketplace add histoiretik1-glitch/eCommerce-Skills
+/plugin install ecommerce-skills@ecommerce-skills
+```
+
+This skill only, with the Skills CLI (Claude Code, Cursor, Codex and other agents):
 
 ```bash
-npx skills add nexscope-ai/eCommerce-Skills --skill etsy-shop-analytics -g
+npx skills add histoiretik1-glitch/eCommerce-Skills --skill etsy-shop-analytics -g
 ```
 
 ## Usage

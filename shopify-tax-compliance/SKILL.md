@@ -1,6 +1,6 @@
 ---
 name: shopify-tax-compliance
-description: "Tax setup and compliance — sales tax, VAT, duty collection, tax-exempt customers, reporting"
+description: "Shopify tax setup and compliance. Configures sales tax, VAT/GST, duties, tax-exempt customers and tax reports in Shopify. Use when a Shopify store owner asks how to charge or report taxes correctly in Shopify (general guidance, not legal or tax advice)."
 metadata:
   nexscope:
     category: shopify
@@ -21,10 +21,19 @@ Tax setup and compliance — sales tax, VAT, duty collection, tax-exempt custome
 - Generate step-by-step implementation plans tailored to your business stage
 - Compare tools, apps, and strategies with pros/cons analysis
 
-## Install
+## Installation
+
+Part of the **`ecommerce-skills`** Claude Code plugin (all 162 skills). In Claude Code:
+
+```
+/plugin marketplace add histoiretik1-glitch/eCommerce-Skills
+/plugin install ecommerce-skills@ecommerce-skills
+```
+
+This skill only, with the Skills CLI (Claude Code, Cursor, Codex and other agents):
 
 ```bash
-npx skills add nexscope-ai/eCommerce-Skills --skill shopify-tax-compliance -g
+npx skills add histoiretik1-glitch/eCommerce-Skills --skill shopify-tax-compliance -g
 ```
 
 ## Usage

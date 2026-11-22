@@ -1,6 +1,6 @@
 ---
 name: ecommerce-ppc-strategy-planner
-description: "Cross-platform PPC strategy planner for ecommerce businesses. Analyzes your product and margins, recommends the right advertising platforms (Google Ads, Meta Ads, TikTok Ads), calculates ROAS targets, allocates budget across channels, and generates platform-specific campaign briefs with ad copy and creative direction. Two modes: (A) Build — design a multi-platform ad strategy from scratch, (B) Optimize — audit existing cross-platform campaigns and reallocate budget. Works for Shopify, WooCommerce, standalone stores, and marketplace sellers expanding to external traffic. No API key required."
+description: "Cross-platform PPC strategy planner for ecommerce businesses. Analyzes your product and margins, recommends the right advertising platforms (Google Ads, Meta Ads, TikTok Ads), calculates ROAS targets, allocates budget across channels, and generates platform-specific campaign briefs with ad copy and creative direction. Two modes: (A) Build — design a multi-platform ad strategy from scratch, (B) Optimize — audit existing cross-platform campaigns and reallocate budget. Works for Shopify, WooCommerce, standalone stores, and marketplace sellers expanding to external traffic. No API key required. Use when a seller asks which ad platforms to use, how to split an ad budget, what ROAS to target or how to plan paid campaigns across channels."
 metadata: {"nexscope":{"emoji":"📊","category":"ecommerce"}}
 ---
 
@@ -10,8 +10,17 @@ Plan your cross-platform advertising strategy: which platforms to use, how much 
 
 ## Installation
 
+Part of the **`ecommerce-skills`** Claude Code plugin (all 162 skills). In Claude Code:
+
+```
+/plugin marketplace add histoiretik1-glitch/eCommerce-Skills
+/plugin install ecommerce-skills@ecommerce-skills
+```
+
+This skill only, with the Skills CLI (Claude Code, Cursor, Codex and other agents):
+
 ```bash
-npx skills add nexscope-ai/eCommerce-Skills --skill ecommerce-ppc-strategy-planner -g
+npx skills add histoiretik1-glitch/eCommerce-Skills --skill ecommerce-ppc-strategy-planner -g
 ```
 
 ## Two Modes
@@ -239,7 +248,7 @@ For each recommended platform, output a campaign brief:
 
 **Google Ads Brief:**
 - Campaign type recommendation (Shopping, Search, Performance Max)
-- Keyword themes (not full keyword list — that's for google-ads-ecommerce skill)
+- Keyword themes (not full keyword list — use `ecommerce-keyword-research` and `google-shopping-optimization` for that)
 - Bidding strategy recommendation (Target ROAS, Maximize Conversions)
 - Daily budget
 - Key settings (location targeting, device bids, scheduling)
@@ -508,15 +517,17 @@ Week 4: [full review, reallocate]
 
 This skill covers cross-platform strategy. For platform-specific execution, check out these dedicated skills:
 
-- **google-ads-ecommerce** — Google Shopping, Search, and Performance Max campaign setup (coming soon)
-- **meta-ads-ecommerce** — Facebook and Instagram ad campaign setup (coming soon)
-- **tiktok-ads-ecommerce** — TikTok ad campaign setup (coming soon)
+- **google-shopping-optimization** — Google Shopping feed, bidding and Performance Max (`shopify-google-channel` for Shopify stores)
+- **shopify-facebook-instagram-shop** — Facebook and Instagram shops and social selling setup
+- **tiktok-shop-ads** — TikTok Shop ad campaigns (Product, Video and LIVE Shopping Ads)
 
 More e-commerce skills: [nexscope-ai/eCommerce-Skills](https://github.com/nexscope-ai/eCommerce-Skills)
 
 ### Selling on Amazon?
 
 **[amazon-ppc-campaign](https://github.com/nexscope-ai/Amazon-Skills/tree/main/amazon-ppc-campaign)** — Build and optimize Amazon Sponsored Products / Brands / Display campaigns. Calculates ACoS targets, groups keywords by campaign type, sets bid strategies based on Amazon's suggested ranges. Output follows Seller Central hierarchy — ready to implement.
+
+External skill `amazon-ppc-campaign` from the separate [Amazon-Skills](https://github.com/nexscope-ai/Amazon-Skills) collection (not part of this plugin):
 
 ```bash
 npx skills add nexscope-ai/Amazon-Skills --skill amazon-ppc-campaign -g

@@ -1,6 +1,6 @@
 ---
 name: shopify-inventory-management
-description: "Multi-location inventory — transfers, low stock alerts, demand forecasting, safety stock, ABC analysis"
+description: "Shopify inventory management. Manages stock across Shopify locations: transfers, low-stock alerts, demand forecasting, safety stock and ABC analysis. Use when a Shopify store owner asks how to track or forecast inventory, avoid stock-outs or manage several locations."
 metadata:
   nexscope:
     category: shopify
@@ -21,10 +21,19 @@ Multi-location inventory — transfers, low stock alerts, demand forecasting, sa
 - Generate step-by-step implementation plans tailored to your business stage
 - Compare tools, apps, and strategies with pros/cons analysis
 
-## Install
+## Installation
+
+Part of the **`ecommerce-skills`** Claude Code plugin (all 162 skills). In Claude Code:
+
+```
+/plugin marketplace add histoiretik1-glitch/eCommerce-Skills
+/plugin install ecommerce-skills@ecommerce-skills
+```
+
+This skill only, with the Skills CLI (Claude Code, Cursor, Codex and other agents):
 
 ```bash
-npx skills add nexscope-ai/eCommerce-Skills --skill shopify-inventory-management -g
+npx skills add histoiretik1-glitch/eCommerce-Skills --skill shopify-inventory-management -g
 ```
 
 ## Usage

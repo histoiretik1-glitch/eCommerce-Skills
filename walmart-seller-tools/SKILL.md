@@ -18,10 +18,19 @@ Essential tools for Walmart Marketplace sellers. Product research, listing optim
 - WFS inventory planning tools
 - Multi-channel tools with Walmart integration
 
-## Install
+## Installation
+
+Part of the **`ecommerce-skills`** Claude Code plugin (all 162 skills). In Claude Code:
+
+```
+/plugin marketplace add histoiretik1-glitch/eCommerce-Skills
+/plugin install ecommerce-skills@ecommerce-skills
+```
+
+This skill only, with the Skills CLI (Claude Code, Cursor, Codex and other agents):
 
 ```bash
-npx skills add nexscope/walmart-seller-tools
+npx skills add histoiretik1-glitch/eCommerce-Skills --skill walmart-seller-tools -g
 ```
 
 ## Usage

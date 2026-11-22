@@ -1,6 +1,6 @@
 ---
 name: shopify-product-photography-guide
-description: "DIY product photography — setup, lighting, backgrounds, editing, lifestyle shots, 360 views"
+description: "Shopify product photography guide. DIY setup, lighting, backgrounds, editing, lifestyle and 360 images for Shopify product pages, with image sizes and file optimization for page speed. Use when a Shopify store owner asks how to take or improve product photos."
 metadata:
   nexscope:
     category: shopify
@@ -21,10 +21,19 @@ DIY product photography — setup, lighting, backgrounds, editing, lifestyle sho
 - Generate step-by-step implementation plans tailored to your business stage
 - Compare tools, apps, and strategies with pros/cons analysis
 
-## Install
+## Installation
+
+Part of the **`ecommerce-skills`** Claude Code plugin (all 162 skills). In Claude Code:
+
+```
+/plugin marketplace add histoiretik1-glitch/eCommerce-Skills
+/plugin install ecommerce-skills@ecommerce-skills
+```
+
+This skill only, with the Skills CLI (Claude Code, Cursor, Codex and other agents):
 
 ```bash
-npx skills add nexscope-ai/eCommerce-Skills --skill shopify-product-photography-guide -g
+npx skills add histoiretik1-glitch/eCommerce-Skills --skill shopify-product-photography-guide -g
 ```
 
 ## Usage

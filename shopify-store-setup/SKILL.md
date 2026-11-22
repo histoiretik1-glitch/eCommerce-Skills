@@ -18,10 +18,19 @@ Step-by-step Shopify store setup guide. From account creation to first sale — 
 - Domain connection and email setup
 - Pre-launch checklist and soft launch strategy
 
-## Install
+## Installation
+
+Part of the **`ecommerce-skills`** Claude Code plugin (all 162 skills). In Claude Code:
+
+```
+/plugin marketplace add histoiretik1-glitch/eCommerce-Skills
+/plugin install ecommerce-skills@ecommerce-skills
+```
+
+This skill only, with the Skills CLI (Claude Code, Cursor, Codex and other agents):
 
 ```bash
-npx skills add nexscope/shopify-store-setup
+npx skills add histoiretik1-glitch/eCommerce-Skills --skill shopify-store-setup -g
 ```
 
 ## Usage

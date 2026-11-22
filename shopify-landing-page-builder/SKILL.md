@@ -1,6 +1,6 @@
 ---
 name: shopify-landing-page-builder
-description: "High-converting landing pages — campaign pages, collection pages, seasonal promos, A/B testing"
+description: "Shopify landing page builder. Plans high-converting campaign, collection and seasonal landing pages on Shopify (theme sections or page builders) with copy, layout and A/B test ideas. Use when a Shopify store owner needs a landing page for a campaign, launch or ad traffic (to audit an existing page use `ecommerce-landing-page`)."
 metadata:
   nexscope:
     category: shopify
@@ -21,10 +21,19 @@ High-converting landing pages — campaign pages, collection pages, seasonal pro
 - Generate step-by-step implementation plans tailored to your business stage
 - Compare tools, apps, and strategies with pros/cons analysis
 
-## Install
+## Installation
+
+Part of the **`ecommerce-skills`** Claude Code plugin (all 162 skills). In Claude Code:
+
+```
+/plugin marketplace add histoiretik1-glitch/eCommerce-Skills
+/plugin install ecommerce-skills@ecommerce-skills
+```
+
+This skill only, with the Skills CLI (Claude Code, Cursor, Codex and other agents):
 
 ```bash
-npx skills add nexscope-ai/eCommerce-Skills --skill shopify-landing-page-builder -g
+npx skills add histoiretik1-glitch/eCommerce-Skills --skill shopify-landing-page-builder -g
 ```
 
 ## Usage

@@ -1,6 +1,6 @@
 ---
 name: etsy-listing-photography
-description: "Product photography for Etsy — composition, lighting, backgrounds, editing, lifestyle shots, 360 views"
+description: "Etsy listing photography guide. Plans the image set for an Etsy listing (main thumbnail, scale, detail, lifestyle, packaging, video), with lighting, backgrounds, phone settings and editing for handmade and vintage items. Use when an Etsy seller asks how to take better product photos or why their thumbnails get few clicks."
 metadata:
   nexscope:
     category: etsy
@@ -21,10 +21,19 @@ Product photography for Etsy — composition, lighting, backgrounds, editing, li
 - Generate step-by-step implementation plans tailored to your shop
 - Compare tools, strategies, and approaches with pros/cons analysis
 
-## Install
+## Installation
+
+Part of the **`ecommerce-skills`** Claude Code plugin (all 162 skills). In Claude Code:
+
+```
+/plugin marketplace add histoiretik1-glitch/eCommerce-Skills
+/plugin install ecommerce-skills@ecommerce-skills
+```
+
+This skill only, with the Skills CLI (Claude Code, Cursor, Codex and other agents):
 
 ```bash
-npx skills add nexscope-ai/eCommerce-Skills --skill etsy-listing-photography -g
+npx skills add histoiretik1-glitch/eCommerce-Skills --skill etsy-listing-photography -g
 ```
 
 ## Usage

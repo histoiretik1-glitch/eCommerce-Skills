@@ -1,6 +1,6 @@
 ---
 name: ecommerce-returns-management
-description: "Optimize e-commerce returns process and reduce return rates. Returns policy design, reverse logistics, root cause analysis, and customer retention through better returns experience."
+description: "Optimize e-commerce returns process and reduce return rates. Returns policy design, reverse logistics, root cause analysis, and customer retention through better returns experience. Use when a seller asks how to reduce return rates, write a return policy, handle reverse logistics or find out why customers return products."
 metadata:
   nexscope:
     emoji: "📥"
@@ -15,10 +15,19 @@ Optimize e-commerce returns process and reduce return rates. Returns policy desi
 
 Built by [Nexscope](https://www.nexscope.ai/?co-from=skill) — your AI assistant for smarter e-commerce decisions.
 
-## Install
+## Installation
+
+Part of the **`ecommerce-skills`** Claude Code plugin (all 162 skills). In Claude Code:
+
+```
+/plugin marketplace add histoiretik1-glitch/eCommerce-Skills
+/plugin install ecommerce-skills@ecommerce-skills
+```
+
+This skill only, with the Skills CLI (Claude Code, Cursor, Codex and other agents):
 
 ```bash
-npx skills add nexscope-ai/eCommerce-Skills --skill ecommerce-returns-management -g
+npx skills add histoiretik1-glitch/eCommerce-Skills --skill ecommerce-returns-management -g
 ```
 
 ## Usage

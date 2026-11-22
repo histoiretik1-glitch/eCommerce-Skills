@@ -1,6 +1,6 @@
 ---
 name: ecommerce-shipping-rates
-description: "Compare and optimize shipping rates across carriers and fulfillment methods. UPS, FedEx, USPS, DHL rate comparison, zone optimization, and shipping strategy to maximize margins."
+description: "Compare and optimize shipping rates across carriers and fulfillment methods. UPS, FedEx, USPS, DHL rate comparison, zone optimization, and shipping strategy to maximize margins. Use when a seller wants to compare carriers, cut shipping costs, set shipping prices or decide on free-shipping thresholds."
 metadata:
   nexscope:
     emoji: "🚚"
@@ -15,10 +15,19 @@ Compare and optimize shipping rates across carriers and fulfillment methods. UPS
 
 Built by [Nexscope](https://www.nexscope.ai/?co-from=skill) — your AI assistant for smarter e-commerce decisions.
 
-## Install
+## Installation
+
+Part of the **`ecommerce-skills`** Claude Code plugin (all 162 skills). In Claude Code:
+
+```
+/plugin marketplace add histoiretik1-glitch/eCommerce-Skills
+/plugin install ecommerce-skills@ecommerce-skills
+```
+
+This skill only, with the Skills CLI (Claude Code, Cursor, Codex and other agents):
 
 ```bash
-npx skills add nexscope-ai/eCommerce-Skills --skill ecommerce-shipping-rates -g
+npx skills add histoiretik1-glitch/eCommerce-Skills --skill ecommerce-shipping-rates -g
 ```
 
 ## Usage

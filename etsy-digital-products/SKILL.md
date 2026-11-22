@@ -1,6 +1,6 @@
 ---
 name: etsy-digital-products
-description: "Digital product creation and selling — templates, printables, planners, digital art, delivery setup"
+description: "Etsy digital products. Plans, creates and lists digital downloads on Etsy (printables, planners, templates, digital art, SVGs): file formats and delivery, pricing, listing photos and mockups, licensing and copyright. Use when someone wants to sell digital downloads on Etsy or improve sales of existing digital listings."
 metadata:
   nexscope:
     category: etsy
@@ -21,10 +21,19 @@ Digital product creation and selling — templates, printables, planners, digita
 - Generate step-by-step implementation plans tailored to your shop
 - Compare tools, strategies, and approaches with pros/cons analysis
 
-## Install
+## Installation
+
+Part of the **`ecommerce-skills`** Claude Code plugin (all 162 skills). In Claude Code:
+
+```
+/plugin marketplace add histoiretik1-glitch/eCommerce-Skills
+/plugin install ecommerce-skills@ecommerce-skills
+```
+
+This skill only, with the Skills CLI (Claude Code, Cursor, Codex and other agents):
 
 ```bash
-npx skills add nexscope-ai/eCommerce-Skills --skill etsy-digital-products -g
+npx skills add histoiretik1-glitch/eCommerce-Skills --skill etsy-digital-products -g
 ```
 
 ## Usage

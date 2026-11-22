@@ -1,6 +1,6 @@
 ---
 name: shopify-cart-abandonment
-description: "Cart abandonment recovery — email sequences, SMS, retargeting, exit intent, checkout friction audit"
+description: "Shopify cart and checkout abandonment recovery. Sets up abandoned-checkout emails and SMS, retargeting and exit-intent offers, and audits checkout friction on a Shopify store. Use when a Shopify store has many abandoned carts or checkouts and wants to recover them (for general email flows use `shopify-email-flows`)."
 metadata:
   nexscope:
     category: shopify
@@ -21,10 +21,19 @@ Cart abandonment recovery — email sequences, SMS, retargeting, exit intent, ch
 - Generate step-by-step implementation plans tailored to your business stage
 - Compare tools, apps, and strategies with pros/cons analysis
 
-## Install
+## Installation
+
+Part of the **`ecommerce-skills`** Claude Code plugin (all 162 skills). In Claude Code:
+
+```
+/plugin marketplace add histoiretik1-glitch/eCommerce-Skills
+/plugin install ecommerce-skills@ecommerce-skills
+```
+
+This skill only, with the Skills CLI (Claude Code, Cursor, Codex and other agents):
 
 ```bash
-npx skills add nexscope-ai/eCommerce-Skills --skill shopify-cart-abandonment -g
+npx skills add histoiretik1-glitch/eCommerce-Skills --skill shopify-cart-abandonment -g
 ```
 
 ## Usage

@@ -18,10 +18,19 @@ Systematic CRO for e-commerce stores. Audit conversion funnels, identify drop-of
 - Page speed impact on conversions
 - CRO testing roadmap and prioritization
 
-## Install
+## Installation
+
+Part of the **`ecommerce-skills`** Claude Code plugin (all 162 skills). In Claude Code:
+
+```
+/plugin marketplace add histoiretik1-glitch/eCommerce-Skills
+/plugin install ecommerce-skills@ecommerce-skills
+```
+
+This skill only, with the Skills CLI (Claude Code, Cursor, Codex and other agents):
 
 ```bash
-npx skills add nexscope/conversion-rate-optimization
+npx skills add histoiretik1-glitch/eCommerce-Skills --skill conversion-rate-optimization -g
 ```
 
 ## Usage

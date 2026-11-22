@@ -10,11 +10,20 @@ Generate platform-optimized product copy — titles, bullet points, descriptions
 
 ## Installation
 
-```bash
-npx skills add nexscope-ai/eCommerce-Skills --skill product-description-generator -g
+Part of the **`ecommerce-skills`** Claude Code plugin (all 162 skills). In Claude Code:
+
+```
+/plugin marketplace add histoiretik1-glitch/eCommerce-Skills
+/plugin install ecommerce-skills@ecommerce-skills
 ```
 
-> **For Amazon listings**, use our dedicated skill with Cosmo algorithm optimization:
+This skill only, with the Skills CLI (Claude Code, Cursor, Codex and other agents):
+
+```bash
+npx skills add histoiretik1-glitch/eCommerce-Skills --skill product-description-generator -g
+```
+
+> **For Amazon listings**, the separate Amazon-Skills collection (not part of this plugin) has a dedicated skill with Cosmo algorithm optimization:
 > ```bash
 > npx skills add nexscope-ai/Amazon-Skills --skill amazon-listing-optimization -g
 > ```

@@ -1,6 +1,6 @@
 ---
 name: etsy-shop-setup
-description: "Etsy shop launch guide — policies, branding, first listings, SEO foundation, payment setup"
+description: "Etsy shop setup guide. Takes a new seller from account creation to first sales: shop policies, payments, branding basics, first listings and SEO foundations. Use when someone asks how to open an Etsy shop or what to do before launching (for the complete selling guide use `etsy-seller-guide`)."
 metadata:
   nexscope:
     category: etsy
@@ -21,10 +21,19 @@ Etsy shop launch guide — policies, branding, first listings, SEO foundation, p
 - Generate step-by-step implementation plans tailored to your shop
 - Compare tools, strategies, and approaches with pros/cons analysis
 
-## Install
+## Installation
+
+Part of the **`ecommerce-skills`** Claude Code plugin (all 162 skills). In Claude Code:
+
+```
+/plugin marketplace add histoiretik1-glitch/eCommerce-Skills
+/plugin install ecommerce-skills@ecommerce-skills
+```
+
+This skill only, with the Skills CLI (Claude Code, Cursor, Codex and other agents):
 
 ```bash
-npx skills add nexscope-ai/eCommerce-Skills --skill etsy-shop-setup -g
+npx skills add histoiretik1-glitch/eCommerce-Skills --skill etsy-shop-setup -g
 ```
 
 ## Usage
