@@ -5,7 +5,7 @@ Supply ChainAnalyze - Report documentGenerate（Suitable for sharing/Demo）
 """
 
 from datetime import datetime
-from calculator import SupplyChainInput, analyze, HealthStatus
+from calculator import SupplyChainInput, analyze, HealthStatus, PLATFORM_PROFILES
 
 
 def generate_doc_report(data: SupplyChainInput, output_path: str = "report.md") -> str:
@@ -13,6 +13,7 @@ def generate_doc_report(data: SupplyChainInput, output_path: str = "report.md") 
     GenerateReport document（Markdown Format，SuitableExport PDF/PPT）
     """
     result = analyze(data)
+    profile = PLATFORM_PROFILES[data.platform]
     
     # StatusIcon
     status_icons = {
@@ -32,7 +33,7 @@ def generate_doc_report(data: SupplyChainInput, output_path: str = "report.md") 
     cost_bars = ""
     cost_items = [
         ("ProductCost", cost['product_cost_ratio'], "🔴"),
-        ("FBAFulfillment", cost['fba_ratio'], "🔵"),
+        (profile["chart_fulfillment"], cost['fba_ratio'], "🔵"),
         ("Advertisingfee", cost['ad_ratio'], "🟣"),
         ("InboundLogistics", cost['shipping_ratio'], "🟠"),
         ("Storagefee", cost['storage_ratio'], "🟤"),
@@ -68,11 +69,11 @@ def generate_doc_report(data: SupplyChainInput, output_path: str = "report.md") 
         bottlenecks_section = "\n✅ **No obvious bottleneck found，Supply ChainOverallHealthy**\n"
     
     # ExecuteList
-    action_items = """
+    action_items = f"""
 ### 📋 ExecuteList
 
 **basicweeks**
-- [ ] Export FBA LibraryageReport，Mark exceeds 60 days SKU
+- [ ] {profile["aged_report"]}，Mark exceeds 60 days SKU
 - [ ] Calculate each  SKU safe all Inventoryquantity
 - [ ] OrganizeSupplierContact info，Prepare negotiation
 
@@ -97,7 +98,7 @@ author: Supply Chain Analyzer
 # 📦 Supply ChainBottleneckAnalyzeReport
 
 > **GenerateTime**: {datetime.now().strftime("%Yyears%mmonths%dDay %H:%M")}  
-> **AnalyzePlatform**: Amazon ({data.platform.upper()})
+> **AnalyzePlatform**: {profile["title"]} ({data.platform.upper()})
 
 ---
 
@@ -159,13 +160,13 @@ Based onProvided by youData，Found **{len([m for m in result.metrics if m.statu
 
 - ProductCost: ${data.product_cost}/piece (UserInput)
 - InboundCost: ${data.shipping_cost_per_unit}/piece (UserInput)
-- FBA Fee: ${data.fba_fee}/piece (UserInput)
+- {profile["fee_label"]}: ${data.fba_fee}/piece (UserInput)
 - Selling Price: ${data.selling_price}/piece (UserInput)
 - Inventorydays: {data.inventory_days}days (UserInput)
 
 ### BenchmarkValueDescription
 
-basicReportUseHealthyBenchmarkValueBased onAmazonSellerIndustryData，Can be adjusted according to actual situation。
+basicReportUseHealthyBenchmarkValueBased on{profile["title"]}SellerIndustryData，Can be adjusted according to actual situation。
 
 ---
 
@@ -196,7 +197,7 @@ if __name__ == "__main__":
         ad_spend_ratio=0.10,
         inventory_days=60,
         has_long_term_storage=True,
-        platform="amazon"
+        platform=None  # default: this skill's platform
     )
     
     output = generate_doc_report(test_data, "supply_chain_report.md")

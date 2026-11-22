@@ -74,6 +74,12 @@ jobs:
       - name: Validate skills and manifest (tools/validate_plugin.py)
         run: python3 tools/validate_plugin.py --expected "$EXPECTED_SKILL_COUNT"
 
+      # Unit and regression tests for the skill scripts: per-platform fee models,
+      # Amazon outputs compared with golden files, every documented example run,
+      # shared script copies kept identical across each family.
+      - name: Run script tests (tests/)
+        run: python3 -m unittest discover -s tests -v
+
       - name: Set up Node.js
         id: node
         continue-on-error: true

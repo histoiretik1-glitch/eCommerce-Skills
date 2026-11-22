@@ -54,7 +54,9 @@ One-step alternative on Claude Code 2.1.275 or later:
 /plugin install ecommerce-skills --marketplace histoiretik1-glitch/eCommerce-Skills
 ```
 
-See [CLAUDE_CODE_PLUGIN.md](./CLAUDE_CODE_PLUGIN.md) for verification, updates and maintenance.
+See [CLAUDE_CODE_PLUGIN.md](./CLAUDE_CODE_PLUGIN.md) for verification, updates, maintenance and the changelog.
+
+**What's new in 1.1.0:** the profit calculators, supply chain, brand protection and review checker scripts now apply each platform's own fees, labels and enforcement channels (they all used Amazon's before); 13 TikTok Shop skills were rewritten with full workflows; TikTok Shop fees are consistent across skills; script examples are covered by automated tests.
 
 Then just ask your AI assistant naturally:
 
@@ -130,9 +132,9 @@ SEO-optimized product descriptions for any platform — Amazon, eBay, Walmart, S
 | Skill | Description | Status |
 |-------|-------------|--------|
 | [profit-margin-calculator-amazon](./profit-margin-calculator/profit-margin-calculator-amazon) | Amazon profit calculator — FBA fees, referral fees, break-even, pricing recommendations. | ✅ Available |
-| [profit-margin-calculator-shopify](./profit-margin-calculator/profit-margin-calculator-shopify) | Shopify/DTC profit calculator — ad spend, CAC, payment processing, 3PL, LTV/CAC analysis. | ✅ Available |
-| [profit-margin-calculator-tiktok](./profit-margin-calculator/profit-margin-calculator-tiktok) | TikTok Shop profit calculator — affiliate commissions, platform fees, FBT, return rates. | ✅ Available |
-| [profit-margin-calculator-walmart](./profit-margin-calculator/profit-margin-calculator-walmart) | Walmart profit calculator — WFS fulfillment, storage fees, referral fees, comparison. | ✅ Available |
+| [profit-margin-calculator-shopify](./profit-margin-calculator/profit-margin-calculator-shopify) | Shopify/DTC profit calculator — Shopify Payments fees by plan, third-party gateway fee, 3PL, ad spend, max affordable CAC. | ✅ Available |
+| [profit-margin-calculator-tiktok](./profit-margin-calculator/profit-margin-calculator-tiktok) | TikTok Shop profit calculator — referral fee by category, creator commissions, FBT, return rates. | ✅ Available |
+| [profit-margin-calculator-walmart](./profit-margin-calculator/profit-margin-calculator-walmart) | Walmart profit calculator — category referral fees (incl. price tiers), WFS fulfillment and storage. | ✅ Available |
 | [competitive-pricing-strategy](./competitive-pricing-strategy) | Price architecture and competitor positioning — normalized offer maps, contribution floors, response rules, and channel rollout. | ✅ Available |
 | [dynamic-pricing-ecommerce](./dynamic-pricing-ecommerce) | Guardrailed repricing systems — signals, floors and ceilings, rule matrices, simulations, approvals, and rollback. | ✅ Available |
 | [price-optimization-tool](./price-optimization-tool) | Evidence-bounded price decisions — unit economics, elasticity, candidate scenarios, experiment design, and rollout gates. | ✅ Available |

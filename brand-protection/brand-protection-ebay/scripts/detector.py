@@ -11,7 +11,11 @@ Features:
 - RiskEvaluate (Risk Assessment)
 - Rights protectionRecommendation (Action Recommendations)
 
-Version: 1.0.0
+Shared by brand-protection-{amazon,ebay,shopify,tiktok,walmart}. The file is
+identical in every skill folder; the platform comes from --platform=<name> or,
+by default, from the skill folder name. Amazon output is unchanged.
+
+Version: 2.0.0
 """
 
 import json
@@ -21,6 +25,30 @@ from enum import Enum
 from datetime import datetime
 import sys
 import re
+
+from templates import PLATFORM_PROFILES, SUPPORTED_PLATFORMS, detect_platform
+
+
+def adapt_report_to_platform(text: str, platform: str) -> str:
+    """Rewrite Amazon-specific wording of a detector report for another platform."""
+    if platform == "amazon":
+        return text
+    pr = PLATFORM_PROFILES[platform]
+    replacements = [
+        ("via Amazon Brand Registry portal", f"via {pr['report']}"),
+        ("File Brand Registry complaint", f"Submit a complaint ({pr['report']})"),
+        ("Report via Brand Registry", f"Report via {pr['program']}"),
+        ("Submit counterfeit complaint with evidence to Amazon", f"Submit counterfeit complaint with evidence via {pr['report']}"),
+        ("Enroll in Brand Registry", f"Enroll in {pr['program']}"),
+        ("Get enhanced brand protection tools from Amazon", f"Get {pr['name']}'s brand protection tools"),
+        ("**Brand Registry**:", f"**{pr['program']}**:"),
+        ("**ASINs Scanned**:", f"**Listings Scanned ({pr['id_label']})**:"),
+        ("ASIN", pr["id_label"]),
+        ("Amazon", pr["name"]),
+    ]
+    for old, new in replacements:
+        text = text.replace(old, new)
+    return text
 
 
 class RiskLevel(Enum):
@@ -613,6 +641,13 @@ def get_demo_data():
 
 def main():
     lang = "zh" if "--zh" in sys.argv else "en"
+    platform = next((a.split("=", 1)[1] for a in sys.argv if a.startswith("--platform=")), None) or detect_platform()
+    platform = platform.lower()
+    if platform not in SUPPORTED_PLATFORMS:
+        print(f"Error: unknown platform '{platform}' (expected one of {', '.join(SUPPORTED_PLATFORMS)})")
+        sys.exit(1)
+    if platform != "amazon":
+        lang = "en"  # Chinese report wording exists for Amazon only
     
     # DemoMode
     brand, listings, reviews = get_demo_data()
@@ -621,7 +656,7 @@ def main():
     result = detect(brand, listings, reviews)
     
     # OutputReport
-    print(format_report(result, lang))
+    print(adapt_report_to_platform(format_report(result, lang), platform))
 
 
 if __name__ == "__main__":

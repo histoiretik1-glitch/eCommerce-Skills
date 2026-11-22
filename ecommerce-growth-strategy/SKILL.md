@@ -278,7 +278,7 @@ When a user asks about expanding to a new channel, evaluate readiness:
 |---------|---------|---------|------|-----------------|
 | **Amazon** | Established products with search demand | Broadest reach, high purchase intent | 15% referral + FBA fees | Competitive pricing, strong reviews |
 | **Walmart** | Brands already on Amazon, price-competitive | Growing, value-conscious | 6-20% referral | Brand registry, competitive pricing |
-| **TikTok Shop** | Visual, demonstrable products targeting 18-34 | Young, impulse buyers | 5% + shipping | Video content capability, trend-aware |
+| **TikTok Shop** | Visual, demonstrable products targeting 18-34 | Young, impulse buyers | ~6-8% referral (US, 5% jewelry) + creator commissions | Video content capability, trend-aware |
 | **Etsy** | Handmade, vintage, unique, customizable | Niche buyers willing to pay premium | 6.5% transaction + listing | Unique/artisan positioning |
 | **Own Website (DTC/Shopify)** | Brand control, customer data ownership | Your audience | Platform fees only (~2-3%) | Marketing capability to drive traffic |
 | **eBay** | Clearance, refurbished, collectibles, niche | Bargain hunters, collectors | ~13% final value | Competitive pricing, good seller rating |

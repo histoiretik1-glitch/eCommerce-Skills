@@ -2,7 +2,7 @@
 name: product-differentiation-shopify
 version: 1.0.0
 author: Nexscope AI
-description: "Shopify/DTC product differentiation strategy tool. Analyze competitor stores, extract pain points from reviews, identify brand positioning opportunities, and generate actionable differentiation strategies. Includes DTC-specific metrics like CAC, LTV, and brand story analysis. No API key required."
+description: "Shopify/DTC product differentiation strategy tool. Analyze competitor stores, extract pain points from reviews, identify brand positioning opportunities, and generate actionable differentiation strategies. Includes DTC-specific metrics like CAC, LTV, and brand story analysis. No API key required. Use when a Shopify or DTC seller asks how to stand out from competitors, which weaknesses or review complaints to exploit, or what unique selling points and positioning to use."
 metadata: {"nexscope":{"emoji":"🎯","category":"ecommerce"}}
 ---
 

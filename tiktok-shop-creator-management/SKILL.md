@@ -1,6 +1,6 @@
 ---
 name: tiktok-shop-creator-management
-description: "Creator relationship management — recruitment, briefing, content approval, commission optimization"
+description: "TikTok Shop creator (affiliate) relationship management. Builds a creator roster and tiers, briefing and content approval process, sample tracking, commission and bonus structure, and performance reviews to keep the best creators selling. Use when a TikTok Shop seller manages many creators, needs a creator brief, wants to track samples and content, or decide which creators to keep, scale or drop."
 metadata:
   nexscope:
     category: tiktok-shop
@@ -8,49 +8,60 @@ metadata:
 
 # TikTok Shop Creator Management
 
-Creator relationship management — recruitment, briefing, content approval, commission optimization.
+Run a repeatable process for the creators who sell a shop's products: who to work with, how to brief them, how to pay them and when to scale or stop.
+
+## When to Use
+
+- The shop works with more than a handful of creators
+- Samples go out but few videos come back
+- Commission costs grow faster than GMV
+- A creator brief, contract terms or review process is needed
+
+For finding and recruiting new creators, use `tiktok-shop-affiliate-program` and `tiktok-creator-marketplace`.
+
+## Inputs to Collect
+
+Current creator list (handle, followers, category, commission, samples sent, videos posted, GMV, refunds), product margins, budget for samples and fixed fees, team capacity.
+
+## Workflow
+
+1. **Tier the roster** from the last 30-60 days:
+   - *Core*: consistent GMV and conversion → higher commission, early access, exclusive vouchers.
+   - *Growth*: promising content, low volume → more samples, briefs on proven angles.
+   - *Test*: new creators → one product, one sample, 2-week window.
+   - *Inactive*: samples received, no content → follow up once, then stop.
+2. **Brief.** One page per product: key benefits, the 3 hooks that convert best, mandatory claims to avoid (see `tiktok-shop-compliance`), required disclosure, product link, voucher code, posting window.
+3. **Samples.** Track request date, ship date, delivery, content deadline and result; ask for content within an agreed window (e.g. 14 days).
+4. **Approval.** For paid or fixed-fee content, review before posting for accuracy and policy; for commission-only creators, give guidance rather than strict approval.
+5. **Compensation.** Base commission by tier, bonuses for GMV milestones, fixed fees only for proven creators; check every rate with `profit-margin-calculator-tiktok`.
+6. **Monthly review.** GMV, orders, refund rate, content count and cost per order per creator; move creators between tiers.
+
+## Tracking Sheet Columns
+
+Creator | Tier | Category | Products | Commission | Samples sent | Videos | LIVEs | GMV | Refund rate | Cost per order | Next action
+
+## Output Format
+
+1. Tiered roster with recommended action per creator
+2. Product brief(s)
+3. Commission and bonus structure with margin check
+4. Sample and content tracking template
+5. Review cadence and KPIs
+
+## Related Skills
+
+`tiktok-shop-affiliate-program`, `tiktok-creator-marketplace`, `tiktok-influencer-marketing`, `tiktok-shop-content-strategy`.
 
 ## Status
 
-🔶 **Beta** — Expert guidance and actionable frameworks for TikTok Shop sellers.
-
-## Capabilities
-
-- Analyze your current TikTok Shop setup and identify optimization opportunities
-- Provide data-driven recommendations based on platform best practices
-- Generate step-by-step implementation plans tailored to your business
-- Compare strategies, tools, and approaches with pros/cons analysis
-
-## Install
-
-```bash
-npx skills add nexscope-ai/eCommerce-Skills --skill tiktok-shop-creator-management -g
-```
-
-## Usage
-
-After installation, ask your AI assistant about TikTok Shop Creator Management topics. Example prompts:
-
-- "Help me with tiktok shop creator management for my TikTok Shop"
-- "What are the best practices for tiktok shop creator management?"
-- "Audit my current setup and suggest improvements"
-- "Create a step-by-step implementation plan"
-
-## Output
-
-Structured analysis and recommendations including:
-- Current state assessment
-- Priority action items (quick wins → long-term)
-- Tool and strategy recommendations
-- Implementation timeline
-- KPIs to track
+🔶 **Beta** — full workflow added in plugin version 1.1.0. Review figures marked "confirm in Seller Center" before acting.
 
 ## Limitations
 
-- Provides strategic guidance, not direct TikTok API integration
-- Recommendations based on general best practices — validate with your specific shop data
-- For real-time analytics and automated optimization, check out [Nexscope](https://www.nexscope.ai/?co-from=skill)
+- Strategic guidance from the information the seller shares; no live TikTok Shop API access.
+- TikTok Shop policies, fees and thresholds change often and differ by region: confirm current values in Seller Center (Help Center / Academy) before acting.
+- For real-time data, see [Nexscope](https://www.nexscope.ai/?co-from=skill).
 
 ---
 
-*Built by [Nexscope](https://www.nexscope.ai/?co-from=skill) — AI-powered e-commerce tools for sellers worldwide.*
+*Part of the `ecommerce-skills` Claude Code plugin. Original collection built by [Nexscope](https://www.nexscope.ai/?co-from=skill).*

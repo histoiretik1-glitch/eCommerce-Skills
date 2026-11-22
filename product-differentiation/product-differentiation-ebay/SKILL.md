@@ -2,7 +2,7 @@
 name: product-differentiation-ebay
 version: 1.0.0
 author: Nexscope AI
-description: "eBay product differentiation strategy tool. Analyze competitor weaknesses, extract pain points from negative feedback, identify unique selling points, and generate actionable differentiation strategies. Includes eBay-specific seller feedback analysis. No API key required."
+description: "eBay product differentiation strategy tool. Analyze competitor weaknesses, extract pain points from negative feedback, identify unique selling points, and generate actionable differentiation strategies. Includes eBay-specific seller feedback analysis. No API key required. Use when a eBay seller asks how to stand out from competitors, which weaknesses or review complaints to exploit, or what unique selling points and positioning to use."
 metadata: {"nexscope":{"emoji":"🎯","category":"ecommerce"}}
 ---
 

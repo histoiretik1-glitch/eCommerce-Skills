@@ -1,7 +1,7 @@
 ---
 name: ebay-review-checker
 version: 1.0.0
-description: "eBay review and feedback authenticity analyzer. Detect fake reviews, suspicious seller feedback patterns, and buyer manipulation. Includes time clustering detection, content similarity analysis, and eBay-specific red flag identification. No API key required."
+description: "eBay review and feedback authenticity analyzer. Detect fake reviews, suspicious seller feedback patterns, and buyer manipulation. Includes time clustering detection, content similarity analysis, and eBay-specific red flag identification. No API key required. Use when a eBay seller or buyer asks whether a product's reviews are fake or manipulated, wants to audit a competitor's reviews, or needs evidence of suspicious review patterns."
 metadata: {"nexscope":{"emoji":"🔍","category":"ecommerce"}}
 ---
 

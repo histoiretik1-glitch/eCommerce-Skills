@@ -6,7 +6,7 @@ Supply ChainAnalyze - WebchartTableReportGenerate
 
 import json
 from datetime import datetime
-from calculator import SupplyChainInput, analyze, HealthStatus
+from calculator import SupplyChainInput, analyze, HealthStatus, PLATFORM_PROFILES
 
 
 def generate_html_report(data: SupplyChainInput, output_path: str = "report.html") -> str:
@@ -230,7 +230,7 @@ def generate_html_report(data: SupplyChainInput, output_path: str = "report.html
         new Chart(costCtx, {{
             type: 'doughnut',
             data: {{
-                labels: ['ProductCost', 'InboundLogistics', 'FBAFulfillment', 'Storagefee', 'Advertisingfee', 'Other', 'Net Profit'],
+                labels: ['ProductCost', 'InboundLogistics', '{PLATFORM_PROFILES[data.platform]["chart_fulfillment"]}', 'Storagefee', 'Advertisingfee', 'Other', 'Net Profit'],
                 datasets: [{{
                     data: [
                         {cost_data['product_cost_ratio']},
@@ -292,7 +292,7 @@ if __name__ == "__main__":
         ad_spend_ratio=0.10,
         inventory_days=60,
         has_long_term_storage=True,
-        platform="amazon"
+        platform=None  # default: this skill's platform
     )
     
     output = generate_html_report(test_data, "supply_chain_report.html")

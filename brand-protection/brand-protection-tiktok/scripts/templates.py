@@ -10,12 +10,119 @@ Packagecontain:
 - MAP Violation notice
 - LegalLetterTemplate
 
-Version: 1.0.0
+Shared by brand-protection-{amazon,ebay,shopify,tiktok,walmart}. The file is
+identical in every skill folder; the platform comes from --platform=<name> or,
+by default, from the skill folder name. Amazon output is unchanged.
+
+Version: 2.0.0
 """
 
 from dataclasses import dataclass
+from pathlib import Path
 from typing import Optional
 from datetime import datetime
+
+SUPPORTED_PLATFORMS = ("amazon", "ebay", "shopify", "tiktok", "walmart")
+
+# Enforcement channel per platform. Program names are stable; exact forms and
+# URLs move, so the steps tell the seller where to look rather than hard-coding links.
+PLATFORM_PROFILES = {
+    "amazon": {
+        "name": "Amazon", "marketplace": "Amazon.com", "id_label": "ASIN",
+        "program": "Amazon Brand Registry",
+    },
+    "ebay": {
+        "name": "eBay", "marketplace": "eBay", "id_label": "eBay Item ID",
+        "program": "eBay VeRO (Verified Rights Owner) Program",
+        "report": "VeRO Notice of Claimed Infringement (NOCI)",
+        "policy": "eBay's VeRO and counterfeit item policies",
+        "message": "eBay messaging (Contact seller)",
+        "steps": [
+            "Join the eBay VeRO Program as the rights owner (one-time, requires proof of IP ownership)",
+            "Open the VeRO reporting tool / NOCI form from the VeRO Program page in eBay Help",
+            "Select the reason code (e.g. counterfeit, trademark in listing, unauthorized image use)",
+            "Enter each eBay Item ID and paste the complaint text below",
+            "Submit and keep the reference number; eBay usually removes listings within days",
+        ],
+        "buyer": "Use a separate eBay buyer account (not linked to your seller account)",
+    },
+    "shopify": {
+        "name": "Shopify", "marketplace": "a Shopify-hosted online store", "id_label": "Store / product URL",
+        "program": "Shopify intellectual property infringement report",
+        "report": "IP infringement report to Shopify + DMCA / trademark notice to the store's host and registrar",
+        "policy": "Shopify's Acceptable Use Policy and intellectual property policies",
+        "message": "the store's contact form or published email",
+        "steps": [
+            "Confirm the store runs on Shopify (e.g. myshopify.com domain, Shopify checkout)",
+            "Open Shopify's 'report intellectual property infringement' form from the Shopify Legal / Help Center pages",
+            "Choose trademark or copyright, enter the store URL and each infringing product URL",
+            "Paste the complaint text below and attach proof of your rights",
+            "In parallel: send a DMCA notice (copyright) to the domain registrar, and report ads to Meta/Google if the store advertises",
+        ],
+        "buyer": "Order with a personal email and card not linked to your brand",
+    },
+    "tiktok": {
+        "name": "TikTok Shop", "marketplace": "TikTok Shop", "id_label": "TikTok Shop Product ID",
+        "program": "TikTok Shop Intellectual Property Protection Center (IPPC)",
+        "report": "IP infringement report in the TikTok Shop IP Protection Center",
+        "policy": "TikTok Shop's Intellectual Property Protection Policy and prohibited products policy",
+        "message": "TikTok Shop chat with the seller",
+        "steps": [
+            "Register your brand and upload trademark certificates in the TikTok Shop IP Protection Center",
+            "Create an infringement report: choose trademark, copyright or patent",
+            "Add each Product ID (and LIVE or video links if the infringement is in content)",
+            "Paste the complaint text below and upload evidence",
+            "Track the case in the IP Protection Center and reply to any seller counter-notice",
+        ],
+        "buyer": "Use a separate TikTok buyer account (not linked to your shop)",
+    },
+    "walmart": {
+        "name": "Walmart", "marketplace": "Walmart Marketplace (Walmart.com)", "id_label": "Walmart Item ID",
+        "program": "Walmart Brand Portal",
+        "report": "IP claim in Walmart Brand Portal (or Walmart's infringement report form)",
+        "policy": "Walmart Marketplace's Intellectual Property and Prohibited Products policies",
+        "message": "Walmart's seller contact options (if available)",
+        "steps": [
+            "Enroll in Walmart Brand Portal with your registered trademark",
+            "Open 'Report infringement' and choose the claim type (counterfeit, trademark, copyright)",
+            "Enter each Walmart Item ID and seller name",
+            "Paste the complaint text below and attach evidence",
+            "Submit and follow the case in Brand Portal",
+        ],
+        "buyer": "Use a separate Walmart.com customer account (not linked to your seller account)",
+    },
+}
+
+
+def detect_platform(default: str = "amazon") -> str:
+    """Platform implied by the skill folder name (brand-protection-<platform>)."""
+    folder = Path(__file__).resolve().parent.parent.name.lower()
+    for platform in SUPPORTED_PLATFORMS:
+        if folder.endswith("-" + platform):
+            return platform
+    return default
+
+
+def adapt_to_platform(text: str, platform: str) -> str:
+    """Rewrite Amazon-specific wording of a template for another platform."""
+    if platform == "amazon":
+        return text
+    pr = PLATFORM_PROFILES[platform]
+    replacements = [
+        ("on Amazon.com, specifically on ASIN:", f"on {pr['marketplace']}, specifically on {pr['id_label']}:"),
+        ("Violation of Amazon's Anti-Counterfeiting Policy", f"Violation of {pr['policy']}"),
+        ("Report to Amazon Brand Registry for listing removal", f"Report via {pr['report']} for listing removal"),
+        ("Send via Amazon Buyer-Seller Messaging (if available)", f"Send via {pr['message']}"),
+        ("Create a separate Amazon buyer account (not linked to seller account)", pr["buyer"]),
+        ("Submit via Brand Registry", f"Submit via {pr['program']}"),
+        ("Amazon review period", f"{pr['name']} review period"),
+        ("Report to Amazon for policy violation", "Notify the marketplace / remove the reseller from your authorized list"),
+        ("| Product | ASIN |", f"| Product | {pr['id_label']} |"),
+        ("Amazon", pr["name"]),
+    ]
+    for old, new in replacements:
+        text = text.replace(old, new)
+    return text
 
 
 @dataclass
@@ -489,6 +596,66 @@ number 10-21 days: Amazon ReviewPeriod
 """
 
 
+def generate_platform_complaint(info: ComplaintInfo, platform: str = "amazon") -> str:
+    """Complaint template for the platform's own enforcement channel."""
+    if platform == "amazon":
+        return generate_brand_registry_complaint(info)
+    pr = PLATFORM_PROFILES[platform]
+    steps = "\n".join(f"{i}. {s}" for i, s in enumerate(pr["steps"], 1))
+    return f"""
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+📋 {pr['name'].upper()} IP COMPLAINT TEMPLATE
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+**Platform**: {pr['program']}
+**Channel**: {pr['report']}
+
+---
+
+## Report Details
+
+**Brand Name**: {info.brand_name}
+**Trademark Number**: {info.trademark_number or "N/A"}
+**{pr['id_label']}**: {info.asin}
+**Infringing Seller / Store**: {info.seller_name} ({info.seller_id})
+**Violation Type**: {info.violation_type}
+
+---
+
+## Complaint Text (Copy & Paste)
+
+```
+I am the owner of the {info.brand_name} trademark (Registration #{info.trademark_number or "[YOUR TRADEMARK NUMBER]"}).
+
+The seller "{info.seller_name}" ({info.seller_id}) is offering unauthorized/counterfeit {info.brand_name} products on {pr['marketplace']} ({pr['id_label']}: {info.asin}).
+
+Evidence:
+{info.evidence or "[Describe your evidence here - screenshots, test buy results, etc.]"}
+
+This seller is NOT authorized to sell our products or use our trademark. Under {pr['policy']}, we request removal of the infringing listing(s).
+
+Contact: {info.contact_email or "[YOUR EMAIL]"}
+Company: {info.company_name or "[YOUR COMPANY NAME]"}
+```
+
+---
+
+## Steps to Submit
+
+{steps}
+
+---
+
+## Evidence Checklist
+
+☐ Screenshots of the listing/store with URL and date visible
+☐ Invoice/order confirmation from test buy
+☐ Photos comparing authentic vs suspected counterfeit
+☐ Trademark registration certificate
+☐ Authorization list (showing the seller is NOT authorized)
+"""
+
+
 # ============================================================
 # CLI
 # ============================================================
@@ -510,25 +677,47 @@ def main():
     )
     
     lang = "zh" if "--zh" in sys.argv else "en"
-    template_type = sys.argv[1] if len(sys.argv) > 1 and not sys.argv[1].startswith("--") else "all"
+    platform = next((a.split("=", 1)[1] for a in sys.argv if a.startswith("--platform=")), None) or detect_platform()
+    platform = platform.lower()
+    if platform not in SUPPORTED_PLATFORMS:
+        print(f"Error: unknown platform '{platform}' (expected one of {', '.join(SUPPORTED_PLATFORMS)})")
+        sys.exit(1)
+    if platform != "amazon":
+        lang = "en"  # Chinese templates exist for Amazon only
+        info.asin = {"ebay": "1234567890", "shopify": "https://example-store.com/products/techgadget-pro",
+                     "tiktok": "1729000000000000000", "walmart": "123456789"}[platform]
+    args = [a for a in sys.argv[1:] if not a.startswith("--")]
+    template_type = args[0] if args else "all"
+    # Sub-command names used in the platform SKILL.md files
+    aliases = {
+        "vero": "complaint", "dmca": "complaint", "platform-report": "complaint",
+        "ip-report": "complaint", "seller-complaint": "complaint", "content-takedown": "complaint",
+        "brand-portal": "complaint", "brand-registry": "complaint",
+        "cease-desist": "cease", "test-buy": "testbuy", "map-notice": "map",
+    }
+    template_type = aliases.get(template_type, template_type)
+    if template_type not in ("all", "complaint", "cease", "testbuy", "map"):
+        print(f"Error: unknown template '{args[0]}'. Use: complaint, cease, testbuy, map or all "
+              f"(aliases: {', '.join(sorted(aliases))})")
+        sys.exit(1)
     
     if template_type == "complaint" or template_type == "all":
         if lang == "zh":
             print(generate_brand_registry_complaint_zh(info))
         else:
-            print(generate_brand_registry_complaint(info))
+            print(generate_platform_complaint(info, platform))
     
     if template_type == "cease" or template_type == "all":
-        print(generate_cease_desist(info))
+        print(adapt_to_platform(generate_cease_desist(info), platform))
     
     if template_type == "testbuy" or template_type == "all":
         if lang == "zh":
             print(generate_test_buy_guide_zh())
         else:
-            print(generate_test_buy_guide())
+            print(adapt_to_platform(generate_test_buy_guide(), platform))
     
     if template_type == "map" or template_type == "all":
-        print(generate_map_violation_notice(info, 18.99, 29.99))
+        print(adapt_to_platform(generate_map_violation_notice(info, 18.99, 29.99), platform))
 
 
 if __name__ == "__main__":

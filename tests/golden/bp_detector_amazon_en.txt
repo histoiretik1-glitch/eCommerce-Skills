@@ -1,0 +1,75 @@
+🛡️ **Brand Protection Detection Report**
+
+**Brand**: TechGadget
+**Brand Registry**: ✅ Enrolled
+**Scan Time**: 2026-11-22T16:09:08
+**ASINs Scanned**: 2
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+## 🎯 Risk Score: 100/100
+
+🚨 CRITICAL | 8 violation(s) found | 3 hijacker(s), 1 counterfeit signal(s)
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+## ⚠️ Violations Found
+
+**1. [HIJACKER] ⚠️**
+   Unauthorized seller 'CheapDeals123' found on your listing
+   Seller: CheapDeals123 | Price: $18.99
+   Action: File Brand Registry complaint or send cease & desist
+
+**2. [HIJACKER] ⚠️**
+   Unauthorized seller 'BestPriceStore' found on your listing
+   Seller: BestPriceStore | Price: $24.99
+   Action: File Brand Registry complaint or send cease & desist
+
+**3. [PRICE] 🚨**
+   Seller 'CheapDeals123' selling 36.7% below MAP
+   Seller: CheapDeals123 | Price: $18.99
+   Action: Send MAP violation notice, consider distribution review
+
+**4. [PRICE] 🔴**
+   Seller 'BestPriceStore' selling 16.7% below MAP
+   Seller: BestPriceStore | Price: $24.99
+   Action: Send MAP violation notice, consider distribution review
+
+**5. [COUNTERFEIT] 🚨**
+   Multiple reviews indicate potential counterfeit products
+   Action: Initiate Test Buy to collect physical evidence
+
+**6. [HIJACKER] ⚠️**
+   Unauthorized seller 'AccessoryWorld' found on your listing
+   Seller: AccessoryWorld | Price: $9.99
+   Action: File Brand Registry complaint or send cease & desist
+
+**7. [PRICE] 🚨**
+   Seller 'AccessoryWorld' selling 66.7% below MAP
+   Seller: AccessoryWorld | Price: $9.99
+   Action: Send MAP violation notice, consider distribution review
+
+**8. [TRADEMARK] ⚠️**
+   Potential trademark abuse in listing title
+   Action: File trademark complaint if unauthorized use
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+## 📋 Action Plan
+
+**[P1] Report via Brand Registry**
+   Report 3 unauthorized seller(s) via Amazon Brand Registry portal
+   Timeline: 24-48 hours
+
+**[P1] Initiate Test Buy**
+   Purchase product from suspected seller to collect physical evidence
+   Timeline: 7-14 days
+
+**[P2] File Counterfeit Report**
+   Submit counterfeit complaint with evidence to Amazon
+   Timeline: After test buy
+
+**[P2] Send MAP Violation Notice**
+   Notify 3 seller(s) of MAP policy violation
+   Timeline: 48-72 hours
+

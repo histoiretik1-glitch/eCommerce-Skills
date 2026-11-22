@@ -1,7 +1,7 @@
 ---
 name: supply-chain-optimization-walmart
 version: 1.0.0
-description: "Supply Chain Bottleneck Analyzer for Walmart Marketplace sellers. Diagnose cash flow, inventory, WFS costs, and referral fees. Includes comparison with Amazon FBA, lower storage fee optimization, and Walmart Connect ad spend analysis. No API key required for basic analysis."
+description: "Walmart Marketplace supply chain bottleneck analyzer. Computes margins after Walmart referral fees, WFS fulfillment and storage, inventory days and cash cycle against Walmart benchmarks, ranks the top 3 bottlenecks and proposes cost reduction actions; optional Markdown/HTML report. No API key required. Use when a Walmart seller asks about WFS costs, cash flow, aged inventory, restocking or landed cost."
 metadata: {"nexscope":{"emoji":"📦","category":"ecommerce"}}
 ---
 
@@ -111,6 +111,16 @@ Same 4-step process as Amazon version:
 • Current Inventory Days: ___ days
 • (Walmart has no long-term storage fees)
 ```
+
+## Script Usage
+
+`scripts/calculator.py` (plus `report_doc.py` and `report_html.py`) is shared by the four supply-chain-optimization skills. The platform comes from the `platform` field (`amazon`, `shopify`, `tiktok`, `walmart`) or, by default, from this skill's folder. It sets the benchmarks, the payout delay used in the cash cycle (14 days by default, override with `payout_days`), the fulfillment labels and the aged-stock advice.
+
+```bash
+python3 scripts/calculator.py '{"product_cost": 6, "supplier_payment_days": 0, "production_days": 25, "shipping_cost_per_unit": 1.2, "shipping_days": 35, "selling_price": 24.99, "wfs_fee": 4.95, "storage_fee": 0.25, "ad_spend_ratio": 0.08, "inventory_days": 55, "has_long_term_storage": false, "referral_fee_rate": 0.15}'
+```
+
+Required fields: `product_cost`, `supplier_payment_days`, `production_days`, `shipping_cost_per_unit`, `shipping_days`, `selling_price`, `fba_fee` (aliases `fulfillment_fee`, `wfs_fee`, `fbt_fee`), `storage_fee`, `ad_spend_ratio`, `inventory_days`, `has_long_term_storage`. Optional: `referral_fee_rate`, `affiliate_commission_rate`, `payout_days`, `daily_sales`, `current_inventory`. An unknown field stops the script with the list of accepted fields.
 
 ## vs Amazon Comparison
 
