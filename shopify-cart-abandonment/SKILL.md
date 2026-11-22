@@ -10,16 +10,46 @@ metadata:
 
 Cart abandonment recovery — email sequences, SMS, retargeting, exit intent, checkout friction audit.
 
+<!-- role-and-scope:start (generated from tools/skill_groups.json) -->
+## Role and Scope
+
+**This skill:** Recovering abandoned carts and checkouts on Shopify (email, SMS, retargeting).
+
+Part of: Checkout and cart abandonment. For neighbouring jobs, use the matching skill instead:
+
+- `ecommerce-checkout-optimization` — Platform-independent checkout optimization: friction, payment methods, trust.
+- `shopify-checkout-customization` — Configuring the Shopify checkout (Checkout Extensibility, express payments, fields).
+
+<!-- role-and-scope:end -->
+
 ## Status
 
-🔶 **Beta** — This skill provides expert guidance and actionable frameworks for Shopify sellers.
+🔶 **Beta** — full workflow added in plugin version 1.3.0.
 
-## Capabilities
+Recover carts and checkouts that Shopify shoppers abandon, and remove the friction that causes them.
 
-- Analyze your current Shopify store setup and identify optimization opportunities
-- Provide data-driven recommendations based on industry best practices
-- Generate step-by-step implementation plans tailored to your business stage
-- Compare tools, apps, and strategies with pros/cons analysis
+## Inputs to Collect
+
+Abandoned checkout count and recovery rate (Shopify's abandoned checkouts and reports), current abandoned-checkout email or automation, email/SMS tool, shipping prices and when they appear, payment methods, checkout settings.
+
+## Workflow
+
+1. **Measure**: share of checkouts abandoned, recovered revenue, and where shoppers leave (cart, shipping step, payment).
+2. **Automations** (Shopify Email/Marketing automations, Shopify Flow, Klaviyo or similar):
+   - Email 1 after about 1 hour: reminder with the cart contents and a direct link back.
+   - Email 2 after about 24 hours: reassurance (reviews, returns, delivery times), answers to objections.
+   - Email 3 after 48-72 hours: optional incentive, only if margins allow, to avoid training shoppers to wait.
+   - SMS only with consent; keep it short.
+3. **Retargeting**: ads to recent cart abandoners on Meta and Google with the viewed products.
+4. **Friction audit**: surprise shipping cost (show it earlier or offer a free-shipping threshold), forced account creation, missing express payments (Shop Pay, Apple Pay, PayPal), discount field distraction, slow checkout. Checkout settings go to `shopify-checkout-customization`.
+5. **Exit-intent offers** on the cart page, used carefully (not on every visit).
+
+## Output Format
+
+1. Abandonment diagnosis by step
+2. Email/SMS sequence with timing, subject lines and copy
+3. Friction fixes ranked by impact
+4. KPIs: recovery rate, recovered revenue, checkout completion rate
 
 ## Installation
 
@@ -36,23 +66,12 @@ This skill only, with the Skills CLI (Claude Code, Cursor, Codex and other agent
 npx skills add histoiretik1-glitch/eCommerce-Skills --skill shopify-cart-abandonment -g
 ```
 
-## Usage
-
-After installation, ask your AI assistant about shopify cart abandonment topics. Example prompts:
+## Example Requests
 
 - "Help me with shopify cart abandonment for my Shopify store"
 - "What are the best practices for shopify cart abandonment?"
 - "Audit my current shopify cart abandonment setup and suggest improvements"
 - "Create a step-by-step shopify cart abandonment implementation plan"
-
-## Output
-
-Structured analysis and recommendations including:
-- Current state assessment
-- Priority action items (quick wins → long-term)
-- Tool/app recommendations with cost comparison
-- Implementation timeline
-- KPIs to track
 
 ## Limitations
 

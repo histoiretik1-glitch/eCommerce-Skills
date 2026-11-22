@@ -1,6 +1,6 @@
 ---
 name: shopify-google-channel
-description: "Shopify Google channel setup. Connects a Shopify store to Google Merchant Center, fixes product feed errors, enables free listings and launches Performance Max campaigns from Shopify. Use when a Shopify store owner wants to sell on Google or fix Merchant Center issues (for Shopping campaign strategy use `google-shopping-optimization`)."
+description: "Shopify to Google connection. Installs and configures the Google & YouTube app, verifies the store in Merchant Center, syncs products with GTINs, brands and shipping settings, fixes product disapprovals and turns on free listings across Google. Use when a Shopify store owner wants products to appear on Google or has Merchant Center sync errors (for ad campaign strategy use `google-shopping-optimization`)."
 metadata:
   nexscope:
     category: shopify
@@ -10,16 +10,45 @@ metadata:
 
 Google integration — Shopping feed, Performance Max, free listings, Merchant Center optimization.
 
+<!-- role-and-scope:start (generated from tools/skill_groups.json) -->
+## Role and Scope
+
+**This skill:** Connecting a Shopify store to Google with the Google & YouTube channel and Merchant Center.
+
+Part of: Google Shopping and product feeds. For neighbouring jobs, use the matching skill instead:
+
+- `google-shopping-optimization` — Google Shopping and Performance Max campaign strategy, bids and ROAS.
+- `ecommerce-feed-management` — Monitoring and fixing product feeds for any channel (sync errors, missing SKUs, attributes).
+
+<!-- role-and-scope:end -->
+
 ## Status
 
-🔶 **Beta** — This skill provides expert guidance and actionable frameworks for Shopify sellers.
+🔶 **Beta** — full workflow added in plugin version 1.3.0.
 
-## Capabilities
+Connect a Shopify store to Google with the Google & YouTube app and keep the Merchant Center feed healthy.
 
-- Analyze your current Shopify store setup and identify optimization opportunities
-- Provide data-driven recommendations based on industry best practices
-- Generate step-by-step implementation plans tailored to your business stage
-- Compare tools, apps, and strategies with pros/cons analysis
+## Inputs to Collect
+
+Google Merchant Center and Google Ads accounts, markets, catalog size, product data quality (GTINs, brands, categories), current Merchant Center errors or warnings.
+
+## Workflow
+
+1. **Install the Google & YouTube app** and connect Merchant Center (verify and claim the store domain) and Google Ads.
+2. **Product sync**: map products and variants; fill GTIN/barcode, brand, product category, condition, shipping and tax settings for each market.
+3. **Fix diagnostics** in Merchant Center: disapproved products, price or availability mismatches, missing identifiers, image problems, policy issues.
+4. **Free listings**: make sure products show in free listings across Google surfaces.
+5. **Performance Max** from the app or Google Ads: start with best sellers, a realistic ROAS target and the conversion tracking in place. Campaign strategy, bids and structure belong to `google-shopping-optimization`.
+6. **Monitor** sync status and Merchant Center diagnostics weekly; feed errors silently cut traffic.
+
+## Output Format
+
+1. Connection and verification checklist
+2. Product data fixes (by error type)
+3. Free listings and Performance Max launch steps
+4. Weekly monitoring checklist
+
+For feeds on several channels, see `ecommerce-feed-management`.
 
 ## Installation
 
@@ -36,23 +65,12 @@ This skill only, with the Skills CLI (Claude Code, Cursor, Codex and other agent
 npx skills add histoiretik1-glitch/eCommerce-Skills --skill shopify-google-channel -g
 ```
 
-## Usage
-
-After installation, ask your AI assistant about shopify google channel topics. Example prompts:
+## Example Requests
 
 - "Help me with shopify google channel for my Shopify store"
 - "What are the best practices for shopify google channel?"
 - "Audit my current shopify google channel setup and suggest improvements"
 - "Create a step-by-step shopify google channel implementation plan"
-
-## Output
-
-Structured analysis and recommendations including:
-- Current state assessment
-- Priority action items (quick wins → long-term)
-- Tool/app recommendations with cost comparison
-- Implementation timeline
-- KPIs to track
 
 ## Limitations
 

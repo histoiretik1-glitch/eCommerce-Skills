@@ -1,11 +1,24 @@
 ---
 name: walmart-seller-tools
-description: "Essential tools for Walmart Marketplace sellers. Product research, listing optimization, advertising management, inventory sync, and analytics tools for scaling on Walmart. Use when the user asks for help choosing software and tools for a Walmart Marketplace business (research, listing, ads, inventory, analytics)."
+description: "Walmart Marketplace software stack. Recommends tools for a Walmart business: listing and catalog management, Walmart Connect ad management, repricing for the Buy Box, inventory and order sync with WFS or other channels, and Walmart analytics, with costs and integration notes. Use when a Walmart seller asks which apps or integrations to use (for how to sell on Walmart use `walmart-seller-guide`)."
 ---
 
 # Walmart Seller Tools
 
 Essential tools for Walmart Marketplace sellers. Product research, listing optimization, advertising management, inventory sync, and analytics tools for scaling on Walmart.
+
+<!-- role-and-scope:start (generated from tools/skill_groups.json) -->
+## Role and Scope
+
+**This skill:** Choosing software tools for a Walmart business.
+
+Part of: eBay and Walmart seller guides and tools. For neighbouring jobs, use the matching skill instead:
+
+- `ebay-seller-guide` — How to sell on eBay, from first listing to Top Rated Seller.
+- `ebay-seller-tools` — Choosing software tools for an eBay business.
+- `walmart-seller-guide` — How to sell on Walmart Marketplace, from application to scaling.
+
+<!-- role-and-scope:end -->
 
 ## Capabilities
 

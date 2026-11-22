@@ -12,14 +12,36 @@ B2B/wholesale setup — wholesale pricing, minimum orders, custom catalogs, net 
 
 ## Status
 
-🔶 **Beta** — This skill provides expert guidance and actionable frameworks for Shopify sellers.
+🔶 **Beta** — full workflow added in plugin version 1.3.0.
 
-## Capabilities
+Sell wholesale (B2B) from Shopify: price lists, minimums, payment terms and a buying experience for retailers.
 
-- Analyze your current Shopify store setup and identify optimization opportunities
-- Provide data-driven recommendations based on industry best practices
-- Generate step-by-step implementation plans tailored to your business stage
-- Compare tools, apps, and strategies with pros/cons analysis
+## Inputs to Collect
+
+Shopify plan, number of wholesale customers, wholesale prices and minimums, payment terms needed (e.g. net 30), whether B2B and retail should share one store, catalog differences.
+
+## Options
+
+- **B2B on Shopify** (Shopify Plus): company accounts, catalogs with price lists, quantity rules, payment terms, B2B checkout in the same store. It replaced the older separate Wholesale channel.
+- **Other plans**: wholesale apps (price lists by customer tag, order forms, minimums), or a separate wholesale store.
+
+## Workflow
+
+1. **Policy**: who qualifies, application form, minimum order value or quantities, pricing (often a discount from retail), payment terms, shipping rules.
+2. **Customer setup**: companies/locations (Plus) or tagged customers (apps); approval process.
+3. **Catalog and prices**: price lists per customer group, case packs and quantity increments, products hidden from retail if needed.
+4. **Ordering**: quick order form, reorder from past orders, draft orders for phone/email orders.
+5. **Payments**: credit card, invoices with payment terms, deposits; reminders for overdue invoices.
+6. **Operations**: separate fulfillment priorities, packing slips, wholesale-specific emails.
+
+## Output Format
+
+1. Recommended setup (B2B on Plus, app or separate store) and why
+2. Wholesale policy draft
+3. Configuration steps
+4. Wholesale customer onboarding email
+
+Shopify admin menus, app names and plan features change; confirm in the Shopify Help Center before acting.
 
 ## Installation
 
@@ -36,23 +58,12 @@ This skill only, with the Skills CLI (Claude Code, Cursor, Codex and other agent
 npx skills add histoiretik1-glitch/eCommerce-Skills --skill shopify-wholesale-channel -g
 ```
 
-## Usage
-
-After installation, ask your AI assistant about shopify wholesale channel topics. Example prompts:
+## Example Requests
 
 - "Help me with shopify wholesale channel for my Shopify store"
 - "What are the best practices for shopify wholesale channel?"
 - "Audit my current shopify wholesale channel setup and suggest improvements"
 - "Create a step-by-step shopify wholesale channel implementation plan"
-
-## Output
-
-Structured analysis and recommendations including:
-- Current state assessment
-- Priority action items (quick wins → long-term)
-- Tool/app recommendations with cost comparison
-- Implementation timeline
-- KPIs to track
 
 ## Limitations
 

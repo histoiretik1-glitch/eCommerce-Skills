@@ -7,6 +7,17 @@ description: "Plan and execute omnichannel e-commerce strategy. Unify selling ac
 
 Plan and execute omnichannel e-commerce strategy. Unify selling across Amazon, Shopify, Walmart, TikTok Shop, eBay, and Etsy with consistent branding, inventory sync, and customer experience.
 
+<!-- role-and-scope:start (generated from tools/skill_groups.json) -->
+## Role and Scope
+
+**This skill:** Strategy: which channels to sell on and how to keep brand and customer experience consistent.
+
+Part of: Selling on several channels. For neighbouring jobs, use the matching skill instead:
+
+- `multichannel-ecommerce` — Operations: inventory sync, order routing and listing syndication across channels.
+
+<!-- role-and-scope:end -->
+
 ## Capabilities
 
 - Channel selection matrix by product type and audience

@@ -8,6 +8,21 @@ metadata: {"nexscope":{"emoji":"💲","category":"ecommerce"}}
 
 Strategic competitor pricing intelligence. Map market positions, identify opportunities, and optimize your pricing strategy.
 
+<!-- role-and-scope:start (generated from tools/skill_groups.json) -->
+## Role and Scope
+
+**This skill:** One-off analysis of competitor prices and positioning.
+
+Part of: Pricing. For neighbouring jobs, use the matching skill instead:
+
+- `competitor-price-tracker` — Ongoing tracking of competitor prices with alerts.
+- `competitive-pricing-strategy` — Price architecture and response rules against competitors.
+- `dynamic-pricing-ecommerce` — Automated repricing rules with floors, ceilings and guardrails.
+- `price-optimization-tool` — Choosing a price from unit economics, elasticity and price tests.
+- `walmart-price-tracker` — Walmart-specific price tracking and repricing.
+
+<!-- role-and-scope:end -->
+
 ## Installation
 
 Part of the **`ecommerce-skills`** Claude Code plugin (all 162 skills). In Claude Code:

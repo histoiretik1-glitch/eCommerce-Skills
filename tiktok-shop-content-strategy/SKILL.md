@@ -8,6 +8,19 @@ metadata: {"nexscope":{"emoji":"🎬","category":"tiktok-shop"}}
 
 Create viral content that converts. Strategic content planning from trending formats to sales optimization.
 
+<!-- role-and-scope:start (generated from tools/skill_groups.json) -->
+## Role and Scope
+
+**This skill:** Short-video content plan for TikTok Shop: formats, hooks, calendar.
+
+Part of: TikTok content, brand and LIVE. For neighbouring jobs, use the matching skill instead:
+
+- `tiktok-shop-branding` — Building a recognizable brand on TikTok: identity, content pillars, community.
+- `tiktok-live-selling` — Planning and running TikTok Shop LIVE sessions.
+- `tiktok-shop-ads` — Paid TikTok Shop ads (Product, Video and LIVE Shopping Ads).
+
+<!-- role-and-scope:end -->
+
 ## Installation
 
 Part of the **`ecommerce-skills`** Claude Code plugin (all 162 skills). In Claude Code:

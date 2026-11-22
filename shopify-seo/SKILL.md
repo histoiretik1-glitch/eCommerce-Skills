@@ -7,6 +7,18 @@ description: "Comprehensive Shopify SEO optimization guide. Technical SEO, on-pa
 
 Comprehensive Shopify SEO optimization guide. Technical SEO, on-page optimization, collection pages, blog strategy, site architecture, and link building for Shopify stores.
 
+<!-- role-and-scope:start (generated from tools/skill_groups.json) -->
+## Role and Scope
+
+**This skill:** SEO of a Shopify store.
+
+Part of: Store and product page SEO. For neighbouring jobs, use the matching skill instead:
+
+- `product-page-seo` — Platform-independent product page SEO: on-page, structured data, speed, content.
+- `woocommerce-seo` — SEO of a WooCommerce store.
+
+<!-- role-and-scope:end -->
+
 ## Capabilities
 
 - Technical SEO audit: site speed, mobile, crawlability, indexing

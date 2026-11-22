@@ -93,8 +93,9 @@ Puis redémarrez Claude Code. Vous pouvez aussi activer la mise à jour automati
    ---
    ```
    `name` doit être **identique au nom du dossier** (minuscules, chiffres, tirets).
-2. Si vous modifiez un script partagé (familles `profit-margin-calculator`, `supply-chain-optimization`, `brand-protection`, `product-differentiation`, `review-checker`), modifiez une copie puis recopiez-la à l'identique dans chaque dossier de la famille : un test vérifie qu'elles restent identiques. La plateforme est déduite du nom du dossier.
-3. Régénérez la liste des skills du manifeste, validez et lancez les tests :
+2. Si le skill a des voisins fonctionnels, déclarez son rôle dans `tools/skill_groups.json`, puis lancez `python3 tools/apply_skill_groups.py` pour régénérer les sections « Role and Scope ». Ne modifiez pas ces sections à la main.
+3. Si vous modifiez un script partagé (familles `profit-margin-calculator`, `supply-chain-optimization`, `brand-protection`, `product-differentiation`, `review-checker`), modifiez une copie puis recopiez-la à l'identique dans chaque dossier de la famille : un test vérifie qu'elles restent identiques. La plateforme est déduite du nom du dossier.
+4. Régénérez la liste des skills du manifeste, validez et lancez les tests :
    ```bash
    python3 tools/validate_plugin.py --write
    ```
@@ -104,8 +105,8 @@ Puis redémarrez Claude Code. Vous pouvez aussi activer la mise à jour automati
    ```bash
    python3 -m unittest discover -s tests -v
    ```
-4. **Augmentez le numéro `version`** du plugin dans `.claude-plugin/marketplace.json` (par exemple `1.0.0` → `1.1.0`). Claude Code se sert de ce numéro pour détecter une mise à jour : sans changement de version, `claude plugin update` considère le plugin à jour.
-5. Faites un commit et un push sur la branche par défaut (`main`).
+5. **Augmentez le numéro `version`** du plugin dans `.claude-plugin/marketplace.json` (par exemple `1.0.0` → `1.1.0`). Claude Code se sert de ce numéro pour détecter une mise à jour : sans changement de version, `claude plugin update` considère le plugin à jour.
+6. Faites un commit et un push sur la branche par défaut (`main`).
 
 ### Validation automatique (GitHub Actions)
 
@@ -157,6 +158,15 @@ claude plugin disable ecommerce-skills@ecommerce-skills
 ```
 
 ## Historique des versions
+
+### 1.3.0 — LOT 3 (doublons et rôles)
+
+- **Aucun skill supprimé**, toujours 162. Les doublons sont traités par des rôles distincts, des renvois entre voisins et du contenu propre à chaque skill.
+- **Registre des groupes** `tools/skill_groups.json` : 24 groupes de skills voisins (Etsy, TikTok Shop, vitesse Shopify, conversion, paiement, prix, avis, stocks, canaux, e-mail, abonnements…), 88 skills avec un rôle unique. `tools/apply_skill_groups.py` en génère une section « Role and Scope » dans chaque skill concerné ; `--check` vérifie qu'elle est à jour.
+- **20 skills Etsy** et **20 skills Shopify** qui n'étaient que des gabarits identiques ont maintenant une méthode propre (informations à collecter, étapes, règles de la plateforme, format de livrable). `etsy-seller-guide` devient le point d'entrée Etsy et renvoie vers les 20 skills spécialisés.
+- **TikTok Shop** : `tiktok-influencer-marketing` (stratégie et choix du modèle de collaboration) est distingué de `tiktok-creator-marketplace` (campagnes payées), `tiktok-shop-affiliate-program` (programme d'affiliation) et `tiktok-shop-creator-management` (gestion du vivier de créateurs).
+- **Descriptions** : 22 descriptions réécrites pour que chaque skill se distingue de ses voisins (ressemblance inférieure à 50 % au sein d'un groupe).
+- **Tests** (`tests/test_duplicates.py`) : registre cohérent, aucun nouveau gabarit, aucun doublon de contenu, descriptions distinctes, aucune ligne de contenu perdue depuis la 1.2.0, et sélection du bon skill face à ses voisins (50 demandes types).
 
 ### 1.2.0 — LOT 2 (installation et descriptions)
 

@@ -7,6 +7,19 @@ description: "Increase Shopify store conversion rates with data-driven optimizat
 
 Increase Shopify store conversion rates with data-driven optimization. Product pages, checkout flow, trust signals, page speed, mobile UX, and A/B testing for higher revenue per visitor.
 
+<!-- role-and-scope:start (generated from tools/skill_groups.json) -->
+## Role and Scope
+
+**This skill:** CRO on a Shopify store: theme, apps, product pages, Shopify checkout.
+
+Part of: Conversion and landing pages. For neighbouring jobs, use the matching skill instead:
+
+- `conversion-rate-optimization` — Platform-independent CRO: funnel analysis, heuristics and testing roadmap.
+- `ecommerce-landing-page` — Auditing an existing landing or product page for conversion.
+- `shopify-landing-page-builder` — Building a new campaign or seasonal landing page on Shopify.
+
+<!-- role-and-scope:end -->
+
 ## Capabilities
 
 - Conversion funnel analysis and drop-off identification

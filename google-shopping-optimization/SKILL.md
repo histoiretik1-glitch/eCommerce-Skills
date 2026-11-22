@@ -1,6 +1,6 @@
 ---
 name: google-shopping-optimization
-description: "Optimize Google Shopping campaigns and product feeds for maximum visibility and ROAS. Feed optimization, bidding strategy, campaign structure, and Performance Max integration. Use when a seller asks about Google Shopping or Performance Max campaigns, Merchant Center feed quality, Shopping bids or ROAS (for the Shopify Google channel app use `shopify-google-channel`)."
+description: "Google Shopping and Performance Max campaign strategy for any store. Structures campaigns and asset groups, sets bidding and ROAS targets, splits budgets by product performance, and uses feed quality as a lever for campaign results. Use when a seller asks how to run, structure or improve Google Shopping or Performance Max ads and their ROAS (to connect a Shopify store to Merchant Center use `shopify-google-channel`; to fix feed errors on any channel use `ecommerce-feed-management`)."
 metadata:
   nexscope:
     emoji: "🛒"
@@ -14,6 +14,18 @@ Optimize Google Shopping campaigns and product feeds for maximum visibility and 
 **Supported platforms:** Amazon, Shopify, WooCommerce, Walmart, TikTok Shop, Etsy, eBay, BigCommerce.
 
 Built by [Nexscope](https://www.nexscope.ai/?co-from=skill) — your AI assistant for smarter e-commerce decisions.
+
+<!-- role-and-scope:start (generated from tools/skill_groups.json) -->
+## Role and Scope
+
+**This skill:** Google Shopping and Performance Max campaign strategy, bids and ROAS.
+
+Part of: Google Shopping and product feeds. For neighbouring jobs, use the matching skill instead:
+
+- `shopify-google-channel` — Connecting a Shopify store to Google with the Google & YouTube channel and Merchant Center.
+- `ecommerce-feed-management` — Monitoring and fixing product feeds for any channel (sync errors, missing SKUs, attributes).
+
+<!-- role-and-scope:end -->
 
 ## Installation
 

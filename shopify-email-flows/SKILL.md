@@ -1,6 +1,6 @@
 ---
 name: shopify-email-flows
-description: "Shopify email automation flows. Builds welcome, abandoned cart, browse abandonment, post-purchase and win-back flows for a Shopify store (Shopify Email, Klaviyo or similar). Use when a Shopify store owner asks which email automations to set up or how to improve them (for a full email program with copy use `ecommerce-email-marketing-builder`)."
+description: "Shopify email automations setup. Turns on and configures the core automated flows of a Shopify store in priority order (welcome, abandoned checkout, browse abandonment, post-purchase, win-back, replenishment) in Shopify Email or Klaviyo, with triggers, timing and filters. Use when a Shopify store owner asks which automations to turn on or how to configure them (see `ecommerce-email-marketing-builder` for a complete program with copywriting)."
 metadata:
   nexscope:
     category: shopify
@@ -10,16 +10,54 @@ metadata:
 
 Email automation flows — welcome series, abandoned cart, post-purchase, win-back, browse abandonment.
 
+<!-- role-and-scope:start (generated from tools/skill_groups.json) -->
+## Role and Scope
+
+**This skill:** Setting up the core automated email flows of a Shopify store.
+
+Part of: Email marketing. For neighbouring jobs, use the matching skill instead:
+
+- `ecommerce-email-marketing-builder` — Complete email program with flows, copy, segmentation and ESP setup, for any store.
+
+<!-- role-and-scope:end -->
+
 ## Status
 
-🔶 **Beta** — This skill provides expert guidance and actionable frameworks for Shopify sellers.
+🔶 **Beta** — full workflow added in plugin version 1.3.0.
 
-## Capabilities
+Set up the core automated email flows of a Shopify store, in the order that brings the most revenue first.
 
-- Analyze your current Shopify store setup and identify optimization opportunities
-- Provide data-driven recommendations based on industry best practices
-- Generate step-by-step implementation plans tailored to your business stage
-- Compare tools, apps, and strategies with pros/cons analysis
+## Inputs to Collect
+
+Email tool (Shopify Email and marketing automations, Klaviyo, Omnisend…), list size and signup sources, existing automations and their results, brand voice, average order value and repeat rate.
+
+## Flows in Priority Order
+
+| Flow | Trigger | Emails | Goal |
+|------|---------|--------|------|
+| Welcome | Newsletter signup | 3-4 over 1-2 weeks | First purchase |
+| Abandoned checkout | Checkout started, not completed | 2-3 over 72 h | Recover the order |
+| Abandoned cart / browse | Product added or viewed | 1-2 | Bring back browsers |
+| Post-purchase | Order placed / delivered | 2-3 | Reassure, educate, ask for a review |
+| Win-back | No order for X days | 2-3 | Second or next purchase |
+| Replenishment | Expected reorder date | 1-2 | Repeat purchase of consumables |
+
+## Workflow
+
+1. Check consent settings and that signups flow into the tool (Shopify customer marketing status).
+2. Build flows in the order above; start with simple text-and-image templates in brand style.
+3. Personalize with product blocks and customer data (first name, last product).
+4. Exclude recent buyers from promotional emails; avoid stacking discounts across flows.
+5. Measure revenue per recipient, conversion and unsubscribe rates per flow; improve the weakest email first.
+
+## Output Format
+
+1. Flow map with triggers, timing and filters
+2. Subject lines and outline of each email
+3. Setup steps in the chosen tool
+4. KPIs and review cadence
+
+For a complete email program with full copywriting, use `ecommerce-email-marketing-builder`.
 
 ## Installation
 
@@ -36,23 +74,12 @@ This skill only, with the Skills CLI (Claude Code, Cursor, Codex and other agent
 npx skills add histoiretik1-glitch/eCommerce-Skills --skill shopify-email-flows -g
 ```
 
-## Usage
-
-After installation, ask your AI assistant about shopify email flows topics. Example prompts:
+## Example Requests
 
 - "Help me with shopify email flows for my Shopify store"
 - "What are the best practices for shopify email flows?"
 - "Audit my current shopify email flows setup and suggest improvements"
 - "Create a step-by-step shopify email flows implementation plan"
-
-## Output
-
-Structured analysis and recommendations including:
-- Current state assessment
-- Priority action items (quick wins → long-term)
-- Tool/app recommendations with cost comparison
-- Implementation timeline
-- KPIs to track
 
 ## Limitations
 

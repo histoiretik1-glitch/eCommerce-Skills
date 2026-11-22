@@ -7,6 +7,17 @@ description: "Run data-driven A/B tests on your Shopify store. Test product page
 
 Run data-driven A/B tests on your Shopify store. Test product pages, pricing, images, copy, checkout flow, and marketing campaigns with proper statistical methodology.
 
+<!-- role-and-scope:start (generated from tools/skill_groups.json) -->
+## Role and Scope
+
+**This skill:** Running A/B tests on a Shopify store with Shopify tools and apps.
+
+Part of: A/B testing. For neighbouring jobs, use the matching skill instead:
+
+- `ecommerce-ab-testing` — A/B testing method for any channel: hypotheses, sample size, significance, Amazon experiments, ads and email tests.
+
+<!-- role-and-scope:end -->
+
 ## Capabilities
 
 - A/B testing tool selection for Shopify (native and third-party)

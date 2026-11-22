@@ -1,11 +1,24 @@
 ---
 name: ebay-seller-tools
-description: "Essential tools and software for eBay sellers. Listing tools, repricing, analytics, inventory management, shipping, and research tools to scale your eBay business. Use when the user asks for help choosing software and tools for an eBay business (listing, repricing, analytics, inventory, shipping, research)."
+description: "eBay seller software selection. Compares and recommends tools for an eBay business by job: bulk listing and cross-listing, repricing, sold-listing research, inventory sync, shipping labels and analytics, with costs and fit for the seller's volume. Use when an eBay seller asks which software or apps to use, or how to automate listing, repricing or shipping on eBay (for how to sell on eBay use `ebay-seller-guide`)."
 ---
 
 # eBay Seller Tools
 
 Essential tools and software for eBay sellers. Listing tools, repricing, analytics, inventory management, shipping, and research tools to scale your eBay business.
+
+<!-- role-and-scope:start (generated from tools/skill_groups.json) -->
+## Role and Scope
+
+**This skill:** Choosing software tools for an eBay business.
+
+Part of: eBay and Walmart seller guides and tools. For neighbouring jobs, use the matching skill instead:
+
+- `ebay-seller-guide` — How to sell on eBay, from first listing to Top Rated Seller.
+- `walmart-seller-guide` — How to sell on Walmart Marketplace, from application to scaling.
+- `walmart-seller-tools` — Choosing software tools for a Walmart business.
+
+<!-- role-and-scope:end -->
 
 ## Capabilities
 

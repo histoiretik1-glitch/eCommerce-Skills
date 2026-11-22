@@ -12,14 +12,38 @@ Upsell and cross-sell strategy — product recommendations, cart upsells, post-p
 
 ## Status
 
-🔶 **Beta** — This skill provides expert guidance and actionable frameworks for Shopify sellers.
+🔶 **Beta** — full workflow added in plugin version 1.3.0.
 
-## Capabilities
+Raise average order value on Shopify with relevant upsells, cross-sells and bundles at each step of the purchase.
 
-- Analyze your current Shopify store setup and identify optimization opportunities
-- Provide data-driven recommendations based on industry best practices
-- Generate step-by-step implementation plans tailored to your business stage
-- Compare tools, apps, and strategies with pros/cons analysis
+## Inputs to Collect
+
+Average order value and items per order, best-selling products and frequently bought together pairs (order reports), margins, current apps, theme.
+
+## Placements and Tools
+
+| Placement | Offer type | Tools |
+|-----------|-----------|-------|
+| Product page | Complementary products, bundles, upgrades | Search & Discovery recommendations, Shopify Bundles, theme sections |
+| Cart / cart drawer | Add-ons, free-shipping progress bar | Theme cart features or apps |
+| Checkout | Small add-ons | Checkout UI extensions (see `shopify-checkout-customization`) |
+| Post-purchase page | One-click offer after payment | Post-purchase upsell apps |
+| Email | Replenishment, accessories | Post-purchase flows (`shopify-email-flows`) |
+
+## Workflow
+
+1. **Find pairs** from order data (products bought together, accessories, consumables).
+2. **Choose offers** that help the buyer: complementary items, larger size, bundle discount, gift wrap.
+3. **Set rules**: one or two offers per placement, priced below the main item, relevant to the cart.
+4. **Free-shipping threshold** slightly above the current average order value with a progress bar.
+5. **Measure** take rate per offer, AOV, conversion rate (check that upsells do not lower conversion).
+
+## Output Format
+
+1. Offer map by placement
+2. Bundle and pricing proposals
+3. Tool setup steps
+4. KPIs and test plan
 
 ## Installation
 
@@ -36,23 +60,12 @@ This skill only, with the Skills CLI (Claude Code, Cursor, Codex and other agent
 npx skills add histoiretik1-glitch/eCommerce-Skills --skill shopify-upsell-cross-sell -g
 ```
 
-## Usage
-
-After installation, ask your AI assistant about shopify upsell & cross-sell topics. Example prompts:
+## Example Requests
 
 - "Help me with shopify upsell & cross-sell for my Shopify store"
 - "What are the best practices for shopify upsell & cross-sell?"
 - "Audit my current shopify upsell & cross-sell setup and suggest improvements"
 - "Create a step-by-step shopify upsell & cross-sell implementation plan"
-
-## Output
-
-Structured analysis and recommendations including:
-- Current state assessment
-- Priority action items (quick wins → long-term)
-- Tool/app recommendations with cost comparison
-- Implementation timeline
-- KPIs to track
 
 ## Limitations
 

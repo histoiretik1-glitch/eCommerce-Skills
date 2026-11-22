@@ -15,6 +15,18 @@ Optimize e-commerce product pages for search engine visibility. On-page SEO, str
 
 Built by [Nexscope](https://www.nexscope.ai/?co-from=skill) — your AI assistant for smarter e-commerce decisions.
 
+<!-- role-and-scope:start (generated from tools/skill_groups.json) -->
+## Role and Scope
+
+**This skill:** Platform-independent product page SEO: on-page, structured data, speed, content.
+
+Part of: Store and product page SEO. For neighbouring jobs, use the matching skill instead:
+
+- `shopify-seo` — SEO of a Shopify store.
+- `woocommerce-seo` — SEO of a WooCommerce store.
+
+<!-- role-and-scope:end -->
+
 ## Installation
 
 Part of the **`ecommerce-skills`** Claude Code plugin (all 162 skills). In Claude Code:

@@ -15,6 +15,21 @@ Set up competitor price tracking and monitoring workflows. Track price changes, 
 
 Built by [Nexscope](https://www.nexscope.ai/?co-from=skill) — your AI assistant for smarter e-commerce decisions.
 
+<!-- role-and-scope:start (generated from tools/skill_groups.json) -->
+## Role and Scope
+
+**This skill:** Ongoing tracking of competitor prices with alerts.
+
+Part of: Pricing. For neighbouring jobs, use the matching skill instead:
+
+- `competitor-price-analysis` — One-off analysis of competitor prices and positioning.
+- `competitive-pricing-strategy` — Price architecture and response rules against competitors.
+- `dynamic-pricing-ecommerce` — Automated repricing rules with floors, ceilings and guardrails.
+- `price-optimization-tool` — Choosing a price from unit economics, elasticity and price tests.
+- `walmart-price-tracker` — Walmart-specific price tracking and repricing.
+
+<!-- role-and-scope:end -->
+
 ## Installation
 
 Part of the **`ecommerce-skills`** Claude Code plugin (all 162 skills). In Claude Code:

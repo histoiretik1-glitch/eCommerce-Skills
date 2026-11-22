@@ -1,6 +1,6 @@
 ---
 name: ecommerce-checkout-optimization
-description: "Optimize e-commerce checkout flow to reduce cart abandonment. Friction analysis, payment method optimization, trust signals, and checkout UX best practices. Use when a store has high cart or checkout abandonment, wants to add payment methods, or asks how to simplify checkout (for Shopify-specific checkout settings use `shopify-checkout-customization`)."
+description: "Platform-independent checkout optimization. Audits the purchase path step by step (guest purchase, form fields, surprise costs, payment options, trust and delivery information) and prioritizes fixes that raise completion on WooCommerce, BigCommerce, custom sites or any other platform. Use when a store has high abandonment at payment or asks how to simplify its buying process (for Shopify settings use `shopify-checkout-customization`; for recovery emails use `shopify-cart-abandonment`)."
 metadata:
   nexscope:
     emoji: "💳"
@@ -14,6 +14,18 @@ Optimize e-commerce checkout flow to reduce cart abandonment. Friction analysis,
 **Supported platforms:** Amazon, Shopify, WooCommerce, Walmart, TikTok Shop, Etsy, eBay, BigCommerce.
 
 Built by [Nexscope](https://www.nexscope.ai/?co-from=skill) — your AI assistant for smarter e-commerce decisions.
+
+<!-- role-and-scope:start (generated from tools/skill_groups.json) -->
+## Role and Scope
+
+**This skill:** Platform-independent checkout optimization: friction, payment methods, trust.
+
+Part of: Checkout and cart abandonment. For neighbouring jobs, use the matching skill instead:
+
+- `shopify-checkout-customization` — Configuring the Shopify checkout (Checkout Extensibility, express payments, fields).
+- `shopify-cart-abandonment` — Recovering abandoned carts and checkouts on Shopify (email, SMS, retargeting).
+
+<!-- role-and-scope:end -->
 
 ## Installation
 

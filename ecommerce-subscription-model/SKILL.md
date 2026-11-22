@@ -7,6 +7,17 @@ description: "Design and launch subscription-based e-commerce businesses. Subscr
 
 Design and launch subscription-based e-commerce businesses. Subscribe-and-save, membership boxes, replenishment models, pricing tiers, and churn reduction strategies.
 
+<!-- role-and-scope:start (generated from tools/skill_groups.json) -->
+## Role and Scope
+
+**This skill:** Designing the subscription offer and business model.
+
+Part of: Subscriptions. For neighbouring jobs, use the matching skill instead:
+
+- `shopify-subscription-setup` — Implementing subscriptions on a Shopify store.
+
+<!-- role-and-scope:end -->
+
 ## Capabilities
 
 - Subscription model types: replenishment, curation, access

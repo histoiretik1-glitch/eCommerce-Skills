@@ -12,14 +12,33 @@ Shopify Markets — multi-currency, translation, duties/taxes, localized pricing
 
 ## Status
 
-🔶 **Beta** — This skill provides expert guidance and actionable frameworks for Shopify sellers.
+🔶 **Beta** — full workflow added in plugin version 1.3.0.
 
-## Capabilities
+Sell to other countries from one Shopify store with Shopify Markets: local currencies, languages, domains, duties and prices.
 
-- Analyze your current Shopify store setup and identify optimization opportunities
-- Provide data-driven recommendations based on industry best practices
-- Generate step-by-step implementation plans tailored to your business stage
-- Compare tools, apps, and strategies with pros/cons analysis
+## Inputs to Collect
+
+Target countries (`cross-border-ecommerce` helps choose), current markets setup, payment provider (some features need Shopify Payments), shipping options abroad, product restrictions, translation resources.
+
+## Workflow
+
+1. **Markets**: create a market per country or region; set currency, language and domain or subfolder (e.g. `/fr-ca`).
+2. **Pricing**: automatic currency conversion with rounding, or fixed local prices per market for key products; adjust for duties and shipping.
+3. **Duties and import taxes**: decide whether buyers pay duties at checkout (delivered duty paid) or on delivery; set HS codes and countries of origin on products.
+4. **Translations**: Translate & Adapt or a translation app; translate product content, checkout, notifications and policies; review machine translations of key pages.
+5. **Shipping and returns** per market: carriers, delivery estimates, international returns policy.
+6. **Payments**: local payment methods per market.
+7. **SEO**: market-specific domains/subfolders with hreflang (handled by Shopify for markets), translated URLs and meta tags.
+8. **Test** a checkout from each market (currency, taxes, duties, delivery).
+
+## Output Format
+
+1. Market structure (countries, currencies, languages, domains)
+2. Pricing and duties approach per market
+3. Translation plan
+4. Launch checklist per market
+
+Shopify admin menus, app names and plan features change; confirm in the Shopify Help Center before acting.
 
 ## Installation
 
@@ -36,23 +55,12 @@ This skill only, with the Skills CLI (Claude Code, Cursor, Codex and other agent
 npx skills add histoiretik1-glitch/eCommerce-Skills --skill shopify-international -g
 ```
 
-## Usage
-
-After installation, ask your AI assistant about shopify international selling topics. Example prompts:
+## Example Requests
 
 - "Help me with shopify international selling for my Shopify store"
 - "What are the best practices for shopify international selling?"
 - "Audit my current shopify international selling setup and suggest improvements"
 - "Create a step-by-step shopify international selling implementation plan"
-
-## Output
-
-Structured analysis and recommendations including:
-- Current state assessment
-- Priority action items (quick wins → long-term)
-- Tool/app recommendations with cost comparison
-- Implementation timeline
-- KPIs to track
 
 ## Limitations
 

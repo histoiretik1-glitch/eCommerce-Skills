@@ -7,6 +7,21 @@ description: Build an evidence-based competitive pricing strategy for ecommerce 
 
 Turn comparable-offer evidence, unit economics, and brand positioning into a SKU-level price architecture, competitor-response policy, and controlled rollout plan.
 
+<!-- role-and-scope:start (generated from tools/skill_groups.json) -->
+## Role and Scope
+
+**This skill:** Price architecture and response rules against competitors.
+
+Part of: Pricing. For neighbouring jobs, use the matching skill instead:
+
+- `competitor-price-analysis` — One-off analysis of competitor prices and positioning.
+- `competitor-price-tracker` — Ongoing tracking of competitor prices with alerts.
+- `dynamic-pricing-ecommerce` — Automated repricing rules with floors, ceilings and guardrails.
+- `price-optimization-tool` — Choosing a price from unit economics, elasticity and price tests.
+- `walmart-price-tracker` — Walmart-specific price tracking and repricing.
+
+<!-- role-and-scope:end -->
+
 ## Installation
 
 Part of the **`ecommerce-skills`** Claude Code plugin (all 162 skills). In Claude Code:

@@ -10,6 +10,22 @@ metadata: {"nexscope":{"emoji":"🔍","category":"ecommerce"}}
 
 Analyze and optimize Etsy listings for better search visibility.
 
+<!-- role-and-scope:start (generated from tools/skill_groups.json) -->
+## Role and Scope
+
+**This skill:** Full SEO audit and scoring of an Etsy listing (title, tags, description) with the analyzer script.
+
+Part of: Etsy listings and search. For neighbouring jobs, use the matching skill instead:
+
+- `etsy-seller-guide` — Entry point for Etsy: diagnoses where the shop stands across the whole selling lifecycle and routes to the specialist Etsy skills.
+- `etsy-keyword-research` — Finding the search phrases Etsy buyers use, before writing titles and tags.
+- `etsy-seo-tags` — Writing the 13 tags and filling attributes of an Etsy listing.
+- `etsy-product-description` — Writing the description text of an Etsy listing.
+- `etsy-listing-photography` — Photos and video of an Etsy listing.
+- `etsy-competitor-analysis` — Studying competing Etsy shops and listings to find gaps.
+
+<!-- role-and-scope:end -->
+
 ## Installation
 
 Part of the **`ecommerce-skills`** Claude Code plugin (all 162 skills). In Claude Code:

@@ -15,6 +15,19 @@ Set up systematic review monitoring across e-commerce platforms. Track new revie
 
 Built by [Nexscope](https://www.nexscope.ai/?co-from=skill) — your AI assistant for smarter e-commerce decisions.
 
+<!-- role-and-scope:start (generated from tools/skill_groups.json) -->
+## Role and Scope
+
+**This skill:** Ongoing review monitoring: alerts on new or negative reviews and the response workflow.
+
+Part of: Reviews, feedback and reputation. For neighbouring jobs, use the matching skill instead:
+
+- `product-review-analysis` — Deep analysis of product reviews: pain points, praise, feature requests, sentiment.
+- `customer-feedback-analysis` — Analysis of all customer feedback channels (reviews, surveys, tickets) into improvement priorities.
+- `online-reputation-management` — Brand-level reputation: monitoring framework, rating recovery and crisis communication.
+
+<!-- role-and-scope:end -->
+
 ## Installation
 
 Part of the **`ecommerce-skills`** Claude Code plugin (all 162 skills). In Claude Code:

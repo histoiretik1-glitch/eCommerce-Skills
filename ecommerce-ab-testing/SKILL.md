@@ -7,6 +7,17 @@ description: "Master A/B testing for e-commerce across all platforms. Test produ
 
 Master A/B testing for e-commerce across all platforms. Test product pages, pricing, ads, emails, and checkout flows with statistical rigor to maximize conversion and revenue.
 
+<!-- role-and-scope:start (generated from tools/skill_groups.json) -->
+## Role and Scope
+
+**This skill:** A/B testing method for any channel: hypotheses, sample size, significance, Amazon experiments, ads and email tests.
+
+Part of: A/B testing. For neighbouring jobs, use the matching skill instead:
+
+- `shopify-ab-testing` — Running A/B tests on a Shopify store with Shopify tools and apps.
+
+<!-- role-and-scope:end -->
+
 ## Capabilities
 
 - A/B testing methodology for e-commerce

@@ -8,6 +8,19 @@ metadata: {"nexscope":{"emoji":"📢","category":"tiktok-shop"}}
 
 Master TikTok Shop advertising. Campaign setup, bidding optimization, and performance scaling strategies.
 
+<!-- role-and-scope:start (generated from tools/skill_groups.json) -->
+## Role and Scope
+
+**This skill:** Paid TikTok Shop ads (Product, Video and LIVE Shopping Ads).
+
+Part of: TikTok content, brand and LIVE. For neighbouring jobs, use the matching skill instead:
+
+- `tiktok-shop-content-strategy` — Short-video content plan for TikTok Shop: formats, hooks, calendar.
+- `tiktok-shop-branding` — Building a recognizable brand on TikTok: identity, content pillars, community.
+- `tiktok-live-selling` — Planning and running TikTok Shop LIVE sessions.
+
+<!-- role-and-scope:end -->
+
 ## Installation
 
 Part of the **`ecommerce-skills`** Claude Code plugin (all 162 skills). In Claude Code:

@@ -12,14 +12,31 @@ DIY product photography — setup, lighting, backgrounds, editing, lifestyle sho
 
 ## Status
 
-🔶 **Beta** — This skill provides expert guidance and actionable frameworks for Shopify sellers.
+🔶 **Beta** — full workflow added in plugin version 1.3.0.
 
-## Capabilities
+Shoot and prepare product photos that make Shopify product pages convert and load fast.
 
-- Analyze your current Shopify store setup and identify optimization opportunities
-- Provide data-driven recommendations based on industry best practices
-- Generate step-by-step implementation plans tailored to your business stage
-- Compare tools, apps, and strategies with pros/cons analysis
+## Inputs to Collect
+
+Products and their size and materials, available space, phone or camera, budget for lights and backdrops, theme's image ratio (square or portrait), brand style.
+
+## Workflow
+
+1. **Shot list per product**: white or neutral background hero, angles, detail/texture, scale (in hand or on a person), lifestyle in use, variants, packaging, 360 or short video for complex products.
+2. **Setup**: window light or two soft lights, a white sweep or foam board reflectors, tripod, fixed white balance.
+3. **Consistency**: same ratio, background and framing for all products so collection grids look clean (match the theme's aspect ratio, square is common).
+4. **Editing**: crop, straighten, remove dust, correct color to match the real product; no misleading retouching.
+5. **Export for Shopify**: high resolution (square around 2048 px is a common recommendation) but compressed files, descriptive file names, alt text for each image.
+6. **Upload**: hero first, variant images assigned to variants, video on the product page.
+
+## Output Format
+
+1. Shot list per product
+2. Equipment list for the budget
+3. Lighting and camera settings
+4. Editing and export checklist
+
+For Etsy listing photos, see `etsy-listing-photography`.
 
 ## Installation
 
@@ -36,23 +53,12 @@ This skill only, with the Skills CLI (Claude Code, Cursor, Codex and other agent
 npx skills add histoiretik1-glitch/eCommerce-Skills --skill shopify-product-photography-guide -g
 ```
 
-## Usage
-
-After installation, ask your AI assistant about shopify product photography guide topics. Example prompts:
+## Example Requests
 
 - "Help me with shopify product photography guide for my Shopify store"
 - "What are the best practices for shopify product photography guide?"
 - "Audit my current shopify product photography guide setup and suggest improvements"
 - "Create a step-by-step shopify product photography guide implementation plan"
-
-## Output
-
-Structured analysis and recommendations including:
-- Current state assessment
-- Priority action items (quick wins → long-term)
-- Tool/app recommendations with cost comparison
-- Implementation timeline
-- KPIs to track
 
 ## Limitations
 

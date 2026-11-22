@@ -21,6 +21,18 @@ nexscope:
 
 AI-powered product feed management and monitoring skill. Designs feed health checks, sync error diagnostics, missing SKU detection, and attribute completeness validation for e-commerce product catalogs.
 
+<!-- role-and-scope:start (generated from tools/skill_groups.json) -->
+## Role and Scope
+
+**This skill:** Monitoring and fixing product feeds for any channel (sync errors, missing SKUs, attributes).
+
+Part of: Google Shopping and product feeds. For neighbouring jobs, use the matching skill instead:
+
+- `google-shopping-optimization` — Google Shopping and Performance Max campaign strategy, bids and ROAS.
+- `shopify-google-channel` — Connecting a Shopify store to Google with the Google & YouTube channel and Merchant Center.
+
+<!-- role-and-scope:end -->
+
 ## Capabilities
 
 - Generates actionable monitoring & alerts frameworks based on your specific business context

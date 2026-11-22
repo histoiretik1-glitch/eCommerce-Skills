@@ -60,6 +60,7 @@ npx skills add histoiretik1-glitch/eCommerce-Skills --skill ecommerce-growth-str
 
 ### What's new
 
+- **1.3.0:** duplicates resolved without removing any skill: the 20 template-only Etsy skills and 20 template-only Shopify skills now have their own workflows; 24 groups of neighbouring skills (Etsy, TikTok Shop, Shopify speed, checkout, pricing, reviews, inventory…) each give every skill one role and point to the right neighbour; descriptions inside a group are distinct; tests detect new duplicates and lost content.
 - **1.2.0:** every skill has a standard installation section (plugin + Skills CLI) instead of the old `clawhub` / `nexscope/<skill>` commands; all 162 descriptions say what the skill does and when to use it, and name their platform; references to skills that did not exist were fixed; the validator and tests enforce these rules.
 - **1.1.0:** the profit calculators, supply chain, brand protection and review checker scripts apply each platform's own fees, labels and enforcement channels (they all used Amazon's before); 13 TikTok Shop skills were rewritten with full workflows; TikTok Shop fees are consistent across skills; script examples are covered by automated tests.
 

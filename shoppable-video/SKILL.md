@@ -7,6 +7,18 @@ description: "Create and optimize shoppable video content for e-commerce. Strate
 
 Create and optimize shoppable video content for e-commerce. Strategy for TikTok Shop, Instagram Reels, YouTube Shorts, and Amazon Live with product tagging, CTAs, and conversion optimization.
 
+<!-- role-and-scope:start (generated from tools/skill_groups.json) -->
+## Role and Scope
+
+**This skill:** Shoppable and live-shopping video with product tagging on several platforms.
+
+Part of: Video commerce. For neighbouring jobs, use the matching skill instead:
+
+- `ecommerce-video-marketing` — Overall video marketing strategy across channels.
+- `tiktok-live-selling` — Planning and running TikTok Shop LIVE sessions.
+
+<!-- role-and-scope:end -->
+
 ## Capabilities
 
 - Shoppable video format selection by platform

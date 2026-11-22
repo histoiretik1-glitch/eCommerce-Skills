@@ -12,14 +12,37 @@ App stack advisor — essential apps by business stage, cost optimization, perfo
 
 ## Status
 
-🔶 **Beta** — This skill provides expert guidance and actionable frameworks for Shopify sellers.
+🔶 **Beta** — full workflow added in plugin version 1.3.0.
 
-## Capabilities
+Build a lean Shopify app stack that covers the store's needs without slowing it down or wasting money.
 
-- Analyze your current Shopify store setup and identify optimization opportunities
-- Provide data-driven recommendations based on industry best practices
-- Generate step-by-step implementation plans tailored to your business stage
-- Compare tools, apps, and strategies with pros/cons analysis
+## Inputs to Collect
+
+Store stage (pre-launch, < $10K/month, scaling, high volume), current apps and monthly cost, problems to solve (reviews, email, upsells, subscriptions, SEO, support, shipping), theme, Shopify plan.
+
+## Workflow
+
+1. **Start with Shopify's own tools** before third-party apps: Shopify Email and Marketing automations, Shopify Flow, Shopify Inbox, Search & Discovery (filters and product recommendations), Shopify Forms, Shopify Subscriptions, Translate & Adapt (availability depends on plan and region).
+2. **Map needs to categories** and pick at most one app per job:
+
+| Stage | Typical essentials |
+|-------|--------------------|
+| Launch | Reviews, email capture and flows, basic SEO, shipping/labels |
+| Growth | Upsells/bundles, loyalty or referral, advanced email/SMS, analytics |
+| Scale | Subscriptions, helpdesk, inventory/ERP sync, personalization |
+
+3. **Evaluate each candidate**: reviews and support, price at the store's volume, storefront performance (does it add scripts on every page?), data export, removal process.
+4. **Audit the current stack**: overlapping apps, unused apps still billing, apps that left code after removal.
+5. **Cost check**: total app cost as a share of revenue.
+
+## Output Format
+
+1. Recommended stack by need with the reason
+2. Apps to remove (overlap, unused, slow)
+3. Monthly cost before/after
+4. Installation order and test plan
+
+For speed impact, see `shopify-speed-optimization`.
 
 ## Installation
 
@@ -36,23 +59,12 @@ This skill only, with the Skills CLI (Claude Code, Cursor, Codex and other agent
 npx skills add histoiretik1-glitch/eCommerce-Skills --skill shopify-app-recommendations -g
 ```
 
-## Usage
-
-After installation, ask your AI assistant about shopify app recommendations topics. Example prompts:
+## Example Requests
 
 - "Help me with shopify app recommendations for my Shopify store"
 - "What are the best practices for shopify app recommendations?"
 - "Audit my current shopify app recommendations setup and suggest improvements"
 - "Create a step-by-step shopify app recommendations implementation plan"
-
-## Output
-
-Structured analysis and recommendations including:
-- Current state assessment
-- Priority action items (quick wins → long-term)
-- Tool/app recommendations with cost comparison
-- Implementation timeline
-- KPIs to track
 
 ## Limitations
 

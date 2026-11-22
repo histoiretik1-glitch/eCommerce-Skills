@@ -7,6 +7,21 @@ description: Evaluate ecommerce price candidates using unit economics, historica
 
 Build an evidence-bounded price decision from seller economics and observed behavior, then recommend a reversible test or rollout with explicit uncertainty.
 
+<!-- role-and-scope:start (generated from tools/skill_groups.json) -->
+## Role and Scope
+
+**This skill:** Choosing a price from unit economics, elasticity and price tests.
+
+Part of: Pricing. For neighbouring jobs, use the matching skill instead:
+
+- `competitor-price-analysis` — One-off analysis of competitor prices and positioning.
+- `competitor-price-tracker` — Ongoing tracking of competitor prices with alerts.
+- `competitive-pricing-strategy` — Price architecture and response rules against competitors.
+- `dynamic-pricing-ecommerce` — Automated repricing rules with floors, ceilings and guardrails.
+- `walmart-price-tracker` — Walmart-specific price tracking and repricing.
+
+<!-- role-and-scope:end -->
+
 ## Installation
 
 Part of the **`ecommerce-skills`** Claude Code plugin (all 162 skills). In Claude Code:
