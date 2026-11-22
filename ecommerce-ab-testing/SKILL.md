@@ -1,3 +1,8 @@
+---
+name: ecommerce-ab-testing
+description: "Master A/B testing for e-commerce across all platforms. Test product pages, pricing, ads, emails, and checkout flows with statistical rigor to maximize conversion and revenue. Use when the user asks for help designing or analyzing A/B tests on product pages, prices, ads, emails or checkout, including sample size and significance."
+---
+
 # E-Commerce A/B Testing
 
 Master A/B testing for e-commerce across all platforms. Test product pages, pricing, ads, emails, and checkout flows with statistical rigor to maximize conversion and revenue.

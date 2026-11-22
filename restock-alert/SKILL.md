@@ -1,4 +1,6 @@
 ---
+name: restock-alert
+description: "AI-powered restock alert and replenishment planning skill. Calculates optimal reorder points, safety stock levels, and stockout risk scores to prevent lost sales from inventory gaps. Use when the user asks for help calculating reorder points, safety stock, stockout risk or planning replenishment."
 nexscope:
   name: "Restock Alert"
   category: "Supply Chain & Logistics"

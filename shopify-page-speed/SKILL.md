@@ -1,4 +1,6 @@
 ---
+name: shopify-page-speed
+description: "AI-powered Shopify page speed optimization skill. Diagnoses performance bottlenecks, provides Core Web Vitals improvement plans, and recommends theme and app optimizations for faster Shopify stores. Use when the user asks for help diagnosing a slow Shopify store, improving Core Web Vitals or optimizing theme and apps for speed."
 nexscope:
   name: "Shopify Page Speed"
   category: "Site Performance"

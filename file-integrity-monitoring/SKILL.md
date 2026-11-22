@@ -1,4 +1,6 @@
 ---
+name: file-integrity-monitoring
+description: "AI-powered file integrity monitoring skill for e-commerce websites. Designs file change detection systems, tamper alerts, security baselines, and recovery procedures to protect online stores. Use when the user asks for help protecting a store against unauthorized file changes, defining tamper alerts, security baselines or recovery procedures."
 nexscope:
   name: "File Integrity Monitoring"
   category: "Monitoring & Alerts"

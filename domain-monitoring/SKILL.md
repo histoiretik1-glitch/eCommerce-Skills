@@ -1,4 +1,6 @@
 ---
+name: domain-monitoring
+description: "AI-powered domain and SSL certificate monitoring skill. Designs domain health checks, SSL expiry alerts, DNS anomaly detection, and security rating assessments for e-commerce websites. Use when the user asks for help monitoring a store's domain, SSL certificates or DNS, or checking domain security and expiry risks."
 nexscope:
   name: "Domain Monitoring"
   category: "Monitoring & Alerts"

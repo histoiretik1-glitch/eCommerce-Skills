@@ -1,4 +1,6 @@
 ---
+name: ecommerce-feed-management
+description: "AI-powered product feed management and monitoring skill. Designs feed health checks, sync error diagnostics, missing SKU detection, and attribute completeness validation for e-commerce product catalogs. Use when the user asks for help fixing or monitoring product feeds (Google Merchant Center, marketplaces), sync errors, missing SKUs or attributes."
 nexscope:
   name: "E-Commerce Feed Management"
   category: "Monitoring & Alerts"

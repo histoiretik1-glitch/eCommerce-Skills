@@ -1,3 +1,8 @@
+---
+name: multichannel-ecommerce
+description: "Manage e-commerce operations across multiple marketplaces and channels. Inventory sync, order routing, listing management, and unified analytics for Amazon, Shopify, Walmart, eBay, Etsy, and TikTok Shop. Use when the user asks for help selling on several marketplaces at once, syncing inventory, routing orders or syndicating listings."
+---
+
 # Multichannel E-Commerce Management
 
 Manage e-commerce operations across multiple marketplaces and channels. Inventory sync, order routing, listing management, and unified analytics for Amazon, Shopify, Walmart, eBay, Etsy, and TikTok Shop.

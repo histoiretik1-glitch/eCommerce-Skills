@@ -1,4 +1,6 @@
 ---
+name: inventory-tracking-software
+description: "AI-powered inventory tracking and monitoring skill for e-commerce businesses. Designs inventory monitoring systems, low-stock alerts, reorder point calculations, and multi-channel sync strategies. Use when the user asks for help setting up inventory tracking, low-stock alerts, reorder points or multi-channel stock sync."
 nexscope:
   name: "Inventory Tracking Software"
   category: "Supply Chain & Logistics"

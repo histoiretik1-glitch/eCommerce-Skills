@@ -1,3 +1,8 @@
+---
+name: shopify-store-setup
+description: "Step-by-step Shopify store setup guide. From account creation to first sale — theme selection, product uploads, payment and shipping configuration, domain setup, and launch checklist. Use when the user asks for help creating a new Shopify store, choosing plan and theme, configuring payments, shipping, domain and launch checklist."
+---
+
 # Shopify Store Setup
 
 Step-by-step Shopify store setup guide. From account creation to first sale — theme selection, product uploads, payment and shipping configuration, domain setup, and launch checklist.

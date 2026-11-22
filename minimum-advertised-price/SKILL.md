@@ -1,4 +1,6 @@
 ---
+name: minimum-advertised-price
+description: "AI-powered MAP (Minimum Advertised Price) policy and enforcement skill. Helps brands create MAP policies, monitor violations across channels, manage dealer compliance, and design enforcement workflows. Use when the user asks for help creating a MAP policy, detecting MAP violations or enforcing pricing compliance with resellers."
 nexscope:
   name: "Minimum Advertised Price"
   category: "Pricing & Profitability"

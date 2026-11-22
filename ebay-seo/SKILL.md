@@ -1,3 +1,8 @@
+---
+name: ebay-seo
+description: "Optimize eBay listings for Cassini search algorithm. Master item specifics, title optimization, category selection, and seller performance factors that drive search visibility. Use when the user asks for help improving eBay search ranking (Cassini), optimizing titles, item specifics or category selection."
+---
+
 # eBay SEO
 
 Optimize eBay listings for Cassini search algorithm. Master item specifics, title optimization, category selection, and seller performance factors that drive search visibility.
