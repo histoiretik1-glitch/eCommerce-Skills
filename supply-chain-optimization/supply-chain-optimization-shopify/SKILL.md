@@ -1,13 +1,23 @@
 ---
 name: supply-chain-optimization-shopify
 version: 1.0.0
-description: "Shopify/DTC supply chain bottleneck analyzer. Computes margins, 3PL fulfillment and shipping ratios, inventory days and cash conversion cycle (fast Shopify payouts) against DTC benchmarks, ranks the top 3 bottlenecks and proposes cost reduction actions; optional Markdown/HTML report. No API key required. Use when a Shopify or DTC brand asks about cash flow, 3PL costs, inventory levels, supplier payment terms or landed cost."
+description: "Shopify/DTC supply chain bottleneck analyzer. Computes margins, 3PL fulfillment and shipping ratios, inventory days and cash conversion cycle (fast Shopify payouts) against DTC benchmarks, ranks the top 3 bottlenecks and proposes cost reduction actions; optional Markdown/HTML report. Use when a Shopify or DTC brand asks about cash flow, 3PL costs, inventory levels, supplier payment terms or landed cost."
 metadata: {"nexscope":{"emoji":"📦","category":"ecommerce"}}
 ---
 
 # Supply Chain Optimization — Shopify/DTC 📦
 
 Supply chain bottleneck analyzer for Shopify and Direct-to-Consumer stores. Diagnose cash flow, inventory, shipping, and customer acquisition costs.
+
+## Output Format
+
+```
+SUPPLY CHAIN DIAGNOSIS — Shopify/DTC — [Product]
+| Metric | Value | Benchmark | Status |        (gross margin, shipping ratio, inventory days, cash cycle, net margin)
+Cost breakdown per unit (with platform fees)
+Top 3 bottlenecks: problem → impact → actions
+Action plan: [action, owner, expected effect, verified/estimate]
+```
 
 ## Installation
 

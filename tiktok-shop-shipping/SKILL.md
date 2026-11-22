@@ -66,6 +66,12 @@ Product weights and packed dimensions, average order value and items per order, 
 
 🔶 **Beta** — full workflow added in plugin version 1.1.0. Review figures marked "confirm in Seller Center" before acting.
 
+## Example Requests
+
+- "Should I offer free shipping on my $15 TikTok Shop products?"
+- "Set up TikTok Shop shipping templates for two warehouses."
+- "We keep getting shipping fee adjustments on TikTok Shop. What's wrong?"
+
 ## Installation
 
 Part of the **`ecommerce-skills`** Claude Code plugin (all 162 skills). In Claude Code:

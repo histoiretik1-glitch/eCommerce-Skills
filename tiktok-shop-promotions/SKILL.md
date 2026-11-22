@@ -62,6 +62,12 @@ Goal of the promotion, product cost and current price, referral fee, creator com
 
 🔶 **Beta** — full workflow added in plugin version 1.1.0. Review figures marked "confirm in Seller Center" before acting.
 
+## Example Requests
+
+- "Plan Flash Deals and vouchers for the next TikTok Shop mega campaign."
+- "Which promotion should I use to raise basket size on TikTok Shop?"
+- "Check whether stacking my product discount and voucher still leaves a profit."
+
 ## Installation
 
 Part of the **`ecommerce-skills`** Claude Code plugin (all 162 skills). In Claude Code:

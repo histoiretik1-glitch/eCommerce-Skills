@@ -1,13 +1,22 @@
 ---
 name: walmart-review-checker
 version: 1.0.0
-description: "Walmart review authenticity analyzer. Detect fake reviews, suspicious patterns, and rating manipulation. Includes WFS verified badge analysis, incentivized review detection, and Walmart-specific red flag identification. No API key required. Use when a Walmart seller or buyer asks whether a product's reviews are fake or manipulated, wants to audit a competitor's reviews, or needs evidence of suspicious review patterns."
+description: "Walmart review authenticity analyzer. Detect fake reviews, suspicious patterns, and rating manipulation. Includes WFS verified badge analysis, incentivized review detection, and Walmart-specific red flag identification. Use when a Walmart seller or buyer asks whether a product's reviews are fake or manipulated, wants to audit a competitor's reviews, or needs evidence of suspicious review patterns."
 metadata: {"nexscope":{"emoji":"🔍","category":"ecommerce"}}
 ---
 
 # Walmart Review Checker 🔍
 
 Review authenticity analyzer for Walmart — detect fake reviews, suspicious patterns, and feedback manipulation.
+
+## Workflow
+
+1. **Collect reviews** of the Walmart product: text, rating, date, and verified-purchase status where the platform shows it (export, copy-paste or CSV).
+2. **Choose the depth**: with text only, content checks run; dates enable time clustering; verified status enables the verified-purchase ratio.
+3. **Run the analyzer**: `python3 scripts/analyzer.py '<json list of reviews>'` (fields `content`, `rating`, `date`, `verified_purchase`; invalid fields stop the script with an error).
+4. **Read the dimensions**: content similarity, time clustering, rating distribution, verified ratio, length and incentive keywords; note which ones drive the score.
+5. **Check the flagged reviews** by hand before drawing conclusions; a high score is a signal, not proof.
+6. **Act**: for your own listing, fix the causes; for a competitor's, report suspicious reviews through the platform's reporting tools with the evidence.
 
 ## Installation
 

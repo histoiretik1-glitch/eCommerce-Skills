@@ -728,8 +728,43 @@ def format_report(result: AnalysisResult, lang: str = "en") -> str:
 # CLI
 # ============================================================
 
+def input_from_dict(d: dict):
+    """{"my_product": {...}, "competitors": [{...}], "competitor_reviews": {"negative": [...]}, "my_reviews": {...}}"""
+    allowed = {"my_product", "competitors", "competitor_reviews", "my_reviews"}
+    unknown = sorted(set(d) - allowed)
+    if unknown or "my_product" not in d:
+        raise ValueError(f"expected keys {', '.join(sorted(allowed))} (my_product required); unknown: {unknown}")
+    pf = set(ProductInfo.__dataclass_fields__)
+    rf = set(ReviewData.__dataclass_fields__)
+
+    def product(x, mine=False):
+        bad = sorted(set(x) - pf)
+        if bad:
+            raise ValueError(f"unknown product field(s): {', '.join(bad)}. Allowed: {', '.join(sorted(pf))}")
+        return ProductInfo(**{**x, "is_mine": mine or x.get("is_mine", False)})
+
+    def reviews(x):
+        bad = sorted(set(x or {}) - rf)
+        if bad:
+            raise ValueError(f"unknown review field(s): {', '.join(bad)}. Allowed: {', '.join(sorted(rf))}")
+        return ReviewData(**(x or {}))
+
+    return (product(d["my_product"], True), [product(c) for c in d.get("competitors", [])],
+            reviews(d.get("competitor_reviews")), reviews(d.get("my_reviews")))
+
+
 def main():
     lang = "zh" if "--zh" in sys.argv else "en"
+    args = [a for a in sys.argv[1:] if not a.startswith("--")]
+    if args:
+        try:
+            mine, comps, comp_reviews, own_reviews = input_from_dict(json.loads(args[0]))
+        except (ValueError, TypeError) as e:
+            print(f"Error: could not read the input JSON: {e}")
+            sys.exit(1)
+        print(format_report(analyze(mine, comps, comp_reviews, own_reviews), lang))
+        return
+    print("> ⚠️ **DEMO DATA** — example products and reviews. Pass your own data as JSON to analyze it.\n")
     
     # DemoData
     my_product = ProductInfo(

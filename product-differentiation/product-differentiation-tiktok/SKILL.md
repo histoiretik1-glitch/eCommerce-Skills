@@ -2,7 +2,7 @@
 name: product-differentiation-tiktok
 version: 1.0.0
 author: Nexscope AI
-description: "TikTok Shop product differentiation strategy tool. Analyze viral product trends, competitor affiliate strategies, content performance, and identify differentiation opportunities. Includes TikTok-specific metrics like engagement rate, viral potential, and creator collaboration insights. No API key required. Use when a TikTok Shop seller asks how to stand out from competitors, which weaknesses or review complaints to exploit, or what unique selling points and positioning to use."
+description: "TikTok Shop product differentiation strategy tool. Analyze viral product trends, competitor affiliate strategies, content performance, and identify differentiation opportunities. Includes TikTok-specific metrics like engagement rate, viral potential, and creator collaboration insights. Use when a TikTok Shop seller asks how to stand out from competitors, which weaknesses or review complaints to exploit, or what unique selling points and positioning to use."
 metadata: {"nexscope":{"emoji":"🎯","category":"ecommerce"}}
 ---
 
@@ -64,12 +64,10 @@ python3 scripts/analyzer.py
 ### With Parameters
 
 ```bash
-python3 scripts/analyzer.py '{
-  "your_product": "Wireless Earbuds",
-  "competitors": ["shop_id_1", "shop_id_2"],
-  "category": "Electronics"
-}'
+python3 scripts/analyzer.py '{"my_product": {"name": "Mini Phone Tripod", "price": 49.99, "rating": 4.3, "review_count": 150, "features": ["feature A", "feature B"]}, "competitors": [{"name": "Competitor A", "price": 59.99, "rating": 4.1, "review_count": 500}], "competitor_reviews": {"negative": ["Broke after two weeks", "Battery life is terrible", "Too expensive for this quality"]}, "my_reviews": {"positive": ["Great quality", "Fast shipping, well packaged"]}}'
 ```
+
+Fields: `my_product` (required: name, price, rating, review_count, features…), `competitors` (list), `competitor_reviews` and `my_reviews` (`positive`, `negative`, `neutral` lists of review texts). Paste real competitor reviews: the script analyzes only what it is given; without input it shows a demo, labelled as such.
 
 ## Output Example
 

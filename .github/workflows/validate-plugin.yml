@@ -108,6 +108,8 @@ jobs:
           claude_bin="$GITHUB_WORKSPACE/tools/ci/node_modules/.bin/claude"
           "$claude_bin" --version
           "$claude_bin" plugin validate .
+          # End-to-end: marketplace add, install (162 skills), simulated release + update, uninstall
+          python3 tools/check_install.py "$claude_bin"
 
       - name: Report skipped CLI validation
         if: steps.claude_cli.outcome != 'success'

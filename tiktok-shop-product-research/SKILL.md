@@ -53,7 +53,8 @@ Weight demonstrability and unit margin double; a product scoring under 3 on comp
 1. Gather evidence for each criterion (videos and their engagement, competitor shops and prices, reviews and complaints).
 2. Compute unit economics with `profit-margin-calculator-tiktok` at the target price and at a campaign price.
 3. Score, rank and explain the top 3.
-4. **Test plan** for the winner: small first order, 5-10 creator samples, 2-3 owned videos, success thresholds (e.g. CTR, conversion, cost per order) and a decision date.
+4. **Check compliance and supply** for the top 3: category restrictions (`tiktok-shop-compliance`), supplier lead time and sample quality.
+5. **Test plan** for the winner: small first order, 5-10 creator samples, 2-3 owned videos, success thresholds (e.g. CTR, conversion, cost per order) and a decision date.
 
 ## Output Format
 
@@ -73,6 +74,12 @@ Test plan: [first order, samples, videos, thresholds, decision date]
 ## Status
 
 🔶 **Beta** — full workflow added in plugin version 1.1.0. Review figures marked "confirm in Seller Center" before acting.
+
+## Example Requests
+
+- "Score these 5 product ideas for TikTok Shop and pick one to test."
+- "Is a $12 phone stand profitable on TikTok Shop with 20% creator commission?"
+- "Validate this AliExpress product for TikTok Shop before I order 500 units."
 
 ## Installation
 

@@ -69,6 +69,12 @@ Add the expected return cost to unit economics: in `profit-margin-calculator-tik
 
 🔶 **Beta** — full workflow added in plugin version 1.1.0. Review figures marked "confirm in Seller Center" before acting.
 
+## Example Requests
+
+- "Our TikTok Shop return rate is 18% on one product. How do we find the cause?"
+- "Should we refund without requiring a return for $8 items on TikTok Shop?"
+- "Write response templates for TikTok Shop return requests."
+
 ## Installation
 
 Part of the **`ecommerce-skills`** Claude Code plugin (all 162 skills). In Claude Code:

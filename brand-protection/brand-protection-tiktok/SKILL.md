@@ -2,13 +2,22 @@
 name: brand-protection-tiktok
 version: 1.0.0
 author: Nexscope AI
-description: "TikTok Shop brand protection toolkit. Detect unauthorized sellers, counterfeit products, and affiliate abuse. Includes TikTok IP Protection reporting, influencer misuse detection, and complaint templates. No API key required. Use when a brand owner asks about counterfeit TikTok Shop sellers, affiliates misusing the brand, or how to report IP infringement in the TikTok Shop IP Protection Center."
+description: "TikTok Shop brand protection toolkit. Detect unauthorized sellers, counterfeit products, and affiliate abuse. Includes TikTok IP Protection reporting, influencer misuse detection, and complaint templates. Use when a brand owner asks about counterfeit TikTok Shop sellers, affiliates misusing the brand, or how to report IP infringement in the TikTok Shop IP Protection Center."
 metadata: {"nexscope":{"emoji":"🛡️","category":"ecommerce"}}
 ---
 
 # Brand Protection — TikTok Shop 🛡️
 
 Protect your brand from unauthorized sellers and counterfeit products on TikTok Shop.
+
+## Workflow
+
+1. **Collect evidence**: listings or stores, seller names and IDs, prices, screenshots with URL and date, test-buy results, your trademark registration and authorized-seller list.
+2. **Classify each case**: unauthorized reseller, counterfeit, MAP violation (`minimum-advertised-price`), trademark or image misuse.
+3. **Score the risk**: run `python3 scripts/detector.py` to see the report and action-plan format, then apply the same checks to the collected data.
+4. **Prepare the filing** for the TikTok Shop IP Protection Center with `python3 scripts/templates.py complaint`, and a cease-and-desist letter with `python3 scripts/templates.py cease` when the seller is reachable.
+5. **Submit and track**: file through the platform channel, record the case number and deadline, follow up on counter-notices.
+6. **Verify and monitor**: confirm removals, re-check the listings weekly, escalate repeat offenders.
 
 ## Installation
 

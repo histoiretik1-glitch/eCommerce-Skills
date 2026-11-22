@@ -1,6 +1,6 @@
 ---
 name: shopify-theme-optimization
-description: "Shopify theme choice and tuning. Compares Online Store 2.0 themes, decides keep or switch, and tunes the theme's Liquid code, sections, app blocks, fonts and mobile layout for usability and conversion. Use when a Shopify store owner asks which theme to use, wants to customize or clean up theme code, or fix mobile UX (for a full speed fix plan use `shopify-speed-optimization`)."
+description: "Shopify theme choice and tuning. Compares Online Store 2.0 themes (such as Dawn) with the current one, decides keep or switch given custom Liquid code, and tunes sections, app blocks, fonts and mobile layout. Use whenever a Shopify store owner asks which theme to choose, whether to switch themes, or how to clean up or customize theme code (for a full speed fix plan use `shopify-speed-optimization`)."
 metadata:
   nexscope:
     category: shopify

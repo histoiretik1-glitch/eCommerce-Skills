@@ -678,8 +678,29 @@ def format_report(report: SEOReport, lang: str = "en") -> str:
 # CLI
 # ============================================================
 
+def listing_from_dict(d: dict) -> "ListingInfo":
+    allowed = set(ListingInfo.__dataclass_fields__)
+    unknown = sorted(set(d) - allowed)
+    if unknown:
+        raise ValueError(f"unknown field(s): {', '.join(unknown)}. Allowed: {', '.join(sorted(allowed))}")
+    d = dict(d)
+    if "category" in d:
+        d["category"] = str(d["category"]).strip().lower()
+    return ListingInfo(**d)
+
+
 def main():
     lang = "zh" if "--zh" in sys.argv else "en"
+    args = [a for a in sys.argv[1:] if not a.startswith("--")]
+    if args:
+        try:
+            listing = listing_from_dict(json.loads(args[0]))
+        except (ValueError, TypeError) as e:
+            print(f"Error: could not read the listing JSON: {e}")
+            sys.exit(1)
+        print(format_report(analyze_listing(listing), lang))
+        return
+    print("> ⚠️ **DEMO DATA** — example listing. Pass your listing as JSON (title, tags, description, category, attributes, images) to analyze it.\n")
     
     # DemoData
     listing = ListingInfo(

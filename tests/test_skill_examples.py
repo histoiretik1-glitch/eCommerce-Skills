@@ -12,10 +12,7 @@ from pathlib import Path
 from helpers import ROOT
 
 # Examples that cannot run offline or are illustrative on purpose
-SKIP = {
-    "brand-monitoring": "queries live websites",
-    "etsy-seo": "example payload is abbreviated with '...'",
-}
+SKIP = {}  # every documented example runs offline since LOT 5
 
 # Script families: the same file must be identical in every member folder
 FAMILIES = {

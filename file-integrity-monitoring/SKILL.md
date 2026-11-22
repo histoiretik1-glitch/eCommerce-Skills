@@ -1,6 +1,6 @@
 ---
 name: file-integrity-monitoring
-description: "File integrity monitoring for online stores. Builds a baseline of store files, code and payment-page scripts, detects unauthorized changes (malware, card skimmers, unexpected theme or plugin edits) with checksums or FIM tools, defines alert and response steps, and maps the controls to PCI DSS script-integrity requirements. Use when a self-hosted store (WooCommerce, Magento, custom) or a Shopify theme needs tamper detection, after a suspected hack or skimmer, or to prepare payment-page security checks."
+description: "File integrity monitoring for online stores. Baselines store files, code and payment-page scripts, detects unauthorized changes (malware, card skimmers, unexpected theme or plugin edits) with checksums or FIM tools and maps controls to PCI DSS script-integrity requirements. Use when a self-hosted store (WooCommerce, Magento, custom) or a Shopify theme needs tamper detection, after a suspected hack or skimmer, or to prepare payment-page security checks."
 nexscope:
   name: "File Integrity Monitoring"
   category: "Monitoring & Alerts"

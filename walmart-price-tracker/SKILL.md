@@ -1,6 +1,6 @@
 ---
 name: walmart-price-tracker
-description: "Walmart price tracking and Buy Box price positioning. Collects landed prices (price plus shipping) of competing offers on the seller's Walmart items, computes a price index against the lowest and median offer, rank and price changes over time with a script, and recommends repricing rules within margin limits, including Walmart's own Repricer and price reasonableness checks. Use when a Walmart Marketplace seller asks how its prices compare, why it lost the Buy Box, or how to set repricing rules on Walmart."
+description: "Walmart price tracking and Buy Box price positioning with a tested script: landed prices (price plus shipping) of competing offers, price index against the lowest and median offer, rank and price changes, and repricing rules within margin limits (Walmart Repricer, reasonable-price checks). Use whenever a Walmart seller compares prices with other sellers, lost the Buy Box, or sets Walmart repricing rules, even for a few items."
 nexscope:
   name: "Walmart Price Tracker"
   category: "Monitoring & Alerts"

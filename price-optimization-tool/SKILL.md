@@ -1,6 +1,6 @@
 ---
 name: price-optimization-tool
-description: Evaluate ecommerce price candidates using unit economics, historical observations, elasticity analysis, scenario modeling, and controlled experiments. Use when a seller asks what price to test, how price changes could affect contribution or revenue, how to estimate elasticity, how to optimize a bundle or tier, or how to design a price experiment across Amazon, Shopify, TikTok Shop, Walmart, eBay, or other channels. Do not claim a proven optimal price without sufficient clean data, and do not change live prices without explicit authorization.
+description: "Price decision tool. Evaluates candidate prices with unit economics, history, elasticity estimates, scenarios and controlled price experiments on Amazon, Shopify, TikTok Shop, Walmart, eBay and other channels, without claiming an optimal price the data cannot support. Use when a seller asks what price to test, how a price change affects contribution or revenue, how to estimate elasticity, how to price a bundle or tier, or how to design a price experiment."
 ---
 
 # Price Optimization Tool

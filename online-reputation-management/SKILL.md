@@ -1,6 +1,6 @@
 ---
 name: online-reputation-management
-description: "Online reputation management for e-commerce brands. Audits ratings and reviews across marketplaces, Google, Trustpilot and social media, sets monitoring and response rules, computes how many new positive reviews a rating recovery needs, prepares response templates and a crisis playbook, all within review-platform policies and consumer-protection rules on fake reviews. Use when a brand's rating dropped, a wave of negative reviews or posts hits the brand, or it needs a reputation strategy and crisis plan."
+description: "Online reputation management for e-commerce brands. Audits ratings and reviews across marketplaces, Google, Trustpilot and social media, computes how many positive reviews a rating recovery needs, sets monitoring and response rules and prepares templates and a crisis playbook within platform rules on fake reviews. Use whenever a brand's rating dropped, it asks how many good reviews it needs, or negative reviews or posts pile up."
 nexscope:
   name: "Online Reputation Management"
   category: "Monitoring & Alerts"

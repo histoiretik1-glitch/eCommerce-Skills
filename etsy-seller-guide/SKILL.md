@@ -1,6 +1,6 @@
 ---
 name: etsy-seller-guide
-description: "Etsy seller guide and starting point. Diagnoses where an Etsy business stands across the whole lifecycle (setup, listings and SEO, pricing, shipping, ads, reviews, Star Seller, analytics), gives an overall growth plan and points to the specialist Etsy skill for each step. Use when an Etsy seller asks where to start, how to grow their Etsy business overall, or a broad question that spans several parts of selling on Etsy."
+description: "Etsy seller guide and starting point. Diagnoses where an Etsy shop stands across the whole lifecycle (setup, listings and SEO, pricing, shipping, ads, reviews, Star Seller, analytics), finds the weakest stage, builds a 90-day growth plan and points to the specialist Etsy skill for each step. Use whenever an Etsy seller asks where to start, why growth stalled, or how to grow their Etsy business overall."
 ---
 
 # Etsy Seller Guide
@@ -48,6 +48,15 @@ Part of: Etsy selling, Etsy listings and search, Etsy pricing, traffic and opera
 - Star Seller program requirements and tips
 - Seasonal selling and trend analysis
 - Shop analytics interpretation and action plans
+
+## Workflow
+
+1. **Snapshot the shop**: listings, sales and conversion (Etsy Stats), reviews and Star Seller status, fees and margins, traffic sources.
+2. **Find the weakest stage**: traffic (SEO, ads, social), conversion (photos, price, reviews), operations (shipping, messages), or profitability (pricing, fees).
+3. **Route to the specialist skill** listed in Role and Scope for that stage (for example `etsy-seo`, `etsy-pricing-strategy`, `etsy-star-seller`).
+4. **Build a 90-day plan**: 3-5 priorities, each with an owner, a measurable target and the skill that details it.
+5. **Seasonal check**: add the next peak from `etsy-seasonal-strategy`.
+6. **Review monthly** with Etsy Stats and adjust the plan.
 
 ## Installation
 

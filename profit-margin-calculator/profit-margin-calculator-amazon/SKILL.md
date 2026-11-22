@@ -1,6 +1,6 @@
 ---
 name: profit-margin-calculator-amazon
-description: "Amazon profit margin calculator for sellers. Calculate cost breakdowns, profit margins, break-even points, and get pricing recommendations. Supports single product analysis and batch calculations. Input product cost, shipping, FBA fees, and get instant profitability analysis. No API key required. Use when: (1) evaluating new product profitability before sourcing, (2) diagnosing existing product margins, (3) adjusting pricing strategy, (4) analyzing multiple SKUs at once."
+description: "Amazon FBA profit margin calculator with a tested script: cost breakdown with Amazon referral fees by category and FBA fees, net margin, break-even price, target-margin pricing and batch SKU analysis. Use when a seller asks any Amazon profitability question, even a quick one, instead of estimating fees by hand: new product evaluation, margin diagnosis, pricing changes or comparing several SKUs."
 metadata: {"nexscope":{"emoji":"💰","category":"ecommerce"}}
 ---
 

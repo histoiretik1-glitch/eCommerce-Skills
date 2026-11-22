@@ -75,6 +75,12 @@ Compare each stage with the seller's own best product and with category benchmar
 
 🔶 **Beta** — full workflow added in plugin version 1.1.0. Review figures marked "confirm in Seller Center" before acting.
 
+## Example Requests
+
+- "My TikTok Shop videos get 50k views but only 12 orders. Where are buyers dropping off?"
+- "Audit my TikTok Shop product page: images, price display and reviews."
+- "Conversion from LIVE is good but from short videos it's terrible. Why?"
+
 ## Installation
 
 Part of the **`ecommerce-skills`** Claude Code plugin (all 162 skills). In Claude Code:

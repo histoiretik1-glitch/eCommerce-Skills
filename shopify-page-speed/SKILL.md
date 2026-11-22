@@ -1,6 +1,6 @@
 ---
 name: shopify-page-speed
-description: "Shopify Core Web Vitals diagnosis. Reads Shopify's web performance report and PageSpeed Insights field data (LCP, INP, CLS at the 75th percentile) per template, compares them with Google's thresholds, identifies the elements that cause slow loading, slow interactions or layout shifts, and explains the measurements. Use when a Shopify store owner asks what their speed score or Core Web Vitals mean or which pages and elements are slow (for the fix plan use `shopify-speed-optimization`)."
+description: "Shopify Core Web Vitals diagnosis. Explains LCP, INP and CLS from Shopify's web performance report and PageSpeed Insights against Google's thresholds (75th percentile), and finds which templates and elements cause slow loading, slow clicks or layout shifts. Use whenever a Shopify store owner shares speed scores or Core Web Vitals, asks what they mean or which pages are slow (for the fix plan use `shopify-speed-optimization`)."
 nexscope:
   name: "Shopify Page Speed"
   category: "Site Performance"

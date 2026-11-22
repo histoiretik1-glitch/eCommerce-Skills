@@ -1,13 +1,22 @@
 ---
 name: brand-protection-ebay
 version: 1.0.0
-description: "eBay brand protection toolkit. Detect unauthorized sellers, counterfeits, and VeRO violations. Includes price monitoring, trademark abuse detection, VeRO complaint templates, and enforcement guides. No API key required. Use when a brand owner asks about unauthorized eBay sellers, counterfeit listings, or how to file a VeRO notice."
+description: "eBay brand protection toolkit. Detect unauthorized sellers, counterfeits, and VeRO violations. Includes price monitoring, trademark abuse detection, VeRO complaint templates, and enforcement guides. Use when a brand owner asks about unauthorized eBay sellers, counterfeit listings, or how to file a VeRO notice."
 metadata: {"nexscope":{"emoji":"🛡️","category":"ecommerce"}}
 ---
 
 # Brand Protection — eBay 🛡️
 
 Protect your brand from unauthorized sellers and counterfeits on eBay.
+
+## Workflow
+
+1. **Collect evidence**: listings or stores, seller names and IDs, prices, screenshots with URL and date, test-buy results, your trademark registration and authorized-seller list.
+2. **Classify each case**: unauthorized reseller, counterfeit, MAP violation (`minimum-advertised-price`), trademark or image misuse.
+3. **Score the risk**: run `python3 scripts/detector.py` to see the report and action-plan format, then apply the same checks to the collected data.
+4. **Prepare the filing** for the eBay VeRO Program (NOCI) with `python3 scripts/templates.py complaint`, and a cease-and-desist letter with `python3 scripts/templates.py cease` when the seller is reachable.
+5. **Submit and track**: file through the platform channel, record the case number and deadline, follow up on counter-notices.
+6. **Verify and monitor**: confirm removals, re-check the listings weekly, escalate repeat offenders.
 
 ## Installation
 
