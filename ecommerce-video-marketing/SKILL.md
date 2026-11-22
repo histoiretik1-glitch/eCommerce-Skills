@@ -7,6 +7,18 @@ description: "Create video marketing strategy for e-commerce brands. Product vid
 
 Create video marketing strategy for e-commerce brands. Product videos, unboxing, tutorials, UGC, live streams, and platform-specific video optimization for Amazon, TikTok, YouTube, and Instagram.
 
+<!-- role-and-scope:start (generated from tools/skill_groups.json) -->
+## Role and Scope
+
+**This skill:** Overall video marketing strategy across channels.
+
+Part of: Video commerce. For neighbouring jobs, use the matching skill instead:
+
+- `shoppable-video` — Shoppable and live-shopping video with product tagging on several platforms.
+- `tiktok-live-selling` — Planning and running TikTok Shop LIVE sessions.
+
+<!-- role-and-scope:end -->
+
 ## Capabilities
 
 - Video content strategy by funnel stage (awareness, consideration, purchase)

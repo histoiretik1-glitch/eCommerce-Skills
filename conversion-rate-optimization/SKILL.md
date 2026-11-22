@@ -7,6 +7,19 @@ description: "Systematic CRO for e-commerce stores. Audit conversion funnels, id
 
 Systematic CRO for e-commerce stores. Audit conversion funnels, identify drop-off points, implement fixes, and run experiments to increase revenue per visitor across all platforms.
 
+<!-- role-and-scope:start (generated from tools/skill_groups.json) -->
+## Role and Scope
+
+**This skill:** Platform-independent CRO: funnel analysis, heuristics and testing roadmap.
+
+Part of: Conversion and landing pages. For neighbouring jobs, use the matching skill instead:
+
+- `shopify-conversion-optimization` — CRO on a Shopify store: theme, apps, product pages, Shopify checkout.
+- `ecommerce-landing-page` — Auditing an existing landing or product page for conversion.
+- `shopify-landing-page-builder` — Building a new campaign or seasonal landing page on Shopify.
+
+<!-- role-and-scope:end -->
+
 ## Capabilities
 
 - Conversion funnel mapping and analysis

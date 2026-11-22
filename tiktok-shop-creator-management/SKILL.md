@@ -10,6 +10,19 @@ metadata:
 
 Run a repeatable process for the creators who sell a shop's products: who to work with, how to brief them, how to pay them and when to scale or stop.
 
+<!-- role-and-scope:start (generated from tools/skill_groups.json) -->
+## Role and Scope
+
+**This skill:** Running an existing creator roster: tiers, briefs, sample tracking, monthly reviews.
+
+Part of: TikTok creators and affiliates. For neighbouring jobs, use the matching skill instead:
+
+- `tiktok-shop-affiliate-program` — Setting up the TikTok Shop affiliate program: open and targeted collaborations, commission rates, samples.
+- `tiktok-creator-marketplace` — Paid branded-content campaigns through TikTok's creator marketplace: briefs, negotiation, deliverables.
+- `tiktok-influencer-marketing` — Overall creator and UGC strategy on TikTok: goals, creator mix, outreach and ROI.
+
+<!-- role-and-scope:end -->
+
 ## When to Use
 
 - The shop works with more than a handful of creators

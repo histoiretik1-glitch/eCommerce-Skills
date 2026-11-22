@@ -8,6 +8,18 @@ metadata: {"nexscope":{"emoji":"📝","category":"tiktok-shop"}}
 
 Optimize product listings for maximum visibility and conversions on TikTok Shop search.
 
+<!-- role-and-scope:start (generated from tools/skill_groups.json) -->
+## Role and Scope
+
+**This skill:** Writing and structuring the TikTok Shop product listing (title, images, video, attributes, search).
+
+Part of: TikTok Shop listings, conversion and analytics. For neighbouring jobs, use the matching skill instead:
+
+- `tiktok-shop-conversion` — Diagnosing where buyers drop off between content and paid order, and fixing it.
+- `tiktok-shop-analytics` — Reading TikTok Shop performance data across videos, LIVE, affiliates and ads.
+
+<!-- role-and-scope:end -->
+
 ## Installation
 
 Part of the **`ecommerce-skills`** Claude Code plugin (all 162 skills). In Claude Code:

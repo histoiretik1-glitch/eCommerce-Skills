@@ -7,6 +7,21 @@ description: Design a controlled dynamic-pricing or repricing system for ecommer
 
 Turn seller-approved economics and trusted signals into a bounded repricing system with explicit rules, approvals, monitoring, and a kill switch.
 
+<!-- role-and-scope:start (generated from tools/skill_groups.json) -->
+## Role and Scope
+
+**This skill:** Automated repricing rules with floors, ceilings and guardrails.
+
+Part of: Pricing. For neighbouring jobs, use the matching skill instead:
+
+- `competitor-price-analysis` — One-off analysis of competitor prices and positioning.
+- `competitor-price-tracker` — Ongoing tracking of competitor prices with alerts.
+- `competitive-pricing-strategy` — Price architecture and response rules against competitors.
+- `price-optimization-tool` — Choosing a price from unit economics, elasticity and price tests.
+- `walmart-price-tracker` — Walmart-specific price tracking and repricing.
+
+<!-- role-and-scope:end -->
+
 ## Installation
 
 Part of the **`ecommerce-skills`** Claude Code plugin (all 162 skills). In Claude Code:

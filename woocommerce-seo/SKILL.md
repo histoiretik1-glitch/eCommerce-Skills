@@ -7,6 +7,18 @@ description: "Optimize WooCommerce stores for search engines. Covers technical S
 
 Optimize WooCommerce stores for search engines. Covers technical SEO, product page optimization, schema markup, site speed, URL structure, and content strategy for organic traffic growth.
 
+<!-- role-and-scope:start (generated from tools/skill_groups.json) -->
+## Role and Scope
+
+**This skill:** SEO of a WooCommerce store.
+
+Part of: Store and product page SEO. For neighbouring jobs, use the matching skill instead:
+
+- `product-page-seo` — Platform-independent product page SEO: on-page, structured data, speed, content.
+- `shopify-seo` — SEO of a Shopify store.
+
+<!-- role-and-scope:end -->
+
 ## Capabilities
 
 - Technical SEO audit for WooCommerce sites

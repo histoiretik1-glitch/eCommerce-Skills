@@ -10,6 +10,17 @@ metadata:
 
 Spot TikTok Shop trends early enough to profit, and tell lasting demand from a two-week spike.
 
+<!-- role-and-scope:start (generated from tools/skill_groups.json) -->
+## Role and Scope
+
+**This skill:** Spotting current TikTok trends and timing entry and exit.
+
+Part of: TikTok Shop products. For neighbouring jobs, use the matching skill instead:
+
+- `tiktok-shop-product-research` — Scoring and validating a product idea for TikTok Shop.
+
+<!-- role-and-scope:end -->
+
 ## When to Use
 
 - Looking for products or angles that are rising right now

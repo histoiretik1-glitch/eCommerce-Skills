@@ -7,6 +7,21 @@ description: "Master TikTok live selling for e-commerce. Plan live sessions, eng
 
 Master TikTok live selling for e-commerce. Plan live sessions, engage audiences, pin products, handle real-time sales, and optimize GPM (GMV per mille) for maximum live revenue.
 
+<!-- role-and-scope:start (generated from tools/skill_groups.json) -->
+## Role and Scope
+
+**This skill:** Planning and running TikTok Shop LIVE sessions.
+
+Part of: TikTok content, brand and LIVE, Video commerce. For neighbouring jobs, use the matching skill instead:
+
+- `tiktok-shop-content-strategy` — Short-video content plan for TikTok Shop: formats, hooks, calendar.
+- `tiktok-shop-branding` — Building a recognizable brand on TikTok: identity, content pillars, community.
+- `tiktok-shop-ads` — Paid TikTok Shop ads (Product, Video and LIVE Shopping Ads).
+- `ecommerce-video-marketing` — Overall video marketing strategy across channels.
+- `shoppable-video` — Shoppable and live-shopping video with product tagging on several platforms.
+
+<!-- role-and-scope:end -->
+
 ## Capabilities
 
 - Live selling session planning and scheduling

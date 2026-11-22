@@ -1,6 +1,6 @@
 ---
 name: customer-feedback-analysis
-description: "AI-powered customer feedback and review sentiment analysis skill. Extracts pain points, feature requests, and improvement priorities from customer reviews across e-commerce platforms. Use when the user asks for help analyzing customer reviews or feedback, extracting pain points, feature requests or sentiment trends."
+description: "Voice-of-customer analysis across every feedback source. Merges survey answers, NPS comments, support tickets, chat logs, return reasons, social comments and reviews into one theme map and an improvement roadmap for product, service and operations. Use when a business wants to understand all its customer feedback together or prioritize what to fix from many sources (for analysis of product reviews only use `product-review-analysis`)."
 nexscope:
   name: "Customer Feedback Analysis"
   category: "Reviews & Reputation"
@@ -21,6 +21,19 @@ nexscope:
 # Customer Feedback Analysis
 
 AI-powered customer feedback and review sentiment analysis skill. Extracts pain points, feature requests, and improvement priorities from customer reviews across e-commerce platforms.
+
+<!-- role-and-scope:start (generated from tools/skill_groups.json) -->
+## Role and Scope
+
+**This skill:** Analysis of all customer feedback channels (reviews, surveys, tickets) into improvement priorities.
+
+Part of: Reviews, feedback and reputation. For neighbouring jobs, use the matching skill instead:
+
+- `product-review-analysis` — Deep analysis of product reviews: pain points, praise, feature requests, sentiment.
+- `review-monitoring` — Ongoing review monitoring: alerts on new or negative reviews and the response workflow.
+- `online-reputation-management` — Brand-level reputation: monitoring framework, rating recovery and crisis communication.
+
+<!-- role-and-scope:end -->
 
 ## Capabilities
 

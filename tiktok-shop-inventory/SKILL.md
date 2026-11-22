@@ -1,6 +1,6 @@
 ---
 name: tiktok-shop-inventory
-description: "TikTok Shop inventory planning for viral demand. Forecasts sales from content and creator pipeline, sets safety stock and reorder points for normal days and viral spikes, plans FBT inbound stock and campaign reservations, and manages stock after the trend fades. Use when a TikTok Shop seller asks how much stock to order, how to prepare for a viral video or campaign, how to avoid stock-outs or overstock, or when to reorder."
+description: "TikTok Shop inventory planning for viral demand. Forecasts sales from the creator and content pipeline, sizes stock for viral spikes and campaigns, splits stock between FBT and own warehouse, and plans the exit when a trend fades. Use when a TikTok Shop seller asks how much stock to prepare for a viral video, a big creator or a campaign, or what to do with stock after the trend."
 metadata:
   nexscope:
     category: tiktok-shop
@@ -9,6 +9,25 @@ metadata:
 # TikTok Shop Inventory
 
 Keep enough stock to ride a viral spike without being stuck with inventory once the trend fades.
+
+<!-- role-and-scope:start (generated from tools/skill_groups.json) -->
+## Role and Scope
+
+**This skill:** Stock planning for viral demand on TikTok Shop.
+
+Part of: TikTok Shop operations, Inventory and replenishment. For neighbouring jobs, use the matching skill instead:
+
+- `tiktok-shop-fulfillment` — Choosing and running the fulfillment model (FBT, self, 3PL) and dispatch performance.
+- `tiktok-shop-shipping` — Shipping templates, carriers, shipping prices and delivery promise.
+- `tiktok-shop-returns` — TikTok Shop returns and refunds.
+- `tiktok-shop-customer-service` — Buyer messages, disputes and service metrics on TikTok Shop.
+- `tiktok-shop-reviews` — Ratings and reviews on TikTok Shop.
+- `warehouse-optimization` — Warehouse and FBA inventory optimization: safety stock, ABC analysis, IPI, storage costs.
+- `restock-alert` — Reorder points, safety stock and stock-out risk for replenishment decisions.
+- `inventory-tracking-software` — Designing the inventory tracking system: monitoring, alerts and multi-channel sync.
+- `shopify-inventory-management` — Managing stock in Shopify across locations.
+
+<!-- role-and-scope:end -->
 
 ## When to Use
 

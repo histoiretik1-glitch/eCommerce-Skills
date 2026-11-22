@@ -1,6 +1,6 @@
 ---
 name: restock-alert
-description: "AI-powered restock alert and replenishment planning skill. Calculates optimal reorder points, safety stock levels, and stockout risk scores to prevent lost sales from inventory gaps. Use when the user asks for help calculating reorder points, safety stock, stockout risk or planning replenishment."
+description: "Restock alert and replenishment planning. Calculates reorder points, safety stock and stockout risk per SKU from sales velocity and supplier lead time, and tells the seller when and how much to reorder to avoid lost sales. Use when a seller asks when to reorder, how much safety stock to keep, or how to avoid running out of stock."
 nexscope:
   name: "Restock Alert"
   category: "Supply Chain & Logistics"
@@ -20,6 +20,20 @@ nexscope:
 # Restock Alert
 
 AI-powered restock alert and replenishment planning skill. Calculates optimal reorder points, safety stock levels, and stockout risk scores to prevent lost sales from inventory gaps.
+
+<!-- role-and-scope:start (generated from tools/skill_groups.json) -->
+## Role and Scope
+
+**This skill:** Reorder points, safety stock and stock-out risk for replenishment decisions.
+
+Part of: Inventory and replenishment. For neighbouring jobs, use the matching skill instead:
+
+- `warehouse-optimization` — Warehouse and FBA inventory optimization: safety stock, ABC analysis, IPI, storage costs.
+- `inventory-tracking-software` — Designing the inventory tracking system: monitoring, alerts and multi-channel sync.
+- `shopify-inventory-management` — Managing stock in Shopify across locations.
+- `tiktok-shop-inventory` — Stock planning for viral demand on TikTok Shop.
+
+<!-- role-and-scope:end -->
 
 ## Capabilities
 

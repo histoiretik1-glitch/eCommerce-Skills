@@ -10,6 +10,17 @@ metadata: {"nexscope":{"emoji":"📡","category":"ecommerce"}}
 
 Track brand mentions across social media platforms and analyze sentiment.
 
+<!-- role-and-scope:start (generated from tools/skill_groups.json) -->
+## Role and Scope
+
+**This skill:** Tracking brand mentions across Reddit, news, YouTube and the web with sentiment and crisis alerts (script).
+
+Part of: Brand and social listening. For neighbouring jobs, use the matching skill instead:
+
+- `social-media-monitor` — Social listening on social networks: mentions, trends and competitor activity.
+
+<!-- role-and-scope:end -->
+
 ## Installation
 
 Part of the **`ecommerce-skills`** Claude Code plugin (all 162 skills). In Claude Code:

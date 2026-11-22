@@ -7,6 +7,19 @@ description: "Complete guide for selling on eBay — auction and fixed-price str
 
 Complete guide for selling on eBay — auction and fixed-price strategies, listing optimization, eBay SEO, shipping setup, seller ratings, and scaling from casual seller to Top Rated Seller.
 
+<!-- role-and-scope:start (generated from tools/skill_groups.json) -->
+## Role and Scope
+
+**This skill:** How to sell on eBay, from first listing to Top Rated Seller.
+
+Part of: eBay and Walmart seller guides and tools. For neighbouring jobs, use the matching skill instead:
+
+- `ebay-seller-tools` — Choosing software tools for an eBay business.
+- `walmart-seller-guide` — How to sell on Walmart Marketplace, from application to scaling.
+- `walmart-seller-tools` — Choosing software tools for a Walmart business.
+
+<!-- role-and-scope:end -->
+
 ## Capabilities
 
 - Account setup and seller level progression

@@ -1,0 +1,218 @@
+{
+  "_comment": "Functional groups of skills that cover neighbouring jobs. Each member has one role; tools/apply_skill_groups.py writes a 'Role and Scope' section from this file into every member's SKILL.md, and tests/test_duplicates.py checks it. Platform variants of the same tool (e.g. brand-protection-*) are not listed: they differ by platform, not by job.",
+  "groups": {
+    "etsy-shop": {
+      "title": "Etsy selling",
+      "members": {
+        "etsy-seller-guide": "Entry point for Etsy: diagnoses where the shop stands across the whole selling lifecycle and routes to the specialist Etsy skills.",
+        "etsy-shop-setup": "Opening a new Etsy shop: account, policies, payments, first listings and launch checklist.",
+        "etsy-shop-branding": "Shop identity on Etsy: name, banner, logo, About section, photo style and packaging.",
+        "etsy-multi-shop": "Deciding on and running more than one Etsy shop.",
+        "etsy-star-seller": "Reaching and keeping the Etsy Star Seller badge (messages, shipping, reviews).",
+        "etsy-shop-analytics": "Reading Etsy Stats to find what drives or blocks sales."
+      }
+    },
+    "etsy-listing-seo": {
+      "title": "Etsy listings and search",
+      "members": {
+        "etsy-seller-guide": "Entry point for Etsy: diagnoses where the shop stands across the whole selling lifecycle and routes to the specialist Etsy skills.",
+        "etsy-seo": "Full SEO audit and scoring of an Etsy listing (title, tags, description) with the analyzer script.",
+        "etsy-keyword-research": "Finding the search phrases Etsy buyers use, before writing titles and tags.",
+        "etsy-seo-tags": "Writing the 13 tags and filling attributes of an Etsy listing.",
+        "etsy-product-description": "Writing the description text of an Etsy listing.",
+        "etsy-listing-photography": "Photos and video of an Etsy listing.",
+        "etsy-competitor-analysis": "Studying competing Etsy shops and listings to find gaps."
+      }
+    },
+    "etsy-growth": {
+      "title": "Etsy pricing, traffic and operations",
+      "members": {
+        "etsy-seller-guide": "Entry point for Etsy: diagnoses where the shop stands across the whole selling lifecycle and routes to the specialist Etsy skills.",
+        "etsy-pricing-strategy": "Setting Etsy prices from costs, Etsy fees and competition.",
+        "etsy-shipping-strategy": "Etsy shipping profiles, prices, processing times and free shipping.",
+        "etsy-advertising": "Etsy Ads on Etsy search (budgets, listings, ROAS).",
+        "etsy-offsite-ads": "Etsy Offsite Ads fees, attribution and the opt-out decision.",
+        "etsy-social-media-marketing": "Bringing outside traffic to an Etsy shop from Pinterest, Instagram and TikTok.",
+        "etsy-seasonal-strategy": "Preparing an Etsy shop for holidays and seasonal peaks.",
+        "etsy-review-strategy": "Getting more honest Etsy reviews and handling bad ones.",
+        "etsy-custom-orders": "Personalized and made-to-order items on Etsy.",
+        "etsy-digital-products": "Selling digital downloads on Etsy.",
+        "etsy-print-on-demand": "Print-on-demand products on Etsy with a production partner."
+      }
+    },
+    "tiktok-creators": {
+      "title": "TikTok creators and affiliates",
+      "members": {
+        "tiktok-shop-affiliate-program": "Setting up the TikTok Shop affiliate program: open and targeted collaborations, commission rates, samples.",
+        "tiktok-creator-marketplace": "Paid branded-content campaigns through TikTok's creator marketplace: briefs, negotiation, deliverables.",
+        "tiktok-influencer-marketing": "Overall creator and UGC strategy on TikTok: goals, creator mix, outreach and ROI.",
+        "tiktok-shop-creator-management": "Running an existing creator roster: tiers, briefs, sample tracking, monthly reviews."
+      }
+    },
+    "tiktok-content": {
+      "title": "TikTok content, brand and LIVE",
+      "members": {
+        "tiktok-shop-content-strategy": "Short-video content plan for TikTok Shop: formats, hooks, calendar.",
+        "tiktok-shop-branding": "Building a recognizable brand on TikTok: identity, content pillars, community.",
+        "tiktok-live-selling": "Planning and running TikTok Shop LIVE sessions.",
+        "tiktok-shop-ads": "Paid TikTok Shop ads (Product, Video and LIVE Shopping Ads)."
+      }
+    },
+    "tiktok-listing-conversion": {
+      "title": "TikTok Shop listings, conversion and analytics",
+      "members": {
+        "tiktok-shop-listing-optimization": "Writing and structuring the TikTok Shop product listing (title, images, video, attributes, search).",
+        "tiktok-shop-conversion": "Diagnosing where buyers drop off between content and paid order, and fixing it.",
+        "tiktok-shop-analytics": "Reading TikTok Shop performance data across videos, LIVE, affiliates and ads."
+      }
+    },
+    "tiktok-products": {
+      "title": "TikTok Shop products",
+      "members": {
+        "tiktok-shop-product-research": "Scoring and validating a product idea for TikTok Shop.",
+        "tiktok-shop-trending-products": "Spotting current TikTok trends and timing entry and exit."
+      }
+    },
+    "tiktok-operations": {
+      "title": "TikTok Shop operations",
+      "members": {
+        "tiktok-shop-fulfillment": "Choosing and running the fulfillment model (FBT, self, 3PL) and dispatch performance.",
+        "tiktok-shop-shipping": "Shipping templates, carriers, shipping prices and delivery promise.",
+        "tiktok-shop-inventory": "Stock planning for viral demand on TikTok Shop.",
+        "tiktok-shop-returns": "TikTok Shop returns and refunds.",
+        "tiktok-shop-customer-service": "Buyer messages, disputes and service metrics on TikTok Shop.",
+        "tiktok-shop-reviews": "Ratings and reviews on TikTok Shop."
+      }
+    },
+    "shopify-speed": {
+      "title": "Shopify store speed",
+      "members": {
+        "shopify-speed-optimization": "Full speed audit of a Shopify store and the prioritized fix plan (apps, images, scripts, theme).",
+        "shopify-page-speed": "Measuring Core Web Vitals and diagnosing which pages and elements are slow.",
+        "shopify-theme-optimization": "Choosing and tuning the Shopify theme itself: Liquid code, sections, mobile UX."
+      }
+    },
+    "conversion-pages": {
+      "title": "Conversion and landing pages",
+      "members": {
+        "conversion-rate-optimization": "Platform-independent CRO: funnel analysis, heuristics and testing roadmap.",
+        "shopify-conversion-optimization": "CRO on a Shopify store: theme, apps, product pages, Shopify checkout.",
+        "ecommerce-landing-page": "Auditing an existing landing or product page for conversion.",
+        "shopify-landing-page-builder": "Building a new campaign or seasonal landing page on Shopify."
+      }
+    },
+    "ab-testing": {
+      "title": "A/B testing",
+      "members": {
+        "ecommerce-ab-testing": "A/B testing method for any channel: hypotheses, sample size, significance, Amazon experiments, ads and email tests.",
+        "shopify-ab-testing": "Running A/B tests on a Shopify store with Shopify tools and apps."
+      }
+    },
+    "checkout": {
+      "title": "Checkout and cart abandonment",
+      "members": {
+        "ecommerce-checkout-optimization": "Platform-independent checkout optimization: friction, payment methods, trust.",
+        "shopify-checkout-customization": "Configuring the Shopify checkout (Checkout Extensibility, express payments, fields).",
+        "shopify-cart-abandonment": "Recovering abandoned carts and checkouts on Shopify (email, SMS, retargeting)."
+      }
+    },
+    "email": {
+      "title": "Email marketing",
+      "members": {
+        "ecommerce-email-marketing-builder": "Complete email program with flows, copy, segmentation and ESP setup, for any store.",
+        "shopify-email-flows": "Setting up the core automated email flows of a Shopify store."
+      }
+    },
+    "subscriptions": {
+      "title": "Subscriptions",
+      "members": {
+        "ecommerce-subscription-model": "Designing the subscription offer and business model.",
+        "shopify-subscription-setup": "Implementing subscriptions on a Shopify store."
+      }
+    },
+    "google-feeds": {
+      "title": "Google Shopping and product feeds",
+      "members": {
+        "google-shopping-optimization": "Google Shopping and Performance Max campaign strategy, bids and ROAS.",
+        "shopify-google-channel": "Connecting a Shopify store to Google with the Google & YouTube channel and Merchant Center.",
+        "ecommerce-feed-management": "Monitoring and fixing product feeds for any channel (sync errors, missing SKUs, attributes)."
+      }
+    },
+    "inventory": {
+      "title": "Inventory and replenishment",
+      "members": {
+        "warehouse-optimization": "Warehouse and FBA inventory optimization: safety stock, ABC analysis, IPI, storage costs.",
+        "restock-alert": "Reorder points, safety stock and stock-out risk for replenishment decisions.",
+        "inventory-tracking-software": "Designing the inventory tracking system: monitoring, alerts and multi-channel sync.",
+        "shopify-inventory-management": "Managing stock in Shopify across locations.",
+        "tiktok-shop-inventory": "Stock planning for viral demand on TikTok Shop."
+      }
+    },
+    "reviews-reputation": {
+      "title": "Reviews, feedback and reputation",
+      "members": {
+        "product-review-analysis": "Deep analysis of product reviews: pain points, praise, feature requests, sentiment.",
+        "customer-feedback-analysis": "Analysis of all customer feedback channels (reviews, surveys, tickets) into improvement priorities.",
+        "review-monitoring": "Ongoing review monitoring: alerts on new or negative reviews and the response workflow.",
+        "online-reputation-management": "Brand-level reputation: monitoring framework, rating recovery and crisis communication."
+      }
+    },
+    "brand-listening": {
+      "title": "Brand and social listening",
+      "members": {
+        "brand-monitoring": "Tracking brand mentions across Reddit, news, YouTube and the web with sentiment and crisis alerts (script).",
+        "social-media-monitor": "Social listening on social networks: mentions, trends and competitor activity."
+      }
+    },
+    "pricing": {
+      "title": "Pricing",
+      "members": {
+        "competitor-price-analysis": "One-off analysis of competitor prices and positioning.",
+        "competitor-price-tracker": "Ongoing tracking of competitor prices with alerts.",
+        "competitive-pricing-strategy": "Price architecture and response rules against competitors.",
+        "dynamic-pricing-ecommerce": "Automated repricing rules with floors, ceilings and guardrails.",
+        "price-optimization-tool": "Choosing a price from unit economics, elasticity and price tests.",
+        "walmart-price-tracker": "Walmart-specific price tracking and repricing."
+      }
+    },
+    "channels": {
+      "title": "Selling on several channels",
+      "members": {
+        "omnichannel-ecommerce": "Strategy: which channels to sell on and how to keep brand and customer experience consistent.",
+        "multichannel-ecommerce": "Operations: inventory sync, order routing and listing syndication across channels."
+      }
+    },
+    "store-seo": {
+      "title": "Store and product page SEO",
+      "members": {
+        "product-page-seo": "Platform-independent product page SEO: on-page, structured data, speed, content.",
+        "shopify-seo": "SEO of a Shopify store.",
+        "woocommerce-seo": "SEO of a WooCommerce store."
+      }
+    },
+    "video": {
+      "title": "Video commerce",
+      "members": {
+        "ecommerce-video-marketing": "Overall video marketing strategy across channels.",
+        "shoppable-video": "Shoppable and live-shopping video with product tagging on several platforms.",
+        "tiktok-live-selling": "Planning and running TikTok Shop LIVE sessions."
+      }
+    },
+    "influencers": {
+      "title": "Influencers",
+      "members": {
+        "influencer-outreach": "Finding, contacting and contracting influencers on any platform.",
+        "tiktok-influencer-marketing": "Overall creator and UGC strategy on TikTok: goals, creator mix, outreach and ROI."
+      }
+    },
+    "marketplace-sellers": {
+      "title": "eBay and Walmart seller guides and tools",
+      "members": {
+        "ebay-seller-guide": "How to sell on eBay, from first listing to Top Rated Seller.",
+        "ebay-seller-tools": "Choosing software tools for an eBay business.",
+        "walmart-seller-guide": "How to sell on Walmart Marketplace, from application to scaling.",
+        "walmart-seller-tools": "Choosing software tools for a Walmart business."
+      }
+    }
+  }
+}

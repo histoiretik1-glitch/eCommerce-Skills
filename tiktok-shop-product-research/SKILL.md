@@ -10,6 +10,17 @@ metadata:
 
 Decide which products are worth launching on TikTok Shop before money goes into stock and samples.
 
+<!-- role-and-scope:start (generated from tools/skill_groups.json) -->
+## Role and Scope
+
+**This skill:** Scoring and validating a product idea for TikTok Shop.
+
+Part of: TikTok Shop products. For neighbouring jobs, use the matching skill instead:
+
+- `tiktok-shop-trending-products` — Spotting current TikTok trends and timing entry and exit.
+
+<!-- role-and-scope:end -->
+
 ## When to Use
 
 - Choosing a first or next product to sell on TikTok Shop

@@ -1,6 +1,6 @@
 ---
 name: ecommerce-landing-page
-description: "Audit and optimize e-commerce landing pages for conversion. CTA placement, trust signals, page structure, copy optimization, and A/B testing strategy for product pages, collection pages, and campaign landing pages. Use when a seller wants a landing or product page audited for conversion, better CTAs and trust signals, or ideas for A/B tests."
+description: "Landing page conversion audit for any store. Reviews an existing product, collection or campaign page section by section (message match, CTA, trust signals, copy, layout, speed) and lists prioritized fixes and A/B test ideas. Use when a seller wants an existing page reviewed or asks why a page converts poorly (to build a new Shopify page use `shopify-landing-page-builder`)."
 metadata:
   nexscope:
     emoji: "🖥️"
@@ -14,6 +14,19 @@ Audit and optimize e-commerce landing pages for conversion. CTA placement, trust
 **Supported platforms:** Amazon, Shopify, WooCommerce, Walmart, TikTok Shop, Etsy, eBay, BigCommerce.
 
 Built by [Nexscope](https://www.nexscope.ai/?co-from=skill) — your AI assistant for smarter e-commerce decisions.
+
+<!-- role-and-scope:start (generated from tools/skill_groups.json) -->
+## Role and Scope
+
+**This skill:** Auditing an existing landing or product page for conversion.
+
+Part of: Conversion and landing pages. For neighbouring jobs, use the matching skill instead:
+
+- `conversion-rate-optimization` — Platform-independent CRO: funnel analysis, heuristics and testing roadmap.
+- `shopify-conversion-optimization` — CRO on a Shopify store: theme, apps, product pages, Shopify checkout.
+- `shopify-landing-page-builder` — Building a new campaign or seasonal landing page on Shopify.
+
+<!-- role-and-scope:end -->
 
 ## Installation
 

@@ -21,6 +21,21 @@ nexscope:
 
 AI-powered Walmart price tracking and competitive pricing skill. Analyzes Walmart marketplace pricing trends, competitor price positioning, and generates repricing strategies for Walmart sellers.
 
+<!-- role-and-scope:start (generated from tools/skill_groups.json) -->
+## Role and Scope
+
+**This skill:** Walmart-specific price tracking and repricing.
+
+Part of: Pricing. For neighbouring jobs, use the matching skill instead:
+
+- `competitor-price-analysis` — One-off analysis of competitor prices and positioning.
+- `competitor-price-tracker` — Ongoing tracking of competitor prices with alerts.
+- `competitive-pricing-strategy` — Price architecture and response rules against competitors.
+- `dynamic-pricing-ecommerce` — Automated repricing rules with floors, ceilings and guardrails.
+- `price-optimization-tool` — Choosing a price from unit economics, elasticity and price tests.
+
+<!-- role-and-scope:end -->
+
 ## Capabilities
 
 - Generates actionable monitoring & alerts frameworks based on your specific business context

@@ -7,6 +7,17 @@ description: "Find, contact, and manage influencer partnerships for e-commerce b
 
 Find, contact, and manage influencer partnerships for e-commerce brands. Outreach templates, negotiation tactics, contract frameworks, and relationship management across Instagram, TikTok, YouTube, and more.
 
+<!-- role-and-scope:start (generated from tools/skill_groups.json) -->
+## Role and Scope
+
+**This skill:** Finding, contacting and contracting influencers on any platform.
+
+Part of: Influencers. For neighbouring jobs, use the matching skill instead:
+
+- `tiktok-influencer-marketing` — Overall creator and UGC strategy on TikTok: goals, creator mix, outreach and ROI.
+
+<!-- role-and-scope:end -->
+
 ## Capabilities
 
 - Influencer discovery by platform, niche, and audience demographics

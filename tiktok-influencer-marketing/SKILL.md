@@ -1,12 +1,45 @@
 ---
 name: tiktok-influencer-marketing
-description: "TikTok creator campaigns and influencer marketing strategy. Creator discovery, outreach, ROI tracking, UGC strategy, and campaign management. Use when the user asks about TikTok influencer marketing, creator campaigns, influencer outreach, UGC content, or TikTok marketing partnerships."
+description: "TikTok creator strategy. Decides which collaboration models to use (TikTok Shop affiliate commissions, paid branded content, gifting, Spark Ads), the creator mix by tier, budget split, usage rights and the ROI model, then hands execution to the affiliate, creator marketplace and creator management skills. Use when a brand asks how to plan TikTok influencer or UGC marketing overall, how to split a creator budget, or which kind of creator partnership fits its goal."
 metadata: {"nexscope":{"emoji":"📱","category":"tiktok-shop"}}
 ---
 
 # TikTok Influencer Marketing 📱
 
 Scale your brand with TikTok creators. Strategic campaign planning from discovery to ROI tracking.
+
+<!-- role-and-scope:start (generated from tools/skill_groups.json) -->
+## Role and Scope
+
+**This skill:** Overall creator and UGC strategy on TikTok: goals, creator mix, outreach and ROI.
+
+Part of: TikTok creators and affiliates, Influencers. For neighbouring jobs, use the matching skill instead:
+
+- `tiktok-shop-affiliate-program` — Setting up the TikTok Shop affiliate program: open and targeted collaborations, commission rates, samples.
+- `tiktok-creator-marketplace` — Paid branded-content campaigns through TikTok's creator marketplace: briefs, negotiation, deliverables.
+- `tiktok-shop-creator-management` — Running an existing creator roster: tiers, briefs, sample tracking, monthly reviews.
+- `influencer-outreach` — Finding, contacting and contracting influencers on any platform.
+
+<!-- role-and-scope:end -->
+
+## Strategy Layer: Choosing the Collaboration Model
+
+This skill sets the overall creator strategy; execution happens in the specialist skills listed in Role and Scope.
+
+| Model | How creators are paid | Best for | Execute with |
+|-------|----------------------|----------|--------------|
+| TikTok Shop affiliate (open or targeted collaboration) | Commission on sales | Products already selling, many small creators | `tiktok-shop-affiliate-program` |
+| Paid branded content (creator marketplace) | Fixed fee per video, sometimes + commission | Launches, awareness, specific audiences | `tiktok-creator-marketplace` |
+| Gifting / seeding | Free product, no obligation | Early content and reviews at low cost | `tiktok-shop-creator-management` |
+| Spark Ads on creator posts | Ad spend on the creator's post (with their authorization code) | Scaling the best organic videos | `tiktok-shop-ads` |
+
+### Building the Plan
+
+1. **Goal**: sales now (affiliate-first), launch awareness (paid + seeding), or content for ads (UGC + Spark Ads).
+2. **Creator mix**: many nano/micro creators for volume and testing, a few mid/macro creators for reach; budget split such as 60% commission-based, 30% paid content, 10% seeding for a sales goal.
+3. **Budget and ROI model**: expected views × click rate × conversion × margin, minus fees and commissions; compare cost per order with `profit-margin-calculator-tiktok`.
+4. **Rights**: usage rights and Spark Ads authorization for every paid video, in writing.
+5. **Measurement**: GMV, orders and cost per order by model and creator tier; move budget to what works each month.
 
 ## Installation
 

@@ -7,6 +7,17 @@ description: "Manage e-commerce operations across multiple marketplaces and chan
 
 Manage e-commerce operations across multiple marketplaces and channels. Inventory sync, order routing, listing management, and unified analytics for Amazon, Shopify, Walmart, eBay, Etsy, and TikTok Shop.
 
+<!-- role-and-scope:start (generated from tools/skill_groups.json) -->
+## Role and Scope
+
+**This skill:** Operations: inventory sync, order routing and listing syndication across channels.
+
+Part of: Selling on several channels. For neighbouring jobs, use the matching skill instead:
+
+- `omnichannel-ecommerce` — Strategy: which channels to sell on and how to keep brand and customer experience consistent.
+
+<!-- role-and-scope:end -->
+
 ## Capabilities
 
 - Multichannel management platform comparison (ChannelAdvisor, Sellbrite, LitCommerce)

@@ -8,6 +8,19 @@ metadata: {"nexscope":{"emoji":"🤝","category":"tiktok-shop"}}
 
 Build and scale your TikTok Shop affiliate program. Creator recruitment to performance optimization.
 
+<!-- role-and-scope:start (generated from tools/skill_groups.json) -->
+## Role and Scope
+
+**This skill:** Setting up the TikTok Shop affiliate program: open and targeted collaborations, commission rates, samples.
+
+Part of: TikTok creators and affiliates. For neighbouring jobs, use the matching skill instead:
+
+- `tiktok-creator-marketplace` — Paid branded-content campaigns through TikTok's creator marketplace: briefs, negotiation, deliverables.
+- `tiktok-influencer-marketing` — Overall creator and UGC strategy on TikTok: goals, creator mix, outreach and ROI.
+- `tiktok-shop-creator-management` — Running an existing creator roster: tiers, briefs, sample tracking, monthly reviews.
+
+<!-- role-and-scope:end -->
+
 ## Installation
 
 Part of the **`ecommerce-skills`** Claude Code plugin (all 162 skills). In Claude Code:

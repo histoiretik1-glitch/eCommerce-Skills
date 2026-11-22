@@ -1,12 +1,25 @@
 ---
 name: tiktok-creator-marketplace
-description: "TikTok Creator Marketplace strategy and campaign management. Finding creators, negotiation tactics, campaign execution, performance tracking, and relationship building. Use when the user asks about TikTok Creator Marketplace, finding TikTok creators, creator partnerships, or influencer campaigns."
+description: "TikTok Creator Marketplace campaigns (paid branded content). Finds creators in TikTok's creator marketplace, writes briefs, negotiates fees, deliverables and usage rights, runs the campaign and tracks performance. Use when a brand wants to hire TikTok creators for paid sponsored videos, needs a creator brief or rate negotiation, or asks how to use the TikTok Creator Marketplace."
 metadata: {"nexscope":{"emoji":"🎭","category":"tiktok-shop"}}
 ---
 
 # TikTok Creator Marketplace 🎭
 
 Master the TikTok Creator Marketplace. Strategic creator partnerships from discovery to performance optimization.
+
+<!-- role-and-scope:start (generated from tools/skill_groups.json) -->
+## Role and Scope
+
+**This skill:** Paid branded-content campaigns through TikTok's creator marketplace: briefs, negotiation, deliverables.
+
+Part of: TikTok creators and affiliates. For neighbouring jobs, use the matching skill instead:
+
+- `tiktok-shop-affiliate-program` — Setting up the TikTok Shop affiliate program: open and targeted collaborations, commission rates, samples.
+- `tiktok-influencer-marketing` — Overall creator and UGC strategy on TikTok: goals, creator mix, outreach and ROI.
+- `tiktok-shop-creator-management` — Running an existing creator roster: tiers, briefs, sample tracking, monthly reviews.
+
+<!-- role-and-scope:end -->
 
 ## Installation
 

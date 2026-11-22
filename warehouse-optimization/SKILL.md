@@ -8,6 +8,20 @@ metadata: {"nexscope":{"emoji":"🏭","category":"ecommerce"}}
 
 Diagnose and optimize your warehouse operations: analyze inventory health, calculate safety stock, reduce costs, and improve efficiency. No API key required.
 
+<!-- role-and-scope:start (generated from tools/skill_groups.json) -->
+## Role and Scope
+
+**This skill:** Warehouse and FBA inventory optimization: safety stock, ABC analysis, IPI, storage costs.
+
+Part of: Inventory and replenishment. For neighbouring jobs, use the matching skill instead:
+
+- `restock-alert` — Reorder points, safety stock and stock-out risk for replenishment decisions.
+- `inventory-tracking-software` — Designing the inventory tracking system: monitoring, alerts and multi-channel sync.
+- `shopify-inventory-management` — Managing stock in Shopify across locations.
+- `tiktok-shop-inventory` — Stock planning for viral demand on TikTok Shop.
+
+<!-- role-and-scope:end -->
+
 ## Installation
 
 Part of the **`ecommerce-skills`** Claude Code plugin (all 162 skills). In Claude Code:

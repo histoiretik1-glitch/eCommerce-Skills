@@ -10,6 +10,21 @@ metadata:
 
 Handle TikTok Shop returns correctly and cheaply, and remove the causes that create them.
 
+<!-- role-and-scope:start (generated from tools/skill_groups.json) -->
+## Role and Scope
+
+**This skill:** TikTok Shop returns and refunds.
+
+Part of: TikTok Shop operations. For neighbouring jobs, use the matching skill instead:
+
+- `tiktok-shop-fulfillment` — Choosing and running the fulfillment model (FBT, self, 3PL) and dispatch performance.
+- `tiktok-shop-shipping` — Shipping templates, carriers, shipping prices and delivery promise.
+- `tiktok-shop-inventory` — Stock planning for viral demand on TikTok Shop.
+- `tiktok-shop-customer-service` — Buyer messages, disputes and service metrics on TikTok Shop.
+- `tiktok-shop-reviews` — Ratings and reviews on TikTok Shop.
+
+<!-- role-and-scope:end -->
+
 ## When to Use
 
 - Return or refund rate is high or rising

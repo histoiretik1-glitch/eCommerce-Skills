@@ -10,6 +10,18 @@ metadata:
 
 Turn TikTok Shop traffic into orders by finding where buyers drop off between the video and the payment.
 
+<!-- role-and-scope:start (generated from tools/skill_groups.json) -->
+## Role and Scope
+
+**This skill:** Diagnosing where buyers drop off between content and paid order, and fixing it.
+
+Part of: TikTok Shop listings, conversion and analytics. For neighbouring jobs, use the matching skill instead:
+
+- `tiktok-shop-listing-optimization` — Writing and structuring the TikTok Shop product listing (title, images, video, attributes, search).
+- `tiktok-shop-analytics` — Reading TikTok Shop performance data across videos, LIVE, affiliates and ads.
+
+<!-- role-and-scope:end -->
+
 ## When to Use
 
 - Many views or clicks but few orders

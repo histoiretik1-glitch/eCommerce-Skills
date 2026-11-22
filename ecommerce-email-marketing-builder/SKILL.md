@@ -15,6 +15,17 @@ Build a complete, copy-paste-ready email marketing system for any e-commerce bus
 
 Built by [Nexscope](https://www.nexscope.ai/?co-from=skill) — your AI assistant for smarter e-commerce decisions.
 
+<!-- role-and-scope:start (generated from tools/skill_groups.json) -->
+## Role and Scope
+
+**This skill:** Complete email program with flows, copy, segmentation and ESP setup, for any store.
+
+Part of: Email marketing. For neighbouring jobs, use the matching skill instead:
+
+- `shopify-email-flows` — Setting up the core automated email flows of a Shopify store.
+
+<!-- role-and-scope:end -->
+
 ## Installation
 
 Part of the **`ecommerce-skills`** Claude Code plugin (all 162 skills). In Claude Code:

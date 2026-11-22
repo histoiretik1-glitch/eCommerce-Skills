@@ -1,6 +1,6 @@
 ---
 name: inventory-tracking-software
-description: "AI-powered inventory tracking and monitoring skill for e-commerce businesses. Designs inventory monitoring systems, low-stock alerts, reorder point calculations, and multi-channel sync strategies. Use when the user asks for help setting up inventory tracking, low-stock alerts, reorder points or multi-channel stock sync."
+description: "Inventory tracking system design. Chooses or designs the tracking setup (spreadsheet, inventory app, ERP), the data each SKU needs, monitoring dashboards, alert rules and multi-channel stock sync so every channel shows the right quantity. Use when a business asks which inventory software to use or how to set up inventory tracking and sync across channels."
 nexscope:
   name: "Inventory Tracking Software"
   category: "Supply Chain & Logistics"
@@ -20,6 +20,20 @@ nexscope:
 # Inventory Tracking Software
 
 AI-powered inventory tracking and monitoring skill for e-commerce businesses. Designs inventory monitoring systems, low-stock alerts, reorder point calculations, and multi-channel sync strategies.
+
+<!-- role-and-scope:start (generated from tools/skill_groups.json) -->
+## Role and Scope
+
+**This skill:** Designing the inventory tracking system: monitoring, alerts and multi-channel sync.
+
+Part of: Inventory and replenishment. For neighbouring jobs, use the matching skill instead:
+
+- `warehouse-optimization` — Warehouse and FBA inventory optimization: safety stock, ABC analysis, IPI, storage costs.
+- `restock-alert` — Reorder points, safety stock and stock-out risk for replenishment decisions.
+- `shopify-inventory-management` — Managing stock in Shopify across locations.
+- `tiktok-shop-inventory` — Stock planning for viral demand on TikTok Shop.
+
+<!-- role-and-scope:end -->
 
 ## Capabilities
 

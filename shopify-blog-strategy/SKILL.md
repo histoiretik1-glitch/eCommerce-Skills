@@ -12,14 +12,32 @@ Content marketing via Shopify blog — SEO content, product education, buying gu
 
 ## Status
 
-🔶 **Beta** — This skill provides expert guidance and actionable frameworks for Shopify sellers.
+🔶 **Beta** — full workflow added in plugin version 1.3.0.
 
-## Capabilities
+Use the Shopify blog to bring organic traffic that turns into sales, not just page views.
 
-- Analyze your current Shopify store setup and identify optimization opportunities
-- Provide data-driven recommendations based on industry best practices
-- Generate step-by-step implementation plans tailored to your business stage
-- Compare tools, apps, and strategies with pros/cons analysis
+## Inputs to Collect
+
+Products and collections, target buyers and their questions, current blog posts and their traffic (Shopify analytics, Google Search Console), main keywords (`ecommerce-keyword-research`), writing capacity per month.
+
+## Workflow
+
+1. **Content types that sell**: buying guides ("best X for Y"), how-to and care guides, comparisons, gift guides, ingredient or material explainers.
+2. **Keyword per post**: one main question or phrase per article, matched to a product or collection page.
+3. **Structure**: clear title with the keyword, intro that answers quickly, headings, original photos, product blocks or links to the relevant products and collections, FAQ.
+4. **Shopify settings**: SEO title and meta description in each blog post's search engine listing, featured image with alt text, clean URL handle, blog tags for grouping.
+5. **Internal links**: from each article to products and collections, and from collections back to the guides.
+6. **Calendar**: 2-4 posts a month, seasonal guides published 6-8 weeks before the season.
+7. **Measure** organic clicks (Search Console) and sales from blog visits; update old posts that rank on page 2.
+
+## Output Format
+
+1. Topic list with keyword, intent and target product/collection
+2. Article brief template
+3. 3-month publishing calendar
+4. Update plan for existing posts
+
+For technical SEO of the store, see `shopify-seo`.
 
 ## Installation
 
@@ -36,23 +54,12 @@ This skill only, with the Skills CLI (Claude Code, Cursor, Codex and other agent
 npx skills add histoiretik1-glitch/eCommerce-Skills --skill shopify-blog-strategy -g
 ```
 
-## Usage
-
-After installation, ask your AI assistant about shopify blog strategy topics. Example prompts:
+## Example Requests
 
 - "Help me with shopify blog strategy for my Shopify store"
 - "What are the best practices for shopify blog strategy?"
 - "Audit my current shopify blog strategy setup and suggest improvements"
 - "Create a step-by-step shopify blog strategy implementation plan"
-
-## Output
-
-Structured analysis and recommendations including:
-- Current state assessment
-- Priority action items (quick wins → long-term)
-- Tool/app recommendations with cost comparison
-- Implementation timeline
-- KPIs to track
 
 ## Limitations
 
