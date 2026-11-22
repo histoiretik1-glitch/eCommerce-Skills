@@ -1,6 +1,6 @@
 ---
 name: shopify-dropshipping
-description: "Dropshipping setup and scaling — supplier integration, automation, pricing strategy, customer experience"
+description: "Shopify dropshipping setup and scaling. Connects suppliers and dropshipping apps to a Shopify store, sets pricing and margins, automates orders and handles shipping times and customer service. Use when someone wants to start or scale a dropshipping store on Shopify (to find products use `dropshipping-product-research`)."
 metadata:
   nexscope:
     category: shopify
@@ -21,10 +21,19 @@ Dropshipping setup and scaling — supplier integration, automation, pricing str
 - Generate step-by-step implementation plans tailored to your business stage
 - Compare tools, apps, and strategies with pros/cons analysis
 
-## Install
+## Installation
+
+Part of the **`ecommerce-skills`** Claude Code plugin (all 162 skills). In Claude Code:
+
+```
+/plugin marketplace add histoiretik1-glitch/eCommerce-Skills
+/plugin install ecommerce-skills@ecommerce-skills
+```
+
+This skill only, with the Skills CLI (Claude Code, Cursor, Codex and other agents):
 
 ```bash
-npx skills add nexscope-ai/eCommerce-Skills --skill shopify-dropshipping -g
+npx skills add histoiretik1-glitch/eCommerce-Skills --skill shopify-dropshipping -g
 ```
 
 ## Usage

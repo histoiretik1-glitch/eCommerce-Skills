@@ -1,6 +1,6 @@
 ---
 name: shopify-subscription-setup
-description: "Subscription program setup — recurring billing, frequency options, churn reduction, lifetime value"
+description: "Shopify subscription program setup. Sets up recurring orders on Shopify (subscription apps, frequencies, discounts, customer portal) and reduces churn. Use when a Shopify store owner wants to sell subscriptions or subscribe-and-save (for designing the subscription business model use `ecommerce-subscription-model`)."
 metadata:
   nexscope:
     category: shopify
@@ -21,10 +21,19 @@ Subscription program setup — recurring billing, frequency options, churn reduc
 - Generate step-by-step implementation plans tailored to your business stage
 - Compare tools, apps, and strategies with pros/cons analysis
 
-## Install
+## Installation
+
+Part of the **`ecommerce-skills`** Claude Code plugin (all 162 skills). In Claude Code:
+
+```
+/plugin marketplace add histoiretik1-glitch/eCommerce-Skills
+/plugin install ecommerce-skills@ecommerce-skills
+```
+
+This skill only, with the Skills CLI (Claude Code, Cursor, Codex and other agents):
 
 ```bash
-npx skills add nexscope-ai/eCommerce-Skills --skill shopify-subscription-setup -g
+npx skills add histoiretik1-glitch/eCommerce-Skills --skill shopify-subscription-setup -g
 ```
 
 ## Usage

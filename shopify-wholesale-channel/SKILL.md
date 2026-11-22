@@ -1,6 +1,6 @@
 ---
 name: shopify-wholesale-channel
-description: "B2B/wholesale setup — wholesale pricing, minimum orders, custom catalogs, net payment terms"
+description: "Shopify B2B and wholesale. Sets up wholesale selling on Shopify: B2B catalogs and price lists, minimum orders, payment terms, wholesale customer accounts or a separate wholesale store. Use when a Shopify store owner wants to sell to retailers or businesses."
 metadata:
   nexscope:
     category: shopify
@@ -21,10 +21,19 @@ B2B/wholesale setup — wholesale pricing, minimum orders, custom catalogs, net 
 - Generate step-by-step implementation plans tailored to your business stage
 - Compare tools, apps, and strategies with pros/cons analysis
 
-## Install
+## Installation
+
+Part of the **`ecommerce-skills`** Claude Code plugin (all 162 skills). In Claude Code:
+
+```
+/plugin marketplace add histoiretik1-glitch/eCommerce-Skills
+/plugin install ecommerce-skills@ecommerce-skills
+```
+
+This skill only, with the Skills CLI (Claude Code, Cursor, Codex and other agents):
 
 ```bash
-npx skills add nexscope-ai/eCommerce-Skills --skill shopify-wholesale-channel -g
+npx skills add histoiretik1-glitch/eCommerce-Skills --skill shopify-wholesale-channel -g
 ```
 
 ## Usage

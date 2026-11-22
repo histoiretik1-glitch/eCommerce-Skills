@@ -1,6 +1,6 @@
 ---
 name: etsy-star-seller
-description: "Star Seller achievement guide — response time, shipping tracking, 5-star ratings, maintaining status"
+description: "Etsy Star Seller guide. Explains the Star Seller criteria (message response time, on-time shipping with tracking, review ratings), checks the shop's numbers and builds a plan to reach or keep the badge. Use when an Etsy seller asks how to become or stay a Star Seller."
 metadata:
   nexscope:
     category: etsy
@@ -21,10 +21,19 @@ Star Seller achievement guide — response time, shipping tracking, 5-star ratin
 - Generate step-by-step implementation plans tailored to your shop
 - Compare tools, strategies, and approaches with pros/cons analysis
 
-## Install
+## Installation
+
+Part of the **`ecommerce-skills`** Claude Code plugin (all 162 skills). In Claude Code:
+
+```
+/plugin marketplace add histoiretik1-glitch/eCommerce-Skills
+/plugin install ecommerce-skills@ecommerce-skills
+```
+
+This skill only, with the Skills CLI (Claude Code, Cursor, Codex and other agents):
 
 ```bash
-npx skills add nexscope-ai/eCommerce-Skills --skill etsy-star-seller -g
+npx skills add histoiretik1-glitch/eCommerce-Skills --skill etsy-star-seller -g
 ```
 
 ## Usage

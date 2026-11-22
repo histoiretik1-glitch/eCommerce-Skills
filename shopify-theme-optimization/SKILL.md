@@ -1,6 +1,6 @@
 ---
 name: shopify-theme-optimization
-description: "Theme speed and UX optimization — Core Web Vitals, Liquid code, image loading, mobile responsiveness"
+description: "Shopify theme optimization. Improves a Shopify theme's speed and UX: Liquid code, image loading, Core Web Vitals, mobile layout and theme app blocks. Use when a Shopify store owner asks to optimize or choose a theme, or fix theme performance and mobile issues."
 metadata:
   nexscope:
     category: shopify
@@ -21,10 +21,19 @@ Theme speed and UX optimization — Core Web Vitals, Liquid code, image loading,
 - Generate step-by-step implementation plans tailored to your business stage
 - Compare tools, apps, and strategies with pros/cons analysis
 
-## Install
+## Installation
+
+Part of the **`ecommerce-skills`** Claude Code plugin (all 162 skills). In Claude Code:
+
+```
+/plugin marketplace add histoiretik1-glitch/eCommerce-Skills
+/plugin install ecommerce-skills@ecommerce-skills
+```
+
+This skill only, with the Skills CLI (Claude Code, Cursor, Codex and other agents):
 
 ```bash
-npx skills add nexscope-ai/eCommerce-Skills --skill shopify-theme-optimization -g
+npx skills add histoiretik1-glitch/eCommerce-Skills --skill shopify-theme-optimization -g
 ```
 
 ## Usage

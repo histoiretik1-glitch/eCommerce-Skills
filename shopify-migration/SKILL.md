@@ -1,6 +1,6 @@
 ---
 name: shopify-migration
-description: "Platform migration to Shopify — from WooCommerce, Magento, BigCommerce, data transfer, URL redirects"
+description: "Migration to Shopify. Plans a move from WooCommerce, Magento, BigCommerce or another platform to Shopify: data transfer (products, customers, orders), URL redirects to keep SEO, apps and launch checklist. Use when someone plans or is doing a migration to Shopify."
 metadata:
   nexscope:
     category: shopify
@@ -21,10 +21,19 @@ Platform migration to Shopify — from WooCommerce, Magento, BigCommerce, data t
 - Generate step-by-step implementation plans tailored to your business stage
 - Compare tools, apps, and strategies with pros/cons analysis
 
-## Install
+## Installation
+
+Part of the **`ecommerce-skills`** Claude Code plugin (all 162 skills). In Claude Code:
+
+```
+/plugin marketplace add histoiretik1-glitch/eCommerce-Skills
+/plugin install ecommerce-skills@ecommerce-skills
+```
+
+This skill only, with the Skills CLI (Claude Code, Cursor, Codex and other agents):
 
 ```bash
-npx skills add nexscope-ai/eCommerce-Skills --skill shopify-migration -g
+npx skills add histoiretik1-glitch/eCommerce-Skills --skill shopify-migration -g
 ```
 
 ## Usage

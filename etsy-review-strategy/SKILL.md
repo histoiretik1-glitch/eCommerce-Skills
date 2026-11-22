@@ -1,6 +1,6 @@
 ---
 name: etsy-review-strategy
-description: "Etsy review generation — thank you cards, follow-up messages, photo review incentives"
+description: "Etsy review strategy. Increases honest reviews within Etsy's rules (packaging inserts, follow-up messages, delivery experience), responds to negative reviews and uses review themes to fix listings. Use when an Etsy seller asks how to get more reviews, improve their rating or handle a bad review."
 metadata:
   nexscope:
     category: etsy
@@ -21,10 +21,19 @@ Etsy review generation — thank you cards, follow-up messages, photo review inc
 - Generate step-by-step implementation plans tailored to your shop
 - Compare tools, strategies, and approaches with pros/cons analysis
 
-## Install
+## Installation
+
+Part of the **`ecommerce-skills`** Claude Code plugin (all 162 skills). In Claude Code:
+
+```
+/plugin marketplace add histoiretik1-glitch/eCommerce-Skills
+/plugin install ecommerce-skills@ecommerce-skills
+```
+
+This skill only, with the Skills CLI (Claude Code, Cursor, Codex and other agents):
 
 ```bash
-npx skills add nexscope-ai/eCommerce-Skills --skill etsy-review-strategy -g
+npx skills add histoiretik1-glitch/eCommerce-Skills --skill etsy-review-strategy -g
 ```
 
 ## Usage

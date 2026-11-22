@@ -18,10 +18,19 @@ Find, contact, and manage influencer partnerships for e-commerce brands. Outreac
 - Long-term ambassador program design
 - Micro-influencer vs macro-influencer strategy
 
-## Install
+## Installation
+
+Part of the **`ecommerce-skills`** Claude Code plugin (all 162 skills). In Claude Code:
+
+```
+/plugin marketplace add histoiretik1-glitch/eCommerce-Skills
+/plugin install ecommerce-skills@ecommerce-skills
+```
+
+This skill only, with the Skills CLI (Claude Code, Cursor, Codex and other agents):
 
 ```bash
-npx skills add nexscope/influencer-outreach
+npx skills add histoiretik1-glitch/eCommerce-Skills --skill influencer-outreach -g
 ```
 
 ## Usage

@@ -1,6 +1,6 @@
 ---
 name: etsy-seo-tags
-description: "Etsy tag optimization — 13-tag strategy, attribute optimization, search ranking factors"
+description: "Etsy tags and attributes optimization. Writes the 13 Etsy tags (up to 20 characters each) and fills listing attributes so they cover different long-tail searches without repeating the title. Use when an Etsy seller asks which tags to use or how to fill attributes (for keyword discovery use `etsy-keyword-research`; for a full listing audit use `etsy-seo`)."
 metadata:
   nexscope:
     category: etsy
@@ -21,10 +21,19 @@ Etsy tag optimization — 13-tag strategy, attribute optimization, search rankin
 - Generate step-by-step implementation plans tailored to your shop
 - Compare tools, strategies, and approaches with pros/cons analysis
 
-## Install
+## Installation
+
+Part of the **`ecommerce-skills`** Claude Code plugin (all 162 skills). In Claude Code:
+
+```
+/plugin marketplace add histoiretik1-glitch/eCommerce-Skills
+/plugin install ecommerce-skills@ecommerce-skills
+```
+
+This skill only, with the Skills CLI (Claude Code, Cursor, Codex and other agents):
 
 ```bash
-npx skills add nexscope-ai/eCommerce-Skills --skill etsy-seo-tags -g
+npx skills add histoiretik1-glitch/eCommerce-Skills --skill etsy-seo-tags -g
 ```
 
 ## Usage

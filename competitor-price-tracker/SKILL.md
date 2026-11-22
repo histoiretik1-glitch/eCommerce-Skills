@@ -1,6 +1,6 @@
 ---
 name: competitor-price-tracker
-description: "Set up competitor price tracking and monitoring workflows. Track price changes, detect promotions, analyze pricing patterns, and get alerts for competitive price movements."
+description: "Set up competitor price tracking and monitoring workflows. Track price changes, detect promotions, analyze pricing patterns, and get alerts for competitive price movements. Use when a seller wants to monitor competitor prices over time, detect promotions or price drops, or decide how to respond to a price war (for one-off pricing analysis use `competitor-price-analysis`)."
 metadata:
   nexscope:
     emoji: "📊"
@@ -15,10 +15,19 @@ Set up competitor price tracking and monitoring workflows. Track price changes, 
 
 Built by [Nexscope](https://www.nexscope.ai/?co-from=skill) — your AI assistant for smarter e-commerce decisions.
 
-## Install
+## Installation
+
+Part of the **`ecommerce-skills`** Claude Code plugin (all 162 skills). In Claude Code:
+
+```
+/plugin marketplace add histoiretik1-glitch/eCommerce-Skills
+/plugin install ecommerce-skills@ecommerce-skills
+```
+
+This skill only, with the Skills CLI (Claude Code, Cursor, Codex and other agents):
 
 ```bash
-npx skills add nexscope-ai/eCommerce-Skills --skill competitor-price-tracker -g
+npx skills add histoiretik1-glitch/eCommerce-Skills --skill competitor-price-tracker -g
 ```
 
 ## Usage

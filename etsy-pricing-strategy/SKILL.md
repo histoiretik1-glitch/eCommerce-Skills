@@ -1,6 +1,6 @@
 ---
 name: etsy-pricing-strategy
-description: "Etsy pricing — cost calculation, competitor pricing, perceived value, shipping cost integration, sales and coupons"
+description: "Etsy pricing strategy. Builds a price from materials, labor, Etsy fees, shipping and profit, compares with competing listings, and plans sales and coupons without losing money. Use when an Etsy seller asks how to price handmade or vintage items, whether their prices are too low, or how Etsy fees affect their margin."
 metadata:
   nexscope:
     category: etsy
@@ -21,10 +21,19 @@ Etsy pricing — cost calculation, competitor pricing, perceived value, shipping
 - Generate step-by-step implementation plans tailored to your shop
 - Compare tools, strategies, and approaches with pros/cons analysis
 
-## Install
+## Installation
+
+Part of the **`ecommerce-skills`** Claude Code plugin (all 162 skills). In Claude Code:
+
+```
+/plugin marketplace add histoiretik1-glitch/eCommerce-Skills
+/plugin install ecommerce-skills@ecommerce-skills
+```
+
+This skill only, with the Skills CLI (Claude Code, Cursor, Codex and other agents):
 
 ```bash
-npx skills add nexscope-ai/eCommerce-Skills --skill etsy-pricing-strategy -g
+npx skills add histoiretik1-glitch/eCommerce-Skills --skill etsy-pricing-strategy -g
 ```
 
 ## Usage

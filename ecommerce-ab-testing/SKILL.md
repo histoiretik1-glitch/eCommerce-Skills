@@ -18,10 +18,19 @@ Master A/B testing for e-commerce across all platforms. Test product pages, pric
 - Ad creative A/B testing (Meta, Google, TikTok)
 - Email and SMS A/B testing best practices
 
-## Install
+## Installation
+
+Part of the **`ecommerce-skills`** Claude Code plugin (all 162 skills). In Claude Code:
+
+```
+/plugin marketplace add histoiretik1-glitch/eCommerce-Skills
+/plugin install ecommerce-skills@ecommerce-skills
+```
+
+This skill only, with the Skills CLI (Claude Code, Cursor, Codex and other agents):
 
 ```bash
-npx skills add nexscope/ecommerce-ab-testing
+npx skills add histoiretik1-glitch/eCommerce-Skills --skill ecommerce-ab-testing -g
 ```
 
 ## Usage

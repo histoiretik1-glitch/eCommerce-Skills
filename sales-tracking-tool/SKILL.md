@@ -1,6 +1,6 @@
 ---
 name: sales-tracking-tool
-description: "Track and analyze e-commerce sales performance across platforms. Set up KPI dashboards, trend analysis, and performance alerts to catch issues and opportunities early."
+description: "Track and analyze e-commerce sales performance across platforms. Set up KPI dashboards, trend analysis, and performance alerts to catch issues and opportunities early. Use when a seller wants a sales KPI dashboard, to understand why sales changed, or alerts on unusual sales drops or spikes."
 metadata:
   nexscope:
     emoji: "📉"
@@ -15,10 +15,19 @@ Track and analyze e-commerce sales performance across platforms. Set up KPI dash
 
 Built by [Nexscope](https://www.nexscope.ai/?co-from=skill) — your AI assistant for smarter e-commerce decisions.
 
-## Install
+## Installation
+
+Part of the **`ecommerce-skills`** Claude Code plugin (all 162 skills). In Claude Code:
+
+```
+/plugin marketplace add histoiretik1-glitch/eCommerce-Skills
+/plugin install ecommerce-skills@ecommerce-skills
+```
+
+This skill only, with the Skills CLI (Claude Code, Cursor, Codex and other agents):
 
 ```bash
-npx skills add nexscope-ai/eCommerce-Skills --skill sales-tracking-tool -g
+npx skills add histoiretik1-glitch/eCommerce-Skills --skill sales-tracking-tool -g
 ```
 
 ## Usage

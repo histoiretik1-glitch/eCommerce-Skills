@@ -1,6 +1,6 @@
 ---
 name: etsy-custom-orders
-description: "Custom order management — communication templates, pricing, delivery timelines, return policies"
+description: "Etsy custom and personalized order management. Sets up personalization fields and custom order requests, quote and pricing rules, message templates, proof approval, production times and return rules for made-to-order items. Use when an Etsy seller offers personalized or custom products and asks how to price them, manage requests or avoid disputes."
 metadata:
   nexscope:
     category: etsy
@@ -21,10 +21,19 @@ Custom order management — communication templates, pricing, delivery timelines
 - Generate step-by-step implementation plans tailored to your shop
 - Compare tools, strategies, and approaches with pros/cons analysis
 
-## Install
+## Installation
+
+Part of the **`ecommerce-skills`** Claude Code plugin (all 162 skills). In Claude Code:
+
+```
+/plugin marketplace add histoiretik1-glitch/eCommerce-Skills
+/plugin install ecommerce-skills@ecommerce-skills
+```
+
+This skill only, with the Skills CLI (Claude Code, Cursor, Codex and other agents):
 
 ```bash
-npx skills add nexscope-ai/eCommerce-Skills --skill etsy-custom-orders -g
+npx skills add histoiretik1-glitch/eCommerce-Skills --skill etsy-custom-orders -g
 ```
 
 ## Usage

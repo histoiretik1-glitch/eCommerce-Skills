@@ -1,6 +1,6 @@
 ---
 name: google-shopping-optimization
-description: "Optimize Google Shopping campaigns and product feeds for maximum visibility and ROAS. Feed optimization, bidding strategy, campaign structure, and Performance Max integration."
+description: "Optimize Google Shopping campaigns and product feeds for maximum visibility and ROAS. Feed optimization, bidding strategy, campaign structure, and Performance Max integration. Use when a seller asks about Google Shopping or Performance Max campaigns, Merchant Center feed quality, Shopping bids or ROAS (for the Shopify Google channel app use `shopify-google-channel`)."
 metadata:
   nexscope:
     emoji: "🛒"
@@ -15,10 +15,19 @@ Optimize Google Shopping campaigns and product feeds for maximum visibility and 
 
 Built by [Nexscope](https://www.nexscope.ai/?co-from=skill) — your AI assistant for smarter e-commerce decisions.
 
-## Install
+## Installation
+
+Part of the **`ecommerce-skills`** Claude Code plugin (all 162 skills). In Claude Code:
+
+```
+/plugin marketplace add histoiretik1-glitch/eCommerce-Skills
+/plugin install ecommerce-skills@ecommerce-skills
+```
+
+This skill only, with the Skills CLI (Claude Code, Cursor, Codex and other agents):
 
 ```bash
-npx skills add nexscope-ai/eCommerce-Skills --skill google-shopping-optimization -g
+npx skills add histoiretik1-glitch/eCommerce-Skills --skill google-shopping-optimization -g
 ```
 
 ## Usage

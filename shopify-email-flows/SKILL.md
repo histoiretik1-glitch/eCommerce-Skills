@@ -1,6 +1,6 @@
 ---
 name: shopify-email-flows
-description: "Email automation flows — welcome series, abandoned cart, post-purchase, win-back, browse abandonment"
+description: "Shopify email automation flows. Builds welcome, abandoned cart, browse abandonment, post-purchase and win-back flows for a Shopify store (Shopify Email, Klaviyo or similar). Use when a Shopify store owner asks which email automations to set up or how to improve them (for a full email program with copy use `ecommerce-email-marketing-builder`)."
 metadata:
   nexscope:
     category: shopify
@@ -21,10 +21,19 @@ Email automation flows — welcome series, abandoned cart, post-purchase, win-ba
 - Generate step-by-step implementation plans tailored to your business stage
 - Compare tools, apps, and strategies with pros/cons analysis
 
-## Install
+## Installation
+
+Part of the **`ecommerce-skills`** Claude Code plugin (all 162 skills). In Claude Code:
+
+```
+/plugin marketplace add histoiretik1-glitch/eCommerce-Skills
+/plugin install ecommerce-skills@ecommerce-skills
+```
+
+This skill only, with the Skills CLI (Claude Code, Cursor, Codex and other agents):
 
 ```bash
-npx skills add nexscope-ai/eCommerce-Skills --skill shopify-email-flows -g
+npx skills add histoiretik1-glitch/eCommerce-Skills --skill shopify-email-flows -g
 ```
 
 ## Usage

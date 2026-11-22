@@ -1,6 +1,6 @@
 ---
 name: etsy-advertising
-description: "Etsy Ads strategy — budget allocation, bid management, promoted listings, offsite ads opt-out analysis"
+description: "Etsy Ads strategy for Etsy sellers. Sets daily budgets, chooses which listings to promote, reads Etsy Ads stats (views, clicks, orders, ROAS) and decides when to pause or scale, including the Offsite Ads opt-out question. Use when an Etsy seller asks whether Etsy Ads are worth it, how much to spend, which listings to advertise or how to improve ad ROAS (for Offsite Ads only use `etsy-offsite-ads`)."
 metadata:
   nexscope:
     category: etsy
@@ -21,10 +21,19 @@ Etsy Ads strategy — budget allocation, bid management, promoted listings, offs
 - Generate step-by-step implementation plans tailored to your shop
 - Compare tools, strategies, and approaches with pros/cons analysis
 
-## Install
+## Installation
+
+Part of the **`ecommerce-skills`** Claude Code plugin (all 162 skills). In Claude Code:
+
+```
+/plugin marketplace add histoiretik1-glitch/eCommerce-Skills
+/plugin install ecommerce-skills@ecommerce-skills
+```
+
+This skill only, with the Skills CLI (Claude Code, Cursor, Codex and other agents):
 
 ```bash
-npx skills add nexscope-ai/eCommerce-Skills --skill etsy-advertising -g
+npx skills add histoiretik1-glitch/eCommerce-Skills --skill etsy-advertising -g
 ```
 
 ## Usage

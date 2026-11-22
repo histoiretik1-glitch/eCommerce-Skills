@@ -130,6 +130,8 @@ Sécurité du workflow :
 
 Pour changer de version de Claude Code à la main : modifiez `tools/ci/package.json`, puis lancez `npm install --package-lock-only` dans `tools/ci/` et commitez les deux fichiers.
 
+Règles de rédaction vérifiées pour chaque `SKILL.md` : description d'au plus 1 024 caractères, sans `<` ni `>`, avec une phrase « Use when… » et le nom de la plateforme dans les 80 premiers caractères pour les skills `etsy-`, `shopify-`, `tiktok-`, `walmart-`, `ebay-`, `amazon-` et `woocommerce-` ; une seule section `## Installation` ; aucun renvoi vers un skill absent du plugin (sauf ceux de la liste `EXTERNAL_OR_NON_SKILL_NAMES`).
+
 Pour rendre ce contrôle obligatoire avant toute fusion : *Settings* → *Branches* → règle de protection sur `main` → *Require status checks to pass*, puis cochez **Skills, manifest and plugin**.
 
 ## Organisation
@@ -155,6 +157,15 @@ claude plugin disable ecommerce-skills@ecommerce-skills
 ```
 
 ## Historique des versions
+
+### 1.2.0 — LOT 2 (installation et descriptions)
+
+- **Installation** : chaque `SKILL.md` a une section `## Installation` unique, avec l'installation du plugin Claude Code et la commande Skills CLI de ce skill (`npx skills add histoiretik1-glitch/eCommerce-Skills --skill <nom> -g`). Les anciennes commandes (`clawhub install`, `npx skills add nexscope/<skill>`, dépôt d'origine) ont disparu.
+- **Renvois entre skills** : les 12 blocs d'installation qui renvoyaient vers un autre skill du plugin sont remplacés par « Use the `<skill>` skill ». Les 4 renvois vers le dépôt externe Amazon-Skills sont signalés comme externes. Les 3 skills « coming soon » inexistants sont remplacés par les skills existants.
+- **Descriptions** : les 162 descriptions disent ce que fait le skill, contiennent une phrase « Use when… » et, pour un skill propre à une plateforme, nomment la plateforme dès le début. 64 ont été complétées ou réécrites. Les skills qui se recouvrent indiquent vers quel skill voisin se tourner.
+- **Validateur** : `tools/validate_plugin.py` vérifie aussi ces règles (description d'au plus 1 024 caractères sans chevrons, phrase « Use when », plateforme nommée, section d'installation unique et correcte, aucune commande héritée, aucun renvoi vers un skill inexistant).
+- **Tests** : tests du validateur (un défaut injecté par catégorie) et test de déclenchement (44 demandes types doivent faire ressortir le bon skill parmi les 3 premiers).
+- Testé avec le Skills CLI : les 162 skills sont détectés, et un skill rangé en sous-dossier s'installe avec ses scripts.
 
 ### 1.1.0 — LOT 1 (scripts multi-plateformes, TikTok Shop)
 

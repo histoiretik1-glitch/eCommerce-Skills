@@ -1,6 +1,6 @@
 ---
 name: shopify-checkout-customization
-description: "Checkout optimization — Checkout Extensibility, custom fields, express payments, trust elements"
+description: "Shopify checkout customization. Configures the Shopify checkout with Checkout Extensibility (custom fields, upsells, trust elements), express payment options and checkout settings. Use when a Shopify store owner asks how to customize or optimize the Shopify checkout (for platform-independent checkout optimization use `ecommerce-checkout-optimization`)."
 metadata:
   nexscope:
     category: shopify
@@ -21,10 +21,19 @@ Checkout optimization — Checkout Extensibility, custom fields, express payment
 - Generate step-by-step implementation plans tailored to your business stage
 - Compare tools, apps, and strategies with pros/cons analysis
 
-## Install
+## Installation
+
+Part of the **`ecommerce-skills`** Claude Code plugin (all 162 skills). In Claude Code:
+
+```
+/plugin marketplace add histoiretik1-glitch/eCommerce-Skills
+/plugin install ecommerce-skills@ecommerce-skills
+```
+
+This skill only, with the Skills CLI (Claude Code, Cursor, Codex and other agents):
 
 ```bash
-npx skills add nexscope-ai/eCommerce-Skills --skill shopify-checkout-customization -g
+npx skills add histoiretik1-glitch/eCommerce-Skills --skill shopify-checkout-customization -g
 ```
 
 ## Usage

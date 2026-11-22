@@ -1,6 +1,6 @@
 ---
 name: shopify-facebook-instagram-shop
-description: "Social selling setup — Facebook Shop, Instagram Shopping, product tagging, social checkout"
+description: "Shopify Facebook and Instagram shops. Sets up the Facebook & Instagram channel for a Shopify store: product catalog sync, Facebook Shop, Instagram Shopping, product tags and social checkout. Use when a Shopify store owner wants to sell on Facebook or Instagram or fix catalog sync problems."
 metadata:
   nexscope:
     category: shopify
@@ -21,10 +21,19 @@ Social selling setup — Facebook Shop, Instagram Shopping, product tagging, soc
 - Generate step-by-step implementation plans tailored to your business stage
 - Compare tools, apps, and strategies with pros/cons analysis
 
-## Install
+## Installation
+
+Part of the **`ecommerce-skills`** Claude Code plugin (all 162 skills). In Claude Code:
+
+```
+/plugin marketplace add histoiretik1-glitch/eCommerce-Skills
+/plugin install ecommerce-skills@ecommerce-skills
+```
+
+This skill only, with the Skills CLI (Claude Code, Cursor, Codex and other agents):
 
 ```bash
-npx skills add nexscope-ai/eCommerce-Skills --skill shopify-facebook-instagram-shop -g
+npx skills add histoiretik1-glitch/eCommerce-Skills --skill shopify-facebook-instagram-shop -g
 ```
 
 ## Usage

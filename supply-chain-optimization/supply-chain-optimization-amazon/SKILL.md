@@ -146,6 +146,22 @@ amazon-lite/
 
 _Version 1.0.0 | Platform: Amazon | Lang: English_
 
+
+## Installation
+
+Part of the **`ecommerce-skills`** Claude Code plugin (all 162 skills). In Claude Code:
+
+```
+/plugin marketplace add histoiretik1-glitch/eCommerce-Skills
+/plugin install ecommerce-skills@ecommerce-skills
+```
+
+This skill only, with the Skills CLI (Claude Code, Cursor, Codex and other agents):
+
+```bash
+npx skills add histoiretik1-glitch/eCommerce-Skills --skill supply-chain-optimization-amazon -g
+```
+
 ---
 
 **Part of [Nexscope AI](https://www.nexscope.ai/?co-from=skill) — AI tools for e-commerce sellers.**

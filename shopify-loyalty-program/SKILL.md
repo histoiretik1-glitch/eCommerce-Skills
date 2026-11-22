@@ -1,6 +1,6 @@
 ---
 name: shopify-loyalty-program
-description: "Customer loyalty and rewards — points systems, VIP tiers, referral programs, app selection"
+description: "Shopify loyalty and rewards program. Designs points, VIP tiers and referral rewards for a Shopify store, picks a loyalty app and measures repeat-purchase impact. Use when a Shopify store owner wants a loyalty or referral program or more repeat customers."
 metadata:
   nexscope:
     category: shopify
@@ -21,10 +21,19 @@ Customer loyalty and rewards — points systems, VIP tiers, referral programs, a
 - Generate step-by-step implementation plans tailored to your business stage
 - Compare tools, apps, and strategies with pros/cons analysis
 
-## Install
+## Installation
+
+Part of the **`ecommerce-skills`** Claude Code plugin (all 162 skills). In Claude Code:
+
+```
+/plugin marketplace add histoiretik1-glitch/eCommerce-Skills
+/plugin install ecommerce-skills@ecommerce-skills
+```
+
+This skill only, with the Skills CLI (Claude Code, Cursor, Codex and other agents):
 
 ```bash
-npx skills add nexscope-ai/eCommerce-Skills --skill shopify-loyalty-program -g
+npx skills add histoiretik1-glitch/eCommerce-Skills --skill shopify-loyalty-program -g
 ```
 
 ## Usage

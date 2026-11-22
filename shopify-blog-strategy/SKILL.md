@@ -1,6 +1,6 @@
 ---
 name: shopify-blog-strategy
-description: "Content marketing via Shopify blog — SEO content, product education, buying guides, internal linking"
+description: "Shopify blog content strategy. Plans SEO articles, buying guides and product education posts on the Shopify blog, with keyword targets, internal links to products and collections, and a publishing calendar. Use when a Shopify store owner asks what to write on their blog or how to get organic traffic from content."
 metadata:
   nexscope:
     category: shopify
@@ -21,10 +21,19 @@ Content marketing via Shopify blog — SEO content, product education, buying gu
 - Generate step-by-step implementation plans tailored to your business stage
 - Compare tools, apps, and strategies with pros/cons analysis
 
-## Install
+## Installation
+
+Part of the **`ecommerce-skills`** Claude Code plugin (all 162 skills). In Claude Code:
+
+```
+/plugin marketplace add histoiretik1-glitch/eCommerce-Skills
+/plugin install ecommerce-skills@ecommerce-skills
+```
+
+This skill only, with the Skills CLI (Claude Code, Cursor, Codex and other agents):
 
 ```bash
-npx skills add nexscope-ai/eCommerce-Skills --skill shopify-blog-strategy -g
+npx skills add histoiretik1-glitch/eCommerce-Skills --skill shopify-blog-strategy -g
 ```
 
 ## Usage

@@ -1,6 +1,6 @@
 ---
 name: etsy-keyword-research
-description: "Etsy search optimization — long-tail keywords, tag research, competitor analysis, seasonal trends"
+description: "Etsy keyword research. Finds the words Etsy buyers search for using Etsy search suggestions, competitor listings and seasonal terms, and groups them into long-tail phrases for titles and tags. Use when an Etsy seller asks which keywords to target or how buyers search for their product (to write the 13 tags use `etsy-seo-tags`; for a full listing SEO audit use `etsy-seo`)."
 metadata:
   nexscope:
     category: etsy
@@ -21,10 +21,19 @@ Etsy search optimization — long-tail keywords, tag research, competitor analys
 - Generate step-by-step implementation plans tailored to your shop
 - Compare tools, strategies, and approaches with pros/cons analysis
 
-## Install
+## Installation
+
+Part of the **`ecommerce-skills`** Claude Code plugin (all 162 skills). In Claude Code:
+
+```
+/plugin marketplace add histoiretik1-glitch/eCommerce-Skills
+/plugin install ecommerce-skills@ecommerce-skills
+```
+
+This skill only, with the Skills CLI (Claude Code, Cursor, Codex and other agents):
 
 ```bash
-npx skills add nexscope-ai/eCommerce-Skills --skill etsy-keyword-research -g
+npx skills add histoiretik1-glitch/eCommerce-Skills --skill etsy-keyword-research -g
 ```
 
 ## Usage

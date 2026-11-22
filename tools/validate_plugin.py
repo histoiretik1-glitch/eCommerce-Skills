@@ -9,6 +9,13 @@ Checks:
   * relative `scripts/...` files and Markdown links mentioned in SKILL.md exist
   * when PyYAML is installed: every frontmatter block is valid YAML and
     `name` / `description` are non-empty strings (strict mode)
+  * Claude Code compatibility of the description: at most 1024 characters, no
+    angle brackets, a "Use when" sentence, and the platform named in the first
+    80 characters for platform-specific skills (etsy-, shopify-, tiktok-, ...)
+  * exactly one "## Installation" section that installs the plugin and this
+    skill (no legacy clawhub / nexscope/<skill> commands)
+  * skill names cited in the body (`name`, **name**, [name]) exist in the
+    plugin, unless listed in EXTERNAL_OR_NON_SKILL_NAMES
 
 Usage:
   python3 tools/validate_plugin.py                 # validate only
@@ -30,6 +37,20 @@ except ImportError:
     yaml = None
 
 NAME_RE = re.compile(r"^[a-z0-9]+(?:-[a-z0-9]+)*$")
+REPO = "histoiretik1-glitch/eCommerce-Skills"
+DESCRIPTION_MAX = 1024  # Agent Skills limit used by Claude Code
+PLATFORM_WORDS = {"etsy": "etsy", "shopify": "shopify", "tiktok": "tiktok", "walmart": "walmart",
+                  "ebay": "ebay", "amazon": "amazon", "woocommerce": "woocommerce"}
+# Prefixes of names that look like skill references in a SKILL.md body
+SKILL_REF_PREFIXES = ("etsy-", "shopify-", "tiktok-", "ecommerce-", "amazon-", "walmart-", "ebay-",
+                      "product-", "profit-", "brand-", "supply-", "review-", "competitor-", "google-", "meta-")
+# Cited names that are not skills of this plugin, on purpose
+EXTERNAL_OR_NON_SKILL_NAMES = {
+    "amazon-listing-optimization", "amazon-ppc-campaign", "tariff-calculator-amazon",  # nexscope-ai/Amazon-Skills
+    "ecommerce-skills",   # the plugin itself
+    "brand-portal",       # templates.py sub-command
+}
+LEGACY_INSTALL = re.compile(r"clawhub install|npx skills add nexscope/|npx skills add nexscope-ai/eCommerce-Skills")
 
 
 def skill_dirs():
@@ -53,9 +74,48 @@ def frontmatter(text):
     return fields
 
 
+def quality_errors(rel, name, desc, text, all_names):
+    """Description, installation section and cross-reference checks."""
+    errors = []
+    if len(desc) > DESCRIPTION_MAX:
+        errors.append(f"{rel}: description is {len(desc)} characters (max {DESCRIPTION_MAX})")
+    if "<" in desc or ">" in desc:
+        errors.append(f"{rel}: description must not contain angle brackets")
+    if "use when" not in desc.lower():
+        errors.append(f"{rel}: description has no 'Use when' sentence (helps Claude pick the skill)")
+    platform = next((w for k, w in PLATFORM_WORDS.items() if k in name.split("-")), None)
+    if platform and platform not in desc[:80].lower():
+        errors.append(f"{rel}: description should name the platform ({platform}) in its first 80 characters")
+    sections = re.findall(r"^## Installation[ \t]*$", text, re.M)
+    if len(sections) != 1:
+        errors.append(f"{rel}: expected exactly one '## Installation' section, found {len(sections)}")
+    else:
+        sec = text[text.index("## Installation"):]
+        sec = sec[:re.search(r"^## (?!Installation)", sec, re.M).start()] if re.search(r"^## (?!Installation)", sec, re.M) else sec
+        if f"/plugin marketplace add {REPO}" not in sec or f"--skill {name} " not in sec:
+            errors.append(f"{rel}: '## Installation' must show the plugin install and 'npx skills add {REPO} --skill {name} -g'")
+    if LEGACY_INSTALL.search(text):
+        errors.append(f"{rel}: legacy install command found (clawhub / nexscope/<skill> / upstream repo)")
+    body = text[text.find("\n---", 4) + 4:]
+    for cited in sorted(set(re.findall(r"(?:`|\*\*|\[)([a-z0-9]+(?:-[a-z0-9]+)+)(?:`|\*\*|\])", body))):
+        if cited.startswith(SKILL_REF_PREFIXES) and cited not in all_names and cited not in EXTERNAL_OR_NON_SKILL_NAMES:
+            errors.append(f"{rel}: references unknown skill `{cited}`")
+    return errors
+
+
+def _unquote(value):
+    if value[:1] == '"':
+        try:
+            return json.loads(value)
+        except ValueError:
+            pass
+    return value.strip("\"'")
+
+
 def main():
     errors = []
     dirs = skill_dirs()
+    all_names = {d.name for d in dirs}
     seen = {}
     for d in dirs:
         rel = d.relative_to(ROOT)
@@ -77,7 +137,7 @@ def main():
                 if not isinstance(strict.get(key), str) or not strict[key].strip():
                     errors.append(f"{rel}: `{key}` must be a non-empty string")
         name = fm.get("name", "").strip("\"'")
-        desc = fm.get("description", "").strip("\"'")
+        desc = _unquote(fm.get("description", ""))
         if not name:
             errors.append(f"{rel}: missing `name`")
         elif name != d.name:
@@ -86,6 +146,8 @@ def main():
             errors.append(f"{rel}: invalid name `{name}`")
         if not desc:
             errors.append(f"{rel}: missing `description`")
+        elif name:
+            errors.extend(quality_errors(rel, name, desc, text, all_names))
         if name in seen:
             errors.append(f"{rel}: duplicate name `{name}` (also {seen[name]})")
         seen[name] = rel

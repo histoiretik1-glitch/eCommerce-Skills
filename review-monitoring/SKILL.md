@@ -1,6 +1,6 @@
 ---
 name: review-monitoring
-description: "Set up systematic review monitoring across e-commerce platforms. Track new reviews, detect negative review spikes, monitor competitor reviews, and automate review response workflows."
+description: "Set up systematic review monitoring across e-commerce platforms. Track new reviews, detect negative review spikes, monitor competitor reviews, and automate review response workflows. Use when a seller wants alerts on new or negative reviews, to track competitor reviews, or a process to respond to reviews."
 metadata:
   nexscope:
     emoji: "👁️"
@@ -15,10 +15,19 @@ Set up systematic review monitoring across e-commerce platforms. Track new revie
 
 Built by [Nexscope](https://www.nexscope.ai/?co-from=skill) — your AI assistant for smarter e-commerce decisions.
 
-## Install
+## Installation
+
+Part of the **`ecommerce-skills`** Claude Code plugin (all 162 skills). In Claude Code:
+
+```
+/plugin marketplace add histoiretik1-glitch/eCommerce-Skills
+/plugin install ecommerce-skills@ecommerce-skills
+```
+
+This skill only, with the Skills CLI (Claude Code, Cursor, Codex and other agents):
 
 ```bash
-npx skills add nexscope-ai/eCommerce-Skills --skill review-monitoring -g
+npx skills add histoiretik1-glitch/eCommerce-Skills --skill review-monitoring -g
 ```
 
 ## Usage

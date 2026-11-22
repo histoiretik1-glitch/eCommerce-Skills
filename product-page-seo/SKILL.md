@@ -1,6 +1,6 @@
 ---
 name: product-page-seo
-description: "Optimize e-commerce product pages for search engine visibility. On-page SEO, structured data, page speed, mobile optimization, and content strategy for Google, Bing, and platform-specific search."
+description: "Optimize e-commerce product pages for search engine visibility. On-page SEO, structured data, page speed, mobile optimization, and content strategy for Google, Bing, and platform-specific search. Use when a store wants its product pages to rank better in Google, needs structured data (schema), or an on-page SEO audit."
 metadata:
   nexscope:
     emoji: "🔎"
@@ -15,10 +15,19 @@ Optimize e-commerce product pages for search engine visibility. On-page SEO, str
 
 Built by [Nexscope](https://www.nexscope.ai/?co-from=skill) — your AI assistant for smarter e-commerce decisions.
 
-## Install
+## Installation
+
+Part of the **`ecommerce-skills`** Claude Code plugin (all 162 skills). In Claude Code:
+
+```
+/plugin marketplace add histoiretik1-glitch/eCommerce-Skills
+/plugin install ecommerce-skills@ecommerce-skills
+```
+
+This skill only, with the Skills CLI (Claude Code, Cursor, Codex and other agents):
 
 ```bash
-npx skills add nexscope-ai/eCommerce-Skills --skill product-page-seo -g
+npx skills add histoiretik1-glitch/eCommerce-Skills --skill product-page-seo -g
 ```
 
 ## Usage

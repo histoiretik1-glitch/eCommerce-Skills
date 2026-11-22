@@ -1,6 +1,6 @@
 ---
 name: ecommerce-landing-page
-description: "Audit and optimize e-commerce landing pages for conversion. CTA placement, trust signals, page structure, copy optimization, and A/B testing strategy for product pages, collection pages, and campaign landing pages."
+description: "Audit and optimize e-commerce landing pages for conversion. CTA placement, trust signals, page structure, copy optimization, and A/B testing strategy for product pages, collection pages, and campaign landing pages. Use when a seller wants a landing or product page audited for conversion, better CTAs and trust signals, or ideas for A/B tests."
 metadata:
   nexscope:
     emoji: "🖥️"
@@ -15,10 +15,19 @@ Audit and optimize e-commerce landing pages for conversion. CTA placement, trust
 
 Built by [Nexscope](https://www.nexscope.ai/?co-from=skill) — your AI assistant for smarter e-commerce decisions.
 
-## Install
+## Installation
+
+Part of the **`ecommerce-skills`** Claude Code plugin (all 162 skills). In Claude Code:
+
+```
+/plugin marketplace add histoiretik1-glitch/eCommerce-Skills
+/plugin install ecommerce-skills@ecommerce-skills
+```
+
+This skill only, with the Skills CLI (Claude Code, Cursor, Codex and other agents):
 
 ```bash
-npx skills add nexscope-ai/eCommerce-Skills --skill ecommerce-landing-page -g
+npx skills add histoiretik1-glitch/eCommerce-Skills --skill ecommerce-landing-page -g
 ```
 
 ## Usage

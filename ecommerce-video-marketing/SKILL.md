@@ -18,10 +18,19 @@ Create video marketing strategy for e-commerce brands. Product videos, unboxing,
 - Video SEO: titles, descriptions, tags, thumbnails
 - Video production workflow on a budget
 
-## Install
+## Installation
+
+Part of the **`ecommerce-skills`** Claude Code plugin (all 162 skills). In Claude Code:
+
+```
+/plugin marketplace add histoiretik1-glitch/eCommerce-Skills
+/plugin install ecommerce-skills@ecommerce-skills
+```
+
+This skill only, with the Skills CLI (Claude Code, Cursor, Codex and other agents):
 
 ```bash
-npx skills add nexscope/ecommerce-video-marketing
+npx skills add histoiretik1-glitch/eCommerce-Skills --skill ecommerce-video-marketing -g
 ```
 
 ## Usage

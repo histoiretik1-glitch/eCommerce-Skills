@@ -1,6 +1,6 @@
 ---
 name: etsy-shipping-strategy
-description: "Shipping strategy — free shipping vs markup, shipping profiles, international shipping, tracking"
+description: "Etsy shipping strategy. Sets up shipping profiles, processing times, free shipping or built-in shipping costs, international shipping and tracking for an Etsy shop. Use when an Etsy seller asks how to charge for shipping, whether to offer free shipping, or how to reduce shipping problems."
 metadata:
   nexscope:
     category: etsy
@@ -21,10 +21,19 @@ Shipping strategy — free shipping vs markup, shipping profiles, international 
 - Generate step-by-step implementation plans tailored to your shop
 - Compare tools, strategies, and approaches with pros/cons analysis
 
-## Install
+## Installation
+
+Part of the **`ecommerce-skills`** Claude Code plugin (all 162 skills). In Claude Code:
+
+```
+/plugin marketplace add histoiretik1-glitch/eCommerce-Skills
+/plugin install ecommerce-skills@ecommerce-skills
+```
+
+This skill only, with the Skills CLI (Claude Code, Cursor, Codex and other agents):
 
 ```bash
-npx skills add nexscope-ai/eCommerce-Skills --skill etsy-shipping-strategy -g
+npx skills add histoiretik1-glitch/eCommerce-Skills --skill etsy-shipping-strategy -g
 ```
 
 ## Usage

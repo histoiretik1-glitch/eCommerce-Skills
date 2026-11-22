@@ -1,6 +1,6 @@
 ---
 name: shopify-international
-description: "Shopify Markets — multi-currency, translation, duties/taxes, localized pricing, market-specific content"
+description: "Shopify Markets international selling. Configures Shopify Markets: multi-currency, translations, domains, duties and taxes, localized prices and content per market. Use when a Shopify store owner wants to sell abroad or set up a new country (for choosing which countries to enter use `cross-border-ecommerce`)."
 metadata:
   nexscope:
     category: shopify
@@ -21,10 +21,19 @@ Shopify Markets — multi-currency, translation, duties/taxes, localized pricing
 - Generate step-by-step implementation plans tailored to your business stage
 - Compare tools, apps, and strategies with pros/cons analysis
 
-## Install
+## Installation
+
+Part of the **`ecommerce-skills`** Claude Code plugin (all 162 skills). In Claude Code:
+
+```
+/plugin marketplace add histoiretik1-glitch/eCommerce-Skills
+/plugin install ecommerce-skills@ecommerce-skills
+```
+
+This skill only, with the Skills CLI (Claude Code, Cursor, Codex and other agents):
 
 ```bash
-npx skills add nexscope-ai/eCommerce-Skills --skill shopify-international -g
+npx skills add histoiretik1-glitch/eCommerce-Skills --skill shopify-international -g
 ```
 
 ## Usage

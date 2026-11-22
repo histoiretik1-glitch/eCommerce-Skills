@@ -13,18 +13,25 @@ Your strategic growth advisor for e-commerce. This skill diagnoses where your bu
 
 This is the strategy layer above marketing execution. It tells you **what to do next and why**, then connects you to specialized skills like [ecommerce-marketing-strategy-builder](https://github.com/nexscope-ai/eCommerce-Skills/tree/main/ecommerce-marketing-strategy-builder) for **how to do it**.
 
-```bash
-npx skills add nexscope-ai/eCommerce-Skills --skill ecommerce-marketing-strategy-builder -g
-```
+Use the `ecommerce-marketing-strategy-builder` skill (included in the `ecommerce-skills` plugin).
 
 **Supported platforms:** Shopify, WooCommerce, Amazon, Walmart, TikTok Shop, Etsy, eBay, BigCommerce, and multi-channel sellers.
 
 Built by [Nexscope](https://www.nexscope.ai/?co-from=skill) — your AI assistant for smarter e-commerce decisions.
 
-## Install
+## Installation
+
+Part of the **`ecommerce-skills`** Claude Code plugin (all 162 skills). In Claude Code:
+
+```
+/plugin marketplace add histoiretik1-glitch/eCommerce-Skills
+/plugin install ecommerce-skills@ecommerce-skills
+```
+
+This skill only, with the Skills CLI (Claude Code, Cursor, Codex and other agents):
 
 ```bash
-npx skills add nexscope-ai/eCommerce-Skills --skill ecommerce-growth-strategy -g
+npx skills add histoiretik1-glitch/eCommerce-Skills --skill ecommerce-growth-strategy -g
 ```
 
 ## Usage
@@ -500,24 +507,16 @@ Revenue = Traffic × Conversion × AOV × Frequency
 For detailed execution of specific growth initiatives:
 
 **Paid advertising:**
-```bash
-npx skills add nexscope-ai/eCommerce-Skills --skill ecommerce-ppc-strategy-planner -g
-```
+Use the `ecommerce-ppc-strategy-planner` skill (included in the `ecommerce-skills` plugin).
 
 **Email marketing system:**
-```bash
-npx skills add nexscope-ai/eCommerce-Skills --skill ecommerce-email-marketing-builder -g
-```
+Use the `ecommerce-email-marketing-builder` skill (included in the `ecommerce-skills` plugin).
 
 **Full marketing strategy:**
-```bash
-npx skills add nexscope-ai/eCommerce-Skills --skill ecommerce-marketing-strategy-builder -g
-```
+Use the `ecommerce-marketing-strategy-builder` skill (included in the `ecommerce-skills` plugin).
 
 **Product descriptions:**
-```bash
-npx skills add nexscope-ai/eCommerce-Skills --skill product-description-generator -g
-```
+Use the `product-description-generator` skill (included in the `ecommerce-skills` plugin).
 
 More e-commerce skills: [nexscope-ai/eCommerce-Skills](https://github.com/nexscope-ai/eCommerce-Skills)
 

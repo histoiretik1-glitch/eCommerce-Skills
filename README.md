@@ -21,27 +21,9 @@ Works with **OpenClaw** · **Claude Code** · **Cursor** · **Windsurf** · **Co
 
 ## Quick Start
 
-Install the collection:
+### Claude Code plugin (recommended, all 162 skills at once)
 
-```bash
-npx skills add nexscope-ai/eCommerce-Skills -g
-```
-
-Or install a specific skill:
-
-```bash
-npx skills add nexscope-ai/eCommerce-Skills --skill <skill-name> -g
-```
-
-Example — install the growth strategy skill:
-
-```bash
-npx skills add nexscope-ai/eCommerce-Skills --skill ecommerce-growth-strategy -g
-```
-
-### Claude Code plugin (all 162 skills at once)
-
-This repository is also a Claude Code plugin marketplace. In Claude Code:
+This repository is a Claude Code plugin marketplace. In Claude Code:
 
 ```
 /plugin marketplace add histoiretik1-glitch/eCommerce-Skills
@@ -56,7 +38,30 @@ One-step alternative on Claude Code 2.1.275 or later:
 
 See [CLAUDE_CODE_PLUGIN.md](./CLAUDE_CODE_PLUGIN.md) for verification, updates, maintenance and the changelog.
 
-**What's new in 1.1.0:** the profit calculators, supply chain, brand protection and review checker scripts now apply each platform's own fees, labels and enforcement channels (they all used Amazon's before); 13 TikTok Shop skills were rewritten with full workflows; TikTok Shop fees are consistent across skills; script examples are covered by automated tests.
+### Skills CLI (Claude Code, Cursor, Codex and other agents)
+
+Install the collection:
+
+```bash
+npx skills add histoiretik1-glitch/eCommerce-Skills -g
+```
+
+Or install a specific skill:
+
+```bash
+npx skills add histoiretik1-glitch/eCommerce-Skills --skill <skill-name> -g
+```
+
+Example — install the growth strategy skill:
+
+```bash
+npx skills add histoiretik1-glitch/eCommerce-Skills --skill ecommerce-growth-strategy -g
+```
+
+### What's new
+
+- **1.2.0:** every skill has a standard installation section (plugin + Skills CLI) instead of the old `clawhub` / `nexscope/<skill>` commands; all 162 descriptions say what the skill does and when to use it, and name their platform; references to skills that did not exist were fixed; the validator and tests enforce these rules.
+- **1.1.0:** the profit calculators, supply chain, brand protection and review checker scripts apply each platform's own fees, labels and enforcement channels (they all used Amazon's before); 13 TikTok Shop skills were rewritten with full workflows; TikTok Shop fees are consistent across skills; script examples are covered by automated tests.
 
 Then just ask your AI assistant naturally:
 

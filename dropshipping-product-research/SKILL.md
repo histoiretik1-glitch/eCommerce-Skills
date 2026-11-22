@@ -1,6 +1,6 @@
 ---
 name: dropshipping-product-research
-description: "Product research for dropshipping businesses. Identify profitable products with reliable suppliers, healthy margins, and manageable competition. Evaluates shipping times, return risk, and marketing viability."
+description: "Product research for dropshipping businesses. Identify profitable products with reliable suppliers, healthy margins, and manageable competition. Evaluates shipping times, return risk, and marketing viability. Use when someone asks what to dropship, wants to validate a dropshipping product or supplier, or compare margins and shipping times of candidate products."
 metadata:
   nexscope:
     emoji: "📦"
@@ -15,10 +15,19 @@ Product research for dropshipping businesses. Identify profitable products with 
 
 Built by [Nexscope](https://www.nexscope.ai/?co-from=skill) — your AI assistant for smarter e-commerce decisions.
 
-## Install
+## Installation
+
+Part of the **`ecommerce-skills`** Claude Code plugin (all 162 skills). In Claude Code:
+
+```
+/plugin marketplace add histoiretik1-glitch/eCommerce-Skills
+/plugin install ecommerce-skills@ecommerce-skills
+```
+
+This skill only, with the Skills CLI (Claude Code, Cursor, Codex and other agents):
 
 ```bash
-npx skills add nexscope-ai/eCommerce-Skills --skill dropshipping-product-research -g
+npx skills add histoiretik1-glitch/eCommerce-Skills --skill dropshipping-product-research -g
 ```
 
 ## Usage

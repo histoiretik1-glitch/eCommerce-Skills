@@ -1,6 +1,6 @@
 ---
 name: etsy-competitor-analysis
-description: "Competitor research — pricing comparison, bestseller analysis, differentiation strategy"
+description: "Etsy competitor analysis. Studies competing Etsy shops and best-selling listings: prices, titles and tags, photos, reviews, shipping and shop policies, then finds gaps to differentiate. Use when an Etsy seller asks who their competitors are, why another shop sells more, or how to stand out in their Etsy niche."
 metadata:
   nexscope:
     category: etsy
@@ -21,10 +21,19 @@ Competitor research — pricing comparison, bestseller analysis, differentiation
 - Generate step-by-step implementation plans tailored to your shop
 - Compare tools, strategies, and approaches with pros/cons analysis
 
-## Install
+## Installation
+
+Part of the **`ecommerce-skills`** Claude Code plugin (all 162 skills). In Claude Code:
+
+```
+/plugin marketplace add histoiretik1-glitch/eCommerce-Skills
+/plugin install ecommerce-skills@ecommerce-skills
+```
+
+This skill only, with the Skills CLI (Claude Code, Cursor, Codex and other agents):
 
 ```bash
-npx skills add nexscope-ai/eCommerce-Skills --skill etsy-competitor-analysis -g
+npx skills add histoiretik1-glitch/eCommerce-Skills --skill etsy-competitor-analysis -g
 ```
 
 ## Usage

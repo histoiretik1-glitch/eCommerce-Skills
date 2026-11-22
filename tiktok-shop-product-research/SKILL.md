@@ -63,6 +63,21 @@ Test plan: [first order, samples, videos, thresholds, decision date]
 
 🔶 **Beta** — full workflow added in plugin version 1.1.0. Review figures marked "confirm in Seller Center" before acting.
 
+## Installation
+
+Part of the **`ecommerce-skills`** Claude Code plugin (all 162 skills). In Claude Code:
+
+```
+/plugin marketplace add histoiretik1-glitch/eCommerce-Skills
+/plugin install ecommerce-skills@ecommerce-skills
+```
+
+This skill only, with the Skills CLI (Claude Code, Cursor, Codex and other agents):
+
+```bash
+npx skills add histoiretik1-glitch/eCommerce-Skills --skill tiktok-shop-product-research -g
+```
+
 ## Limitations
 
 - Strategic guidance from the information the seller shares; no live TikTok Shop API access.

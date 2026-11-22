@@ -18,10 +18,19 @@ Complete guide for selling on Etsy — from shop setup to scaling. Covers listin
 - Seasonal selling and trend analysis
 - Shop analytics interpretation and action plans
 
-## Install
+## Installation
+
+Part of the **`ecommerce-skills`** Claude Code plugin (all 162 skills). In Claude Code:
+
+```
+/plugin marketplace add histoiretik1-glitch/eCommerce-Skills
+/plugin install ecommerce-skills@ecommerce-skills
+```
+
+This skill only, with the Skills CLI (Claude Code, Cursor, Codex and other agents):
 
 ```bash
-npx skills add nexscope/etsy-seller-guide
+npx skills add histoiretik1-glitch/eCommerce-Skills --skill etsy-seller-guide -g
 ```
 
 ## Usage

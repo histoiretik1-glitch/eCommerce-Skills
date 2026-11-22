@@ -2,7 +2,7 @@
 name: etsy-seo
 version: 1.0.0
 author: Nexscope AI
-description: "Etsy SEO analyzer and optimizer. Improve search visibility with title optimization, tag analysis, description scoring, and keyword research. Includes SEO scoring (0-100), long-tail keyword suggestions, and prioritized action plans. No API key required."
+description: "Etsy SEO analyzer and optimizer. Improve search visibility with title optimization, tag analysis, description scoring, and keyword research. Includes SEO scoring (0-100), long-tail keyword suggestions, and prioritized action plans. No API key required. Use when an Etsy seller asks to improve search ranking, audit or rewrite listing titles, tags and descriptions, or score a listing's SEO."
 metadata: {"nexscope":{"emoji":"🔍","category":"ecommerce"}}
 ---
 
@@ -12,8 +12,17 @@ Analyze and optimize Etsy listings for better search visibility.
 
 ## Installation
 
+Part of the **`ecommerce-skills`** Claude Code plugin (all 162 skills). In Claude Code:
+
+```
+/plugin marketplace add histoiretik1-glitch/eCommerce-Skills
+/plugin install ecommerce-skills@ecommerce-skills
+```
+
+This skill only, with the Skills CLI (Claude Code, Cursor, Codex and other agents):
+
 ```bash
-npx skills add nexscope-ai/eCommerce-Skills --skill etsy-seo -g
+npx skills add histoiretik1-glitch/eCommerce-Skills --skill etsy-seo -g
 ```
 
 ## Features

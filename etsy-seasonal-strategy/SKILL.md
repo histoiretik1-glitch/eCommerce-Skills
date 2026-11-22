@@ -1,6 +1,6 @@
 ---
 name: etsy-seasonal-strategy
-description: "Seasonal selling calendar — holiday prep, trending categories, listing refresh timing, inventory planning"
+description: "Etsy seasonal selling calendar. Plans listings, keywords, stock and promotions for Etsy's key seasons (Valentine's Day, Mother's Day, Halloween, holidays and more), with lead times for production and shipping cut-offs. Use when an Etsy seller asks how to prepare for a holiday or seasonal peak, or when to list seasonal products."
 metadata:
   nexscope:
     category: etsy
@@ -21,10 +21,19 @@ Seasonal selling calendar — holiday prep, trending categories, listing refresh
 - Generate step-by-step implementation plans tailored to your shop
 - Compare tools, strategies, and approaches with pros/cons analysis
 
-## Install
+## Installation
+
+Part of the **`ecommerce-skills`** Claude Code plugin (all 162 skills). In Claude Code:
+
+```
+/plugin marketplace add histoiretik1-glitch/eCommerce-Skills
+/plugin install ecommerce-skills@ecommerce-skills
+```
+
+This skill only, with the Skills CLI (Claude Code, Cursor, Codex and other agents):
 
 ```bash
-npx skills add nexscope-ai/eCommerce-Skills --skill etsy-seasonal-strategy -g
+npx skills add histoiretik1-glitch/eCommerce-Skills --skill etsy-seasonal-strategy -g
 ```
 
 ## Usage

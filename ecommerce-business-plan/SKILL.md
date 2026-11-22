@@ -1,6 +1,6 @@
 ---
 name: ecommerce-business-plan
-description: "Create a comprehensive e-commerce business plan. Market analysis, financial projections, marketing strategy, operations planning, and milestone roadmap for new or growing e-commerce businesses."
+description: "Create a comprehensive e-commerce business plan. Market analysis, financial projections, marketing strategy, operations planning, and milestone roadmap for new or growing e-commerce businesses. Use when someone needs a business plan for a new online store or e-commerce brand, financial projections, or a plan for investors or a loan."
 metadata:
   nexscope:
     emoji: "📑"
@@ -15,10 +15,19 @@ Create a comprehensive e-commerce business plan. Market analysis, financial proj
 
 Built by [Nexscope](https://www.nexscope.ai/?co-from=skill) — your AI assistant for smarter e-commerce decisions.
 
-## Install
+## Installation
+
+Part of the **`ecommerce-skills`** Claude Code plugin (all 162 skills). In Claude Code:
+
+```
+/plugin marketplace add histoiretik1-glitch/eCommerce-Skills
+/plugin install ecommerce-skills@ecommerce-skills
+```
+
+This skill only, with the Skills CLI (Claude Code, Cursor, Codex and other agents):
 
 ```bash
-npx skills add nexscope-ai/eCommerce-Skills --skill ecommerce-business-plan -g
+npx skills add histoiretik1-glitch/eCommerce-Skills --skill ecommerce-business-plan -g
 ```
 
 ## Usage

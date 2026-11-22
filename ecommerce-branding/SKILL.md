@@ -1,6 +1,6 @@
 ---
 name: ecommerce-branding
-description: "Build and strengthen your e-commerce brand identity. Brand positioning, messaging, visual identity guidelines, and brand consistency across sales channels and marketing touchpoints."
+description: "Build and strengthen your e-commerce brand identity. Brand positioning, messaging, visual identity guidelines, and brand consistency across sales channels and marketing touchpoints. Use when a store owner asks how to position their brand, define brand voice and messaging, create visual identity guidelines or keep branding consistent across channels."
 metadata:
   nexscope:
     emoji: "🎨"
@@ -15,10 +15,19 @@ Build and strengthen your e-commerce brand identity. Brand positioning, messagin
 
 Built by [Nexscope](https://www.nexscope.ai/?co-from=skill) — your AI assistant for smarter e-commerce decisions.
 
-## Install
+## Installation
+
+Part of the **`ecommerce-skills`** Claude Code plugin (all 162 skills). In Claude Code:
+
+```
+/plugin marketplace add histoiretik1-glitch/eCommerce-Skills
+/plugin install ecommerce-skills@ecommerce-skills
+```
+
+This skill only, with the Skills CLI (Claude Code, Cursor, Codex and other agents):
 
 ```bash
-npx skills add nexscope-ai/eCommerce-Skills --skill ecommerce-branding -g
+npx skills add histoiretik1-glitch/eCommerce-Skills --skill ecommerce-branding -g
 ```
 
 ## Usage

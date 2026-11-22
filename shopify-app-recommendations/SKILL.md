@@ -1,6 +1,6 @@
 ---
 name: shopify-app-recommendations
-description: "App stack advisor — essential apps by business stage, cost optimization, performance impact analysis"
+description: "Shopify app stack advisor. Recommends essential Shopify apps by business stage and need (reviews, email, upsells, subscriptions, SEO), with cost and page-speed impact, and finds apps to remove. Use when a Shopify store owner asks which apps to install, how to cut app costs or which apps slow the store."
 metadata:
   nexscope:
     category: shopify
@@ -21,10 +21,19 @@ App stack advisor — essential apps by business stage, cost optimization, perfo
 - Generate step-by-step implementation plans tailored to your business stage
 - Compare tools, apps, and strategies with pros/cons analysis
 
-## Install
+## Installation
+
+Part of the **`ecommerce-skills`** Claude Code plugin (all 162 skills). In Claude Code:
+
+```
+/plugin marketplace add histoiretik1-glitch/eCommerce-Skills
+/plugin install ecommerce-skills@ecommerce-skills
+```
+
+This skill only, with the Skills CLI (Claude Code, Cursor, Codex and other agents):
 
 ```bash
-npx skills add nexscope-ai/eCommerce-Skills --skill shopify-app-recommendations -g
+npx skills add histoiretik1-glitch/eCommerce-Skills --skill shopify-app-recommendations -g
 ```
 
 ## Usage
