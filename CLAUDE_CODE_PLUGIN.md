@@ -183,6 +183,32 @@ Les cas sont définis dans `evals/trigger_cases.json` : chaque cas réussit quan
 
 ## Historique des versions
 
+### 1.6.0 — LOT 6 (enrichissement des 15 skills par plateforme)
+
+- **15 skills enrichis** :
+  - eBay : `ebay-advertising`, `ebay-product-research`, `ebay-seller-guide`, `ebay-seller-tools`, `ebay-seo` ;
+  - Walmart : `walmart-advertising-strategy`, `walmart-listing-optimization`, `walmart-seller-guide`, `walmart-seller-tools` ;
+  - Shopify : `shopify-ab-testing`, `shopify-analytics-guide`, `shopify-conversion-optimization`, `shopify-seo`, `shopify-store-setup` ;
+  - TikTok : `tiktok-live-selling`.
+- **Sections ajoutées à chacun** : Platform Rules and Constraints (règles datées, chiffres variables marqués [check]), Data Needed (où trouver chaque donnée dans Seller Hub, Seller Center, Ad Center, l'admin Shopify ou Search Console), Workflow en 8 étapes, Calculations and Tools, Worked Example (signalé comme illustratif), Example Requests, Output Format, Quality Checks, Data Reliability. Les capacités et demandes existantes sont conservées.
+- **7 scripts** (bibliothèque standard, valeurs vérifiées à la main dans `tests/test_lot6_scripts.py`) :
+  - `ebay-product-research/scripts/sold_analysis.py` : taux d'écoulement, quartiles des prix vendus, frais et net par vente ;
+  - `ebay-advertising/scripts/promoted_listings.py` : taux publicitaire de rentabilité (General), CPC maximal (Priority), actions par annonce ;
+  - `ebay-seo/scripts/title_check.py` : longueur, mots-clés manquants, répétitions, majuscules, item specifics vides ;
+  - `walmart-advertising-strategy/scripts/connect_report.py` : ACoS, ROAS et décision par mot-clé ;
+  - `shopify-ab-testing/scripts/ab_test.py` : taille d'échantillon, test z, intervalle de confiance, contrôle SRM ;
+  - `shopify-analytics-guide/scripts/orders_kpis.py` : KPI depuis l'export des commandes, avec un fichier d'exemple synthétique ;
+  - `tiktok-live-selling/scripts/live_metrics.py` : GPM, GMV par heure, CTR produit, conversion par session.
+- **Registre** : 3 nouveaux groupes, soit 106 skills groupés :
+  - « eBay research, search and ads » ;
+  - « Walmart listings and ads » ;
+  - « Shopify setup, analytics and conversion ».
+- **Qualité** : 133 skills validés sur 162 (29 restent à enrichir, tous génériques). `tests/test_lot6_structure.py` vérifie :
+  - les sections ;
+  - les règles datées et propres à la plateforme ;
+  - l'étiquetage des exemples ;
+  - l'absence de contenu copié entre ces 15 skills.
+
 ### 1.5.0 — LOT 5 (audit final et optimisation)
 
 - **Audit complet** : rapport détaillé dans `AUDIT_REPORT.md`. 118 skills validés, 44 encore « liste de sujets » suivis par un test (la liste ne peut que diminuer).

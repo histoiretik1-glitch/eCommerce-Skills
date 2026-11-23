@@ -1,0 +1,8 @@
+Name,Email,Financial Status,Created at,Subtotal,Shipping,Taxes,Total,Discount Amount,Refunded Amount,Lineitem quantity,Lineitem name
+#1001,ana@example.com,paid,2026-09-02 10:14:00 -0400,58.00,6.00,4.64,68.64,0.00,0.00,1,Ceramic mug set
+#1002,ben@example.com,paid,2026-09-05 18:40:00 -0400,42.30,0.00,3.38,45.68,4.70,0.00,1,Linen apron
+#1002,,,,,,,,,,1,Tea towel
+#1003,ana@example.com,partially_refunded,2026-09-19 09:02:00 -0400,96.00,0.00,7.68,103.68,0.00,32.00,2,Serving bowl
+#1004,cara@example.com,voided,2026-10-01 12:00:00 -0400,24.00,6.00,1.92,31.92,0.00,0.00,1,Coaster set
+#1005,dan@example.com,paid,2026-10-07 20:15:00 -0400,75.60,0.00,6.05,81.65,8.40,0.00,1,Ceramic mug set
+#1006,ben@example.com,paid,2026-10-21 08:30:00 -0400,130.00,0.00,10.40,140.40,0.00,0.00,1,Dinner plate set
