@@ -2,6 +2,33 @@
 
 Date : 22 novembre 2026 · Périmètre : les 162 skills, le manifeste, les 48 scripts, l'installation et le déclenchement réel dans Claude Code.
 
+## Mise à jour 1.6.0 — LOT 6 (23 novembre 2026)
+
+Les 15 skills spécialisés par plateforme signalés ci-dessous sont enrichis : eBay (5), Walmart (4), Shopify (5) et TikTok LIVE (1).
+
+| Indicateur | 1.5.0 | 1.6.0 |
+|---|---|---|
+| Skills validés (critères complets) | 118 | **133** |
+| Skills à améliorer | 44 | **29** (tous génériques, multi-plateformes) |
+| Tests automatisés | 75 | **103**, tous réussis |
+| Exemples de commandes documentés exécutés | 61 | **70**, dans 35 skills |
+| Scripts | 48 | **55** (7 nouveaux scripts de calcul propres à une plateforme) |
+| Skills groupés (rôle unique) | 99 | **106** (3 nouveaux groupes : eBay, Walmart, Shopify) |
+
+Chacun des 15 skills contient désormais :
+- les règles et contraintes de la plateforme, datées, avec les chiffres variables marqués **[check]** ;
+- les données à collecter et l'endroit précis où les trouver ;
+- une méthode en 8 étapes ;
+- les formules de calcul ;
+- un exemple chiffré signalé comme illustratif ;
+- des demandes types, un format de livrable, des contrôles qualité et la règle « vérifié / estimation ».
+
+Un test interdit le contenu copié d'un de ces skills à l'autre : au plus 15 % de lignes communes, titres compris ; le maximum mesuré est 10 %.
+
+Les règles de plateforme proviennent des pages d'aide publiques d'eBay, de Walmart, de Shopify et de TikTok Shop, telles que connues à la date de révision. Elles n'ont pas pu être revérifiées en ligne, car le réseau de l'environnement bloque ces sites. C'est pourquoi chaque seuil ou montant susceptible de changer porte la mention [check].
+
+Le reste de ce rapport décrit l'état de la version 1.5.0.
+
 ## Synthèse
 
 | Indicateur | Résultat |
@@ -119,7 +146,7 @@ Les frais restent des estimations datées de novembre 2026 : les pages officiell
 
 ## Problèmes restants
 
-1. **44 skills sans méthode en étapes.** Ils sont listés dans `tests/test_lot5_audit.py`, et la liste ne peut que diminuer. Ils sont utilisables, mais reposent surtout sur les connaissances générales du modèle.
+1. **44 skills sans méthode en étapes** (29 depuis la 1.6.0). Ils sont listés dans `tests/test_lot5_audit.py`, et la liste ne peut que diminuer. Ils sont utilisables, mais reposent surtout sur les connaissances générales du modèle.
 2. **Sous-déclenchement sur les questions simples** (environ 25 % des demandes testées). La rédaction des descriptions ne l'a pas réduit.
 3. **Frais non vérifiés auprès des sources officielles** : TikTok Shop US (6 % ou 8 % selon les sources), grille Walmart.
 4. **Métadonnées héritées** dans 21 en-têtes (`version: 1.0.0`) et autres clés non standard.

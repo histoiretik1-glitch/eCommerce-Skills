@@ -234,6 +234,32 @@
         "ecommerce-competitor-analysis": "Cross-platform competitor analysis: channel presence, offer, strategy and positioning.",
         "market-gap-analysis": "Finding underserved needs and niches that competitors miss."
       }
+    },
+    "ebay-selling": {
+      "title": "eBay research, search and ads",
+      "members": {
+        "ebay-seller-guide": "How to sell on eBay, from first listing to Top Rated Seller.",
+        "ebay-product-research": "Deciding what to sell on eBay from sold listings: sell-through rate, sold prices, net per sale.",
+        "ebay-seo": "Ranking eBay listings in Best Match search: titles, item specifics, category, identifiers.",
+        "ebay-advertising": "Paid eBay Promoted Listings (General, Priority, Offsite): ad rates, bids, break-even and ROAS."
+      }
+    },
+    "walmart-selling": {
+      "title": "Walmart listings and ads",
+      "members": {
+        "walmart-seller-guide": "How to sell on Walmart Marketplace, from application to scaling.",
+        "walmart-listing-optimization": "Walmart item content: product name, key features, attributes, images and Listing Quality score.",
+        "walmart-advertising-strategy": "Walmart Connect Sponsored Products and Brands: campaigns, bids, ACoS and ROAS."
+      }
+    },
+    "shopify-operations": {
+      "title": "Shopify setup, analytics and conversion",
+      "members": {
+        "shopify-store-setup": "Launching a new Shopify store: plan, payments, theme, products, shipping, taxes, domain.",
+        "shopify-analytics-guide": "Reading Shopify reports and KPIs: sales definitions, funnel, AOV, repeat customers, cohorts.",
+        "shopify-conversion-optimization": "CRO on a Shopify store: theme, apps, product pages, Shopify checkout.",
+        "shopify-ab-testing": "Running A/B tests on a Shopify store with Shopify tools and apps."
+      }
     }
   }
 }

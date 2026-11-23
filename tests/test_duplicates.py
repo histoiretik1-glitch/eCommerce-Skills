@@ -175,6 +175,13 @@ GROUP_REQUESTS = [
     ("What share of marketplace search results does our brand have versus competitors on these keywords?", "share-of-shelf"),
     ("Draft a minimum advertised price policy and check reseller prices for violations", "minimum-advertised-price"),
     ("Compare my Walmart landed prices with other sellers and set Repricer rules", "walmart-price-tracker"),
+    ("What is the sell-through rate and sold price of vintage cameras on eBay, should I buy them?", "ebay-product-research"),
+    ("Rewrite my eBay title and item specifics to rank higher in Best Match search", "ebay-seo"),
+    ("What Promoted Listings ad rate can I afford on eBay?", "ebay-advertising"),
+    ("Fix my Walmart item content: product name, key features, attributes and Listing Quality score", "walmart-listing-optimization"),
+    ("Which Walmart Connect Sponsored Products keywords should I bid down based on ACoS?", "walmart-advertising-strategy"),
+    ("Choose a Shopify plan and set up payments, shipping and taxes for a new store", "shopify-store-setup"),
+    ("Explain Shopify net sales, AOV and returning customer rate in my reports", "shopify-analytics-guide"),
 ]
 
 

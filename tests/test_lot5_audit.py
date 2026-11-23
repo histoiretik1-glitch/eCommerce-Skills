@@ -12,17 +12,16 @@ REPORT = AUDIT.audit()
 
 # Skills that are still topic lists without a step-by-step method (audit E2).
 # This list may only shrink: when a skill is enriched, remove it from here.
+# LOT 6 removed the 15 platform skills (eBay, Walmart, Shopify, TikTok LIVE): 44 -> 29.
 KNOWN_TO_IMPROVE = set("""
-affiliate-marketing-strategy competitor-price-tracker conversion-rate-optimization dropshipping-product-research
-ebay-advertising ebay-product-research ebay-seller-guide ebay-seller-tools ebay-seo ecommerce-ab-testing
-ecommerce-branding ecommerce-business-plan ecommerce-checkout-optimization ecommerce-customer-retention
-ecommerce-keyword-research ecommerce-landing-page ecommerce-personalization ecommerce-returns-management
-ecommerce-shipping-rates ecommerce-subscription-model ecommerce-video-marketing google-shopping-optimization
-influencer-outreach market-gap-analysis multichannel-ecommerce omnichannel-ecommerce product-launch-strategy
-product-page-seo product-title-optimization review-monitoring sales-tracking-tool shopify-ab-testing
-shopify-analytics-guide shopify-conversion-optimization shopify-seo shopify-store-setup shoppable-video
-social-media-monitor tiktok-live-selling walmart-advertising-strategy walmart-listing-optimization
-walmart-seller-guide walmart-seller-tools woocommerce-seo
+affiliate-marketing-strategy competitor-price-tracker conversion-rate-optimization
+dropshipping-product-research ecommerce-ab-testing ecommerce-branding ecommerce-business-plan
+ecommerce-checkout-optimization ecommerce-customer-retention ecommerce-keyword-research
+ecommerce-landing-page ecommerce-personalization ecommerce-returns-management ecommerce-shipping-rates
+ecommerce-subscription-model ecommerce-video-marketing google-shopping-optimization influencer-outreach
+market-gap-analysis multichannel-ecommerce omnichannel-ecommerce product-launch-strategy product-page-seo
+product-title-optimization review-monitoring sales-tracking-tool shoppable-video social-media-monitor
+woocommerce-seo
 """.split())
 
 
