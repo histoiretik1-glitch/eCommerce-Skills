@@ -17,7 +17,7 @@ Set Etsy shipping so buyers see fair, fast delivery and the shop does not lose m
 
 **This skill:** Etsy shipping profiles, prices, processing times and free shipping.
 
-Part of: Etsy pricing, traffic and operations. For neighbouring jobs, use the matching skill instead:
+Part of: Etsy pricing, traffic and operations, Shipping and returns. For neighbouring jobs, use the matching skill instead:
 
 - `etsy-seller-guide` — Entry point for Etsy: diagnoses where the shop stands across the whole selling lifecycle and routes to the specialist Etsy skills.
 - `etsy-pricing-strategy` — Setting Etsy prices from costs, Etsy fees and competition.
@@ -29,6 +29,10 @@ Part of: Etsy pricing, traffic and operations. For neighbouring jobs, use the ma
 - `etsy-custom-orders` — Personalized and made-to-order items on Etsy.
 - `etsy-digital-products` — Selling digital downloads on Etsy.
 - `etsy-print-on-demand` — Print-on-demand products on Etsy with a production partner.
+- `ecommerce-shipping-rates` — Parcel costs on any carrier: dimensional weight, zones, surcharges, free-shipping threshold.
+- `ecommerce-returns-management` — Returns on any channel: cost per return, reasons, policy, grading and fraud controls.
+- `tiktok-shop-returns` — TikTok Shop returns and refunds.
+- `tiktok-shop-shipping` — Shipping templates, carriers, shipping prices and delivery promise.
 
 <!-- role-and-scope:end -->
 

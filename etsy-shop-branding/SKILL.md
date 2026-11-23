@@ -17,13 +17,17 @@ Give an Etsy shop a recognizable, trustworthy identity that buyers remember and 
 
 **This skill:** Shop identity on Etsy: name, banner, logo, About section, photo style and packaging.
 
-Part of: Etsy selling. For neighbouring jobs, use the matching skill instead:
+Part of: Etsy selling, Brand and business planning. For neighbouring jobs, use the matching skill instead:
 
 - `etsy-seller-guide` — Entry point for Etsy: diagnoses where the shop stands across the whole selling lifecycle and routes to the specialist Etsy skills.
 - `etsy-shop-setup` — Opening a new Etsy shop: account, policies, payments, first listings and launch checklist.
 - `etsy-multi-shop` — Deciding on and running more than one Etsy shop.
 - `etsy-star-seller` — Reaching and keeping the Etsy Star Seller badge (messages, shipping, reviews).
 - `etsy-shop-analytics` — Reading Etsy Stats to find what drives or blocks sales.
+- `ecommerce-branding` — Brand positioning, voice, visual identity and trademark clearance across channels.
+- `ecommerce-business-plan` — Business plan for a new online business: market sizing, unit economics, cash flow.
+- `ecommerce-growth-strategy` — Growth priorities for an existing business: unit economics, growth levers and roadmap.
+- `tiktok-shop-branding` — Building a recognizable brand on TikTok: identity, content pillars, community.
 
 <!-- role-and-scope:end -->
 

@@ -260,6 +260,73 @@
         "shopify-conversion-optimization": "CRO on a Shopify store: theme, apps, product pages, Shopify checkout.",
         "shopify-ab-testing": "Running A/B tests on a Shopify store with Shopify tools and apps."
       }
+    },
+    "product-sourcing": {
+      "title": "Product research and launch",
+      "members": {
+        "dropshipping-product-research": "Screening dropshipping products: supplier quotes, landed cost, max CPA, delivery time, policy checks.",
+        "shopify-dropshipping": "Running a dropshipping store on Shopify: apps, supplier connections and order flow.",
+        "tiktok-shop-product-research": "Scoring and validating a product idea for TikTok Shop.",
+        "ebay-product-research": "Deciding what to sell on eBay from sold listings: sell-through rate, sold prices, net per sale.",
+        "product-launch-strategy": "Planning a product launch on any channel: timeline, stock, pricing, compliant reviews, launch ads."
+      }
+    },
+    "listing-content": {
+      "title": "Keywords, titles and product copy",
+      "members": {
+        "ecommerce-keyword-research": "Cross-channel keyword map: discovery, intent, priority scores and seasonal calendar.",
+        "product-title-optimization": "Writing compliant product titles for each channel from one verified attribute set.",
+        "product-description-generator": "Writing product descriptions and bullet copy.",
+        "etsy-keyword-research": "Finding the search phrases Etsy buyers use, before writing titles and tags.",
+        "ebay-seo": "Ranking eBay listings in Best Match search: titles, item specifics, category, identifiers."
+      }
+    },
+    "retention": {
+      "title": "Retention, loyalty and personalization",
+      "members": {
+        "ecommerce-customer-retention": "Retention from order data: cohorts, RFM segments, lifecycle flows with holdouts.",
+        "ecommerce-personalization": "Personalising site content and recommendations by segment, with consent and holdouts.",
+        "shopify-loyalty-program": "Loyalty and rewards programmes on Shopify.",
+        "shopify-upsell-cross-sell": "Upsell and cross-sell offers on a Shopify store.",
+        "shopify-email-flows": "Setting up the core automated email flows of a Shopify store."
+      }
+    },
+    "delivery-returns": {
+      "title": "Shipping and returns",
+      "members": {
+        "ecommerce-shipping-rates": "Parcel costs on any carrier: dimensional weight, zones, surcharges, free-shipping threshold.",
+        "ecommerce-returns-management": "Returns on any channel: cost per return, reasons, policy, grading and fraud controls.",
+        "tiktok-shop-returns": "TikTok Shop returns and refunds.",
+        "tiktok-shop-shipping": "Shipping templates, carriers, shipping prices and delivery promise.",
+        "etsy-shipping-strategy": "Etsy shipping profiles, prices, processing times and free shipping."
+      }
+    },
+    "brand-planning": {
+      "title": "Brand and business planning",
+      "members": {
+        "ecommerce-branding": "Brand positioning, voice, visual identity and trademark clearance across channels.",
+        "ecommerce-business-plan": "Business plan for a new online business: market sizing, unit economics, cash flow.",
+        "ecommerce-growth-strategy": "Growth priorities for an existing business: unit economics, growth levers and roadmap.",
+        "tiktok-shop-branding": "Building a recognizable brand on TikTok: identity, content pillars, community.",
+        "etsy-shop-branding": "Shop identity on Etsy: name, banner, logo, About section, photo style and packaging."
+      }
+    },
+    "partner-marketing": {
+      "title": "Affiliate and creator partnerships",
+      "members": {
+        "affiliate-marketing-strategy": "Commission-based affiliate programmes: commission ceiling, terms, networks, incrementality.",
+        "influencer-outreach": "Finding, contacting and contracting influencers on any platform.",
+        "tiktok-shop-affiliate-program": "Setting up the TikTok Shop affiliate program: open and targeted collaborations, commission rates, samples."
+      }
+    },
+    "sales-reporting": {
+      "title": "Sales reporting and analytics",
+      "members": {
+        "sales-tracking-tool": "Cross-channel sales tracking: metric dictionary, contribution by channel and SKU, anomalies, reconciliation.",
+        "shopify-analytics-guide": "Reading Shopify reports and KPIs: sales definitions, funnel, AOV, repeat customers, cohorts.",
+        "tiktok-shop-analytics": "Reading TikTok Shop performance data across videos, LIVE, affiliates and ads.",
+        "etsy-shop-analytics": "Reading Etsy Stats to find what drives or blocks sales."
+      }
     }
   }
 }

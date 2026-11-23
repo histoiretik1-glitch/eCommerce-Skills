@@ -8,6 +8,20 @@ metadata: {"nexscope":{"emoji":"📝","category":"ecommerce"}}
 
 Generate platform-optimized product copy — titles, bullet points, descriptions, and backend keywords — for any major e-commerce platform. No API key required.
 
+<!-- role-and-scope:start (generated from tools/skill_groups.json) -->
+## Role and Scope
+
+**This skill:** Writing product descriptions and bullet copy.
+
+Part of: Keywords, titles and product copy. For neighbouring jobs, use the matching skill instead:
+
+- `ecommerce-keyword-research` — Cross-channel keyword map: discovery, intent, priority scores and seasonal calendar.
+- `product-title-optimization` — Writing compliant product titles for each channel from one verified attribute set.
+- `etsy-keyword-research` — Finding the search phrases Etsy buyers use, before writing titles and tags.
+- `ebay-seo` — Ranking eBay listings in Best Match search: titles, item specifics, category, identifiers.
+
+<!-- role-and-scope:end -->
+
 ## Installation
 
 Part of the **`ecommerce-skills`** Claude Code plugin (all 162 skills). In Claude Code:

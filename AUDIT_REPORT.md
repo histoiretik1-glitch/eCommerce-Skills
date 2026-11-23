@@ -2,6 +2,30 @@
 
 Date : 22 novembre 2026 · Périmètre : les 162 skills, le manifeste, les 48 scripts, l'installation et le déclenchement réel dans Claude Code.
 
+## Mise à jour 1.7.0 — LOT 7 (23 novembre 2026)
+
+Les 29 skills génériques (multi-plateformes) restants sont enrichis. **Les 162 skills remplissent désormais tous les critères de l'audit.**
+
+| Indicateur | 1.6.0 | 1.7.0 |
+|---|---|---|
+| Skills validés (critères complets) | 133 | **162** |
+| Skills à améliorer | 29 | **0** |
+| Tests automatisés | 103 | **126**, tous réussis |
+| Exemples de commandes documentés exécutés | 70 | **78**, dans 43 skills |
+| Scripts | 55 | **63** (8 nouveaux scripts transversaux) |
+| Groupes de skills voisins | 29 | **36** ; 123 skills avec un rôle unique |
+
+Chacun des 29 skills a perdu ses blocs génériques : le « How This Skill Works » en 4 étapes identiques partout, l'« Output Format » standard et la phrase « Structured recommendations… ». Ils sont remplacés par :
+- des principes et contraintes transversaux (droit de la consommation, règles des places de marché, normes) ;
+- les données à collecter et leur source ;
+- une méthode en 8 étapes et des formules ;
+- un exemple chiffré signalé comme illustratif ;
+- des demandes types, un format de livrable, des contrôles qualité et la règle « vérifié / estimation ».
+
+Les capacités existantes sont conservées.
+
+**Complémentarité** : chaque skill renvoie au moins à deux skills voisins existants, souvent ceux d'une plateforme. Par exemple, `ecommerce-ab-testing` renvoie à `shopify-ab-testing` et `ecommerce-shipping-rates` à `tiktok-shop-shipping`. Les 7 nouveaux groupes du registre relient les skills transversaux à leurs équivalents de plateforme. Un test vérifie que le contenu ajouté ne recopie aucun des 161 autres skills : au plus 15 % de lignes communes, et le maximum mesuré est 8 %.
+
 ## Mise à jour 1.6.0 — LOT 6 (23 novembre 2026)
 
 Les 15 skills spécialisés par plateforme signalés ci-dessous sont enrichis : eBay (5), Walmart (4), Shopify (5) et TikTok LIVE (1).
@@ -146,7 +170,7 @@ Les frais restent des estimations datées de novembre 2026 : les pages officiell
 
 ## Problèmes restants
 
-1. **44 skills sans méthode en étapes** (29 depuis la 1.6.0). Ils sont listés dans `tests/test_lot5_audit.py`, et la liste ne peut que diminuer. Ils sont utilisables, mais reposent surtout sur les connaissances générales du modèle.
+1. **44 skills sans méthode en étapes** (29 depuis la 1.6.0, 0 depuis la 1.7.0). Ils sont listés dans `tests/test_lot5_audit.py`, et la liste ne peut que diminuer. Ils sont utilisables, mais reposent surtout sur les connaissances générales du modèle.
 2. **Sous-déclenchement sur les questions simples** (environ 25 % des demandes testées). La rédaction des descriptions ne l'a pas réduit.
 3. **Frais non vérifiés auprès des sources officielles** : TikTok Shop US (6 % ou 8 % selon les sources), grille Walmart.
 4. **Métadonnées héritées** dans 21 en-têtes (`version: 1.0.0`) et autres clés non standard.

@@ -15,9 +15,13 @@ Email automation flows — welcome series, abandoned cart, post-purchase, win-ba
 
 **This skill:** Setting up the core automated email flows of a Shopify store.
 
-Part of: Email marketing. For neighbouring jobs, use the matching skill instead:
+Part of: Email marketing, Retention, loyalty and personalization. For neighbouring jobs, use the matching skill instead:
 
 - `ecommerce-email-marketing-builder` — Complete email program with flows, copy, segmentation and ESP setup, for any store.
+- `ecommerce-customer-retention` — Retention from order data: cohorts, RFM segments, lifecycle flows with holdouts.
+- `ecommerce-personalization` — Personalising site content and recommendations by segment, with consent and holdouts.
+- `shopify-loyalty-program` — Loyalty and rewards programmes on Shopify.
+- `shopify-upsell-cross-sell` — Upsell and cross-sell offers on a Shopify store.
 
 <!-- role-and-scope:end -->
 

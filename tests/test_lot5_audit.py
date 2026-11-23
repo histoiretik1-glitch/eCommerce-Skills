@@ -12,17 +12,8 @@ REPORT = AUDIT.audit()
 
 # Skills that are still topic lists without a step-by-step method (audit E2).
 # This list may only shrink: when a skill is enriched, remove it from here.
-# LOT 6 removed the 15 platform skills (eBay, Walmart, Shopify, TikTok LIVE): 44 -> 29.
-KNOWN_TO_IMPROVE = set("""
-affiliate-marketing-strategy competitor-price-tracker conversion-rate-optimization
-dropshipping-product-research ecommerce-ab-testing ecommerce-branding ecommerce-business-plan
-ecommerce-checkout-optimization ecommerce-customer-retention ecommerce-keyword-research
-ecommerce-landing-page ecommerce-personalization ecommerce-returns-management ecommerce-shipping-rates
-ecommerce-subscription-model ecommerce-video-marketing google-shopping-optimization influencer-outreach
-market-gap-analysis multichannel-ecommerce omnichannel-ecommerce product-launch-strategy product-page-seo
-product-title-optimization review-monitoring sales-tracking-tool shoppable-video social-media-monitor
-woocommerce-seo
-""".split())
+# LOT 6 removed the 15 platform skills (eBay, Walmart, Shopify, TikTok LIVE): 44 -> 29; LOT 7 the 29 generic ones: 29 -> 0.
+KNOWN_TO_IMPROVE = set()  # emptied in LOT 7: all 162 skills meet the quality bar
 
 
 class LibraryQualityGate(unittest.TestCase):

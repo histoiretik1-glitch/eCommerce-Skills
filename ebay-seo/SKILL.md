@@ -12,11 +12,15 @@ Optimize eBay listings for Cassini search algorithm. Master item specifics, titl
 
 **This skill:** Ranking eBay listings in Best Match search: titles, item specifics, category, identifiers.
 
-Part of: eBay research, search and ads. For neighbouring jobs, use the matching skill instead:
+Part of: eBay research, search and ads, Keywords, titles and product copy. For neighbouring jobs, use the matching skill instead:
 
 - `ebay-seller-guide` — How to sell on eBay, from first listing to Top Rated Seller.
 - `ebay-product-research` — Deciding what to sell on eBay from sold listings: sell-through rate, sold prices, net per sale.
 - `ebay-advertising` — Paid eBay Promoted Listings (General, Priority, Offsite): ad rates, bids, break-even and ROAS.
+- `ecommerce-keyword-research` — Cross-channel keyword map: discovery, intent, priority scores and seasonal calendar.
+- `product-title-optimization` — Writing compliant product titles for each channel from one verified attribute set.
+- `product-description-generator` — Writing product descriptions and bullet copy.
+- `etsy-keyword-research` — Finding the search phrases Etsy buyers use, before writing titles and tags.
 
 <!-- role-and-scope:end -->
 

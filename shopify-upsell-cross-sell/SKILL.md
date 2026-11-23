@@ -10,6 +10,20 @@ metadata:
 
 Upsell and cross-sell strategy — product recommendations, cart upsells, post-purchase offers, bundles.
 
+<!-- role-and-scope:start (generated from tools/skill_groups.json) -->
+## Role and Scope
+
+**This skill:** Upsell and cross-sell offers on a Shopify store.
+
+Part of: Retention, loyalty and personalization. For neighbouring jobs, use the matching skill instead:
+
+- `ecommerce-customer-retention` — Retention from order data: cohorts, RFM segments, lifecycle flows with holdouts.
+- `ecommerce-personalization` — Personalising site content and recommendations by segment, with consent and holdouts.
+- `shopify-loyalty-program` — Loyalty and rewards programmes on Shopify.
+- `shopify-email-flows` — Setting up the core automated email flows of a Shopify store.
+
+<!-- role-and-scope:end -->
+
 ## Status
 
 🔶 **Beta** — full workflow added in plugin version 1.3.0.

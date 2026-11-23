@@ -12,11 +12,14 @@ Master Shopify analytics and reporting. Understand key metrics, build custom rep
 
 **This skill:** Reading Shopify reports and KPIs: sales definitions, funnel, AOV, repeat customers, cohorts.
 
-Part of: Shopify setup, analytics and conversion. For neighbouring jobs, use the matching skill instead:
+Part of: Shopify setup, analytics and conversion, Sales reporting and analytics. For neighbouring jobs, use the matching skill instead:
 
 - `shopify-store-setup` — Launching a new Shopify store: plan, payments, theme, products, shipping, taxes, domain.
 - `shopify-conversion-optimization` — CRO on a Shopify store: theme, apps, product pages, Shopify checkout.
 - `shopify-ab-testing` — Running A/B tests on a Shopify store with Shopify tools and apps.
+- `sales-tracking-tool` — Cross-channel sales tracking: metric dictionary, contribution by channel and SKU, anomalies, reconciliation.
+- `tiktok-shop-analytics` — Reading TikTok Shop performance data across videos, LIVE, affiliates and ads.
+- `etsy-shop-analytics` — Reading Etsy Stats to find what drives or blocks sales.
 
 <!-- role-and-scope:end -->
 

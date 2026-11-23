@@ -13,11 +13,15 @@ Build an authentic, memorable brand on TikTok Shop. Strategic brand positioning 
 
 **This skill:** Building a recognizable brand on TikTok: identity, content pillars, community.
 
-Part of: TikTok content, brand and LIVE. For neighbouring jobs, use the matching skill instead:
+Part of: TikTok content, brand and LIVE, Brand and business planning. For neighbouring jobs, use the matching skill instead:
 
 - `tiktok-shop-content-strategy` — Short-video content plan for TikTok Shop: formats, hooks, calendar.
 - `tiktok-live-selling` — Planning and running TikTok Shop LIVE sessions.
 - `tiktok-shop-ads` — Paid TikTok Shop ads (Product, Video and LIVE Shopping Ads).
+- `ecommerce-branding` — Brand positioning, voice, visual identity and trademark clearance across channels.
+- `ecommerce-business-plan` — Business plan for a new online business: market sizing, unit economics, cash flow.
+- `ecommerce-growth-strategy` — Growth priorities for an existing business: unit economics, growth levers and roadmap.
+- `etsy-shop-branding` — Shop identity on Etsy: name, banner, logo, About section, photo style and packaging.
 
 <!-- role-and-scope:end -->
 

@@ -17,13 +17,16 @@ Turn Etsy Stats into decisions: which listings to fix, where traffic comes from,
 
 **This skill:** Reading Etsy Stats to find what drives or blocks sales.
 
-Part of: Etsy selling. For neighbouring jobs, use the matching skill instead:
+Part of: Etsy selling, Sales reporting and analytics. For neighbouring jobs, use the matching skill instead:
 
 - `etsy-seller-guide` — Entry point for Etsy: diagnoses where the shop stands across the whole selling lifecycle and routes to the specialist Etsy skills.
 - `etsy-shop-setup` — Opening a new Etsy shop: account, policies, payments, first listings and launch checklist.
 - `etsy-shop-branding` — Shop identity on Etsy: name, banner, logo, About section, photo style and packaging.
 - `etsy-multi-shop` — Deciding on and running more than one Etsy shop.
 - `etsy-star-seller` — Reaching and keeping the Etsy Star Seller badge (messages, shipping, reviews).
+- `sales-tracking-tool` — Cross-channel sales tracking: metric dictionary, contribution by channel and SKU, anomalies, reconciliation.
+- `shopify-analytics-guide` — Reading Shopify reports and KPIs: sales definitions, funnel, AOV, repeat customers, cohorts.
+- `tiktok-shop-analytics` — Reading TikTok Shop performance data across videos, LIVE, affiliates and ads.
 
 <!-- role-and-scope:end -->
 

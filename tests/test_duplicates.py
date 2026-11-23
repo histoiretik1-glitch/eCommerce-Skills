@@ -182,6 +182,18 @@ GROUP_REQUESTS = [
     ("Which Walmart Connect Sponsored Products keywords should I bid down based on ACoS?", "walmart-advertising-strategy"),
     ("Choose a Shopify plan and set up payments, shipping and taxes for a new store", "shopify-store-setup"),
     ("Explain Shopify net sales, AOV and returning customer rate in my reports", "shopify-analytics-guide"),
+    ("Screen dropshipping products: supplier quotes, landed cost, max CPA and delivery time", "dropshipping-product-research"),
+    ("Plan the launch of a new product with a timeline, launch stock and compliant reviews", "product-launch-strategy"),
+    ("Build a keyword map across Amazon, Google and Walmart with intent and seasonality", "ecommerce-keyword-research"),
+    ("Rewrite my product titles for each marketplace within their character limits", "product-title-optimization"),
+    ("Build cohorts and RFM segments from my orders to improve repeat purchases", "ecommerce-customer-retention"),
+    ("Personalise product recommendations by customer segment with consent", "ecommerce-personalization"),
+    ("Compare carriers with dimensional weight and set a free shipping threshold", "ecommerce-shipping-rates"),
+    ("Calculate the cost of returns per SKU and reduce return reasons", "ecommerce-returns-management"),
+    ("Define brand positioning, voice and visual identity and check the trademark", "ecommerce-branding"),
+    ("Write a business plan with market sizing, unit economics and cash flow for a new store", "ecommerce-business-plan"),
+    ("Set affiliate commission rates and terms for a network affiliate programme", "affiliate-marketing-strategy"),
+    ("Track sales and contribution by channel and SKU across all my marketplaces", "sales-tracking-tool"),
 ]
 
 
