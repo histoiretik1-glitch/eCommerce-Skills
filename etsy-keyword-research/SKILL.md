@@ -17,7 +17,7 @@ Find the exact phrases Etsy buyers type, before writing titles, tags and descrip
 
 **This skill:** Finding the search phrases Etsy buyers use, before writing titles and tags.
 
-Part of: Etsy listings and search. For neighbouring jobs, use the matching skill instead:
+Part of: Etsy listings and search, Keywords, titles and product copy. For neighbouring jobs, use the matching skill instead:
 
 - `etsy-seller-guide` — Entry point for Etsy: diagnoses where the shop stands across the whole selling lifecycle and routes to the specialist Etsy skills.
 - `etsy-seo` — Full SEO audit and scoring of an Etsy listing (title, tags, description) with the analyzer script.
@@ -25,6 +25,10 @@ Part of: Etsy listings and search. For neighbouring jobs, use the matching skill
 - `etsy-product-description` — Writing the description text of an Etsy listing.
 - `etsy-listing-photography` — Photos and video of an Etsy listing.
 - `etsy-competitor-analysis` — Studying competing Etsy shops and listings to find gaps.
+- `ecommerce-keyword-research` — Cross-channel keyword map: discovery, intent, priority scores and seasonal calendar.
+- `product-title-optimization` — Writing compliant product titles for each channel from one verified attribute set.
+- `product-description-generator` — Writing product descriptions and bullet copy.
+- `ebay-seo` — Ranking eBay listings in Best Match search: titles, item specifics, category, identifiers.
 
 <!-- role-and-scope:end -->
 

@@ -10,6 +10,20 @@ metadata:
 
 Dropshipping setup and scaling — supplier integration, automation, pricing strategy, customer experience.
 
+<!-- role-and-scope:start (generated from tools/skill_groups.json) -->
+## Role and Scope
+
+**This skill:** Running a dropshipping store on Shopify: apps, supplier connections and order flow.
+
+Part of: Product research and launch. For neighbouring jobs, use the matching skill instead:
+
+- `dropshipping-product-research` — Screening dropshipping products: supplier quotes, landed cost, max CPA, delivery time, policy checks.
+- `tiktok-shop-product-research` — Scoring and validating a product idea for TikTok Shop.
+- `ebay-product-research` — Deciding what to sell on eBay from sold listings: sell-through rate, sold prices, net per sale.
+- `product-launch-strategy` — Planning a product launch on any channel: timeline, stock, pricing, compliant reviews, launch ads.
+
+<!-- role-and-scope:end -->
+
 ## Status
 
 🔶 **Beta** — full workflow added in plugin version 1.3.0.

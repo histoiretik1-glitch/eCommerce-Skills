@@ -13,11 +13,13 @@ Build and scale your TikTok Shop affiliate program. Creator recruitment to perfo
 
 **This skill:** Setting up the TikTok Shop affiliate program: open and targeted collaborations, commission rates, samples.
 
-Part of: TikTok creators and affiliates. For neighbouring jobs, use the matching skill instead:
+Part of: TikTok creators and affiliates, Affiliate and creator partnerships. For neighbouring jobs, use the matching skill instead:
 
 - `tiktok-creator-marketplace` — Paid branded-content campaigns through TikTok's creator marketplace: briefs, negotiation, deliverables.
 - `tiktok-influencer-marketing` — Overall creator and UGC strategy on TikTok: goals, creator mix, outreach and ROI.
 - `tiktok-shop-creator-management` — Running an existing creator roster: tiers, briefs, sample tracking, monthly reviews.
+- `affiliate-marketing-strategy` — Commission-based affiliate programmes: commission ceiling, terms, networks, incrementality.
+- `influencer-outreach` — Finding, contacting and contracting influencers on any platform.
 
 <!-- role-and-scope:end -->
 

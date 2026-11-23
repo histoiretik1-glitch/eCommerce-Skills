@@ -15,13 +15,16 @@ Set TikTok Shop shipping so buyers see a fast, cheap delivery promise and the sh
 
 **This skill:** Shipping templates, carriers, shipping prices and delivery promise.
 
-Part of: TikTok Shop operations. For neighbouring jobs, use the matching skill instead:
+Part of: TikTok Shop operations, Shipping and returns. For neighbouring jobs, use the matching skill instead:
 
 - `tiktok-shop-fulfillment` — Choosing and running the fulfillment model (FBT, self, 3PL) and dispatch performance.
 - `tiktok-shop-inventory` — Stock planning for viral demand on TikTok Shop.
 - `tiktok-shop-returns` — TikTok Shop returns and refunds.
 - `tiktok-shop-customer-service` — Buyer messages, disputes and service metrics on TikTok Shop.
 - `tiktok-shop-reviews` — Ratings and reviews on TikTok Shop.
+- `ecommerce-shipping-rates` — Parcel costs on any carrier: dimensional weight, zones, surcharges, free-shipping threshold.
+- `ecommerce-returns-management` — Returns on any channel: cost per return, reasons, policy, grading and fraud controls.
+- `etsy-shipping-strategy` — Etsy shipping profiles, prices, processing times and free shipping.
 
 <!-- role-and-scope:end -->
 

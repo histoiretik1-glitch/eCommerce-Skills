@@ -183,6 +183,44 @@ Les cas sont définis dans `evals/trigger_cases.json` : chaque cas réussit quan
 
 ## Historique des versions
 
+### 1.7.0 — LOT 7 (enrichissement des 29 skills génériques)
+
+- **29 skills enrichis**, tous multi-plateformes :
+  - affiliation, suivi des prix concurrents, CRO, dropshipping, tests A/B, marque, business plan ;
+  - paiement (checkout), rétention, mots-clés, pages d'atterrissage, personnalisation, retours, expédition ;
+  - abonnements, vidéo, Google Shopping, influenceurs, lacunes du marché, multicanal, omnicanal, lancement de produit ;
+  - SEO de fiche produit, titres, surveillance des avis, suivi des ventes, vidéo achetable, veille des réseaux sociaux, SEO WooCommerce.
+- **Contenu générique supprimé** : section « How This Skill Works » identique partout, « Output Format » standard, phrase « Structured recommendations… ». Il est remplacé par :
+  - Principles and Constraints (règles légales et de places de marché, datées, chiffres variables marqués [check]) ;
+  - Data Needed, Workflow en 8 étapes, Calculations and Tools ;
+  - Worked Example (illustratif), Example Requests, Output Format, Quality Checks, Data Reliability.
+
+  Les capacités existantes sont conservées.
+- **8 scripts transversaux** (bibliothèque standard, testés dans `tests/test_lot7_scripts.py`) :
+  - `sales-tracking-tool/scripts/sales_report.py` : contribution par canal, par SKU et par période ;
+  - `ecommerce-customer-retention/scripts/cohorts.py` : cohortes, taux de réachat, délai avant la 2e commande ;
+  - `ecommerce-shipping-rates/scripts/shipping_quote.py` : poids volumétrique, comparaison de transporteurs, plus grand carton sans surcoût ;
+  - `ecommerce-returns-management/scripts/returns_cost.py` : coût par retour, marge nette, motifs ;
+  - `ecommerce-subscription-model/scripts/subscription_economics.py` : LTV, LTV:CAC, retour sur coût d'acquisition, churn maximal ;
+  - `dropshipping-product-research/scripts/dropship_score.py` : coût rendu, CPA maximal, ROAS de rentabilité, note ;
+  - `ecommerce-ab-testing/scripts/revenue_test.py` : test sur le revenu par visiteur, correction de Bonferroni ;
+  - `google-shopping-optimization/scripts/product_buckets.py` : segmentation hero / sidekick / villain / zombie.
+- **Données d'exemple synthétiques** (signalées comme telles) pour le rapport de ventes et les cohortes.
+- **Registre** : 7 nouveaux groupes, qui relient les skills transversaux à leurs équivalents de plateforme (36 groupes, 123 skills avec un rôle unique) :
+  - « Product research and launch » ;
+  - « Keywords, titles and product copy » ;
+  - « Retention, loyalty and personalization » ;
+  - « Shipping and returns » ;
+  - « Brand and business planning » ;
+  - « Affiliate and creator partnerships » ;
+  - « Sales reporting and analytics ».
+- **Qualité** : 162 skills validés sur 162 ; la liste `KNOWN_TO_IMPROVE` est vide. `tests/test_lot7_structure.py` vérifie :
+  - les sections ;
+  - la disparition du texte générique ;
+  - les renvois vers les voisins ;
+  - l'absence de contenu recopié d'un autre skill (seuil 15 %, maximum mesuré 8 %) ;
+  - l'étiquetage des exemples.
+
 ### 1.6.0 — LOT 6 (enrichissement des 15 skills par plateforme)
 
 - **15 skills enrichis** :

@@ -13,10 +13,13 @@ Master data-driven selling on TikTok Shop. Track performance, optimize content, 
 
 **This skill:** Reading TikTok Shop performance data across videos, LIVE, affiliates and ads.
 
-Part of: TikTok Shop listings, conversion and analytics. For neighbouring jobs, use the matching skill instead:
+Part of: TikTok Shop listings, conversion and analytics, Sales reporting and analytics. For neighbouring jobs, use the matching skill instead:
 
 - `tiktok-shop-listing-optimization` — Writing and structuring the TikTok Shop product listing (title, images, video, attributes, search).
 - `tiktok-shop-conversion` — Diagnosing where buyers drop off between content and paid order, and fixing it.
+- `sales-tracking-tool` — Cross-channel sales tracking: metric dictionary, contribution by channel and SKU, anomalies, reconciliation.
+- `shopify-analytics-guide` — Reading Shopify reports and KPIs: sales definitions, funnel, AOV, repeat customers, cohorts.
+- `etsy-shop-analytics` — Reading Etsy Stats to find what drives or blocks sales.
 
 <!-- role-and-scope:end -->
 

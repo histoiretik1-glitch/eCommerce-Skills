@@ -19,6 +19,20 @@ Use the `ecommerce-marketing-strategy-builder` skill (included in the `ecommerce
 
 Built by [Nexscope](https://www.nexscope.ai/?co-from=skill) — your AI assistant for smarter e-commerce decisions.
 
+<!-- role-and-scope:start (generated from tools/skill_groups.json) -->
+## Role and Scope
+
+**This skill:** Growth priorities for an existing business: unit economics, growth levers and roadmap.
+
+Part of: Brand and business planning. For neighbouring jobs, use the matching skill instead:
+
+- `ecommerce-branding` — Brand positioning, voice, visual identity and trademark clearance across channels.
+- `ecommerce-business-plan` — Business plan for a new online business: market sizing, unit economics, cash flow.
+- `tiktok-shop-branding` — Building a recognizable brand on TikTok: identity, content pillars, community.
+- `etsy-shop-branding` — Shop identity on Etsy: name, banner, logo, About section, photo style and packaging.
+
+<!-- role-and-scope:end -->
+
 ## Installation
 
 Part of the **`ecommerce-skills`** Claude Code plugin (all 162 skills). In Claude Code:

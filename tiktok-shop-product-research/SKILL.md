@@ -15,9 +15,13 @@ Decide which products are worth launching on TikTok Shop before money goes into 
 
 **This skill:** Scoring and validating a product idea for TikTok Shop.
 
-Part of: TikTok Shop products. For neighbouring jobs, use the matching skill instead:
+Part of: TikTok Shop products, Product research and launch. For neighbouring jobs, use the matching skill instead:
 
 - `tiktok-shop-trending-products` — Spotting current TikTok trends and timing entry and exit.
+- `dropshipping-product-research` — Screening dropshipping products: supplier quotes, landed cost, max CPA, delivery time, policy checks.
+- `shopify-dropshipping` — Running a dropshipping store on Shopify: apps, supplier connections and order flow.
+- `ebay-product-research` — Deciding what to sell on eBay from sold listings: sell-through rate, sold prices, net per sale.
+- `product-launch-strategy` — Planning a product launch on any channel: timeline, stock, pricing, compliant reviews, launch ads.
 
 <!-- role-and-scope:end -->
 

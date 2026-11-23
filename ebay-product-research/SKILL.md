@@ -12,11 +12,15 @@ Research profitable products to sell on eBay. Analyze completed listings, sell-t
 
 **This skill:** Deciding what to sell on eBay from sold listings: sell-through rate, sold prices, net per sale.
 
-Part of: eBay research, search and ads. For neighbouring jobs, use the matching skill instead:
+Part of: eBay research, search and ads, Product research and launch. For neighbouring jobs, use the matching skill instead:
 
 - `ebay-seller-guide` — How to sell on eBay, from first listing to Top Rated Seller.
 - `ebay-seo` — Ranking eBay listings in Best Match search: titles, item specifics, category, identifiers.
 - `ebay-advertising` — Paid eBay Promoted Listings (General, Priority, Offsite): ad rates, bids, break-even and ROAS.
+- `dropshipping-product-research` — Screening dropshipping products: supplier quotes, landed cost, max CPA, delivery time, policy checks.
+- `shopify-dropshipping` — Running a dropshipping store on Shopify: apps, supplier connections and order flow.
+- `tiktok-shop-product-research` — Scoring and validating a product idea for TikTok Shop.
+- `product-launch-strategy` — Planning a product launch on any channel: timeline, stock, pricing, compliant reviews, launch ads.
 
 <!-- role-and-scope:end -->
 
